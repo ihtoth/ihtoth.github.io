@@ -1,3 +1,21 @@
+
+body{
+  padding-bottom: 5rem;
+}
+
+footer.mdl-mini-footer{
+    bottom: 0;
+    position: fixed;
+    padding: 0.5rem;
+    width: 100%;
+    z-index: 1;
+}
+
+footer.mdl-mini-footer > ul{
+  margin: auto;
+  font-size: 2rem;
+}
+
 header {
   background: url(../images/background-image.jpg) top / cover;*/
   background: rgba(0,0,0, 0.7) center / cover;
@@ -7,15 +25,36 @@ header {
   text-align: center;
   overflow: hidden;
 }
+
 h1{
   font-weight: bold;
   color: hsla(0, 0%, 100%, 0.9);
 }
+
+main{
+max-width: 900px;
+}
+
+.project-description{
+  padding-left: 0px;
+}
+
+.project img{
+  width:100%;
+}
+
 .slogan{
   font-weight: lighter;
-  color: rgba(255,255,255,0.8);
+  color: rgba(220,235,230,0.7);
   font-size: 1.6rem;
 }
+
+@media screen and (max-width: 1024px) {
+  header.mdl-layout__header {
+    display: flex;
+  }
+}
+
 /* #myVideo {
     position: absolute;
     left: 0;
@@ -26,8 +65,8 @@ h1{
     min-width: 100%;
     max-height: 100%;
     z-index: -100;
-    /* overflow: hidden; */
-}
+    /* overflow: hidden;
+}*/
 /* @media (min-aspect-ratio: 4/3) { */
   /* #myVideo {
     height: 275%;
