@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio | Ildikó Tóth</title>
+
+  <!-- Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <a href="http://imildi.com"><img src="./images/icons/logo.png"/></a>
+    <!-- For Mobile Size. Hide when viewport size > 600px?-->
+    <h1>Ildikó Tóth</h1>
+    <h2>UX Designer in Portland, OR</h2>
+    <a href=""><img src="./images/icons/hamburgerMenu.png" /></a>
+    <!-- End Mobile Size-->
+    <!-- Sticky header. Hide when on homepage and no scroll has occured yet-->
+    <div>
+      <span>Ildikó Tóth</span> <span>UX Designer</span>
+    </div>
+    <nav>
+      <ul>
+        <li>Projects</li>
+        <li>My Journey</li>
+        <li>Resume</li>
+        <li>Blog</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id=intro_1>
+      <img src="./projects/cirrus/images/logo.png" />
+      <img src="./projects/cirrus/images/cirrusOnScreen.png" />
+      <p>
+        Cirrus is a cloud storage app that is simple and gesture- friendly.
+        It is aimed towards viewing, sharing, and uploading data into a
+        secure space available from any device.
+      </p>
+      <article id="problem">
+        <h2>Problem</h2>
+        <h3>Hey can you include <span>everything?</span></h3>
+        <p>
+          I was asked to provide direction to a startup client with no previous products.
+          Their vague request asked me to explore the market, and provide a final app design
+          including the laundry list of functionalities they thought people wanted.
+        </p>
+        <ul>
+          <li>
+            Save Image
+          </li>
+          <li>
+            Upload Files
+          </li>
+          <li>
+            <div>
+              Tag
+            </div>
+            <div>
+              Move
+            </div>
+          </li>
+          <li>
+            + New
+          </li>
+          <li>
+            <img id=upload src="" />
+            <img id=share src="" />
+          </li>
+          <li>
+            <img id=comment src="" />
+          </li>
+          <li>
+            <img id=elephant src="" />
+          </li>
+        </ul>
+      </article>
+      <article id="solution">
+        <h2>Solution</h2>
+        <h3> No, let’s pick key features, and create a targeted look.</h3>
+        <p>
+          Although this was a daunting task, it gave me the opportunity to discover the market.
+          As one snarky user remarked in my initial survey: “Cloud storage is a standard.
+          Calling it ‘Cloud storage’ is almost outdated, it's just known as storage.”
+          The research revealed a niche Cirrus could exist: providing a better
+          sharing experience and a more flexible way to organize content. Using the design process,
+          I created an MVP to showcase key must-have features of the app.
+        </p>
+        <a href="">Explore Invision Prototype</a>
+      </article>
+    </section>
+    <section id=researchDesign_1>
+      <h1>Research + Analysis</h1>
+      <section class=DT>
+        <div>
+          <h4>Deliverables</h4>
+          <ul>
+            <li>Research user demographics </li>
+            <li>Market discovery</li>
+            <li>List of prioritized user needs</li>
+            <li>User flows to fulfill top needs</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Tools</h4>
+          <ul>
+            <li>Google Forms</li>
+            <li>Chrome</li>
+            <li>Spreadsheets</li>
+            <li>Figma</li>
+            <li>Pen + Paper</li>
+            <li>Draw.io</li>
+          </ul>
+        </div>
+      </section>
+      <section id=userResearch class="purpleBg">
+        <h2>User Research</h2>
+        <h3>Discovering what the user would actually use.</h3>
+        <p>
+          Taking the long list of requirements, my first job was to find what users liked, wanted, and were most peeved about. This was also a good time to find out what elements were top-of-mind for users vs. just nice-to-haves.
+        </p>
+        <p>
+          Writing up a healthy set of questions, I sent texts to friends, family, posted on facebook, reddit, a couple slack channels to solicit responses to my google survey. Luckily my efforts were rewarded by thirty-three respondents, 75% of which already use Google Drive. Score!
+        </p>
+        <h4>Main Frustrations</h4>
+        <ul>
+          <li>
+            <div>35%</div>
+            <div>Confusing navigation or organization. Connectivity and apps crashing.</div>
+          </li>
+          <li>
+            <div>50%</div>
+            <div>Running out of storage space or shared content recipients not being able to view content. </div>
+          </li>
+          <li>
+            <div>15%</div>
+            <div>Other</div>
+          </li>
+        </ul>
+        <h4>"The following aspects of collaboration are very exciting to me."</h4>
+        <ul>
+          <li>
+            <div>72%</div>
+            <div>Permission levels such as viewing and editing</div>
+          </li>
+          <li>
+            <div>63%</div>
+            <div>Editing is reflected across devices and accounts automatically.</div>
+          </li>
+          <li>
+            <div>56%</div>
+            <div>Sharing content with others via link or social media.</div>
+          </li>
+          <li>
+            <div></div>
+            <div>% respondents found these very exciting</div>
+          </li>
+        </ul>
+      </section>
+      <section id=competitorAnalysis class="whiteBg center img-right">
+        <h2>Competitor Analysis</h2>
+        <h3>What are other apps doing?</h3>
+        <img src="./projects/cirrus/images/boxLogo.png" />
+        <img src="./projects/cirrus/images/dropboxLogo.png" />
+        <img src="./projects/cirrus/images/evernoteLogo.png" />
+        <h4>Competitor Strengths</h4>
+        <p>
+          Version history at 30 days to 1 year, focus on security (box), and sophisticated permission levels
+        </p>
+        <h4>Where Cirrus could shine</h4>
+        <p>
+          Geared towards personal use, more flexible organization, easier sharing, intuitive interface.
+        </p>
+      </section>
+      <section id=personas>
+        <h2>Personas</h2>
+        <h3>I don't mean to stereotype,but...</h3>
+        <p>
+          I lumped my users into demographically similar groups, and came up with 3 personas.
+          <span class="bold-500">Overall, ease of sharing emerged as a clear need for all three. </span>
+        </p>
+        <article id=Samira class="twoColumns">
+          <h5>Samira</h5>
+          <h6>Photo Nut</h6>
+          <div class="overlay">
+            <span>Almost all of her items are photos.</span>
+            <p><span>Goals: </span>automatic syncing of photos, sharing, comment/ upload notifications</p>
+            <p><span>Frustrations:</span> Her google photos is running out of space. She’s convinced that there are better ways to auto-manage old photos to give her more space without paying for more GB.</p>
+          </div>
+        </article>
+        <article id=Raul class="twoColumns">
+          <h5>Raul</h5>
+          <h6>Sensitive Data Dude</h6>
+          <div class="overlay">
+            <span>Stores sensitive financial data</span>
+            <p><span>Goals:</span> Ability to easily organize and share with specific people with select permissions.</p>
+            <p><span>Frustrations:</span> App crashes, and takes a while to recover. Sharing files do not work all the time, so Raul has to email them on occasion, which isn’t as secure!</p>
+          </div>
+        </article>
+        <article id=William class="twoColumns">
+          <h5>William</h5>
+          <h6>Tinkerer</h6>
+          <div class="overlay">
+            <span>Always playing with latest technology</span>
+            <p><span>Goals:</span> Change notification levels. Sharing files with others, syncing only specific files to his cloud storage.</p>
+            <p><span>Frustrations:</span> Not sure how files are indexed, trouble moving stuff across platforms. Seems to end up with duplicates when co-editing.</p>
+          </div>
+        </article>
+        <p>
+          Throughout the process, I referred back to these personas to remind myself what goals I was trying to fulfill, and if I was sorely missing considering any of them.
+          <a href="./projects/cirrus/documents/personas.pdf">Full Persona Pages</a>
+        </p>
+
+
+      </section>
+      <section id=userStories class="green2Bg">
+        <h2>User Stories</h2>
+        <h3>Breaking it down in plain english</h3>
+        <p>I divided and prioritized my user stories under four different user cases.</p>
+        <p>Then I spent some agonizing minutes deciding how to prioritize them. It felt like educated gambling.</p>
+        <p>Many of the basic needs were clear through the user survey, but many of the frustrations described how these basic functions were defective + advanced requests that would require the basics to be already present. </p>
+        <article>
+          <h4>Top <span class="OneOnMobileTwoOnDesktop">two</span> stories per category</h4>
+          <ul>
+            <li>
+              <img src="./projects/cirrus/images/icons/NewUser.png" />
+              <h5>New User</h5>
+              <div>
+                <p>
+                  “I want to know how much this service will cost me”
+                </p>
+                <p>
+                  “I want to create an account using an email address”
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="./projects/cirrus/images/icons/ReturningUser.png" />
+              <h5>Returning User</h5>
+              <div>
+                <p>
+                  “I want to be able to view my content on any device”
+                </p>
+                <p>
+                  “I want to be able to log in to add new items, edit existing items or to share my items”
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="./projects/cirrus/images/icons/Collaborator.png" />
+              <h5>Collaborator</h5>
+              <div>
+                <p>
+                  “I want to make sure ANYONE can view content that I've shared with them, regardless of if they have my cloud storage service, what device they are on, or what browser they are using.”
+                </p>
+                <p>
+                  “I want my files to automatically sync across devices, and viewable without refreshing the page”
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="./projects/cirrus/images/icons/Backuper.png" />
+              <h5>Backuper</h5>
+              <div>
+                <p>
+                  “I do not want files to be deleted without my consent.”
+                </p>
+                <p>
+                  “I want it to be clear what content is being uploaded automatically to give peace of mind (via a save/delete history?)”
+                </p>
+              </div>
+            </li>
+          </ul>
+          <a href="">See All User Stories</a>
+        </article>
+      </section>
+    </section>
+    <section id=interactionDesign_1>
+      <h1>Interaction Design</h1>
+      <section class=DT>
+        <div>
+          <h4>Deliverables</h4>
+          <ul>
+            <li>User Flows </li>
+            <li>Sitemap</li>
+            <li>Page Layout Sketches</li>
+            <li>Digital Wireframes</li>
+            <li>Clickable Mockups</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Tools</h4>
+          <ul>
+            <li>Flowmapp</li>
+            <li>Pen + Paper</li>
+            <li>Balsamiq</li>
+            <li>Figma</li>
+            <li>Invision</li>
+          </ul>
+        </div>
+      </section>
+      <section id=userFlows>
+        <h2>User Flows</h2>
+        <h3>Connecting the dots... and other shapes</h3>
+        <p>
+          I used sketching to be messy, brainstorming on how a user might go about completing tasks such as signing up, adding content, and sharing something.
+        </p>
+        <img id=OnboardingSketch />
+        <p>
+          This was the part where I had interaction ideas handwritten sideways, upside down, with arrows pointing a lot of directions. Distilling the essence, I used draw.io to digitize the flows.
+        </p>
+        <div class="twoColumns">
+          <div class="leftColumn">
+            <h4>Sharing</h4>
+            <img src="./projects/cirrus/images/sharingFlow.png" />
+          </div>
+          <div class="rightColumn">
+            <h4>Adding an Item</h4>
+            <img src="./projects/cirrus/images/addinganItem.png" />
+          </div>
+        </div>
+        <aside class="ideaBubble">
+          <img src="./projects/cirrus/images/fabs/idea.png" />
+          <div class="bubble">
+            <p>
+              I ended up deviating from both of these user flows. Here is what I learned: the flows are just to get the first draft out the door. As I compared other products and tested Cirrus with users, the interactions evolved to be simpler. For example, I ditched the ‘user-dialogue’ when uploading something.
+            </p>
+          </div>
+        </aside>
+        <a href="">More User Flows</a>
+      </section>
+      <section id=contentStrategy>
+        <h2>Content Strategy</h2>
+        <h3>Mapping out every single page.</h3>
+        <p>
+          So far, we have the user flows according to user personas and user stories. To help me with wireframing, I needed to map out my content into specific pages. This is called the sitemap, which just outlines proposed content of each page, and how they may be connected to one-another. I used an app called Flow Mapp.
+        </p>
+        <img src="./projects/cirrus/images/siteMap.png" />
+        <p>
+          <span>Green</span> = Items depicted on wireframe, and in high fidelity mockups.
+          <span>Turquoise</span> = Pages visible to non-cirrus users, when a user shares an item with them.
+          <span>Purple</span> = Not implemented at this time.
+        </p>
+        <a href="">See full sitemap</a>
+
+
+      </section>
+      <section id=wireframing>
+        <h2>Wireframing</h2>
+        <article>
+          <h3>Never enough X-es, O-s, boxes, and Squiggles</h3>
+          <p>
+            Finally! Lots of research has gone into getting to this point. I relied heavily on my sitemap, user flows, and user stories as I started to sketch out what my pages might look like using old fashioned paper and pen. These are different ideas how I may lay out my user dashboard.
+          </p>
+          <img src="./projects/cirrus/images/wireframeSketches.png" />
+        </article>
+        <article>
+          <h3>Digitize and Iterate</h3>
+          <div class="twoColumns">
+            <div class="leftColumn">
+              <h4>Upload? Add? Save? Import?</h4>
+              <p>
+                Button to upload says “Import” vs. “Add” with dropdown in second version. Seems simple, but trying to find the right wording for this action ended up being the longest saga involving multiple user tests.
+              </p>
+            </div>
+            <div class="rightColumn">
+              <img src="./projects/cirrus/images/wireframeImport.png" />
+              <div class="downTriangleArrow"></div>
+              <img src="./projects/cirrus/images/wireframeAdd.png" />
+            </div>
+          </div>
+          <aside class="ideaBubble">
+            <img src="./projects/cirrus/images/fabs/idea.png" />
+            <div class="bubble brownBg">
+              <p>
+                I finally ended up using “Add folder or file”. Although I was trying to be minimalist, the test results showed that the extra couple words were necessary. Without them, some testers didn’t quite get it.
+              </p>
+            </div>
+          </aside>
+          <div class="twoColumns">
+            <div class="leftColumn">
+              <h4>Removing Clutter.</h4>
+              <p>
+                In my first iteration, the quick tools were always visible. I revised the mockup so they only appear for a row when hovering on a row (desktop solution). For touch-only screens and mobile, a different solution would have to be implemented.
+              </p>
+            </div>
+            <div class="rightColumn">
+              <img src="./projects/cirrus/images/alwaysViewQuickTools.png" />
+              <div class="downTriangleArrow"></div>
+              <img src="./projects/cirrus/images/hoverQuickTools.png" />
+            </div>
+          </div>
+          <a href="">More Wireframes</a>
+        </article>
+      </section>
+      <section id=mockups class="greenBg">
+        <h2>Mockups</h2>
+        <h3>Aka wireframes round-two.</h3>
+        <p>
+          After creating a sequence of wireframes, I refined them to create clickable mockups using Invision.
+        </p>
+        <aside class="ideaBubble">
+          <img src="./projects/cirrus/images/fabs/idea.png" />
+          <div class="bubble whiteBg">
+            <p>
+              At this point, I thought I had most of my wireframes ready to create a click-through design, but there are so many more slightly different screens I created when I finally brought these things to life. For example: hovering over something that changes color. Or making a newly added file appear on the dashboard. Moral of the story is that <span class=bold-500>it will take longer to make than you think.</span>
+            </p>
+          </div>
+        </aside>
+        <img src="./projects/cirrus/images/gifs/wireframeWalkthrough.gif" />
+        <a href="">Invision B+W Mockups</a>
+        <h3>Testing the Mockups</h3>
+        <p>
+          For consistency, I created a <a href="">testing script</a> to use. This was the first time my ideas saw light of day. With a mixture of nervousness, excitement, and kicking myself to stop making perfectionist tweaks, I coordinated remote and in-person tests, asking users to complete relatively “simple” tasks associated with the top user stories from my research phase.
+        </p>
+        <a href="">See Results</a>
+      </section>
+    </section>
+    <section id=branding_1>
+      <section class=DT>
+        <div>
+          <h4>Deliverables</h4>
+          <ul>
+            <li>Moodboards</li>
+            <li>Brand look & feel</li>
+            <li>Vector logo</li>
+            <li>Color palette</li>
+            <li>Typography</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Tools</h4>
+          <ul>
+            <li>Pen + Paper</li>
+            <li>Google Fonts</li>
+            <li>Figma</li>
+            <li>Pinterest</li>
+            <li>Google Search</li>
+          </ul>
+        </div>
+      </section>
+      <section id=sketching>
+        <h2>Sketching</h2>
+        <h3>Best done on the couch with a cup of tea.</h3>
+        <p>
+          Taking a pause from the layout and content iterations, I dove into creating a brand for Cirrus. At this time, I already had the name “Cirrus” in mind. Cirrus is a type of high-flying light-whispy cloud. I wanted my users to feel light, elegance when using the application. I used a mind map to come up with more words and ideas to accompany Cirrus.
+        </p>
+        <img src="./projects/cirrus/images/sketches/mindmap.png" />
+        <article class="purpleBg">
+          <h3>I took a wrong turn</h3>
+          <p>
+            Probably from over thinking the whole strategy, I was trying too hard to avoid the analogy to ice and fragility. Instead, I tried to create more of a grounded feel, and pivoted my design for more earthy tones.
+          </p>
+          <img class="leftColumn" src="./projects/cirrus/images/sketches/logoSketchesTerra.png" />
+          <img class="rightColumn" src="./projects/cirrus/images/logoTerraPurple.png" />
+          <p>
+            After consulting with my mentor and some friends, I realized that I had lost the wispy, light feel that would resonate with my users. Terra was a name and logo which would work better for for a landscaping company, something where you could hold the product in your hand. Holding a laptop doesn’t count.
+          </p>
+        </article>
+        <aside class="ideaBubble">
+          <img src="./projects/cirrus/images/fabs/idea.png" />
+          <div class="bubble purple2Bg">
+            <p>
+              The whole time I was sketching Terra, I had this gut feeling that it was all wrong. Even diving into it, I knew I was taking a risk, but thought to myself - I’ll never know unless I try.  Lesson: trust your gut, and take risks as long as you have enough time to turn back around.
+            </p>
+          </div>
+        </aside>
+        <h3>Seeing the blue sky!</h3>
+        <p>
+          Even though I had gone pretty far in the wrong direction, having digitized my sketches and was already matching typefaces, I went back to the drawing board one morning with a hot tea in my hand, my mind still in a sort of sleepy-dreaming state. It was here that I came up with these sketches. Picking the top circled, I digitized them. I was suprised how fast this all matriculated! Like it was a baby waiting to be born.
+        </p>
+        <img src="./projects/cirrus/images/sketches/logoSketchesCirrus.png" />
+        <img src="./projects/cirrus/images/logoDraftsCirrus.png" />
+        <img src="./projects/cirrus/images/moodboardCirrus.png" />
+      </section>
+      <section id=digitalLogo>
+        <h2>Digital Logo</h2>
+        <h3>Black and White first.</h3>
+        <div class="dGreyBg">
+          <div>
+            Light
+          </div>
+          <img src="./projects/cirrus/images/logoLight.png" />
+          <div>
+            Dark
+          </div>
+          <img src="./projects/cirrus/images/logoDark.png" />
+        </div>
+        <p>
+          I used the typeface Quicksand Regular for the words Cirrus, but modified the kerning manually so the letters look more optically evenly spaced out. This typeface was most analogous to the logo, which I also trapped into a circle with similar thickness.
+        </p>
+        <p>
+          Although it was attractive to keep the C cradled in the curve of the cloudlike fingers, ultimately, the circle worked better in a standalone way, and makes the logo more versatile overall.
+        </p>
+        <aside class="ideaBubble">
+          <img src="./projects/cirrus/images/fabs/idea.png" />
+          <div class="bubble whiteBg">
+            <p>
+              The evolution from {cirrus first logo} to {cirrus second logo}  really only manifested itself once I created the second version of my high fidelity mockup. <span class="bold-500">Lesson:</span> Let the visual look miander slightly, don’t feel like you have to stick exactly with the branding guidelines, especially in the beginning. When in doubt, run a preference test!
+            </p>
+          </div>
+        </aside>
+      </section>
+      <section id=designGuide class="green2Bg">
+        <h2>Design Guide</h2>
+        <h3>Guidelines are allowed to evolve.</h3>
+        <img src="./projects/cirrus/images/designGuide.png" />
+        <p>
+          Creating design guides are one of my favorite parts of the process. It is where my logical thinking and affinity to visual beauty come together. My quest is for simplicity and harmony, especially with this brand.
+        </p>
+        <p>
+          Initially, I picked Raleway and Montserrat as Title and Body text respectively, but learned quickly that there was not really a compelling reason to pull both those fonts in (extra download overhead!) because they were so familiar. Montserrat had enough weight variety to do the heavy lifting in all typography.
+        </p>
+        <aside class=Quote>
+          “I really like the font! It works really well, which is it?”  <br /> - Alice Tester
+        </aside>
+        <aside class="ideaBubble">
+          <img src="./projects/cirrus/images/fabs/idea.png" />
+          <div class="bubble whiteBg">
+            <p>
+              <span class="bold-500"></span>Picking colors:</span> I knew I wanted to use a deep turquoise like the color of the Caribbean Sea. To contrast the turquoise, I chose a complimentary color.
+            </p>
+            <p>
+              It was supposed to be more mute. I tried many times to incorporate this brown, but it just brought too much attention to itself and looked <span class="bold-500">*ugly*</span>. You know that gut feeling. Yeah, it felt gross. I ended up ditching this color, and picking a bright pink with a couple different shades used to draw attention.
+            </p>
+            <a href="">Full Design Guide (PDF)</a>
+          </div>
+        </aside>
+      </section>
+    </section>
+    <section id=visualDesign_1>
+      <h1>Visual Design</h1>
+      <section class=DT>
+        <div>
+          <h4>Deliverables</h4>
+          <ul>
+            <li>High Fidelity Mockup</li>
+            <li>Clickable Prototype</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Tools</h4>
+          <ul>
+            <li>Figma</li>
+            <li>inVision</li>
+          </ul>
+        </div>
+      </section>
+      <section id=highFidelityPrototypes>
+        <h2>High Fidelity Prototypes</h2>
+        <h3>From blueprint to reality.</h3>
+        <p>
+          Having part in this project from its inception to developer handoff, it was crazy to see how much work goes into even putting a pixel on the page that will actually see day of light in production.
+        </p>
+        <p>
+          With colors, typography, a solid logo, basic wireframes and a list of things to fix, I sat down to design the high fidelity mockups. I started with the easy stuff:
+        </p>
+        <img src="./projects/cirrus/images/screenshots/homepageV1.png" />
+        <div class="upTriangleArrow"></div>
+        <article>
+          <h4 class="centered">First Version</h4>
+          <ul>
+            <li>
+              Logo is still without Circle
+            </li>
+            <li>
+              See More under the features and pricing sections is regular case and not centered.
+            </li>
+            <li>
+              Button colors aren’t consistent
+            </li>
+          </ul>
+          <h4 class="centered">Second Version</h4>
+        </article>
+        <div class="downTriangleArrow">&nbsp;</div>
+        <img src="./projects/cirrus/images/screenshots/homepageV2.png" />
+        <p>
+          Easy? Well no, but the user stories for a new user were relatively straightforward, with not too many complicated tasks required.
+        </p>
+        <a href="">See onboarding screens</a>
+        <h3>Mobile Dashboard</h3>
+        <p>
+          Next, I changed my perspective, literally - to what the dashboard may look like on a mobile device. Although this interaface wasn’t the main focus, it was important to start thinking small screen too.
+        </p>
+        <p>
+          What if I thought up a fancy solution on the big screen that would *suck* on the mobile. I didn’t want to have to alter the look too much. The users did say they want this app available on any device.
+        </p>
+        <h4 class="centered">Initial Version</h4>
+        <img src="./projects/cirrus/images/screenshots/mobileDashboardV1.png" />
+        <h4 class="centered">Final Version</h4>
+        <img src="./projects/cirrus/images"/>
+        <article>
+          <h3>Desktop Dashboard Evolution</h3>
+          <img src="./projects/cirrus/images/screenshots/desktopDashboardV1.png" />
+          <img src="./projects/cirrus/images/screenshots/desktopDashboardV2.png" />
+          <img src="./projects/cirrus/images/screenshots/desktopDashboardV3.png" />
+          <img src="./projects/cirrus/images/screenshots/desktopDashboardV4.png" />
+        </article>
+      </section>
+    </section>
+    <section id=testing_1>
+      <h1>Testing</h1>
+      <section class=DT>
+        <div>
+          <h4>Deliverables</h4>
+          <ul>
+            <li>User Preference Test</li>
+            <li>In-Person/Remote Usability tests</li>
+            <li>Modified high fidelity prototypes</li>
+            <li>Refined clickable prototype according to test results</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Tools</h4>
+          <ul>
+            <li>Usability Hub</li>
+            <li>Zoom</li>
+            <li>Google Docs</li>
+            <li>Figma</li>
+            <li>InVision</li>
+          </ul>
+        </div>
+      </section>
+      <section id=round1MockupTesting>
+        <h2>Round 1: Mockup Testing</h2>
+        <h3>What’s black and white and moves when you click?</h3>
+        <p>
+          A wireframe mockup.. duh!
+        </p>
+        <p>
+          All jokes aside, I ran this test before I did any branding.
+        </p>
+        <p>
+          Just like you can’t move the foundation of a house once the walls are up without having to start over, running low fidelity tests gave me a good base on which to create the branded high-fi prototypes.
+        </p>
+        <p>
+          Here are the results combined from four user tests.
+        </p>
+        <article class="green2Bg">
+          <h4>The Good</h4>
+          <p>
+            Good visual feedback when users interacted with the interface: sharing success, uploading progress, hover behavior.
+          </p>
+        </article>
+        <article class="purpleBg">
+          <h4>The not so good</h4>
+          <img src="./projects/cirrus/images/screenshots/wireframeImagePreview.png"/>
+          <p>
+            <span class="bold-500">Dragging-Dropping.</span> Test takers had trouble with how to move items. In the above screenshots, the folder icon wasn’t understood. Instinctively, they said they should be able to drag the name of the file over a folder to drop it in. This included not only the line item, but in the breadcrumbs too. Dragging is more intuitive than clicking buttons.
+          </p>
+        </article>
+      </section>
+      <section id=round2HiFiTesting>
+        <h2>Round 2: High-Fi Testing</h2>
+        <h3>Things are never really perfect.</h3>
+        <p>
+          The best part about being a UX designer is that if you are not sure how something should work, the best way to find out is to test users. It’s great that we don’t have to invent it all by ourselves!
+        </p>
+        <p>
+          I thought I had ironed out everything by the time I was ready to test my high-fidelity prototypes, but there’s always something to tweak, especially when bringing in new testers who haven’t tested the product before.
+        </p>
+        <h4 class="centered">Improvements</h4>
+        <div class="img_text_card">
+          <p>Keep quick tools on the item row when it is selected!</p>
+          <img src="./projects/cirrus/images/screenshots/hiFi_QuickTools.png" />
+        </div>
+        <div class="img_text_card">
+          <p>In the grid layout, the select circle should be on the top left or right.</p>
+          <img src="./projects/cirrus/images/screenshots/selectTopLeft.png" />
+        </div>
+        <div class="img_text_card">
+          <p>Order files by last modified date by default, and remove Recent tab.</p>
+          <img src="./projects/cirrus/images/screenshots/orderByLastModified.png" />
+        </div>
+        <div class="img_text_card">
+          <p>Hotkeys should be enabled including Ctrl-Z, Ctrl-X, Ctrl-C, Ctrl-V.</p>
+          <img src="./projects/cirrus/images/screenshots/???.png" />
+        </div>
+        <div class="img_text_card">
+          <p>Include toggle to grid/list view and pagination.</p>
+          <img src="./projects/cirrus/images/screenshots/pagination.png" />
+        </div>
+        <div class="img_text_card">
+          <p>Quick tool options made available on right-click.</p>
+          <img src="./projects/cirrus/images/screenshots/rightClick.png" />
+        </div>
+        <div class="img_text_card">
+          <p>Colors and layout worked well. Yay research and wireframing!</p>
+          <img src="./projects/cirrus/images/screenshots/colorPalette.png" />
+        </div>
+        <div class="img_text_card">
+          <p>Upload area  say “Upload file or folder” instead of “Add”</p>
+          <img src="./projects/cirrus/images/screenshots/uploadffNotAdd.png" />
+        </div>
+
+
+        <a href="">see all results</a>
+      </section>
+      <section id=finalDesign class="purpleBg">
+        <h2>Final Design</h2>
+        <h3>Incorporating testing feedback</h3>
+        <p>
+          After the preference testing, which provided invaluable insights and final tests, my prototype dashboard evolved from sketches, to Balsamiq wireframes, to high-fidelity prototypes with interaction.
+        </p>
+        <img src="./projects/cirrus/images/gifs/hiFiClickthrough.gif" />
+        <a href="">InVision Prototype</a>
+      </section>
+      <section id=reflection>
+        <h2>Reflection</h2>
+        <h3>The Design Process really works.</h3>
+        <p>
+          I am amazed how far users’ feedback combined with my experience and studying have brought this product where I truly believe it could compete with “the big ones” like google and dropbox if implemented correctly, and further iterated on using the same testing principles.
+        </p>
+        <h4>Lessons Learned</h4>
+        <ul>
+          <li>There’s no such thing as too much sketching</li>
+          <li>Trust your gut instinct; stop and go back, or keep iterating if it doesn’t feel right.</li>
+          <li>The process will take 2 or 3 times as long as you think. Most people don’t get why.</li>
+        </ul>
+        <h4>What's Next?</h4>
+        <p>
+          There are many more user stories in the queue that haven’t been implemented. That is where I would go to if there is more time, or a second design sprint.
+        </p>
+        <p>
+          As a Designer, I would go into more details and thinking out test cases and acceptance criteria for the developer to use when iterating on their code to match to the original user stories.
+        </p>
+      </section>
+    </section>
+    <nav class=projectNav>
+      <div>
+        Rebranding Inreach Solutions
+      </div>
+      <div class="rightTriangleArrow"></div>
+    </nav>
+  </main>
+
+  <footer>
+    <ul class="mdl-mini-footer__link-list">
+      <li>
+        <!-- Desktop Only -->
+        <div>
+          Like My Work? <br  />
+          Let me know.
+        </div>
+        <!-- End desktop Only -->
+      </li>
+      <li>
+        <a href="http://www.linkedin.com/in/ildikototh">
+          <i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.github.com/ihtoth">
+          <i class="fa fa-github-square fa-lg" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/ihtoth">
+          <i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a href="http://www.twitter.com/ihtoth">
+          <i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:imildih@gmail.com">
+          <i class="fa fa-envelope-square fa-lg" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
+  </footer>
+</body>
+
+</html>
