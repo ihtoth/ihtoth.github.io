@@ -1,0 +1,82 @@
+
+body{
+  padding-bottom: 5rem;
+}
+
+footer.mdl-mini-footer{
+    bottom: 0;
+    position: fixed;
+    padding: 0.5rem;
+    width: 100%;
+    z-index: 1;
+}
+
+footer.mdl-mini-footer > ul{
+  margin: auto;
+  font-size: 2rem;
+}
+
+header {
+  background: url(../images/IMG_0733.png) bottom / cover;*/
+  background: rgba(0,0,0, 0.7) center / cover;
+  width: 100%;
+  height: 60vh;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+h1{
+  font-weight: bold;
+  color: hsla(0, 0%, 100%, 0.9);
+}
+
+main{
+max-width: 900px;
+}
+
+.project-description{
+  padding-left: 0px;
+}
+
+.project img{
+  width:100%;
+}
+
+.slogan{
+  font-weight: lighter;
+  color: rgba(220,235,230,0.7);
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 1024px) {
+  header.mdl-layout__header {
+    display: flex;
+  }
+}
+
+/* #myVideo {
+    position: absolute;
+    left: 0;
+    top: -100px;
+    width: 100%;
+    height: 275%;
+    filter: brightness(40%) grayscale(75%);
+    min-width: 100%;
+    max-height: 100%;
+    z-index: -100;
+    /* overflow: hidden;
+}*/
+/* @media (min-aspect-ratio: 4/3) { */
+  /* #myVideo {
+    height: 275%;
+    top: -100%;
+  }
+} */
+
+/* @media (max-aspect-ratio: 4/3) {
+  #myVideo {
+    width: 275%;
+    left: -100%;
+  }
+} */

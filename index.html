@@ -7,208 +7,237 @@
   <!-- Viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!--Google Fonts-->
+  <link href='https://fonts.googleapis.com/css?family=Advent+Pro:400,700' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+
   <!-- Font Awesome -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Reset CSS-->
+  <link rel="stylesheet" href="styles/reset.css">
+  <!-- Custom CSS-->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/header.css">
+
 
 </head>
-<body>
+<body id=home>
   <header>
-    <a href="http://imildi.com"><img src="./images/icons/logo.png"/></a>
-    <!-- For Mobile Size. Hide when viewport size > 600px?-->
-    <h1>Ildikó Tóth</h1>
-    <h2>UX Designer in Portland, OR</h2>
-    <a href=""><img src="./images/icons/hamburgerMenu.png" /></a>
-    <!-- End Mobile Size-->
-    <!-- Sticky header. Hide when on homepage and no scroll has occured yet-->
-    <div>
-      <span>Ildikó Tóth</span> <span>UX Designer</span>
+    <div class="mainLogoContainer">
+    <a href="http://imildi.com"><img src="./images/icons/logo@1_5x.png" class="mainLogo"/></a>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#projects">Projects</a></li>
-        <li>My Journey</li>
-        <li>Resume</li>
-        <li>Blog</li>
-      </ul>
+    <!-- For Mobile Size. Hide when viewport size > 600px?-->
+    <div class="headerText mobile">
+      <h1>Ildikó Tóth</h1>
+      <h2>UX Designer in Portland, OR</h2>
+    </div>
+    <nav role="navigation" class="mobile">
+      <div id="menuToggle">
+        <!-- A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it.-->
+        <input type="checkbox" class=hamburgerMenuCheckbox/>
+        <!--      hamburgerMenu  -->
+        <div class="hamburgerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul id="topMenu">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#myJourney">My Journey</a></li>
+          <li><a href="resume.pdf"target="_blank">Resume</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </div>
     </nav>
-  </header>
-  <div> <!-- This will float as one scrolls down. Clicking rolls up to top-->
-    <a href="">Back to top</a>
-  </div>
-  <main>
-    <section>
-      <!-- Large Screen only. Hide when <601px-->
-      <h1><span>Hello! I'm Ildikó,</span> <span>a UX Designer in Portland,OR</span></h1>
-      <!-- End Large Screen -->
+    <ul class="desktopMenu">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#myJourney">My Journey</a></li>
+      <li><a href="resume.pdf"target="_blank">Resume</a></li>
+      <li><a href="#blog">Blog</a></li>
+    </ul>
+    <!-- <a href=""><img src="./images/icons/hamburgerMenu.png" class="hamburgerMenu" /></a> -->
+    <!-- End Mobile Size-->
+    <!-- Sticky header. Hide when on homepage and no scroll has occured yet
+    <div>
+    <span>Ildikó Tóth</span> <span>UX Designer</span>
+  </div> -->
+
+</header>
+<div> <!-- This will float as one scrolls down. Clicking rolls up to top-->
+  <a href="#home">Back to top</a>
+</div>
+<main>
+  <section>
+    <!-- Large Screen only. Hide when <601px-->
+    <h1><span>Hello! I'm Ildikó,</span> <span>a UX Designer in Portland,OR</span></h1>
+    <!-- End Large Screen -->
+    <div>
+      <h2>I design for efficient <span class="heroEmphasis">experiences</span></h2>
+      <img src="./images/sketches/experiences.png" />
+    </div>
+    <div>
+      <h2>So humans can reduce <span class="heroEmphasis">screentime</span></h2>
+      <img src="./images/sketches/screentime.png" />
+    </div>
+    <div>
+      <h2>and get back to<span class="heroEmphasis">human time</span></h2>
+      <img src="./images/sketches/humantime.png" />
+    </div>
+  </section>
+  <section id="projects">
+    <h1>Projects</h1>
+    <article>
+      <img src="./projects/cirrus/images/logoIcon.png" />
       <div>
-        <h2>I design for efficient</h2>
-        <caption>experiences</caption>
-        <img src="./images/sketches/experiences.png" />
+        <summary>Cirrus</summary>
+        <details>A more intuitive way to organize and share your stuff.</details>
+        <a href="./projects/projectCirrus.html">read more</a>
       </div>
+    </article>
+    <article>
+      <img src="./projects/inReach/images/logoIcon.png" />
       <div>
-        <h2>So humans can reduce</h2>
-        <caption>screentime</caption>
-        <img src="./images/sketches/screentime.png" />
+        <summary>Inreach Solutions Facelift</summary>
+        <details>Re-branding a SASS company for social workers</details>
+        <a href="projectInreach.html">read more</a>
       </div>
+    </article>
+    <article>
+      <img src="./projects/intelRetailer/images/logoIcon.png" />
       <div>
-        <h2>and get back to</h2>
-        <caption>human time</caption>
-        <img src="./images/sketches/humantime.png" />
+        <summary>Retailer Onboarding</summary>
+        <details>Solving the international address problem.</details>
+        <a href="./projects/projectIntelRetailer.html">read more</a>
       </div>
-    </section>
-    <section id="projects">
-      <h1>Projects</h1>
-      <article>
-        <img src="./projects/cirrus/images/logoIcon.png" />
-        <div>
-          <summary>Cirrus</summary>
-          <details>A more intuitive way to organize and share your stuff.</details>
-          <a href="./projects/projectCirrus.html">read more</a>
-        </div>
-      </article>
-      <article>
-        <img src="./projects/inReach/images/logoIcon.png" />
-        <div>
-          <summary>Inreach Solutions Facelift</summary>
-          <details>Re-branding a SASS company for social workers</details>
-          <a href="./projects/projectInreach.html">read more</a>
-        </div>
-      </article>
-      <article>
-        <img src="./projects/intelRetailer/images/logoIcon.png" />
-        <div>
-          <summary>Retailer Onboarding</summary>
-          <details>Solving the international address problem.</details>
-          <a href="./projects/projectIntelRetailer.html">read more</a>
-        </div>
-      </article>
-    </section>
-    <section id="myJourney">
-      <h1>My Journey</h1>
-      <article>
-        <img src="./images/sketches/math.png" />
-        <h2>1</h2>
+    </article>
+  </section>
+  <section id="myJourney">
+    <h1>My Journey</h1>
+    <article>
+      <img src="./images/sketches/math.png" />
+      <h2>1</h2>
+      <p>
+        <span class="bold">Math.</span> It’s challenging, and I love the logic and making sense of data.
+        I also have a degree in it from two different universities.
+        Left brain is happy, but right brain needed something too...
+      </p>
+      <a href="./documents/resume.pdf">see resume</a>
+    </article>
+    <article>
+      <img src="./images/sketches/graphicDesign.png" />
+      <h2>2</h2>
+      <p>
+        <span class="bold">Graphic Design.</span>  I don’t want to create anything that wastes people’s time.
+        As a designer, it is my responsibility to avoid design patterns that cause anxiety and confusion.
+      </p>
+      <!-- Hide when Expand is shown as link below, show when Collapse is link below-->
+      <p>
+        My first job out in the wild was an Automation Software Engineer at Intel.
+        As a newly minted adult, I wanted most of all to please my coworkers and managers.
+        I did exactly what I was told: learn fast, and program things due yesterday.
+        In the process, I ignored certain thoughts which got louder and louder as time passed:
+        Why do the users turn off our automation and do things manually essentially abandoning
+        the software we wrote? Why am I not allowed to talk to them and watch them work on
+        new releases to work out any kinks?
         <p>
-          <span class="bold">Math.</span> It’s challenging, and I love the logic and making sense of data.
-          I also have a degree in it from two different universities.
-          Left brain is happy, but right brain needed something too...
+          When I voiced my concern to management, they loudly ignored what I said,
+          citing my proposed improvements a “waste of time” and “no competition,
+          internal customers…it doesn’t matter...” and then put me on a project the furthest
+          away from UX they could find: how to take the user out of the picture entirely.
+          Their vision was a lights-off factory.
         </p>
-        <a href="./documents/resume.pdf">see resume</a>
+        <p>
+          Needless to say, this attitude and short sightedness made my blood boil. Yes I get
+          all the reasons, but it didn’t mean I was ok with it. I finally realized that this
+          was not the place for me, because the type of work I enjoyed the most: talking to
+          customers about frustrations and ultimately design for them, was at risk of falling
+          off the priority list entirely.
+        </p>
+        <a href="expand">Expand</a>
+        <a href="collapse">Collapse</a>
       </article>
       <article>
-        <img src="./images/sketches/graphicDesign.png" />
-        <h2>2</h2>
+        <img src="./images/sketches/UXEthics.png" />
+        <h2>3</h2>
         <p>
-          <span class="bold">Graphic Design.</span>  I don’t want to create anything that wastes people’s time.
-          As a designer, it is my responsibility to avoid design patterns that cause anxiety and confusion.
+          <span class="bold">UX Ethics.</span> I have a degree in this too. Back in the day,
+          apps and interface design were in their infancy, left mainly for the programmer to implement.
+          I sort of though it was dumb to design print brochures, so I got a job as a programmer...
         </p>
         <!-- Hide when Expand is shown as link below, show when Collapse is link below-->
         <p>
-          My first job out in the wild was an Automation Software Engineer at Intel.
-          As a newly minted adult, I wanted most of all to please my coworkers and managers.
-          I did exactly what I was told: learn fast, and program things due yesterday.
-          In the process, I ignored certain thoughts which got louder and louder as time passed:
-          Why do the users turn off our automation and do things manually essentially abandoning
-          the software we wrote? Why am I not allowed to talk to them and watch them work on
-          new releases to work out any kinks?
+          Not all apps are created equal: some are confusing, others draw you into an endless scrolling abyss,
+          some make you feel overwhelmed by revealing too much visually. My favorite apps are the ones
+          I spend the least time with: they tell me what I want to know, help me with making my
+          micro-decision, and lets me move on with life. It’s like my favorite shoe that I think
+          about when putting on in the morning, but actively forget about while “carrying” it around
+          with me all day.
           <p>
-            When I voiced my concern to management, they loudly ignored what I said,
-            citing my proposed improvements a “waste of time” and “no competition,
-            internal customers…it doesn’t matter...” and then put me on a project the furthest
-            away from UX they could find: how to take the user out of the picture entirely.
-            Their vision was a lights-off factory.
-          </p>
-          <p>
-            Needless to say, this attitude and short sightedness made my blood boil. Yes I get
-            all the reasons, but it didn’t mean I was ok with it. I finally realized that this
-            was not the place for me, because the type of work I enjoyed the most: talking to
-            customers about frustrations and ultimately design for them, was at risk of falling
-            off the priority list entirely.
+            I want to create design that doesn’t include nefarious dark patterns, pulling people in
+            like a casino does with a mixture of anxiety and dopamine. I’d rather create
+            warm-fuzzy-clarity type design that brings people back because it truly helps
+            them reach their goals without distraction. I believe reducing anxiety and depression
+            is my purpose as a designer. This doesn’t mean getting rid of technology, but being
+            smarter in design to reduce unnecessary screen time thereby allowing for more
+            community and human connection.
           </p>
           <a href="expand">Expand</a>
           <a href="collapse">Collapse</a>
         </article>
+      </section>
+      <section id="blog">
+        <h1>What I'm up to</h1>
         <article>
-          <img src="./images/sketches/UXEthics.png" />
-          <h2>3</h2>
-          <p>
-            <span class="bold">UX Ethics.</span> I have a degree in this too. Back in the day,
-            apps and interface design were in their infancy, left mainly for the programmer to implement.
-            I sort of though it was dumb to design print brochures, so I got a job as a programmer...
-          </p>
-          <!-- Hide when Expand is shown as link below, show when Collapse is link below-->
-          <p>
-            Not all apps are created equal: some are confusing, others draw you into an endless scrolling abyss,
-            some make you feel overwhelmed by revealing too much visually. My favorite apps are the ones
-            I spend the least time with: they tell me what I want to know, help me with making my
-            micro-decision, and lets me move on with life. It’s like my favorite shoe that I think
-            about when putting on in the morning, but actively forget about while “carrying” it around
-            with me all day.
-            <p>
-              I want to create design that doesn’t include nefarious dark patterns, pulling people in
-              like a casino does with a mixture of anxiety and dopamine. I’d rather create
-              warm-fuzzy-clarity type design that brings people back because it truly helps
-              them reach their goals without distraction. I believe reducing anxiety and depression
-              is my purpose as a designer. This doesn’t mean getting rid of technology, but being
-              smarter in design to reduce unnecessary screen time thereby allowing for more
-              community and human connection.
-            </p>
-            <a href="expand">Expand</a>
-            <a href="collapse">Collapse</a>
-          </article>
-        </section>
-        <section>
-          <h1>What I'm up to</h1>
-          <article>
-            <img src="" />
-            <h2>HACK: how to make a hard to read pag...</h2>
-            <h3 class="date">March 27, 2018</h3>
-            <a href="">Read More</a>
-          </article>
-          <article>
-            <img src="" />
-            <h2>Make Burgers Smaller!</h2>
-            <h3 class="date">December 28, 2017</h3>
-            <a href="">Read More</a>
-          </article>
-          <a href="">More Blog Posts</a>
-        </section>
-      </main>
-      <footer>
-        <ul class="mdl-mini-footer__link-list">
-          <li>
-            <div>
-              Like My Work? <br  />
-              Let me know.
-            </div>
-          </li>
-          <li>
-            <a href="http://www.linkedin.com/in/ildikototh">
-              <i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.github.com/ihtoth">
-              <i class="fa fa-github-square fa-lg" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/ihtoth">
-              <i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li>
-            <a href="http://www.twitter.com/ihtoth">
-              <i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:imildih@gmail.com">
-              <i class="fa fa-envelope-square fa-lg" aria-hidden="true"></i>
-            </a>
-          </li>
-        </ul>
-      </footer>
-    </body>
+          <img src="" />
+          <h2>HACK: how to make a hard to read pag...</h2>
+          <h3 class="date">March 27, 2018</h3>
+          <a href="">Read More</a>
+        </article>
+        <article>
+          <img src="" />
+          <h2>Make Burgers Smaller!</h2>
+          <h3 class="date">December 28, 2017</h3>
+          <a href="">Read More</a>
+        </article>
+        <a href="">More Blog Posts</a>
+      </section>
+    </main>
+    <footer>
+      <ul class="mdl-mini-footer__link-list">
+        <li>
+          <div>
+            Like My Work? <br  />
+            Let me know.
+          </div>
+        </li>
+        <li>
+          <a href="http://www.linkedin.com/in/ildikototh">
+            <i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.github.com/ihtoth">
+            <i class="fa fa-github-square fa-lg" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/ihtoth">
+            <i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://www.twitter.com/ihtoth">
+            <i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:imildih@gmail.com">
+            <i class="fa fa-envelope-square fa-lg" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 
-    </html>
+  </html>
