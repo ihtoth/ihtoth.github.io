@@ -19,6 +19,8 @@ body{
   color: var(--dark-green);
   font-family: 'Muli';
   padding-bottom: 5rem;
+  width-max: 1024px;
+  margin-left: 5%;
 
 }
 

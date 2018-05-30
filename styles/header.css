@@ -21,10 +21,10 @@ ul{
   font-weight:300;
 }
 
-/* .hamburgerMenu{
-margin: 44px 20px;
-width:20px;
-} */
+ .hamburgerMenu{
+margin: 0px 20px;
+/* width:20px;*/
+}
 
 .headerText{
   width: 65%;
@@ -54,19 +54,20 @@ a:hover {
 #menuToggle {
   display: block;
   position: relative;
-  top: 50px;
-  left: 50px;
-
+  top: 44px;
+  justify-content: flex-end;
   z-index: 1;
 
   -webkit-user-select: none;
   user-select: none;
 }
 
-#menuToggle input {
+#menuToggle input
+{
   display: block;
   width: 40px;
   height: 32px;
+  /* margin: 0px 22px; */
   position: absolute;
   top: -7px;
   left: -5px;
@@ -97,12 +98,13 @@ a:hover {
 
   transform-origin: 4px 0px;
 
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-  background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
 }
 
 #menuToggle span:first-child {
-  transform-origin: top right;
+  transform-origin: 0% 0%;
 }
 
 #menuToggle span:nth-last-child(2) {
@@ -150,9 +152,12 @@ a:hover {
   background: #D7DD9F;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-  transform-origin: right top;
-  transform: translate(100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  /* to stop flickering of text in safari */
+
+  transform-origin: top right;
+  transform: translate(100%, 0%);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 
 }
 
@@ -167,32 +172,31 @@ a:hover {
   transform: none;
 }
 
+@media screen and (max-width: 574px){
+  .desktopMenu{
+    display:none;
+  }
+}
 
 @media screen and (min-width: 575px) {
-  /* .hamburgerMenu{
-    display: none;
-  }
-  .hamburgerMenuCheckbox{
-    display: none;
-  } */
 .mobile{
     display:none;
   }
-
+.desktopNav{
+  width: 75%;
+  justify-content: flex-end;
+  margin: 48px 7.2% 48px 0px;
+}
 .desktopMenu{
-    width: 75%;
-    margin: 48px 7.2% 48px 0px;
+    /* width: 75%; */
+    justify-content: inherit;
     font-size: 2.4rem;
-    justify-content: flex-end;
     font-weight:300;
 }
+
 .desktopMenu>li{
   margin-right: 15px;
 }
 .mainLogoContainer{
   width: 25%;
-}
-
-@media screen and (min-width: 1024){
-
 }
