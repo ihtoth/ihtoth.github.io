@@ -8,6 +8,9 @@ header h1, header h2, header ul{
 header h1{
   font-size: 3rem;
   margin-bottom: 0.5rem;
+  padding: 0;
+  text-align: left;
+  text-transform: none;
 }
 
 header h2{
@@ -17,13 +20,8 @@ header h2{
 
 }
 
-ul{
+header ul{
   font-weight:300;
-}
-
- #menuToggle span{
-margin: 0px 20px;
-/* width:20px;*/
 }
 
 .headerText{
@@ -53,24 +51,27 @@ nav a:hover {
 #menuToggle {
   display: block;
   position: fixed;
-  top: 44px;
+  top: 30px;
   right: 20px;
+  padding: 10px;
   justify-content: flex-end;
   z-index: 1;
-
   -webkit-user-select: none;
   user-select: none;
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 2px;
 }
 
 #menuToggle input
 {
   display: block;
-  width: 40px;
+  width: 45px;
   height: 40px;
-  position: fixed;
-  top: 30px;
-  right: 40px;
+  position: absolute;
+  top: 0;
+  right: 5px;
   cursor: pointer;
+  margin: 0;
   opacity: 0; /* hide this */
   z-index: 2; /* and place it over the hamburger */
 
@@ -82,7 +83,7 @@ nav a:hover {
 */
 #menuToggle span {
   display: block;
-  width: 33px;
+  width: 35px;
   height: 4px;
   margin-bottom: 5px;
   position: relative;
@@ -105,6 +106,7 @@ nav a:hover {
 
 #menuToggle span:nth-last-child(2) {
   transform-origin: 0% 100%;
+  margin-bottom: 0px;
 }
 
 /*
@@ -114,7 +116,7 @@ nav a:hover {
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: #7D488E;
 }
 
 /*
@@ -146,7 +148,8 @@ nav a:hover {
   padding-right: 100px;
   padding-top: 200px;
   text-align: right;
-  background: #D7DD9F;
+  background: #F2F4DB;
+  text-transform: uppercase;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -161,13 +164,17 @@ nav a:hover {
 #topMenu li {
   padding: 10px 0;
   font-size: 3rem;
+  font-weight: 400;
 }
+
 /*
 * And let's slide it in from the left
 */
 #menuToggle input:checked ~ ul {
   transform: none;
 }
+
+
 /* For Mobile */
 @media screen and (max-width: 574px){
 

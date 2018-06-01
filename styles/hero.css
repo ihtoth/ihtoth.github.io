@@ -53,6 +53,10 @@
   #hero h1{
     color: var(--medium-green);
     font-size: 3rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+    text-transform: none;
   }
 
   #hero div{
@@ -65,11 +69,9 @@
     font-size: 2.3rem;
   }
 
-  .heroTitle{
-    font-family: 'Roboto Condensed', sans-serif;
-    padding-bottom: 5rem;
-    padding-top: 2rem;
-  }
+  /* .heroTitle{
+
+  } */
 
   .subtext{
     font-size: 0.8em;

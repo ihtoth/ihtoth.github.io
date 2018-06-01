@@ -1,6 +1,6 @@
 *, *:before, *:after {
   box-sizing: border-box;
-  font-size:10px;
+
 }
 :root {
   --main-bg-color: #FFF;
@@ -11,6 +11,8 @@
 
   --medium-purple: #7D488E;
   --bright-purple: #D39DE5;
+  --light-grey-purple: #DED7E0;
+  --light-purple: #F5EFF7;
 
   --breakpoint-mobile: 575px;
 }
@@ -34,14 +36,28 @@ main{
 }
 
 h1{
+  text-align: center;
+  padding: 8rem 2rem;
   font-family: 'Advent Pro';
   font-size: 3.2rem;
   font-weight: 700;
+  text-transform: uppercase;
 }
 h2{
   font-family: 'Advent Pro';
   font-size: 3rem;
   font-weight:600;
+}
+h3{
+  text-transform: uppercase;
+  font-size: 2.6rem;
+  line-height: 100%;
+  color: #2B2B27;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+}
+
+a{
+  text-decoration: none;
 }
 
 .center{
@@ -66,7 +82,13 @@ h2{
 .purple-dark{
   color: var(--medium-purple);
 }
+.purplegreyBg{
+  background-color: var(--light-grey-purple);
+}
 
+.purpleBg{
+  background-color: var(--light-purple);
+}
 
 .sticky{
   display:inline;
@@ -103,6 +125,10 @@ h2{
     line-height: 150%;
     padding-bottom: 1.5rem;
   }
+  h3{
+    font-size: 3.6rem;
+  }
+
 
 }
 /*For Mobile*/
