@@ -1,13 +1,18 @@
 *, *:before, *:after {
-    box-sizing: border-box;
-    font-size:10px;
+  box-sizing: border-box;
+  font-size:10px;
 }
 :root {
-    --main-bg-color: #FFF;
-    --dark-green: #262A01;
-    --medium-green: #666103;
-    --lime-green: #A7B909;
+  --main-bg-color: #FFF;
 
+  --dark-green: #262A01;
+  --medium-green: #666103;
+  --lime-green: #A7B909;
+
+  --medium-purple: #7D488E;
+  --bright-purple: #D39DE5;
+
+  --breakpoint-mobile: 575px;
 }
 
 html{
@@ -17,11 +22,15 @@ html{
 
 body{
   color: var(--dark-green);
-  font-family: 'Muli';
+  font-family: 'Muli', sans-serif;
   padding-bottom: 5rem;
-  width-max: 1024px;
-  margin-left: 5%;
-
+  max-width: 1280px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+main{
+  width: 100%;
+  margin: 0 auto;
 }
 
 h1{
@@ -33,4 +42,78 @@ h2{
   font-family: 'Advent Pro';
   font-size: 3rem;
   font-weight:600;
+}
+
+.center{
+  text-align: center;
+}
+
+.bold-300{
+  font-weight: 300;
+}
+.bold-400{
+  font-weight: 400;
+}
+
+.bold-500{
+  font-weight: 500;
+}
+
+.bold-700{
+  font-weight: 700;
+}
+
+.purple-dark{
+  color: var(--medium-purple);
+}
+
+
+.sticky{
+  display:inline;
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  padding: 1em;
+  background-color: #fff;
+  text-align: center;
+}
+
+.linkNoUnderline:hover{
+  text-decoration: none;
+  border: none;
+}
+
+#linkToTop i, #linkToTop div div{
+  position: relative;
+  top:0;
+  opacity: 0.75;
+  font-size: 2rem;
+}
+/*For Desktop*/
+@media screen and (min-width: 575px) {
+  .mobile{
+    display:none;
+  }
+  .flexing{
+    display: flex;
+  }
+
+  p{
+    font-size:2.4rem;
+    line-height: 150%;
+    padding-bottom: 1.5rem;
+  }
+
+}
+/*For Mobile*/
+@media screen and (max-width: 574px){
+  .desktop{
+    display:none;
+  }
+  p{
+    font-size:1.6rem;
+    line-height: 140%;
+    padding-bottom: 1.5rem;
+  }
+
 }

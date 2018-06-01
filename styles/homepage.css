@@ -1,0 +1,38 @@
+#bgMath{
+    background-image: url(../images/sketches/mathNoBorder@1x.png);
+}
+#bgGraphicDesign{
+    background-image: url(../images/sketches/graphicDesignNoBorder@1x.png);
+}
+
+#bgUXEthics{
+    background-image: url(../images/sketches/ethicsNoBorder@1x.png);
+}
+
+.circleBorder{
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  background-size: 75px 75px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid var(--lime-green);
+}
+
+.twoThirdWidth{
+  width: 67%;
+}
+.oneThirdWidth{
+  width: 33%;
+}
+
+
+/*For desktop*/
+@media screen and (min-width: 575px){
+  .circleBorder{
+    height: 165px;
+    width: 165px;
+    background-size: 165px 165px;
+  }
+
+}

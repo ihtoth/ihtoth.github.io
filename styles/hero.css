@@ -1,0 +1,114 @@
+:root{
+    --blue: #86D7CA;
+    --red: #DF8C78;
+}
+
+#hero h2{
+  font-family: 'Muli', 'Roboto', 'Roboto Condensed', sans-serif;
+}
+
+.heroEmphasis{
+  font-family: 'Advent Pro', serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+#hero .purple{
+  color: var(--bright-purple);
+}
+#hero .red{
+  color: var(--red);
+}
+#hero .blue{
+  color: var(--blue);
+}
+
+#hero div{
+ padding-bottom: 3rem;
+}
+/*For Mobile*/
+@media screen and (max-width: 574px){
+  #hero img{
+    height: 124px;
+    margin: 0 auto;
+  }
+  #hero div{
+   padding-bottom: 3rem;
+  }
+  #hero h2{
+   font-size: 2.3rem;
+  }
+  .heroEmphasis{
+    font-size: 2.1rem;
+  }
+
+}
+/* For Desktop*/
+@media screen and (min-width: 575px){
+
+  #hero{
+    max-width: 575px;
+    margin: 0 auto;
+  }
+  #hero h1{
+    color: var(--medium-green);
+    font-size: 3rem;
+  }
+
+  #hero div{
+    padding: 0 0 1.2rem 0;
+  }
+  #hero h2{
+    font-size: 2.3rem;
+  }
+  .heroEmphasis{
+    font-size: 2.3rem;
+  }
+
+  .heroTitle{
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+  }
+
+  .subtext{
+    font-size: 0.8em;
+  }
+
+  #hero .flexing h2{
+    order: 1;
+    width: 75%;
+    margin: auto 0;
+    text-align: left;
+  }
+  #hero .flexing img{
+    height: 130px;
+    order: 2;
+    margin: 0 0 0 auto;
+  }
+
+}
+
+@media screen and (min-width: 700px){
+  #hero{
+    max-width: 700px;
+  }
+  #hero h1{
+    font-size: 4.75rem;
+    text-align: left;
+  }
+  #hero h2{
+    font-size: 3rem;
+  }
+
+  .subtext{
+    font-size: 0.6em;
+  }
+  .heroEmphasis{
+    font-size: 3rem;
+  }
+  #hero .flexing h2{
+    width: 75%;
+
+  }
+}
