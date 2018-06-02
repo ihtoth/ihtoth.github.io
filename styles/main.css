@@ -14,6 +14,8 @@
   --light-grey-purple: #DED7E0;
   --light-purple: #F5EFF7;
 
+  --dark-brown: #59310E;
+
   --breakpoint-mobile: 575px;
 }
 
@@ -25,7 +27,7 @@ html{
 body{
   color: var(--dark-green);
   font-family: 'Muli', sans-serif;
-  padding-bottom: 5rem;
+  /* padding-bottom: 5rem; */
   max-width: 1280px;
   margin: 0 auto;
   overflow-x: hidden;
@@ -37,7 +39,7 @@ main{
 
 h1{
   text-align: center;
-  padding: 8rem 2rem;
+  padding: 6rem 0rem;
   font-family: 'Advent Pro';
   font-size: 3.2rem;
   font-weight: 700;
@@ -60,6 +62,32 @@ a{
   text-decoration: none;
 }
 
+a.expand, summary.expand::before{
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-size: 2rem;
+  color: var(--lime-green);
+  text-transform: uppercase;
+  line-height: 150%;
+}
+
+summary.expand::before{
+  content: 'Expand';
+}
+
+summary::-webkit-details-marker{
+  display: none;
+}
+
+details[open]{
+  font-weight: 300;
+}
+
+details[open] summary.expand::before {
+    content:'collapse';
+    color: var(--dark-brown);
+    font-weight: 400;
+}
+
 .center{
   text-align: center;
 }
@@ -71,8 +99,8 @@ a{
   font-weight: 400;
 }
 
-.bold-500{
-  font-weight: 500;
+.bold-600{
+  font-weight: 600;
 }
 
 .bold-700{
@@ -89,14 +117,17 @@ a{
 .purpleBg{
   background-color: var(--light-purple);
 }
+.roundCorners{
+  border-radius: 0.5rem;
+}
 
 .sticky{
   display:inline;
   position: fixed;
   bottom: 2em;
   right: 2em;
-  padding: 1em;
-  background-color: #fff;
+  padding: 0.5em 1em 1em;
+  background-color: rgba(255,255,255,0.7);
   text-align: center;
 }
 
@@ -108,9 +139,18 @@ a{
 #linkToTop i, #linkToTop div div{
   position: relative;
   top:0;
-  opacity: 0.75;
+  text-transform: uppercase;
+}
+#linkToTop i{
   font-size: 2rem;
 }
+
+#linkToTop .sticky:hover{
+  background-color: var(--bright-purple);
+  color: #fff;
+}
+
+
 /*For Desktop*/
 @media screen and (min-width: 575px) {
   .mobile{
@@ -120,15 +160,23 @@ a{
     display: flex;
   }
 
+  h1{
+    padding: 8rem 2rem;
+    font-size: 4.8rem;
+  }
+
   p{
     font-size:2.4rem;
-    line-height: 150%;
+    line-height: 160%;
     padding-bottom: 1.5rem;
   }
   h3{
     font-size: 3.6rem;
   }
 
+  summary.expand::before, a.expand{
+    font-size:2.4rem;
+  }
 
 }
 /*For Mobile*/
