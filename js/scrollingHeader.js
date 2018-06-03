@@ -4,6 +4,7 @@ $(document).ready(function(){
       section = $('section'),
       documentEl = $(document);
 
+
   documentEl.on('scroll', function(){
     let currentScrollPos = documentEl.scrollTop();
       section.each(function() {
@@ -19,12 +20,12 @@ $(document).ready(function(){
       });
 
   });
-})();
+});
 
-// $(".mobile").click(function () {
-//   $("li").toggleClass("visible");
-// });
-//
-// $("li").click(function () {
-//   $("li").toggleClass("active");
-// })
+$(".mobile").click(function () {
+  $("li").toggleClass("visible");
+});
+
+$("li").click(function () {
+  $("li").toggleClass("active");
+})
