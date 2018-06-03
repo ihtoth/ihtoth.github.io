@@ -23,17 +23,25 @@
 
   <!-- Font Awesome -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
   <!-- Reset CSS-->
   <link rel="stylesheet" href="styles/reset.css" />
+
   <!-- Custom CSS-->
   <link rel="stylesheet" href="styles/main.css" />
   <link rel="stylesheet" href="styles/header.css" />
   <link rel="stylesheet" href="styles/hero.css" />
-  <link rel="stylesheet" href="styles/homepage.css" />
+  <link rel="stylesheet" href="styles/grids.css" />
+  <link rel="stylesheet" href="styles/footer.css" />
+
+  <!-- jQuery import and Scrolling header JS-->
+  <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../js/scrollingHeader.js"></script>
+
 </head>
 <body id=home>
-  <header>
-    <a href="http://imildi.com" class="mainLogoContainer">
+  <header class="flexing">
+    <a href="http://imildi.com" class="mainLogoContainer linkNoUnderline">
       <div>
         <img src="../images/icons/logo@1_5x.png" class="mainLogo"/>
       </div>
@@ -56,8 +64,8 @@
         <ul id="topMenu">
           <li><a href="#projects">Projects</a></li>
           <li><a href="#myJourney">My Journey</a></li>
-          <li><a href="resume.pdf"target="_blank">Resume</a></li>
           <li><a href="#blog">Blog</a></li>
+          <li><a href="#footerTextAndIcons">Contact</a></li>
         </ul>
 
       </div>
@@ -66,9 +74,8 @@
       <ul class="desktopMenu desktop">
         <li><a href="#projects">Projects</a></li>
         <li><a href="#myJourney">My Journey</a></li>
-        <li><a href="resume.pdf"target="_blank">Resume</a></li>
         <li><a href="#blog">Blog</a></li>
-      </ul>
+        <li><a href="#footerTextAndIcons">Contact</a></li>
     </nav>
     <!-- <a href=""><img src="../images/icons/hamburgerMenu.png" class="hamburgerMenu" /></a> -->
     <!-- End Mobile Size-->
@@ -77,8 +84,8 @@
     <span>Ildikó Tóth</span> <span>UX Designer</span>
   </div> -->
     </header>
-    <a href="#home" class="linkNoUnderline" id="linkToTop">
-      <div class="sticky roundCorners">  <!--This will float as one scrolls down. Clicking rolls up to top -->
+    <a href="#home" class="linkNoUnderline">
+      <div class="sticky roundCorners" id="linkToTop">  <!--This will float as one scrolls down. Clicking rolls up to top -->
         <i class="fa fa-angle-up" aria-hidden="true"></i>
         <div>Top</div>
       </div>
@@ -101,41 +108,57 @@
           <h2 class="bold-300">and get back to<span class="purple heroEmphasis"> human time</span></h2>
         </div>
       </section>
-      <section id="projects" class="center">
+      <section id="projects" class="full-width-wrapper yellowBg">
         <h1>Projects</h1>
-        <article>
-          <img src="../projects/cirrus/images/icons/logoIcon@2x.png" />
-          <div>
-            <h3>Cirrus</h3>
-            <p>A more intuitive way to organize and share your stuff.</p>
-            <a href="../projects/projectCirrus.html">read more</a>
-          </div>
-        </article>
-        <article>
-          <img src="../projects/inreach/images/icons/logoIcon@2x.png" />
-          <div>
-            <h3>Inreach Solutions Facelift</h3>
-            <p>Re-branding a SASS company for social workers</p>
-            <a href="../projects/projectInreach.html">read more</a>
-          </div>
-        </article>
-        <article>
-          <img src="../projects/intel/images/icons/logo@2x.png" />
-          <div>
-            <h3>Retailer Onboarding</h3>
-            <p>Solving the international address problem.</p>
-            <a href="../projects/projectIntelRetailer.html">read more</a>
-          </div>
-        </article>
+        <div class="d-one-m-one-col-grid">
+          <article id="cirrus" class="card yellowLightBg">
+            <div class="col-1">
+              <div class="circleBorder col-1-content">
+                <img src="../projects/cirrus/images/icons/logoIcon@2x.png" />
+              </div>
+            </div>
+            <div class="col-2">
+              <h3>Cirrus</h3>
+              <p>A more intuitive way to organize and share your stuff.</p>
+              <a class="lnk brown-dark" href="../projects/projectCirrus.html">read more</a>
+            </div>
+          </article>
+          <article id="inreach" class="card yellowLightBg">
+            <div class="col-1">
+              <div class="circleBorder col-1-content">
+                <img src="../projects/inreach/images/icons/logoIcon@2x.png" />
+              </div>
+            </div>
+            <div class="col-2">
+              <h3>Inreach Solutions Facelift</h3>
+              <p>Re-branding a SASS company for social workers</p>
+              <a class="lnk" href="../projects/projectInreach.html">Coming Soon</a>
+            </div>
+          </article>
+          <article id="intel" class="card yellowLightBg">
+            <div class="col-1">
+              <div class="circleBorder col-1-content">
+                <img src="../projects/intel/images/icons/logo@2x.png" />
+              </div>
+            </div>
+            <div class="col-2">
+              <h3>Retailer Onboarding</h3>
+              <p>Solving the international address form-field problem.</p>
+              <a class="lnk " href="../projects/projectIntelRetailer.html">Coming Soon</a>
+            </div>
+          </article>
+        </div>
       </section>
       <section id="myJourney" class="full-width-wrapper">
         <h1>My Journey</h1>
         <article id="myJourneyPart1" class="card one-col-card">
           <div class="col-1">
-            <div class="circleBorder col-1-content" id="bgMath"></div>
+            <div class="circleBorder limeGreenBorder col-1-content" id="bgMath">
+              <img src="../images/sketches/mathNoBorder@1x.png" />
+            </div>
           </div>
           <div class="col-2">
-            <h2>1</h2>
+            <h2 class="bottomBorder">1</h2>
             <p>
               <span class="bold-600">Math.</span> It’s challenging, and I love the logic and making sense of data.
               I also have a degree in it from two different universities.
@@ -146,10 +169,12 @@
         </article>
         <article id="myJourneyPart2" class="card one-col-card">
           <div class="col-1">
-            <div class="circleBorder col-1-content" id="bgGraphicDesign"></div>
+            <div class="circleBorder limeGreenBorder col-1-content" id="bgGraphicDesign">
+              <img src="../images/sketches/graphicDesignNoBorder@1x.png"  />
+            </div>
           </div>
           <div class="col-2">
-            <h2>2</h2>
+            <h2 class="bottomBorder">2</h2>
             <p>
               <span class="bold-600">Graphic Design.</span>  I don’t want to create anything that wastes people’s time.
               As a designer, it is my responsibility to avoid design patterns that cause anxiety and confusion.
@@ -185,10 +210,12 @@
         </article>
         <article id="myJourneyPart3" class="card one-col-card">
           <div class="col-1">
-            <div class="circleBorder col-1-content" id="bgUXEthics"></div>
+            <div class="circleBorder limeGreenBorder col-1-content" id="bgUXEthics">
+              <img src="../images/sketches/ethicsNoBorder@1x.png" />
+            </div>
           </div>
           <div class="col-2">
-            <h2>3</h2>
+            <h2 class="bottomBorder">3</h2>
               <p>
                 <span class="bold-600">UX Ethics.</span> I have a degree in this too. Back in the day,
                 apps and interface design were in their infancy, left mainly for the programmer to implement.
@@ -214,16 +241,24 @@
       </section>
       <section id="blog" class="full-width-wrapper purplegreyBg">
         <h1>What I'm up to</h1>
-        <div class="row">
+        <div class="d-two-m-one-col-grid">
           <article class="card purpleBg">
-            <div class="col-1"><img src="../images/makingThingsReadableBlogImg@2x.png" /></div>
-            <div class="col-2"><h3>HACK: How to make a hard...</h3><date>March 27, 2018</date>
+            <div class="col-1">
+              <div class="col-1-content">
+                <img src="../images/makingThingsReadableBlogImg@2x.png" />
+              </div>
+            </div>
+            <div class="col-2"><h3>HACK: How to make a hard...</h3><date class="">March 27, 2018</date>
               <a href="http://www.ildikototh.com/index.php/2018/03/hack-how-to-make-a-hard-to-read-page-look-however-you-want/">READ POST</a>
             </div>
           </article>
           <article class="card purpleBg">
-            <div class="col-1"><img src="../images/makeBurgersSmaller@1x.gif" /></div>
-            <div class="col-2"><h3>Make Burgers Smaller!</h3><date>December 28, 2017</date>
+            <div class="col-1">
+              <div class="col-1-content">
+                <img src="../images/makeBurgersSmaller@1x.gif" />
+            </div>
+            </div>
+            <div class="col-2"><h3>Make Burgers Smaller!</h3><date class="">December 28, 2017</date>
               <a href="http://www.ildikototh.com/index.php/2018/03/hack-how-to-make-a-hard-to-read-page-look-however-you-want/">READ POST</a>
             </div>
           </article>
@@ -231,32 +266,32 @@
         <div class="one-col-cntr"><a class="purple-dark lnk" href="http://www.ildikototh.com/index.php/category/design/">More blog posts</a></div>
       </section>
       <footer>
-            <ul id="textAndIcons">
+            <ul id="footerTextAndIcons">
               <li id="text"> Like My Work? <br class="desktop" />Let me know.</li>
               <li id="socialIcons">
                 <ul>
                   <li>
-                    <a href="mailto:imildih@gmail.com">
+                    <a href="mailto:imildih@gmail.com" class="linkNoUnderline" >
                       <i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="http://www.linkedin.com/in/ildikototh">
+                    <a href="http://www.linkedin.com/in/ildikototh" class="linkNoUnderline">
                       <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
                     </a>
                   </li>
                   <li>
-                    <a href=  "https://www.github.com/ihtoth">
+                    <a href=  "https://www.github.com/ihtoth" class="linkNoUnderline">
                       <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.facebook.com/ihtoth">
+                    <a href="https://www.facebook.com/ihtoth" class="linkNoUnderline">
                       <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="http://www.twitter.com/ihtoth">
+                    <a href="http://www.twitter.com/ihtoth" class="linkNoUnderline">
                       <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
                     </a>
                   </li>

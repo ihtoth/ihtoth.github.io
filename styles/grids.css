@@ -1,0 +1,131 @@
+/* This page defines css grid settings for different
+ * column number grids
+ */
+
+/*********************************************/
+/* ---- Default is Mobile size < 575px ----- */
+/*********************************************/
+ .full-width-wrapper{
+  padding: 2rem;
+}
+
+.d-two-m-one-col-grid, .d-one-m-one-col-grid{
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-columns: repeat(1, 1fr);
+  display: grid;
+}
+
+
+.card {
+    min-height: 30px;
+    display: flex;
+    padding: calc(7% + 10px) calc(2% + 10px);
+}
+
+.one-col-card{
+  padding: 0 0 3rem 0;
+}
+
+
+.one-col-cntr{
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem 0px;
+}
+
+.col-1
+{
+  width: 30%;
+  display: block;
+}
+
+.col-1-content{
+  float:right;
+  /* margin: 0 auto; */
+  max-width: 13rem;
+}
+.d-one-m-one-col-grid .col-1-content{
+  margin: 0 auto;
+  float: none;
+  max-width: 80%;
+}
+
+.card img{
+  width:100%;
+  height: auto;
+  display: block;
+}
+
+.col-2{
+  width: 70%;
+  padding: 0 0px 0px 2rem;
+  text-align: left;
+}
+
+/********************************/
+/* ------ Tablet/Desktop ------ */
+/********************************/
+@media only screen and (min-width: 575px) {
+  .d-two-m-one-col-grid{
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .d-one-m-one-col-grid .card{
+    margin: 0 11%;
+  }
+
+  .one-col-card{
+    padding: 0 11.2% 6.4rem 0;
+  }
+  .one-col-cntr{
+    padding: 4rem 0px;
+  }
+  .col-2{
+    width: 80%;
+    padding: 0 0px 0px 5%;
+    text-align: left;
+  }
+}
+
+/* Tablet Sized */
+@media screen and (max-width: 768px){
+/*
+  .col-1-content{
+    max-width: 100%;
+  } */
+
+
+}
+
+/**********************************/
+/* ------ For small Mobile ------ */
+/**********************************/
+@media screen and (max-width: 413px){
+
+  .d-two-m-one-col-grid{
+    grid-auto-rows: auto;
+  }
+
+  .card{
+    display: block;
+  }
+
+  .col-1{
+    width: 100%;
+  }
+
+  .col-2{
+    width: 100%;
+    padding: 2rem 2rem 0 2rem;
+    /* text-align: center; */
+  }
+  .col-1-content{
+    float:none;
+    margin: 0 auto;
+    max-width: 35%;
+  }
+  .d-one-m-one-col-grid .col-1-content, .d-two-m-one-col-grid .col-1-content{
+    max-width: 45%;
+  }
+}

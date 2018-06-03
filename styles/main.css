@@ -2,6 +2,10 @@
   box-sizing: border-box;
 
 }
+
+/*********************************/
+/* ------ Color Variables ------ */
+/*********************************/
 :root {
   --main-bg-color: #FFF;
 
@@ -15,13 +19,53 @@
   --light-purple: #F5EFF7;
 
   --dark-brown: #59310E;
+  --grey: #A5A89D;
 
-  --breakpoint-mobile: 575px;
+  --light-yellow: #F6E5A8;
+  --bright-yellow:#ECC372;
 }
 
+/************************/
+/* ------ Colors ------ */
+/************************/
+
+/* Border */
+.limeGreenBorder{
+  border: 0.2rem solid var(--lime-green);
+}
+
+/* Text */
+.purple-dark{
+  color: var(--medium-purple);
+}
+
+.brown-dark{
+  color: var(--dark-brown);
+}
+
+/* Backgrounds */
+.purplegreyBg{
+  background-color: var(--light-grey-purple);
+}
+
+.purpleBg{
+  background-color: var(--light-purple);
+}
+
+.yellowLightBg{
+  background-color: var(--light-yellow);
+}
+
+.yellowBg{
+  background-color: var(--bright-yellow);
+}
+
+/*******************************************/
+/* ------ Top Level Default Settings ------*/
+/*******************************************/
 html{
   font-size:10px;
-
+  line-height: 150%;
 }
 
 body{
@@ -37,9 +81,12 @@ main{
   margin: 0 auto;
 }
 
+/****************************/
+/* ------ Typography ------ */
+/****************************/
 h1{
   text-align: center;
-  padding: 6rem 0rem;
+  padding: 5rem 0rem;
   font-family: 'Advent Pro';
   font-size: 3.2rem;
   font-weight: 700;
@@ -58,40 +105,74 @@ h3{
   font-family: 'Roboto Condensed', Arial, sans-serif;
 }
 
+p{
+  font-size: 1.6rem;
+  line-height: 160%;
+  padding-bottom: 1.5rem;
+}
+
+date{
+  padding: 10px 0 15px 0;
+  display: block;
+  font-weight: 300;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+/***********************/
+/* ------ Links ------ */
+/***********************/
+
 a{
   text-decoration: none;
+  color:var(--grey);
+  transition: color 0.3s ease;
+  display: inline-block;
+  position: relative;
+  line-height: 160%;
 }
 
-a.expand, summary.expand::before{
-  font-family: 'Roboto Condensed', Arial, sans-serif;
-  font-size: 2rem;
-  color: var(--lime-green);
+a:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 0.1rem solid;
+  margin-top: 0.6em;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+a:hover:after{
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.lnk{
   text-transform: uppercase;
-  line-height: 150%;
+  font-family: 'advent pro';
+  font-size: 2.4rem;
 }
 
-summary.expand::before{
-  content: 'Expand';
-}
+/* Overriding underline effect on special links */
+  .linkNoUnderline:hover{
+    text-decoration: none;
+    /* border: none; */
+  }
 
-summary::-webkit-details-marker{
-  display: none;
-}
+  .linkNoUnderline::after{
+    display:none;
+  }
 
-details[open]{
-  font-weight: 300;
-}
-
-details[open] summary.expand::before {
-    content:'collapse';
-    color: var(--dark-brown);
-    font-weight: 400;
-}
-
-.center{
-  text-align: center;
-}
-
+/******************************/
+/* ------ Font weights ------ */
+/******************************/
 .bold-300{
   font-weight: 300;
 }
@@ -107,36 +188,82 @@ details[open] summary.expand::before {
   font-weight: 700;
 }
 
-.purple-dark{
-  color: var(--medium-purple);
-}
-.purplegreyBg{
-  background-color: var(--light-grey-purple);
-}
+/***************************************/
+/* ------ Border Specifications ------ */
+/***************************************/
 
-.purpleBg{
-  background-color: var(--light-purple);
-}
 .roundCorners{
   border-radius: 0.5rem;
 }
 
+.circleBorder{
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.bottomBorder{
+  padding-bottom: 1rem;
+  margin-right: 40vw;
+  margin-bottom: 1rem;
+  border-bottom: 0.2rem solid var(--lime-green);
+}
+
+
+/***************************************************************/
+/* ------ for Items that need to be fixed on the screen ------ */
+/***************************************************************/
+
 .sticky{
   display:inline;
   position: fixed;
-  bottom: 2em;
-  right: 2em;
+  z-index: 1;
+}
+/*************************************************************/
+/* ------ Specifically for My Journey Expand/Collapse ------ */
+/*************************************************************/
+
+  a.expand, summary.expand::before{
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-size: 2rem;
+    color: var(--lime-green);
+    text-transform: uppercase;
+    line-height: 150%;
+  }
+  /*sets pseudo class above details to say "expand"*/
+  summary.expand::before{
+    content: 'Expand';
+  }
+  /* Specifically for My Journey Expand/Collapse
+   * removing the turning arrow
+  */
+  summary::-webkit-details-marker{
+    display: none;
+  }
+  /* details are lighter type
+  */
+  details[open] p{
+    font-weight: 300;
+  }
+  /* Change text to collapse when details are open.
+
+  */
+  details[open] summary.expand::before {
+      content:'collapse';
+      color: var(--dark-brown);
+  }
+
+/******************************************************/
+/* ------ Specifically for the linkToTop button ----- */
+/******************************************************/
+#linkToTop{
+  bottom: 10em;
+  right: 3em;
+  text-align: center;
   padding: 0.5em 1em 1em;
   background-color: rgba(255,255,255,0.7);
-  text-align: center;
 }
-
-.linkNoUnderline:hover{
-  text-decoration: none;
-  border: none;
-}
-
-#linkToTop i, #linkToTop div div{
+#linkToTop i, #linkToTop div{
   position: relative;
   top:0;
   text-transform: uppercase;
@@ -145,33 +272,34 @@ details[open] summary.expand::before {
   font-size: 2rem;
 }
 
-#linkToTop .sticky:hover{
+#linkToTop.sticky:hover{
   background-color: var(--bright-purple);
   color: #fff;
 }
 
-
-/*For Desktop*/
+/**********************************************/
+/* ------ For Medium Screens and above ------ */
+/**********************************************/
 @media screen and (min-width: 575px) {
   .mobile{
     display:none;
   }
+  /*Only flex on larger screens*/
   .flexing{
     display: flex;
   }
 
   h1{
-    padding: 8rem 2rem;
-    font-size: 4.8rem;
+    padding: 6rem 2rem;
+    font-size: 4.2rem;
+  }
+
+  h3{
+    font-size: 3.2rem;
   }
 
   p{
-    font-size:2.4rem;
-    line-height: 160%;
-    padding-bottom: 1.5rem;
-  }
-  h3{
-    font-size: 3.6rem;
+    font-size:2rem;
   }
 
   summary.expand::before, a.expand{
@@ -179,15 +307,47 @@ details[open] summary.expand::before {
   }
 
 }
-/*For Mobile*/
+/***********************************/
+/* ------ For Large Screens ------ */
+/***********************************/
+@media screen and (min-width: 769px){
+  p{
+    font-size:2.4rem;
+  }
+
+  h1{
+    font-size: 4.8rem;
+    padding: 8rem 2rem;
+  }
+
+  h3{
+    font-size: 3.6rem;
+    }
+
+  .lnk{
+    font-size: 2.8rem;
+  }
+  date{
+    font-size: 2rem;
+  }
+}
+
+/**************************************************/
+/* ------ hiding certain things for Mobile ------ */
+/**************************************************/
 @media screen and (max-width: 574px){
   .desktop{
     display:none;
   }
-  p{
-    font-size:1.6rem;
-    line-height: 140%;
-    padding-bottom: 1.5rem;
+
+}
+
+@media screen and (max-width: 413px){
+  h3{
+    font-size: 2.2rem;
+  }
+  .lnk{
+    font-size: 2rem;
   }
 
 }

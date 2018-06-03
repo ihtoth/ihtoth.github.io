@@ -2,6 +2,9 @@
     --blue: #86D7CA;
     --red: #DF8C78;
 }
+#hero{
+  text-align:center;
+}
 
 #hero h2{
   font-family: 'Muli', 'Roboto', 'Roboto Condensed', sans-serif;
@@ -26,23 +29,38 @@
 #hero div{
  padding-bottom: 3rem;
 }
+
 /*For Mobile*/
 @media screen and (max-width: 574px){
   #hero img{
-    height: 124px;
+    height: 120px;
     margin: 0 auto;
   }
   #hero div{
    padding-bottom: 3rem;
   }
   #hero h2{
-   font-size: 2.3rem;
+   font-size: 1.8rem;
   }
   .heroEmphasis{
-    font-size: 2.1rem;
+    font-size: 1.8rem;
   }
 
 }
+
+@media screen and (max-width: 320px){
+  #hero img{
+    height: 110px;
+    margin: 0 auto;
+  }
+  #hero div{
+   padding-bottom: 2.5rem;
+  }
+  #hero h2{
+   font-size: 2rem;
+  }
+}
+
 /* For Desktop*/
 @media screen and (min-width: 575px){
 
@@ -68,10 +86,6 @@
   .heroEmphasis{
     font-size: 2.3rem;
   }
-
-  /* .heroTitle{
-
-  } */
 
   .subtext{
     font-size: 0.8em;
