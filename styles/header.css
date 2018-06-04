@@ -1,6 +1,12 @@
 
 header{
   display:flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
 }
 
 header h1, header h2, header ul{
@@ -193,7 +199,7 @@ header ul{
 @media screen and (min-width: 575px) {
 
 header{
-  margin: 0 5%;
+  padding: 0 5%;
 }
 .desktopNav{
   width: 85%;
