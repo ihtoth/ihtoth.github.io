@@ -1,37 +1,90 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Portfolio | Ildikó Tóth</title>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-9510171-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  <!-- Viewport -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+      gtag('config', 'UA-9510171-4');
+    </script>
 
-  <!-- Font Awesome -->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Portfolio | Ildikó Tóth</title>
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</head>
-<body>
-  <header>
-    <a href="http://imildi.com"><img src="./images/icons/logo.png"/></a>
-    <!-- For Mobile Size. Hide when viewport size > 600px?-->
-    <h1>Ildikó Tóth</h1>
-    <h2>UX Designer in Portland, OR</h2>
-    <a href=""><img src="./images/icons/hamburgerMenu.png" /></a>
-    <!-- End Mobile Size-->
-    <!-- Sticky header. Hide when on homepage and no scroll has occured yet-->
-    <div>
-      <span>Ildikó Tóth</span> <span>UX Designer</span>
-    </div>
-    <nav>
-      <ul>
-        <li>Projects</li>
-        <li>My Journey</li>
-        <li>Resume</li>
-        <li>Blog</li>
-      </ul>
-    </nav>
-  </header>
+    <!--Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Advent+Pro:400,700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Muli:300,400,700' rel='stylesheet'>
+
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Reset CSS-->
+    <link rel="stylesheet" href="../styles/reset.css" />
+
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/hero.css" />
+    <link rel="stylesheet" href="../styles/grids.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+
+    <!-- jQuery import and Scrolling header JS-->
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="../js/scrollingHeader.js"></script>
+    <script src="../js/menuHelper.js"></script>
+
+  </head>
+  <body id=home>
+    <header class="flexing">
+      <a href="http://ihtoth.github.io" class="mainLogoContainer linkNoUnderline">
+        <div>
+          <img src="../images/icons/logo@1_5x.png" class="mainLogo"/>
+        </div>
+      </a>
+      <!-- For Mobile Size. Hide when viewport size > 600px?-->
+      <div class="headerText mobile">
+        <h1>Ildikó Tóth</h1>
+        <h2>UX Designer in Portland, OR</h2>
+      </div>
+      <nav role="navigation" class="mobile">
+        <div id="menuToggle">
+          <!-- A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it.-->
+          <input type="checkbox" class=hamburgerMenuCheckbox/>
+          <!--      hamburgerMenu  -->
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="topMenu">
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#myJourney">My Journey</a></li>
+            <li><a href="../index.html#blog">Blog</a></li>
+            <li><a href="#footerTextAndIcons">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="desktopNav dekstop">
+        <ul class="desktopMenu desktop">
+          <li><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../index.html#myJourney">My Journey</a></li>
+          <li><a href="../index.html#blog">Blog</a></li>
+          <li><a href="#footerTextAndIcons">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <a href="#home" class="linkNoUnderline">
+      <div class="sticky roundCorners" id="linkToTop">  <!--This will float as one scrolls down. Clicking rolls up to top -->
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+        <div>Top</div>
+      </div>
+    </a>
   <main>
     <section id=intro_1>
       <img src="./projects/cirrus/images/logo.png" />
@@ -739,42 +792,39 @@
   </main>
 
   <footer>
-    <ul class="mdl-mini-footer__link-list">
-      <li>
-        <!-- Desktop Only -->
-        <div>
-          Like My Work? <br  />
-          Let me know.
-        </div>
-        <!-- End desktop Only -->
-      </li>
-      <li>
-        <a href="http://www.linkedin.com/in/ildikototh">
-          <i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.github.com/ihtoth">
-          <i class="fa fa-github-square fa-lg" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.facebook.com/ihtoth">
-          <i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li>
-        <a href="http://www.twitter.com/ihtoth">
-          <i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li>
-        <a href="mailto:imildih@gmail.com">
-          <i class="fa fa-envelope-square fa-lg" aria-hidden="true"></i>
-        </a>
-      </li>
-    </ul>
-  </footer>
+        <ul id="footerTextAndIcons">
+          <li id="text"> Like My Work? <br class="desktop" />Let me know.</li>
+          <li id="socialIcons">
+            <ul>
+              <li>
+                <a href="mailto:imildih@gmail.com" class="linkNoUnderline" >
+                  <i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.linkedin.com/in/ildikototh" class="linkNoUnderline">
+                  <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href=  "https://www.github.com/ihtoth" class="linkNoUnderline">
+                  <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/ihtoth" class="linkNoUnderline">
+                  <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.twitter.com/ihtoth" class="linkNoUnderline">
+                  <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </footer>
 </body>
 
 </html>

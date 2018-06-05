@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-9510171-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-9510171-4');
+    </script>
+
+    <meta charset="utf-8">
+    <title>Portfolio | Ildikó Tóth</title>
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Advent+Pro:400,700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Muli:300,400,700' rel='stylesheet'>
+
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Reset CSS-->
+    <link rel="stylesheet" href="styles/reset.css" />
+
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/hero.css" />
+    <link rel="stylesheet" href="styles/grids.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+
+    <!-- jQuery import and Scrolling header JS-->
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="../js/scrollingHeader.js"></script>
+    <script src="./js/menuHelper.js"></script>
+
+  </head>
+  <body id=home>
+
+
+
+
+    <header class="flexing">
+      <a href="http://ihtoth.github.io" class="mainLogoContainer linkNoUnderline">
+        <div>
+          <img src="../images/icons/logo@1_5x.png" class="mainLogo"/>
+        </div>
+      </a>
+      <!-- For Mobile Size. Hide when viewport size > 600px?-->
+      <div class="headerText mobile">
+        <h1>Ildikó Tóth</h1>
+        <h2>UX Designer in Portland, OR</h2>
+      </div>
+      <nav role="navigation" class="mobile">
+        <div id="menuToggle">
+          <!-- A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it.-->
+          <input type="checkbox" class=hamburgerMenuCheckbox/>
+          <!--      hamburgerMenu  -->
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="topMenu">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#myJourney">My Journey</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#footerTextAndIcons">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="desktopNav dekstop">
+        <ul class="desktopMenu desktop">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#myJourney">My Journey</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#footerTextAndIcons">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+
+
+  </body>
+</html>

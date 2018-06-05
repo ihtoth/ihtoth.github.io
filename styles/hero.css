@@ -40,7 +40,7 @@
    padding-bottom: 3rem;
   }
   #hero h2{
-   font-size: 1.8rem;
+   font-size: 2rem;
   }
   .heroEmphasis{
     font-size: 1.8rem;
@@ -48,7 +48,7 @@
 
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 413px){
   #hero img{
     height: 110px;
     margin: 0 auto;
@@ -56,9 +56,7 @@
   #hero div{
    padding-bottom: 2.5rem;
   }
-  #hero h2{
-   font-size: 2rem;
-  }
+
 }
 
 /* For Desktop*/
@@ -66,7 +64,8 @@
 
   #hero{
     max-width: 575px;
-    margin: 0 auto;
+    margin: 0 auto 2rem;
+    padding: 2rem;
   }
   #hero h1{
     color: var(--medium-green);
@@ -108,6 +107,7 @@
 @media screen and (min-width: 700px){
   #hero{
     max-width: 700px;
+    padding: 0;
   }
   #hero h1{
     font-size: 4.75rem;
@@ -117,10 +117,10 @@
     font-size: 3rem;
   }
 
-  .subtext{
+  #hero .subtext{
     font-size: 0.6em;
   }
-  .heroEmphasis{
+  #hero .heroEmphasis{
     font-size: 3rem;
   }
   #hero .flexing h2{

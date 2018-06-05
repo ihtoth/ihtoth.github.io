@@ -20,9 +20,11 @@
 
   --dark-brown: #59310E;
   --grey: #A5A89D;
+  --light-grey: #FCFDF9;
 
   --light-yellow: #F6E5A8;
   --bright-yellow:#ECC372;
+
 }
 
 /************************/
@@ -60,6 +62,10 @@
   background-color: var(--bright-yellow);
 }
 
+.whiteBg{
+  background-color: var(--light-grey);
+}
+
 /*******************************************/
 /* ------ Top Level Default Settings ------*/
 /*******************************************/
@@ -80,6 +86,7 @@ main{
   width: 100%;
   margin: 0 auto;
   padding-top: 10.5rem;
+  background-color: var(--light-grey);
 }
 
 /****************************/
@@ -199,15 +206,31 @@ a:hover:after{
 
 .circleBorder{
   border-radius: 50%;
-  background-color: #fff;
-  padding: 1rem;
+  background-color: var(--light-grey);
+  /* padding: 1em; */
 }
 
-.bottomBorder{
+.bottomBorder, .bottomBorder66, .bottomBorder100{
   padding-bottom: 1rem;
-  margin-right: 40vw;
   margin-bottom: 1rem;
   border-bottom: 0.2rem solid var(--lime-green);
+}
+.bottomBorder{
+    margin-right: 66%;
+}
+.bottomBorder66{
+  margin-right: 33%;
+}
+.bottomBorder100{
+  margin-right: 0;
+}
+
+
+/******************************/
+/* ------ image sizing ------ */
+/******************************/
+img.m-smaller{
+  max-width: 10rem;
 }
 
 
@@ -218,7 +241,7 @@ a:hover:after{
 .sticky{
   display:inline;
   position: fixed;
-  z-index: 1;
+  /* z-index: 1; */
 }
 /*************************************************************/
 /* ------ Specifically for My Journey Expand/Collapse ------ */
@@ -289,6 +312,12 @@ a:hover:after{
   .flexing{
     display: flex;
     flex-direction: row;
+  }
+
+  main{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 9rem;
   }
 
   h1{

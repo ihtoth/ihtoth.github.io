@@ -5,7 +5,7 @@ header{
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--light-grey);
   z-index: 1;
 }
 
@@ -72,8 +72,7 @@ header ul{
   cursor: pointer;
   margin: 0;
   opacity: 0; /* hide this */
-  z-index: 3; /* and place it over the hamburger */
-
+  z-index: 4; /* and place it over the hamburger */
   -webkit-touch-callout: none;
 }
 
@@ -90,7 +89,7 @@ header ul{
   background: #a7b909;
   border-radius: 2px;
 
-  z-index: 2;
+  z-index: 3;
 
   transform-origin: 4px 0px;
 
@@ -146,6 +145,7 @@ header ul{
   /* margin-top: -100px; */
   padding-right: 20vw;
   padding-top: 10vh;
+  z-index: 2;
   text-align: right;
   background: #F2F4DB;
   text-transform: uppercase;

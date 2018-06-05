@@ -10,18 +10,24 @@
 }
 
 .d-two-m-one-col-grid, .d-one-m-one-col-grid, .d-three-m-one-col-grid{
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
   grid-template-columns: repeat(1, 1fr);
   display: grid;
+  margin: 0 0 5rem 0;
+
 }
 
+
+/* .start1span2{
+  grid-column: 1 / span 2;
+} */
 
 .card {
     min-height: 30px;
     display: flex;
     flex-direction: row;
-    padding: calc(7% + 10px) calc(2% + 10px);
+    padding: 5rem calc(2% + 10px);
 }
 
 .one-col-card{
@@ -42,9 +48,12 @@
 }
 
 .col-1-content{
-  float:right;
-  /* margin: 0 auto; */
-  max-width: 13rem;
+  justify-self: center;
+  /* float:right; */
+  /* max-width: 50%; */
+}
+.m-bottom-margin{
+  margin-bottom: 5rem;
 }
 .d-one-m-one-col-grid .col-1-content{
   margin: 0 auto;
@@ -64,22 +73,42 @@
   text-align: left;
 }
 
+/* .margin-medium{
+  margin: 0 11% 5rem;
+}
+
+.margin-small{
+  margin: 0 5%;
+} */
+
 /********************************/
 /* ------ Tablet/Desktop ------ */
 /********************************/
 @media only screen and (min-width: 575px) {
+
+
+
+  .d-one-m-one-col-grid{
+   grid-row-gap: 2rem;
+  }
   .d-two-m-one-col-grid{
     grid-auto-rows: 1fr;
     grid-template-columns: repeat(2, 1fr);
   }
 
   .d-three-m-one-col-grid{
-    grid-auto-rows: 1fr;
-    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 3rem;
+    grid-auto-rows: minmax(1.5rem, auto);
+    grid-template-columns: 1fr 5fr 1fr;
   }
 
-  .d-one-m-one-col-grid .card{
-    margin: 0 11%;
+  .d-start2span2{
+    grid-column: 2 / span 2;
+  }
+  .col-1-content{
+    justify-self: right;
+    max-width: 100%;
   }
 
   .one-col-card{
@@ -93,8 +122,25 @@
     padding: 0 0px 0px 5%;
     text-align: left;
   }
+  .m-bottom-margin{
+    margin-bottom: 0rem;
+  }
+
 }
 
+@media screen and (min-width: 769px){
+  /* .start2span2{
+    grid-column: 2 / span 1;
+  } */
+  .d-one-m-one-col-grid, .d-two-m-one-col-grid, .d-three-m-one-col-grid{
+      margin: 0 11% 5rem;
+  }
+  .d-three-m-one-col-grid{
+      /* grid-column-gap: 3rem; */
+    grid-row-gap: 6rem;
+    grid-template-columns: 1fr 4fr 1fr;
+  }
+}
 
 /**********************************/
 /* ------ For small Mobile ------ */
@@ -126,4 +172,7 @@
   .d-one-m-one-col-grid .col-1-content, .d-two-m-one-col-grid .col-1-content{
     max-width: 45%;
   }
+
+
+
 }
