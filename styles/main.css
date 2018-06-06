@@ -12,6 +12,8 @@
   --dark-green: #262A01;
   --medium-green: #666103;
   --lime-green: #A7B909;
+  --light-green: #F2F4DB;
+  --light-grey-green: #D3DAC3;
 
   --medium-purple: #7D488E;
   --bright-purple: #D39DE5;
@@ -37,6 +39,10 @@
 }
 
 /* Text */
+.green-medium{
+  color: var(--medium-green);
+}
+
 .purple-dark{
   color: var(--medium-purple);
 }
@@ -54,6 +60,14 @@
   background-color: var(--light-purple);
 }
 
+.greenBg{
+  background-color: var(--light-green);
+}
+
+.greenGreyBg{
+    background-color: var(--light-grey-green);
+}
+
 .yellowLightBg{
   background-color: var(--light-yellow);
 }
@@ -64,6 +78,10 @@
 
 .whiteBg{
   background-color: var(--light-grey);
+}
+
+.noBg{
+  background-color: rgba(255,255,255,0);
 }
 
 /*******************************************/
@@ -85,7 +103,7 @@ body{
 main{
   width: 100%;
   margin: 0 auto;
-  padding-top: 10.5rem;
+  padding-top: 7rem;
   background-color: var(--light-grey);
 }
 
@@ -104,19 +122,54 @@ h2{
   font-family: 'Advent Pro';
   font-size: 3rem;
   font-weight:600;
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 1.33334em 0 1.165em;
 }
+
+#myJourney h2{
+  padding: 0;
+}
+
 h3{
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: 2.6rem;
   line-height: 100%;
   color: #2B2B27;
   font-family: 'Roboto Condensed', Arial, sans-serif;
+  padding-bottom: 0.3em;
+}
+.card h3{
+  padding: 0;
 }
 
-p{
+h4{
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+}
+
+h5{
+  font-size: 2rem;
+  font-family: 'Advent Pro', Roboto, sans-serif;
+  font-weight: 600;
+  padding-bottom: 0.4em;
+}
+h6{
+  font-size: 1.8rem;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+p, span{
   font-size: 1.6rem;
   line-height: 150%;
   padding-bottom: 1.5rem;
+}
+
+p.topPadding{
+  padding-top: 1.5rem;
 }
 
 date{
@@ -229,9 +282,46 @@ a:hover:after{
 /******************************/
 /* ------ image sizing ------ */
 /******************************/
+img{
+  max-width: 1280px;
+}
+
+ main img{
+  display:block;
+}
+
+img.centered{
+  width: 50%;
+  margin: 1rem auto;
+}
+
+img.d-xlarge{
+  padding: 1rem 11%;
+  display: flex;
+  width: 100%;
+}
+
+img.d-large{
+  margin: 0 auto;
+  width: 50%;
+}
+img.m-large, img.m-medium{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+img.m-large{
+  width: 100%;
+}
+
+img.m-medium{
+  max-width: 30rem;
+}
+
 img.m-smaller{
   max-width: 10rem;
 }
+
+
 
 
 /***************************************************************/
@@ -325,12 +415,17 @@ img.m-smaller{
     font-size: 4.2rem;
   }
 
-  h3{
-    font-size: 3.2rem;
-    padding-bottom: 0.3em;
+  h2{
+    /* padding-left: 10.6rem; */
+    font-size: 4.2rem;
   }
 
-  p{
+  h3{
+    font-size: 3.2rem;
+    /* padding-bottom: 0.3em; */
+  }
+
+  p, span{
     font-size:2rem;
   }
 
@@ -343,7 +438,7 @@ img.m-smaller{
 /* ------ For Large Screens ------ */
 /***********************************/
 @media screen and (min-width: 769px){
-  p{
+  p, span{
     font-size:2.4rem;
     line-height: 160%;
   }
@@ -351,6 +446,9 @@ img.m-smaller{
   h1{
     font-size: 4.8rem;
     padding: 8rem 2rem;
+  }
+  h2{
+    /* padding-left: 10.6rem; */
   }
 
   h3{

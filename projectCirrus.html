@@ -41,14 +41,14 @@
 
   </head>
   <body id=home>
-    <header class="flexing">
+    <header class="flexing greenBg caseStudy">
       <a href="http://ihtoth.github.io" class="mainLogoContainer linkNoUnderline">
-        <div>
-          <img src="../images/icons/logo@1_5x.png" class="mainLogo"/>
-        </div>
+        <!-- <div> -->
+          <img src="../images/icons/logo@1x.png" class="mainLogo "/>
+        <!-- </div> -->
       </a>
       <!-- For Mobile Size. Hide when viewport size > 600px?-->
-      <div class="headerText mobile">
+      <div class="headerText mobile caseStudy">
         <h1>Ildikó Tóth</h1>
         <h2>UX Designer in Portland, OR</h2>
       </div>
@@ -87,63 +87,67 @@
     </a>
   <main>
     <section id=intro_1>
-      <img src="./projects/cirrus/images/logo.png" />
-      <img src="./projects/cirrus/images/cirrusOnScreen.png" />
-      <p>
-        Cirrus is a cloud storage app that is simple and gesture- friendly.
-        It is aimed towards viewing, sharing, and uploading data into a
-        secure space available from any device.
-      </p>
-      <article id="problem">
-        <h2>Problem</h2>
-        <h3>Hey can you include <span>everything?</span></h3>
-        <p>
-          I was asked to provide direction to a startup client with no previous products.
-          Their vague request asked me to explore the market, and provide a final app design
-          including the laundry list of functionalities they thought people wanted.
+      <div class="full-width-wrapper">
+        <img src="./projects/cirrus/images/logoWithWords@2x.png" class="centered m-medium"/>
+        <p class="topPadding one-col-content">
+          Cirrus is a cloud storage app that is simple and gesture- friendly.
+          It is aimed towards viewing, sharing, and uploading data into a
+          secure space available from any device.
         </p>
-        <ul>
-          <li>
-            Save Image
-          </li>
-          <li>
-            Upload Files
-          </li>
-          <li>
-            <div>
-              Tag
-            </div>
-            <div>
-              Move
-            </div>
-          </li>
-          <li>
-            + New
-          </li>
-          <li>
-            <img id=upload src="" />
-            <img id=share src="" />
-          </li>
-          <li>
-            <img id=comment src="" />
-          </li>
-          <li>
-            <img id=elephant src="" />
-          </li>
-        </ul>
-      </article>
-      <article id="solution">
-        <h2>Solution</h2>
-        <h3> No, let’s pick key features, and create a targeted look.</h3>
-        <p>
-          Although this was a daunting task, it gave me the opportunity to discover the market.
-          As one snarky user remarked in my initial survey: “Cloud storage is a standard.
-          Calling it ‘Cloud storage’ is almost outdated, it's just known as storage.”
-          The research revealed a niche Cirrus could exist: providing a better
-          sharing experience and a more flexible way to organize content. Using the design process,
-          I created an MVP to showcase key must-have features of the app.
-        </p>
-        <a href="">Explore Invision Prototype</a>
+        <img src="./projects/cirrus/images/screenshots/macbookPro@2x.png" class="d-large m-large one-col-content" />
+        </div>
+        <article id="problem" class="greenGreyBg full-width-wrapper">
+          <h2>Problem</h2>
+          <div class="one-col-content">
+            <h3>Hey can you include <span>everything?</span></h3>
+            <p>
+              I was asked to provide direction to a startup client with no previous products.
+              Their vague request asked me to explore the market, and provide a final app design
+              including the laundry list of functionalities they thought people wanted.
+            </p>
+            <ul>
+              <li>
+                Save Image
+              </li>
+              <li>
+                Upload Files
+              </li>
+              <li>
+                <div>
+                  Tag
+                </div>
+                <div>
+                  Move
+                </div>
+              </li>
+              <li>
+                + New
+              </li>
+              <li>
+                <img id=upload src="" />
+                <img id=share src="" />
+              </li>
+              <li>
+                <img id=comment src="" />
+              </li>
+              <li>
+                <img id=elephant src="" />
+              </li>
+            </ul>
+          </div>
+          <h2>Solution</h2>
+          <div class="one-col-content">
+            <h3> No, let’s pick key features, and create a targeted look.</h3>
+            <p>
+              Although this was a daunting task, it gave me the opportunity to discover the market.
+              As one snarky user remarked in my initial survey: “Cloud storage is a standard.
+              Calling it ‘Cloud storage’ is almost outdated, it's just known as storage.”
+              The research revealed a niche Cirrus could exist: providing a better
+              sharing experience and a more flexible way to organize content. Using the design process,
+              I created an MVP to showcase key must-have features of the app.
+            </p>
+            <a href="https://invis.io/2EGGO1M83BJ" class="lnk green-medium">Explore Invision Prototype</a>
+          </div>
       </article>
     </section>
     <section id=researchDesign_1>
@@ -170,7 +174,7 @@
           </ul>
         </div>
       </section>
-      <section id=userResearch class="purpleBg">
+      <section id=userResearch class="purpleBg full-width-wrapper">
         <h2>User Research</h2>
         <h3>Discovering what the user would actually use.</h3>
         <p>
@@ -214,7 +218,7 @@
           </li>
         </ul>
       </section>
-      <section id=competitorAnalysis class="whiteBg center img-right">
+      <section id=competitorAnalysis class="whiteBg center img-right full-width-wrapper">
         <h2>Competitor Analysis</h2>
         <h3>What are other apps doing?</h3>
         <img src="./projects/cirrus/images/boxLogo.png" />
@@ -230,37 +234,39 @@
         </p>
       </section>
       <section id=personas>
-        <h2>Personas</h2>
-        <h3>I don't mean to stereotype,but...</h3>
-        <p>
-          I lumped my users into demographically similar groups, and came up with 3 personas.
-          <span class="bold-500">Overall, ease of sharing emerged as a clear need for all three. </span>
-        </p>
+        <div class="full-width-wrapper">
+          <h2>Personas</h2>
+          <h3>I don't mean to stereotype,but...</h3>
+          <p>
+            I lumped my users into demographically similar groups, and came up with 3 personas.
+            <span class="bold-500">Overall, ease of sharing emerged as a clear need for all three. </span>
+          </p>
+        </div>
         <article id=Samira class="twoColumns">
           <h5>Samira</h5>
           <h6>Photo Nut</h6>
-          <div class="overlay">
-            <span>Almost all of her items are photos.</span>
-            <p><span>Goals: </span>automatic syncing of photos, sharing, comment/ upload notifications</p>
-            <p><span>Frustrations:</span> Her google photos is running out of space. She’s convinced that there are better ways to auto-manage old photos to give her more space without paying for more GB.</p>
+          <div class="overlay full-width-wrapper">
+            <span class="bold-600">Almost all of her items are photos.</span>
+            <p><span class="bold-600">Goals: </span>automatic syncing of photos, sharing, comment/ upload notifications</p>
+            <p><span class="bold-600">Frustrations:</span> Her google photos is running out of space. She’s convinced that there are better ways to auto-manage old photos to give her more space without paying for more GB.</p>
           </div>
         </article>
         <article id=Raul class="twoColumns">
           <h5>Raul</h5>
           <h6>Sensitive Data Dude</h6>
-          <div class="overlay">
-            <span>Stores sensitive financial data</span>
-            <p><span>Goals:</span> Ability to easily organize and share with specific people with select permissions.</p>
-            <p><span>Frustrations:</span> App crashes, and takes a while to recover. Sharing files do not work all the time, so Raul has to email them on occasion, which isn’t as secure!</p>
+          <div class="overlay full-width-wrapper">
+            <span class="bold-600">Stores sensitive financial data</span>
+            <p><span class="bold-600">Goals:</span> Ability to easily organize and share with specific people with select permissions.</p>
+            <p><span class="bold-600">Frustrations:</span> App crashes, and takes a while to recover. Sharing files do not work all the time, so Raul has to email them on occasion, which isn’t as secure!</p>
           </div>
         </article>
         <article id=William class="twoColumns">
           <h5>William</h5>
           <h6>Tinkerer</h6>
-          <div class="overlay">
-            <span>Always playing with latest technology</span>
-            <p><span>Goals:</span> Change notification levels. Sharing files with others, syncing only specific files to his cloud storage.</p>
-            <p><span>Frustrations:</span> Not sure how files are indexed, trouble moving stuff across platforms. Seems to end up with duplicates when co-editing.</p>
+          <div class="overlay full-width-wrapper">
+            <span class="bold-600">Always playing with latest technology</span>
+            <p><span class="bold-600">Goals:</span> Change notification levels. Sharing files with others, syncing only specific files to his cloud storage.</p>
+            <p><span class="bold-600">Frustrations:</span> Not sure how files are indexed, trouble moving stuff across platforms. Seems to end up with duplicates when co-editing.</p>
           </div>
         </article>
         <p>
@@ -270,7 +276,7 @@
 
 
       </section>
-      <section id=userStories class="green2Bg">
+      <section id=userStories class="green2Bg full-width-wrapper">
         <h2>User Stories</h2>
         <h3>Breaking it down in plain english</h3>
         <p>I divided and prioritized my user stories under four different user cases.</p>
@@ -356,7 +362,7 @@
           </ul>
         </div>
       </section>
-      <section id=userFlows>
+      <section id=userFlows class="full-width-wrapper">
         <h2>User Flows</h2>
         <h3>Connecting the dots... and other shapes</h3>
         <p>
@@ -386,7 +392,7 @@
         </aside>
         <a href="">More User Flows</a>
       </section>
-      <section id=contentStrategy>
+      <section id=contentStrategy class="full-width-wrapper">
         <h2>Content Strategy</h2>
         <h3>Mapping out every single page.</h3>
         <p>
@@ -402,7 +408,7 @@
 
 
       </section>
-      <section id=wireframing>
+      <section id=wireframing class="full-width-wrapper">
         <h2>Wireframing</h2>
         <article>
           <h3>Never enough X-es, O-s, boxes, and Squiggles</h3>
@@ -450,7 +456,7 @@
           <a href="">More Wireframes</a>
         </article>
       </section>
-      <section id=mockups class="greenBg">
+      <section id=mockups class="greenBg full-width-wrapper">
         <h2>Mockups</h2>
         <h3>Aka wireframes round-two.</h3>
         <p>
@@ -496,7 +502,7 @@
           </ul>
         </div>
       </section>
-      <section id=sketching>
+      <section id=sketching class="full-width-wrapper">
         <h2>Sketching</h2>
         <h3>Best done on the couch with a cup of tea.</h3>
         <p>
@@ -530,7 +536,7 @@
         <img src="./projects/cirrus/images/logoDraftsCirrus.png" />
         <img src="./projects/cirrus/images/moodboardCirrus.png" />
       </section>
-      <section id=digitalLogo>
+      <section id=digitalLogo class="full-width-wrapper">
         <h2>Digital Logo</h2>
         <h3>Black and White first.</h3>
         <div class="dGreyBg">
@@ -558,7 +564,7 @@
           </div>
         </aside>
       </section>
-      <section id=designGuide class="green2Bg">
+      <section id=designGuide class="green2Bg full-width-wrapper">
         <h2>Design Guide</h2>
         <h3>Guidelines are allowed to evolve.</h3>
         <img src="./projects/cirrus/images/designGuide.png" />
@@ -603,7 +609,7 @@
           </ul>
         </div>
       </section>
-      <section id=highFidelityPrototypes>
+      <section id=highFidelityPrototypes class="full-width-wrapper">
         <h2>High Fidelity Prototypes</h2>
         <h3>From blueprint to reality.</h3>
         <p>
@@ -678,7 +684,7 @@
           </ul>
         </div>
       </section>
-      <section id=round1MockupTesting>
+      <section id=round1MockupTesting class="full-width-wrapper">
         <h2>Round 1: Mockup Testing</h2>
         <h3>What’s black and white and moves when you click?</h3>
         <p>
@@ -707,7 +713,7 @@
           </p>
         </article>
       </section>
-      <section id=round2HiFiTesting>
+      <section id=round2HiFiTesting class="full-width-wrapper">
         <h2>Round 2: High-Fi Testing</h2>
         <h3>Things are never really perfect.</h3>
         <p>
@@ -753,7 +759,7 @@
 
         <a href="">see all results</a>
       </section>
-      <section id=finalDesign class="purpleBg">
+      <section id=finalDesign class="purpleBg full-width-wrapper">
         <h2>Final Design</h2>
         <h3>Incorporating testing feedback</h3>
         <p>
@@ -762,18 +768,20 @@
         <img src="./projects/cirrus/images/gifs/hiFiClickthrough.gif" />
         <a href="">InVision Prototype</a>
       </section>
-      <section id=reflection>
+      <section id=reflection class="full-width-wrapper">
         <h2>Reflection</h2>
         <h3>The Design Process really works.</h3>
         <p>
           I am amazed how far users’ feedback combined with my experience and studying have brought this product where I truly believe it could compete with “the big ones” like google and dropbox if implemented correctly, and further iterated on using the same testing principles.
         </p>
         <h4>Lessons Learned</h4>
-        <ul>
-          <li>There’s no such thing as too much sketching</li>
-          <li>Trust your gut instinct; stop and go back, or keep iterating if it doesn’t feel right.</li>
-          <li>The process will take 2 or 3 times as long as you think. Most people don’t get why.</li>
-        </ul>
+
+          <ul>
+            <li><p>There’s no such thing as too much sketching </p></li>
+            <li><p>Trust your gut instinct; stop and go back, or keep iterating if it doesn’t feel right.</p></li>
+            <li><p>The process will take 2 or 3 times as long as you think. Most people don’t get why.</p></li>
+          </ul>
+        </p>
         <h4>What's Next?</h4>
         <p>
           There are many more user stories in the queue that haven’t been implemented. That is where I would go to if there is more time, or a second design sprint.

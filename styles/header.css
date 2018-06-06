@@ -11,6 +11,7 @@ header{
 
 header h1, header h2, header ul{
   font-family: 'Roboto Condensed';
+  padding:0;
 }
 
 header h1{
@@ -34,12 +35,15 @@ header ul{
 
 .headerText{
   width: 65%;
-  padding: 30px 10px;
+  padding-left: 10px;
   min-width: 175px;
+  align-self: center;
 }
 
 .mainLogo{
-  margin: 16px 10px;
+  margin: 16px 10px 10px 20px;
+  height: 6rem;
+  display:block;
 }
 
 
@@ -50,16 +54,17 @@ header ul{
 #menuToggle {
   display: block;
   position: fixed;
-  top: 30px;
+  top: 25px;
   right: 20px;
   padding: 10px;
   justify-content: flex-end;
   z-index: 2;
   -webkit-user-select: none;
   user-select: none;
-  background-color: rgba(255,255,255,0.7);
+  /* background-color: rgba(255,255,255,0.7); */
   border-radius: 2px;
 }
+
 
 #menuToggle input
 {
@@ -85,7 +90,7 @@ header ul{
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-
+  padding: 0;
   background: #a7b909;
   border-radius: 2px;
 
@@ -173,56 +178,59 @@ header ul{
   transform: none;
 }
 
-/****************************/
-/* ------ For Mobile ------ */
-/****************************/
-@media screen and (max-width: 574px){
+/************************************/
+/* ------ For smaller Mobile ------ */
+/************************************/
 
-  .mainLogo{
-    height: 8rem;
-  }
-
-}
-
-/* For smaller mobile */
 @media screen and (max-width: 413px){
-  #menuToggle {
-    right:0;
+  .caseStudy #menuToggle {
+    top: 10px;
+    right:10px;
   }
-  .mainLogo{
-    margin-right: 0;
-  }
-
+ .headerText.caseStudy h2{
+   display: none;
+ }
+ .headerText.caseStudy h1{
+   text-align: center;
+ }
+ .caseStudy .mainLogo{
+   height: 4rem;
+   margin: 12px 0 10px 20px;
+ }
 }
+/************************************/
+/* ------ For tablet/desktop ------ */
+/************************************/
 
-/* For Desktop */
 @media screen and (min-width: 575px) {
 
-header{
-  padding: 0 5%;
-}
-.desktopNav{
-  width: 85%;
-  justify-content: flex-end;
-  margin: auto 0;
-}
-.desktopMenu{
-    display: flex;
-    justify-content: inherit;
-    font-size: 2rem;
-    font-weight:300;
-    text-transform: uppercase;
-}
+  header{
+    padding: 0 5%;
+  }
 
-.desktopMenu>li{
-  margin-right: 2rem;
-}
+  .mainLogo{
+    margin: 16px 10px 10px 20px;
+    height: 6rem;
+  }
 
-.mainLogoContainer{
-  width: 15%;
-}
-.mainLogo{
-  height: 6rem;
-}
+  .desktopNav{
+    width: 85%;
+    justify-content: flex-end;
+    margin: auto 0;
+  }
+  .desktopMenu{
+      display: flex;
+      justify-content: inherit;
+      font-size: 2rem;
+      font-weight:300;
+      text-transform: uppercase;
+  }
 
+  .desktopMenu>li{
+    margin-right: 2rem;
+  }
+
+  .mainLogoContainer{
+    width: 15%;
+  }
 }

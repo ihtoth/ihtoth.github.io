@@ -8,6 +8,7 @@
 
 #hero h2{
   font-family: 'Muli', 'Roboto', 'Roboto Condensed', sans-serif;
+  padding: 0;
 }
 
 .heroEmphasis{
@@ -98,6 +99,7 @@
   }
   #hero .flexing img{
     height: 130px;
+    width: auto;
     order: 2;
     margin: 0 0 0 auto;
   }

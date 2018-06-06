@@ -6,7 +6,7 @@
 /* ---- Default is Mobile size < 575px ----- */
 /*********************************************/
  .full-width-wrapper{
-  padding: 2rem;
+  padding: 2rem 2rem 4rem 2rem;
 }
 
 .d-two-m-one-col-grid, .d-one-m-one-col-grid, .d-three-m-one-col-grid{
@@ -14,7 +14,7 @@
   grid-row-gap: 1rem;
   grid-template-columns: repeat(1, 1fr);
   display: grid;
-  margin: 0 0 5rem 0;
+  /* margin: 0; */
 
 }
 
@@ -85,9 +85,9 @@
 /* ------ Tablet/Desktop ------ */
 /********************************/
 @media only screen and (min-width: 575px) {
-
-
-
+  .full-width-wrapper{
+   padding: 5rem 5rem 10rem 5rem;
+ }
   .d-one-m-one-col-grid{
    grid-row-gap: 2rem;
   }
@@ -117,6 +117,12 @@
   .one-col-cntr{
     padding: 4rem 0px;
   }
+
+  .one-col-content{
+    max-width: 67rem;
+    margin: 0 auto;
+  }
+
   .col-2{
     width: 80%;
     padding: 0 0px 0px 5%;
@@ -133,13 +139,20 @@
     grid-column: 2 / span 1;
   } */
   .d-one-m-one-col-grid, .d-two-m-one-col-grid, .d-three-m-one-col-grid{
-      margin: 0 11% 5rem;
+      margin: 0 11%;
+  }
+  .d-two-m-one-col-grid{
+    margin: 0;
   }
   .d-three-m-one-col-grid{
       /* grid-column-gap: 3rem; */
     grid-row-gap: 6rem;
     grid-template-columns: 1fr 4fr 1fr;
   }
+  /* .one-col-content{
+    max-width: 67rem;
+
+  } */
 }
 
 /**********************************/
