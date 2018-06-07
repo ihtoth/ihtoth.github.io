@@ -21,11 +21,14 @@ footer ul{
   margin: auto;
   display: flex;
   justify-content: center;
+  padding: 0;
+  line-height: 1em;
 }
 
 footer>ul{
     font-size: 2rem;
     flex-wrap:wrap;
+
 }
 
 footer #text{
@@ -65,7 +68,7 @@ footer #socialIcons ul li:last-child{
   }
 
   footer #socialIcons{
-  margin:0.6rem;
+  margin-top:0.6rem;
   }
 
   footer #socialIcons ul li{

@@ -1,0 +1,176 @@
+/**************************/
+/* ------ grey divs ------*/
+/**************************/
+.roundCornerGreyBg, .roundCornerClearBg{
+  text-align: center;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  min-width: 20rem;
+  margin: 1rem auto;
+  position: relative;
+}
+.roundCornerClearBg{
+  padding: 0.3em;
+}
+.roundCornerGreyBg{
+  color: var(--light-grey);
+  background-color: var(--grey);
+}
+.greyBorder{
+    border: var(--grey) solid 0.3rem;
+    color: var(--dark-grey);
+}
+
+.triangleGreyBg{
+  margin: 0rem 0 0 2.5rem;
+}
+
+.triangleGreyBg::after{
+  content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+  border: 1.25em solid transparent;
+  border-right-color: var(--grey);
+  border-left: 0;
+  margin-top: -1.25em;
+  margin-left: -1.1em;
+
+}
+
+.flexCenter{
+  justify-content: center;
+  display:flex;
+  flex-wrap: nowrap;
+}
+
+.flexCenter > *{
+  margin: 0 0.5rem;
+}
+.flexCenter img{
+  height: 90%;
+}
+
+.lengthA{
+  max-width: 30rem;
+}
+
+.lengthB{
+  max-width: 28rem;
+}
+
+.lengthC{
+  max-width: 18rem;
+  min-width: 8rem;
+}
+
+/**********************************/
+/* ------ Deliverables-Tools------*/
+/**********************************/
+.DT{
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem 4rem 2rem;
+}
+
+.DT h4{
+  color: var(--dark-brown);
+}
+
+.DT li{
+  padding: 0.5rem 0;
+}
+
+.deliverables, .tools{
+  padding: 3rem 2rem 2rem 2rem;
+  text-align: center;
+}
+
+.deliverables{
+  background-color: var(--bright-yellow);
+
+}
+.tools{
+  background-color: var(--medium-yellow);
+}
+
+/***************************************/
+/* ----- User Persona BG images ------ */
+/***************************************/
+#personas article{
+  background-color: var(--dark-grey-half-transparent);
+  background-position: top;
+  background-blend-mode: luminosity;
+  background-repeat: no-repeat;
+  max-width: 55rem;
+  margin: 0 auto 1rem;
+  display: flex;
+  flex-direction: column;
+}
+#Samira{
+  background-image: url(../projects/cirrus/images/photos/samira.jpeg);
+}
+
+#Raul{
+  background-image: url(../projects/cirrus/images/photos/raulCropped.jpeg);
+}
+
+#William{
+  background-image: url(../projects/cirrus/images/photos/william3.jpeg)
+}
+
+#Raul .title{
+  text-align: right;
+}
+
+.overlay, .title{
+  padding: 2rem;
+}
+
+
+.overlay{
+  height: 40%;
+  flex-grow: 1;
+  background-position: top;
+  color: var(--light-grey);
+  font-weight: 300;
+  background-color: var(--dark-grey-half-transparent);
+
+}
+.overlay:last-child{
+  padding-bottom: 1rem;
+}
+.title{
+  height: 60%;
+  flex-grow: 3;
+  flex-basis: 35rem;
+}
+
+
+@media screen and (min-width: 575px){
+  .triangleGreyBg{
+    border-radius: 0.5em;
+  }
+  .DT{
+    flex-direction: row;
+    max-width: 80rem;
+    margin: auto;
+  }
+  .deliverables{
+    width: 66%;
+  }
+  .tools{
+    width: 34%;
+  }
+}
+
+
+
+@media screen and (min-width: 768px){
+  .triangleGreyBg{
+    margin: 0 0 0 3rem;
+    border-radius: 0.9em;
+  }
+}

@@ -9,6 +9,7 @@
   padding: 2rem 2rem 4rem 2rem;
 }
 
+
 .d-two-m-one-col-grid, .d-one-m-one-col-grid, .d-three-m-one-col-grid{
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
@@ -27,7 +28,7 @@
     min-height: 30px;
     display: flex;
     flex-direction: row;
-    padding: 5rem calc(2% + 10px);
+    padding: 3rem calc(2% + 10px);
 }
 
 .one-col-card{
@@ -45,6 +46,7 @@
 {
   width: 30%;
   display: block;
+  align-self: center;
 }
 
 .col-1-content{
@@ -62,9 +64,14 @@
 }
 
 .card img{
-  width:100%;
+  max-width:90%;
   height: auto;
   display: block;
+  margin: auto;
+}
+
+#blog .card img, #projects .card img{
+  max-width: 100%;
 }
 
 .col-2{
@@ -149,6 +156,15 @@
     grid-row-gap: 6rem;
     grid-template-columns: 1fr 4fr 1fr;
   }
+  .card img{
+    max-width:70%;
+  }
+  .col-1{
+    width: 20%;
+  }
+  .col-2{
+    width: 80%;
+  }
   /* .one-col-content{
     max-width: 67rem;
 
@@ -186,6 +202,9 @@
     max-width: 45%;
   }
 
+  .card img{
+    max-width:50%;
+  }
 
 
 }

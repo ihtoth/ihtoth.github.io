@@ -12,6 +12,7 @@
   --dark-green: #262A01;
   --medium-green: #666103;
   --lime-green: #A7B909;
+  --lime-light-green: #D7DD9F;
   --light-green: #F2F4DB;
   --light-grey-green: #D3DAC3;
 
@@ -21,11 +22,14 @@
   --light-purple: #F5EFF7;
 
   --dark-brown: #59310E;
+  --dark-grey: #55574F;
+  --dark-grey-half-transparent: rgba(0,0,0,0.4);
   --grey: #A5A89D;
   --light-grey: #FCFDF9;
 
-  --light-yellow: #F6E5A8;
-  --bright-yellow:#ECC372;
+  --light-yellow: #FDF6DB; /*#F6E5A8;*/
+  --medium-yellow: #FFE37C;
+  --bright-yellow: #FFC800;/*#ECC372;*/
 
 }
 
@@ -51,6 +55,10 @@
   color: var(--dark-brown);
 }
 
+.white{
+  color: var(--light-grey);
+}
+
 /* Backgrounds */
 .purplegreyBg{
   background-color: var(--light-grey-purple);
@@ -62,6 +70,10 @@
 
 .greenBg{
   background-color: var(--light-green);
+}
+
+.greenMedBg{
+  background-color: var(--lime-light-green);
 }
 
 .greenGreyBg{
@@ -106,7 +118,9 @@ main{
   padding-top: 7rem;
   background-color: var(--light-grey);
 }
-
+aside{
+  margin: 3rem auto;
+}
 /****************************/
 /* ------ Typography ------ */
 /****************************/
@@ -118,6 +132,8 @@ h1{
   font-weight: 700;
   text-transform: uppercase;
 }
+
+
 h2{
   font-family: 'Advent Pro';
   font-size: 3rem;
@@ -129,6 +145,7 @@ h2{
 
 #myJourney h2{
   padding: 0;
+  text-align: left;
 }
 
 h3{
@@ -137,38 +154,62 @@ h3{
   line-height: 100%;
   color: #2B2B27;
   font-family: 'Roboto Condensed', Arial, sans-serif;
-  padding-bottom: 0.3em;
+  padding-bottom: 1em;
 }
-.card h3{
+/* .card h3{
+  padding: 0;
+} */
+.noPadding{
   padding: 0;
 }
 
 h4{
   text-transform: uppercase;
   font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 300;
+  padding-bottom: 0.7em;
+
 }
 
 h5{
   font-size: 2rem;
   font-family: 'Advent Pro', Roboto, sans-serif;
   font-weight: 600;
-  padding-bottom: 0.4em;
+  padding-bottom: 0.2em;
 }
 h6{
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-family: 'Roboto Condensed', Arial, sans-serif;
   font-style: italic;
   text-transform: uppercase;
   font-weight: 300;
 }
 
-p, span{
+p, span, ul, .quote{
   font-size: 1.6rem;
   line-height: 150%;
   padding-bottom: 1.5rem;
 }
 
-p.topPadding{
+ul{
+  line-height: 160%;
+}
+
+.quote{
+  font-size: 2em;
+  font-weight: 700;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  text-align: right;
+  color: var(--medium-green);
+  margin-left: 2%;
+  /* margin-right: -10%; */
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border-right: 0.5rem var(--medium-green) solid;
+}
+
+.topPadding{
   padding-top: 1.5rem;
 }
 
@@ -178,6 +219,11 @@ date{
   font-weight: 300;
   font-size: 1.6rem;
   text-transform: uppercase;
+}
+
+.italics{
+  font-style:italic;
+  font-size: 1em;
 }
 
 /***********************/
@@ -259,7 +305,7 @@ a:hover:after{
 
 .circleBorder{
   border-radius: 50%;
-  background-color: var(--light-grey);
+  /* background-color: var(--light-grey); */
   /* padding: 1em; */
 }
 
@@ -292,7 +338,7 @@ img{
 
 img.centered{
   width: 50%;
-  margin: 1rem auto;
+  margin: 0 auto;
 }
 
 img.d-xlarge{
@@ -321,8 +367,19 @@ img.m-smaller{
   max-width: 10rem;
 }
 
+.shapeContainer{
+  display: flex;
+  margin: 2rem auto;
+  align-items: center;
+}
 
+.vertical{
+  flex-direction: column;
+}
 
+.horizontal{
+ flex-direction: row;
+}
 
 /***************************************************************/
 /* ------ for Items that need to be fixed on the screen ------ */
@@ -425,12 +482,28 @@ img.m-smaller{
     /* padding-bottom: 0.3em; */
   }
 
+  h4{
+    font-size: 2.8rem;
+  }
+
+  h5{
+    font-size: 2.6rem;
+  }
+  h6{
+    font-size: 1.8rem;
+  }
+
   p, span{
     font-size:2rem;
   }
 
   summary.expand::before, a.expand{
     font-size:2.4rem;
+  }
+
+  .quote{
+      font-size: 2.5rem;
+      border-right-width: 1rem;
   }
 
 }
@@ -461,6 +534,11 @@ img.m-smaller{
   date{
     font-size: 2rem;
   }
+  .quote{
+      margin-right: -5%;
+      font-size: 3rem;
+  }
+
 }
 
 /**************************************************/
@@ -474,9 +552,23 @@ img.m-smaller{
 }
 
 @media screen and (max-width: 413px){
+
+  h2{
+      text-align: center;
+  }
+
   h3{
     font-size: 2.2rem;
   }
+
+  h4{
+    font-size: 2rem;
+  }
+
+  h4.imgAbove{
+    text-align:center;
+  }
+
   .lnk{
     font-size: 2rem;
   }
