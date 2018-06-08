@@ -1,44 +1,133 @@
-/**************************/
-/* ------ grey divs ------*/
-/**************************/
-.roundCornerGreyBg, .roundCornerClearBg{
-  text-align: center;
-  padding: 0.5em;
-  border-radius: 0.3em;
-  min-width: 20rem;
-  margin: 1rem auto;
-  position: relative;
+/**/
+/* ----- Project Navigation ----- */
+/**/
+.nextProject{
+  border-top: 1px var(--grey) solid;
+  border-bottom: 1px var(--grey) solid;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  text-transform: uppercase;
+  color: var(--grey);
+  font-size: 2.2rem;
+  text-align: right;
+  /* margin: 2rem 0 2rem 10%; */
+  padding: 1rem 2rem 1rem 0;
 }
-.roundCornerClearBg{
-  padding: 0.3em;
+.projectNav{
+  /* text-align:right; */
 }
-.roundCornerGreyBg{
-  color: var(--light-grey);
-  background-color: var(--grey);
+.projectNav::after{
+  border-bottom: none;
 }
-.greyBorder{
-    border: var(--grey) solid 0.3rem;
-    color: var(--dark-grey);
-}
-
-.triangleGreyBg{
-  margin: 0rem 0 0 2.5rem;
+.projectNav:hover{
+  transform: scale(1.01);
+  transform-origin: left;
 }
 
-.triangleGreyBg::after{
-  content: '';
-	position: absolute;
-	left: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-  border: 1.25em solid transparent;
-  border-right-color: var(--grey);
-  border-left: 0;
-  margin-top: -1.25em;
-  margin-left: -1.1em;
 
+/*******************************/
+/* ----- Fab-type Icons ------ */
+/*******************************/
+.icon{
+  width: 56px;
+  padding: 0.2rem;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  /* border: 1px solid var(--bright-yellow); */
+  background-color: var(--bright-yellow);
 }
+
+
+
+/*******************************/
+/* ------ speech bubbles ------*/
+/*******************************/
+  .ideaBubble{
+  display: block;
+  max-width: 575px;
+  }
+
+ .roundCorner{
+    /* text-align: center; */
+    padding: 0.5em;
+    border-radius: 0.3em;
+    min-width: 20rem;
+    margin: 1rem auto;
+    position: relative;
+    z-index: 0;
+  }
+  .textC{
+    text-align: center;
+  }
+  .textR{
+    text-align: right;
+  }
+
+  /* .clearBg{
+    padding: 0.3em;
+  } */
+  /* .greyBg{
+    color: var(--light-grey);
+    background-color: var(--grey);
+  } */
+  /* .greyBorder{
+      border: var(--grey) solid 0.3rem;
+      color: var(--dark-grey);
+  } */
+
+  .triangle{
+    margin: 0rem 0 0 2.5rem;
+  }
+
+  .triangle::after{
+    content: '';
+  	position: absolute;
+  	left: 0;
+  	top: 50%;
+  	width: 0;
+  	height: 0;
+    border: 1.25em solid transparent;
+    border-right-color: var(--grey);
+    border-left: 0;
+    margin-top: -1.25em;
+    margin-left: -1.1em;
+  }
+  .triangleTop{
+    margin: 2.5rem 0 0 0;
+    padding: 2.5rem 2.5rem 1rem 2.5rem;
+  }
+  .triangleTop::after {
+  	content: '';
+  	position: absolute;
+  	top: 0;
+  	left: 50%;
+  	width: 0;
+  	height: 0;
+  	border: 1.5em solid transparent;
+  	border-bottom-color: var(--bright-yellow);
+  	border-top: 0;
+  	margin-left: -1.5em;
+  	margin-top: -1.5em;
+  }
+  .triangleRight{
+    position: relative;
+  }
+
+  .triangleRight::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 1rem solid transparent;
+    border-left-color: var(--dark-grey);
+    border-right: 0;
+    margin-top: -3rem;
+    margin-right: 0rem;
+  }
+
+
 
 .flexCenter{
   justify-content: center;
@@ -73,10 +162,11 @@
   display: flex;
   flex-direction: column;
   padding: 0 2rem 4rem 2rem;
+
 }
 
 .DT h4{
-  color: var(--dark-brown);
+  color: var(--dark-green);
 }
 
 .DT li{
@@ -89,12 +179,13 @@
 }
 
 .deliverables{
-  background-color: var(--bright-yellow);
+  background-color: var(--light-grey-green);
 
 }
 .tools{
-  background-color: var(--medium-yellow);
+  background-color: #DDEDDA;
 }
+
 
 /***************************************/
 /* ----- User Persona BG images ------ */

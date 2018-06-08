@@ -9,12 +9,18 @@
 :root {
   --main-bg-color: #FFF;
 
-  --dark-green: #262A01;
-  --medium-green: #666103;
-  --lime-green: #A7B909;
-  --lime-light-green: #D7DD9F;
-  --light-green: #F2F4DB;
-  --light-grey-green: #D3DAC3;
+  --dark-green: #262A01; /*#262A01;*/
+  --medium-green: #0C4C00; /*#666103;*/
+  --lime-green: #1C9D03; /*#A7B909;*/
+  --lime-light-green: #74D461; /*#D7DD9F;*/
+  --light-green: #EDFFE9; /*#F2F4DB;*/
+  --light-grey-green: #C3F4BA; /*#D3DAC3;*/
+
+  --dark-orange: #AC5200;
+  --bright-orange: #F07000;
+  --medium-orange: #FF9538;
+  --light-orange: #FFCA9C;
+  --white-orange: #FFF0DE;
 
   --medium-purple: #7D488E;
   --bright-purple: #D39DE5;
@@ -22,14 +28,18 @@
   --light-purple: #F5EFF7;
 
   --dark-brown: #59310E;
+
   --dark-grey: #55574F;
   --dark-grey-half-transparent: rgba(0,0,0,0.4);
   --grey: #A5A89D;
-  --light-grey: #FCFDF9;
+  --medium-grey: #D9DCD1;
+  --light-grey: #F2F3EF;
+  --white-grey: #FCFDF9;
 
-  --light-yellow: #FDF6DB; /*#F6E5A8;*/
-  --medium-yellow: #FFE37C;
-  --bright-yellow: #FFC800;/*#ECC372;*/
+  --white-yellow: #FDF6DB;
+  --light-yellow: #FFEDAD; /*#F6E5A8;*/
+  --medium-yellow: #FFDE65;
+  --bright-yellow: #FCC500;/*#ECC372;*/
 
 }
 
@@ -47,8 +57,8 @@
   color: var(--medium-green);
 }
 
-.purple-dark{
-  color: var(--medium-purple);
+.orange-dark{
+  color: var(--dark-orange);
 }
 
 .brown-dark{
@@ -61,11 +71,15 @@
 
 /* Backgrounds */
 .purplegreyBg{
-  background-color: var(--light-grey-purple);
+  background-color: var(--medium-orange);
 }
 
 .purpleBg{
-  background-color: var(--light-purple);
+  background-color: var(--light-orange);
+}
+
+.orangeWhiteBg{
+  background-color: var(--white-orange);
 }
 
 .greenBg{
@@ -83,13 +97,36 @@
 .yellowLightBg{
   background-color: var(--light-yellow);
 }
+.yellowWhiteBg{
+  background-color: var(--white-yellow);
+}
 
 .yellowBg{
   background-color: var(--bright-yellow);
 }
 
 .whiteBg{
+  background-color: #fff;
+}
+
+.greyBg{
+  /* color: var(--light-grey); */
+  background-color: var(--grey);
+}
+
+.greyMedBg{
+  background-color: var(--medium-grey);
+}
+
+.lightGreyBg{
   background-color: var(--light-grey);
+}
+.whiteGreyBg{
+  background-color: var(--white-grey);
+}
+
+.clearBg{
+  padding: 0.3em;
 }
 
 .noBg{
@@ -116,10 +153,13 @@ main{
   width: 100%;
   margin: 0 auto;
   padding-top: 7rem;
-  background-color: var(--light-grey);
+  background-color: var(--white-grey);
 }
 aside{
   margin: 3rem auto;
+}
+article{
+  /* margin: 2rem auto; */
 }
 /****************************/
 /* ------ Typography ------ */
@@ -154,11 +194,9 @@ h3{
   line-height: 100%;
   color: #2B2B27;
   font-family: 'Roboto Condensed', Arial, sans-serif;
-  padding-bottom: 1em;
+  padding: 1em 0;
 }
-/* .card h3{
-  padding: 0;
-} */
+
 .noPadding{
   padding: 0;
 }
@@ -168,7 +206,7 @@ h4{
   font-family: 'Roboto Condensed', Arial, sans-serif;
   font-size: 2.2rem;
   font-weight: 300;
-  padding-bottom: 0.7em;
+  padding: 0.7em 0;
 
 }
 
@@ -232,7 +270,7 @@ date{
 
 a{
   text-decoration: none;
-  color:var(--grey);
+  color:var(--dark-grey);
   transition: color 0.3s ease;
   display: inline-block;
   position: relative;
@@ -309,6 +347,11 @@ a:hover:after{
   /* padding: 1em; */
 }
 
+.greyBorder{
+    border: var(--grey) solid 0.3rem;
+    color: var(--dark-grey);
+}
+
 .bottomBorder, .bottomBorder66, .bottomBorder100{
   padding-bottom: 1rem;
   margin-bottom: 1rem;
@@ -336,37 +379,36 @@ img{
   display:block;
 }
 
-img.centered{
+.centered{
   width: 50%;
   margin: 0 auto;
 }
 
-img.d-xlarge{
-  padding: 1rem 11%;
-  display: flex;
+.m-large, .m-medium{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.noTopPadding{
+  margin-top: 0;
+}
+.m-large{
   width: 100%;
 }
 
-img.d-large{
-  margin: 0 auto;
-  width: 50%;
-}
-img.m-large, img.m-medium{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-img.m-large{
-  width: 100%;
-}
-
-img.m-medium{
+.m-medium{
   max-width: 30rem;
 }
 
-img.m-smaller{
+.m-smaller{
   max-width: 10rem;
+  display: inline;
 }
 
+.shadow{
+  /* box-shadow: 0.5rem 0.5rem 20px var(--dark-grey-half-transparent); */
+}
+
+}
 .shapeContainer{
   display: flex;
   margin: 2rem auto;
@@ -388,7 +430,7 @@ img.m-smaller{
 .sticky{
   display:inline;
   position: fixed;
-  /* z-index: 1; */
+  z-index: 1;
 }
 /*************************************************************/
 /* ------ Specifically for My Journey Expand/Collapse ------ */
@@ -444,7 +486,7 @@ img.m-smaller{
 }
 
 #linkToTop.sticky:hover{
-  background-color: var(--bright-purple);
+  background-color: var(--bright-orange);
   color: #fff;
 }
 
@@ -506,6 +548,22 @@ img.m-smaller{
       border-right-width: 1rem;
   }
 
+  .d-xlarge{
+    /* padding: 1rem 11%; */
+    /* display: flex; */
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .d-large{
+    /* margin: 0 auto; */
+    width: 90%;
+  }
+
+  .d-medium{
+    /* margin: 0 auto; */
+    width: 50%;
+  }
 }
 /***********************************/
 /* ------ For Large Screens ------ */

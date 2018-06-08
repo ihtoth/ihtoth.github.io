@@ -18,13 +18,13 @@
 }
 
 #hero .purple{
-  color: var(--bright-purple);
+  color: var(--dark-green);
 }
 #hero .red{
-  color: var(--red);
+  color: var(--dark-green);
 }
 #hero .blue{
-  color: var(--blue);
+  color: var(--dark-green);
 }
 
 #hero div{

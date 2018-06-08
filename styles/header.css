@@ -92,7 +92,7 @@ header ul{
   margin-bottom: 5px;
   position: relative;
   padding: 0;
-  background: #a7b909;
+  background: var(--lime-green);
   border-radius: 2px;
 
   z-index: 3;
@@ -120,7 +120,7 @@ header ul{
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #7D488E;
+  background: var(--bright-yellow);
 }
 
 /*
@@ -153,7 +153,7 @@ header ul{
   padding-top: 10vh;
   z-index: 2;
   text-align: right;
-  background: #F2F4DB;
+  background: var(--light-yellow);
   text-transform: uppercase;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;

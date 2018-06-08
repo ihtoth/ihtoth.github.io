@@ -4,17 +4,17 @@ footer{
     padding: 1.5rem;
     width: 100%;
     z-index: 0;
-    background-color: #55574F;
-    color: #A5A89D;
+    background-color: var(--dark-grey);
+    color: var(--grey);
     text-transform: uppercase;
     font-weight: 700;
 }
 footer a{
-  color: #A5A89D;
+  color: var(--grey);
 }
 
 footer a:hover{
-  color: #A7B909;
+  color: var(--bright-yellow);
 }
 
 footer ul{
