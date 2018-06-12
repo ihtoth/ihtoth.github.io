@@ -294,7 +294,7 @@
   background-position: top;
   background-blend-mode: luminosity;
   background-repeat: no-repeat;
-  /* max-width: 55rem; */
+  background-size: cover;
   margin: 0 auto 1rem;
   display: flex;
   flex-direction: column;
