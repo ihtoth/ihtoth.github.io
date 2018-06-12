@@ -1,6 +1,102 @@
-/**/
+/***************************************/
+/* ----- User Research Graphics ------ */
+/***************************************/
+#Frustrations{
+  display:flex;
+  flex-direction: column;
+  min-height: 30rem;
+  margin-bottom: 2rem;
+
+}
+#Frustrations li, #CollaborationExcitement li{
+  padding: 5%;
+  display: flex;
+}
+#Frustrations li:nth-child(1){
+  background-color: var(--medium-orange);
+  height: 10.5rem;
+  order: 2;
+}
+#Frustrations li:nth-child(2){
+  background-color: var(--bright-orange);
+  height: 15rem;
+  order: 1;
+}
+#Frustrations li:nth-child(3){
+  background-color: var(--light-orange);
+  height: 4.5rem;
+  order:3;
+}
+
+#Frustrations li div:nth-child(1), #CollaborationExcitement li div:nth-child(1), #CEKey li div:nth-child(1){
+  width: 20%;
+  align-self: center;
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+#Frustrations li div:nth-child(2), #CollaborationExcitement li div:nth-child(2), #CEKey li div:nth-child(2){
+  width: 80%;
+  font-size: 1.8rem;
+  line-height: 130%;
+  align-self: center;
+}
+
+#CollaborationExcitement, #CEKey{
+  max-width: 67rem;
+  margin:0 auto;
+}
+
+#CollaborationExcitement{
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
+
+#CEKey{
+  padding: 0 1.1rem;
+}
+#CollaborationExcitement{
+  border-left: solid 1px var(--dark-orange);
+  border-right: solid 1px var(--dark-orange);
+}
+#CollaborationExcitement li{
+    margin: 1rem 0;
+}
+
+#CollaborationExcitement li:nth-child(1){
+  background: linear-gradient( to right,var(--medium-orange), var(--medium-orange) 72%, var(--light-grey) 72%, var(--light-grey)
+  );
+}
+#CollaborationExcitement li:nth-child(2){
+  background: linear-gradient( to right,var(--medium-orange), var(--medium-orange) 63%, var(--light-grey) 63%, var(--light-grey)
+  );
+}
+#CollaborationExcitement li:nth-child(3){
+  background: linear-gradient( to right,var(--medium-orange), var(--medium-orange) 56%, var(--light-grey) 56%, var(--light-grey)
+  );
+}
+
+ #CEKey li{
+   display: flex;
+ }
+
+#CEKey li div:nth-child(1){
+  height: 100%;
+  background-color: var(--medium-orange);
+  /* margin-right: 1rem; */
+}
+#CEKey li div:nth-child(2){
+  padding-left: 3%;
+}
+/*******************************/
+/* ------ Subnavigation ------ */
+/*******************************/
+
+
+
+/**********************************/
 /* ----- Project Navigation ----- */
-/**/
+/**********************************/
+
 .nextProject{
   border-top: 1px var(--grey) solid;
   border-bottom: 1px var(--grey) solid;
@@ -46,7 +142,9 @@
   display: block;
   max-width: 575px;
   }
-
+  .ideaBubble div img{
+    display: inline;
+  }
  .roundCorner{
     /* text-align: center; */
     padding: 0.5em;
@@ -171,6 +269,7 @@
 
 .DT li{
   padding: 0.5rem 0;
+  font-size: 1.8rem;
 }
 
 .deliverables, .tools{
@@ -188,28 +287,33 @@
 
 
 /***************************************/
-/* ----- User Persona BG images ------ */
+/* ----- User Persona section ------ */
 /***************************************/
 #personas article{
   background-color: var(--dark-grey-half-transparent);
   background-position: top;
   background-blend-mode: luminosity;
   background-repeat: no-repeat;
-  max-width: 55rem;
+  /* max-width: 55rem; */
   margin: 0 auto 1rem;
   display: flex;
   flex-direction: column;
 }
+
+
 #Samira{
   background-image: url(../projects/cirrus/images/photos/samira.jpeg);
+  grid-area: card1;
 }
 
 #Raul{
   background-image: url(../projects/cirrus/images/photos/raulCropped.jpeg);
+  grid-area: card2;
 }
 
 #William{
-  background-image: url(../projects/cirrus/images/photos/william3.jpeg)
+  background-image: url(../projects/cirrus/images/photos/william3.jpeg);
+  grid-area: card3;
 }
 
 #Raul .title{
@@ -240,6 +344,10 @@
 }
 
 
+
+
+
+/*MEDIA QUERIES*/
 @media screen and (min-width: 575px){
   .triangleGreyBg{
     border-radius: 0.5em;
@@ -258,10 +366,102 @@
 }
 
 
-
 @media screen and (min-width: 768px){
   .triangleGreyBg{
     margin: 0 0 0 3rem;
     border-radius: 0.9em;
   }
+
+  .overlay{
+    height: 50%;
+  }
+
+  .overlay:last-child{
+    padding-bottom: 0;
+  }
+
+  .DT li{
+    font-size: 2.2rem;
+    line-height: 160%;
+  }
+
+  #Frustrations{
+    flex-direction: row;
+    min-height: auto;
+  }
+  #Frustrations li{
+    display: block;
+    padding: 4%;
+    /* height: auto; */
+  }
+
+  #Frustrations li:nth-child(1){
+    width: 35%;
+    height: auto;
+    order: 2;
+  }
+
+  #Frustrations li:nth-child(2){
+    width: 50%;
+    height: auto;
+    order:1;
+  }
+
+  #Frustrations li:nth-child(3){
+    width: 15%;
+    height: auto;
+    order:3;
+  }
+  #Frustrations li div:nth-child(1), #Frustrations li div:nth-child(2){
+    width: 100%;
+  }
+  #Frustrations li div:nth-child(1){
+    font-size: 2.8rem;
+    padding-bottom: 1rem;
+  }
+  #Frustrations li div:nth-child(2){
+    font-size: 1.8rem;
+  }
+  #CollaborationExcitement{
+      padding: 0 2rem;
+      margin-bottom: 4rem;
+    }
+
+  #CollaborationExcitement li{
+      padding: 3%;
+  }
+
+  #CEKey{
+      padding: 0 2.2rem;
+  }
+  #CollaborationExcitement li:nth-child(-n+3){
+    margin: 2rem 0;
+  }
+  #CollaborationExcitement li div:nth-child(1), #CEKey li div:nth-child(1){
+    width: 10%;
+  }
+  #CollaborationExcitement li div:nth-child(2), #CEKey li div:nth-child(2){
+    width: 90%;
+  }
+  #personas article{
+   margin: 0;
+  }
+  #personaIntro, #personaConclusion{
+    background-color: var(--light3-grey);
+    position: relative;
+  }
+  #personaIntro{
+    grid-area: intro;
+  }
+  #personaIntro p, #personaConclusion p{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 3rem;
+  }
+  #personaConclusion{
+    grid-area: concl;
+    /* padding: 2rem; */
+  }
+
 }

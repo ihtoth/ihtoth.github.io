@@ -16,13 +16,20 @@
   --light-green: #EDFFE9; /*#F2F4DB;*/
   --light-grey-green: #C3F4BA; /*#D3DAC3;*/
 
+
+  --dark-teal: #004C3E;
+  --medium-teal:#009176;
+  --bright-teal:#01D7B0;
+
+
   --dark-orange: #AC5200;
   --bright-orange: #F07000;
   --medium-orange: #FF9538;
   --light-orange: #FFCA9C;
   --white-orange: #FFF0DE;
 
-  --medium-purple: #7D488E;
+   --medium-purple: #7D488E;
+   --purple: #6651A5;
   --bright-purple: #D39DE5;
   --light-grey-purple: #DED7E0;
   --light-purple: #F5EFF7;
@@ -33,7 +40,10 @@
   --dark-grey-half-transparent: rgba(0,0,0,0.4);
   --grey: #A5A89D;
   --medium-grey: #D9DCD1;
+  --light3-grey: #E2E5DC;
+  --light2-grey: #EBEDE7;
   --light-grey: #F2F3EF;
+  --lighter-grey: #F9FAF6;
   --white-grey: #FCFDF9;
 
   --white-yellow: #FDF6DB;
@@ -57,6 +67,10 @@
   color: var(--medium-green);
 }
 
+.green-bright{
+  color: var(--lime-light-green);
+}
+
 .orange-dark{
   color: var(--dark-orange);
 }
@@ -68,13 +82,19 @@
 .white{
   color: var(--light-grey);
 }
+.turquoise{
+  color: var(--bright-teal);
+}
+.purple{
+  color: var(--purple);
+}
 
 /* Backgrounds */
-.purplegreyBg{
+.orangeMedBg{
   background-color: var(--medium-orange);
 }
 
-.purpleBg{
+.orangeBg{
   background-color: var(--light-orange);
 }
 
@@ -118,9 +138,21 @@
   background-color: var(--medium-grey);
 }
 
+.lightGrey3Bg{
+  background-color: var(--light3-grey);
+}
+.lightGrey2Bg{
+  background-color: var(--light2-grey);
+}
+
 .lightGreyBg{
   background-color: var(--light-grey);
 }
+
+.lighterGreyBg{
+  background-color: var(--lighter-grey);
+}
+
 .whiteGreyBg{
   background-color: var(--white-grey);
 }
@@ -157,8 +189,8 @@ body{
 main{
   width: 100%;
   margin: 0 auto;
-  padding-top: 7rem;
-  background-color: var(--white-grey);
+  padding-top: 8rem;
+  background-color: #fff;
 }
 aside{
   margin: 3rem auto;
@@ -199,7 +231,9 @@ h3{
   line-height: 100%;
   color: #2B2B27;
   font-family: 'Roboto Condensed', Arial, sans-serif;
-  padding: 1em 0;
+  padding: 0.3em 0 0.5em 0;
+  /* margin: 0 auto; */
+  max-width: 67rem;
 }
 
 .noPadding{
@@ -212,6 +246,8 @@ h4{
   font-size: 2.2rem;
   font-weight: 300;
   padding: 0.7em 0;
+  margin: 0 auto;
+  max-width: 67rem;
 
 }
 
@@ -233,6 +269,15 @@ p, span, ul, .quote{
   font-size: 1.6rem;
   line-height: 150%;
   padding-bottom: 1.5rem;
+}
+
+p{
+  max-width: 67rem;
+  margin: 0 auto;
+}
+
+p.less-line-height{
+  line-height: 120%;
 }
 
 ul{
@@ -269,6 +314,10 @@ date{
   font-size: 1em;
 }
 
+.caption{
+  font-size:2rem;
+}
+
 /***********************/
 /* ------ Links ------ */
 /***********************/
@@ -277,7 +326,7 @@ a{
   text-decoration: none;
   color:var(--dark-grey);
   transition: color 0.3s ease;
-  display: inline-block;
+  /* display: inline-block; */
   position: relative;
   line-height: 160%;
 }
@@ -308,6 +357,7 @@ a:hover:after{
   text-transform: uppercase;
   font-family: 'advent pro';
   font-size: 2.4rem;
+  line-height: 200%;
 }
 
 /* Overriding underline effect on special links */
@@ -406,27 +456,24 @@ img{
 
 .m-smaller{
   max-width: 10rem;
-  display: inline;
+  /* height: 100%; */
+  /* display: inline; */
 }
 
 .shadow{
   /* box-shadow: 0.5rem 0.5rem 20px var(--dark-grey-half-transparent); */
 }
 
-}
 .shapeContainer{
   display: flex;
   margin: 2rem auto;
   align-items: center;
 }
+/* .shapeContainer img{
+  display: inline;
+} */
 
-.vertical{
-  flex-direction: column;
-}
 
-.horizontal{
- flex-direction: row;
-}
 
 /***************************************************************/
 /* ------ for Items that need to be fixed on the screen ------ */
@@ -495,6 +542,10 @@ img{
   color: #fff;
 }
 
+.desktop{
+  display:none;
+}
+
 /**********************************************/
 /* ------ For Medium Screens and above ------ */
 /**********************************************/
@@ -511,7 +562,7 @@ img{
   main{
     width: 100%;
     margin: 0 auto;
-    padding-top: 9rem;
+    padding-top: 8rem;
   }
 
   h1{
@@ -569,6 +620,14 @@ img{
     /* margin: 0 auto; */
     width: 50%;
   }
+
+  .d-vertical{
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    margin: 2rem 30% 2rem auto;
+  }
+
 }
 /***********************************/
 /* ------ For Large Screens ------ */
@@ -601,15 +660,18 @@ img{
       margin-right: -5%;
       font-size: 3rem;
   }
-
+  .desktop{
+    display:block;
+  }
 }
 
 /**************************************************/
 /* ------ hiding certain things for Mobile ------ */
 /**************************************************/
 @media screen and (max-width: 574px){
-  .desktop{
-    display:none;
+
+  .m-horizontal{
+   flex-direction: row;
   }
 
 }

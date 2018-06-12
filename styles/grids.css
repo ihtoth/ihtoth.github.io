@@ -15,14 +15,7 @@
   grid-row-gap: 1rem;
   grid-template-columns: repeat(1, 1fr);
   display: grid;
-  /* margin: 0; */
-
 }
-
-
-/* .start1span2{
-  grid-column: 1 / span 2;
-} */
 
 .card {
     min-height: 30px;
@@ -51,8 +44,7 @@
 
 .col-1-content{
   justify-self: center;
-  /* float:right; */
-  /* max-width: 50%; */
+  line-height: 130%;
 }
 .m-bottom-margin{
   margin-bottom: 5rem;
@@ -79,14 +71,6 @@
   padding: 0 0px 0px 2rem;
   text-align: left;
 }
-
-/* .margin-medium{
-  margin: 0 11% 5rem;
-}
-
-.margin-small{
-  margin: 0 5%;
-} */
 
 /********************************/
 /* ------ Tablet/Desktop ------ */
@@ -145,12 +129,28 @@
   /* .start2span2{
     grid-column: 2 / span 1;
   } */
-  .d-one-m-one-col-grid, .d-two-m-one-col-grid, .d-three-m-one-col-grid{
+  .d-one-m-one-col-grid, .d-three-m-one-col-grid{
       margin: 0 11%;
   }
   .d-two-m-one-col-grid{
     margin: 0;
   }
+
+  .d-4r-by-2c{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-auto-rows: auto;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    grid-template-areas:
+    "intro card1"
+    "card2 card1"
+    "card2 card3"
+    "concl card3"
+  }
+
+
   .d-three-m-one-col-grid{
       /* grid-column-gap: 3rem; */
     grid-row-gap: 6rem;
