@@ -477,9 +477,7 @@ img{
   /* display: inline; */
 }
 
-.shadow{
-  box-shadow: 0rem 1rem 100px var(--dark-grey-half-transparent);
-}
+
 
 .shapeContainer{
   display: flex;
@@ -698,6 +696,11 @@ img{
     margin-bottom: 2rem;
     margin-top: 2rem;
   }
+
+  .shadow{
+    box-shadow: 0rem 1rem 100px var(--dark-grey-half-transparent);
+  }
+
 }
 
 /**************************************************/

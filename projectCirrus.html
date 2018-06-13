@@ -546,7 +546,7 @@
       </section>
       <section id="testingMockups" class="yellowLightBg full-width-wrapper">
         <h3 class="one-col-content">Testing the Mockups</h3>
-        <img class="m-small d-small centered" src="./projects/cirrus/images/photos/remoteTesting.png" />
+        <!-- <img class="m-small d-small centered" src="./projects/cirrus/images/photos/remoteTesting.png" /> -->
         <p>
           For consistency, I created a <a href="https://drive.google.com/open?id=1p0vUldQmuBybq18zkS-mb7S2wIjrCZieiKfRbJT1nRU">testing script</a> to use. This was the first time my ideas saw light of day. With a mixture of nervousness, excitement, and kicking myself to stop making perfectionist tweaks, I coordinated remote and in-person tests, asking users to complete relatively “simple” tasks associated with the top user stories from my research phase.
         </p>
@@ -701,7 +701,7 @@
           </p>
           <div class="d-4r-by-2c hifi-homepage-grid">
           <article id="HomepageV1">
-          <h4 class="centered noTopPadding"> First Try</h4>
+          <!-- <h4 class="centered noTopPadding"> First Try</h4> -->
           <img src="./projects/cirrus/images/screenshots/homepageV1.png" class="centered m-large d-xlarge noMargin"/>
           </article>
           <div class="upTriangleArrow mobile"></div>
@@ -801,9 +801,11 @@
         </article>
         <article class="greenMedBg full-width-wrapper">
           <h4 class="one-col-content">The Good</h4>
-          <p>
-            Good visual feedback when users interacted with the interface: sharing success, uploading progress, hover behavior.
-          </p>
+          <ul class="one-col-content pSpacing">
+            <li>"Ooh I like the thumbs up!"</li>
+            <li>"It's great that the quick tools are right there when I hover."</li>
+            <li>"I can tell my file is uploading. :)"</li>
+          </ul>
         </article>
         <article class="orangeMedBg full-width-wrapper">
           <h4 class="one-col-content">The not so good</h4>
@@ -825,41 +827,89 @@
         <p>
           I thought I had ironed out everything by the time I was ready to test my high-fidelity prototypes, but there’s always something to tweak, especially when bringing in new testers who haven’t tested the product before.
         </p>
-        <h4 class="one-col-content">Improvements</h4>
-        <div class="img_text_card">
-          <img src="./projects/cirrus/images/screenshots/hiFi_QuickTools.png" class="m-large d-medium centered"/>
-          <p>Keep quick tools on the item row when it is selected!</p>
-        </div>
-        <div class="img_text_card">
-          <img src="./projects/cirrus/images/screenshots/selectTopLeft.png" class="m-large d-medium centered"/>
-          <p>In the grid layout, the select circle should be on the top left or right.</p>
-        </div>
-        <div class="img_text_card">
-          <img src="./projects/cirrus/images/screenshots/orderByLastModified.png" class="m-large d-medium centered"/>
-          <p>Order files by last modified date by default, and remove Recent tab.</p>
-        </div>
-        <div class="img_text_card">
-          <!-- <img src="./projects/cirrus/images/screenshots/???.png" class="m-large"/> -->
-          <p>Hotkeys should be enabled including Ctrl-Z, Ctrl-X, Ctrl-C, Ctrl-V.</p>
-        </div>
-        <div class="img_text_card">
-          <img src="./projects/cirrus/images/screenshots/pagination.png" class="m-large d-medium centered"/>
-          <p>Include toggle to grid/list view and pagination.</p>
-        </div>
-        <div class="img_text_card">
-          <!-- <img src="./projects/cirrus/images/screenshots/rightClick.png" /> -->
-          <p>Quick tool options made available on right-click.</p>
-        </div>
-        <div class="img_text_card">
-          <!-- <img src="./projects/cirrus/images/screenshots/colorPalette.png" /> -->
-          <p>Colors and layout worked well. Yay research and wireframing!</p>
-        </div>
-        <div class="img_text_card">
-          <img src="./projects/cirrus/images/screenshots/uploadNotAdd.png" class="m-large d-medium centered"/>
-          <p>Upload area  say “Upload file or folder” instead of “Add”</p>
-        </div>
+        <section class="d3-t2-m1-col-grid">
+          <article class="d3-t2-m1-col-grid-card">
+            <figure>
+                <figcaption>
+                  <h4 class="one-col-content">Improvements</h4>
+                </figcaption>
+            </figure>
+          </article>
+          <article class="d3-t2-m1-col-grid-card">
+            <figure>
+              <img src="./projects/cirrus/images/screenshots/hiFi_QuickTools.png" class=""/>
+              <figcaption>
+                <p>Keep quick tools on the item row when it is selected!</p>
+              </figcaption>
+            </figure>
+          </article>
 
-        <a class="lnk" href="https://docs.google.com/document/d/1T-aJMFfTLGdMwpB2MW-DvPD6tHu05hwOGwbnvkA26Zw/edit?usp=sharing">see all results</a>
+          <article class="d3-t2-m1-col-grid-card">
+            <figure>
+                <img src="./projects/cirrus/images/screenshots/selectTopLeft.png" class=""/>
+                <figcaption>
+                  <p>In the grid layout, the select circle should be on the top left or right.</p>
+                </figcaption>
+            </figure>
+          </article>
+
+          <article class="d3-t2-m1-col-grid-card">
+            <figure>
+              <img src="./projects/cirrus/images/screenshots/orderByLastModified.png" class=""/>
+              <figcaption>
+                <p>Order files by last modified date by default, and remove Recent tab.</p>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="d3-t2-m1-col-grid-card">
+            <figure>
+              <!-- <img src="./projects/cirrus/images/screenshots/???.png" class="m-large"/> -->
+              <figcaption>
+                <p>Hotkeys should be enabled including Ctrl-Z, Ctrl-X, Ctrl-C, Ctrl-V.</p>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="d3-t2-m1-col-grid-card">
+            <figure>
+              <img src="./projects/cirrus/images/screenshots/pagination.png" class=""/>
+              <figcaption>
+                <p>Include toggle to grid/list view and pagination.</p>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="d3-t2-m1-col-grid-card">
+            <figure>
+              <!-- <img src="./projects/cirrus/images/screenshots/rightClick.png" /> -->
+              <figcaption>
+                <p>Quick tool options made available on right-click.</p>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="d3-t2-m1-col-grid-card">
+            <figure>
+              <!-- <img src="./projects/cirrus/images/screenshots/colorPalette.png" /> -->
+              <figcaption>
+                <p>Colors and layout worked well. Yay research and wireframing!</p>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="d3-t2-m1-col-grid-card">
+            <figure>
+              <img src="./projects/cirrus/images/screenshots/uploadNotAdd.png" class=""/>
+              <figcaption>
+                <p>Upload area  say “Upload file or folder” instead of “Add”</p>
+              </figcaption>
+            </figure>
+          </article>
+        </section>
+        <div class=one-col-cntr>
+          <a class="lnk " href="https://docs.google.com/document/d/1T-aJMFfTLGdMwpB2MW-DvPD6tHu05hwOGwbnvkA26Zw/edit?usp=sharing">see all results</a>
+        </div>
       </section>
       <section id=finalDesign class="lightGreyBg full-width-wrapper">
         <h2>Final Design</h2>
@@ -867,7 +917,7 @@
         <p>
           After the preference testing, which provided invaluable insights and final tests, my prototype dashboard evolved from sketches, to Balsamiq wireframes, to high-fidelity prototypes with interaction.
         </p>
-        <img src="./projects/cirrus/images/gifs/hiFiClickthrough.gif" class="m-large centered d-large"/>
+        <img src="./projects/cirrus/images/gifs/hiFiClickthrough.gif" class="centered m-large d-large"/>
         <div class="one-col-cntr">
           <a class="lnk" href="https://invis.io/2EGGO1M83BJ">InVision Prototype</a>
         </div>
