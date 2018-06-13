@@ -42,8 +42,8 @@
 }
 
 #CollaborationExcitement, #CEKey{
-  max-width: 67rem;
-  margin:0 auto;
+  /* max-width: 67rem; */
+  /* margin:0 auto; */
 }
 
 #CollaborationExcitement{
@@ -104,6 +104,7 @@
   text-transform: uppercase;
   color: var(--grey);
   font-size: 2.2rem;
+  font-weight: 400;
   text-align: right;
   /* margin: 2rem 0 2rem 10%; */
   padding: 1rem 2rem 1rem 0;
@@ -259,7 +260,7 @@
 .DT{
   display: flex;
   flex-direction: column;
-  padding: 0 2rem 4rem 2rem;
+  /* padding: 0 2rem 4rem 2rem; */
 
 }
 
@@ -300,7 +301,6 @@
   flex-direction: column;
 }
 
-
 #Samira{
   background-image: url(../projects/cirrus/images/photos/samira.jpeg);
   grid-area: card1;
@@ -321,33 +321,79 @@
 }
 
 .overlay, .title{
-  padding: 2rem;
+  padding: 2rem 2rem 0;
 }
 
-
 .overlay{
-  height: 40%;
-  flex-grow: 1;
   background-position: top;
   color: var(--light-grey);
   font-weight: 300;
   background-color: var(--dark-grey-half-transparent);
+  padding-bottom: 2rem;
 
 }
 .overlay:last-child{
   padding-bottom: 1rem;
 }
 .title{
-  height: 60%;
-  flex-grow: 3;
+  /* height: 60%; */
+  flex-grow: 1;
   flex-basis: 35rem;
 }
 
+/*******************************/
+/* ------ HiFi Homepage ------ */
+/*******************************/
+ #HomepageV1{
+   grid-area: homepageV1;
+   align-self: center;
+ }
+ #HomepageV2{
+   grid-area: homepageV2;
+ }
+ #HomepageV1Text{
+   grid-area: homepageV1text;
+   border-radius: 1rem;
+   border: 5px solid var(--bright-orange);
+   margin: 2rem 0;
+   padding: 2rem 2rem 1rem 2rem;
+   background-color: white;
+ }
+
+ #HomepageConcl{
+   grid-area: homepageConcl;
+   margin-top: 2rem;
+ }
 
 
+ /* #HomepageV1Text ul{
 
 
-/*MEDIA QUERIES*/
+ } */
+
+ /* figure{
+   position: relative;
+   overflow: hidden;
+   margin: 0;
+   padding: 30% 0;
+   cursor: pointer;
+ }
+
+ figure img{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   mix-blend-mode: multiply;
+   filter: saturate(0);
+   transition: all 0.3s ease-in-out;
+ } */
+
+/******************************/
+/* ------ MEDIA QUERIES ------*/
+/******************************/
 @media screen and (min-width: 575px){
   .triangleGreyBg{
     border-radius: 0.5em;
@@ -366,14 +412,14 @@
 }
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 769px){
   .triangleGreyBg{
     margin: 0 0 0 3rem;
     border-radius: 0.9em;
   }
 
   .overlay{
-    height: 50%;
+    /* height: 50%; */
   }
 
   .overlay:last-child{
@@ -446,22 +492,52 @@
   #personas article{
    margin: 0;
   }
+
   #personaIntro, #personaConclusion{
-    background-color: var(--light3-grey);
-    position: relative;
+    background-color: var(--medium-grey);
   }
+
+  #HomepageV1Text, #HomepageConcl{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
+
   #personaIntro{
     grid-area: intro;
   }
-  #personaIntro p, #personaConclusion p{
+
+  .centerInGrid{
+     position: relative;
+     margin: 0;
+
+   }
+  .centerInGrid>p, .centerInGrid>div {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     padding: 3rem;
+    font-size: 1.8rem;
   }
+  .centerInGrid>div>p{
+    font-size:1.8rem;
+  }
+
   #personaConclusion{
     grid-area: concl;
     /* padding: 2rem; */
   }
+  .nextProject{
+    font-size: 2.8rem;
+    text-align: right;
+    /* margin: 2rem 0 2rem 10%; */
+    padding: 2rem 4rem 2rem 0;
+    /* margin-left: 50%; */
+  }
+
+  .triangleRight::after{
+    margin-top:-3.8rem;
+  }
+
 
 }

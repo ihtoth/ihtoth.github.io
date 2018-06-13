@@ -6,7 +6,7 @@
 /* ---- Default is Mobile size < 575px ----- */
 /*********************************************/
  .full-width-wrapper{
-  padding: 2rem 2rem 4rem 2rem;
+  padding: 4rem 2rem;
 }
 
 
@@ -32,7 +32,7 @@
 .one-col-cntr{
   margin: 0 auto;
   text-align: center;
-  padding: 3rem 0px;
+  padding: 3rem 0 0;
 }
 
 .col-1
@@ -77,7 +77,7 @@
 /********************************/
 @media only screen and (min-width: 575px) {
   .full-width-wrapper{
-   padding: 5rem 5rem 7rem 5rem;
+   padding: 7rem 5rem;
  }
   .d-one-m-one-col-grid{
    grid-row-gap: 2rem;
@@ -85,6 +85,9 @@
   .d-two-m-one-col-grid{
     grid-auto-rows: 1fr;
     grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    margin-top: 4rem;
+    /* justify-content: center; */
   }
 
   .d-three-m-one-col-grid{
@@ -106,12 +109,15 @@
     padding: 0 11.2% 6.4rem 0;
   }
   .one-col-cntr{
-    padding: 4rem 0px;
+    padding: 4rem 0 0;
   }
 
   .one-col-content{
     max-width: 67rem;
     margin: 0 auto;
+  }
+  .one-col-img{
+    max-width:67rem;
   }
 
   .col-2{
@@ -126,14 +132,14 @@
 }
 
 @media screen and (min-width: 769px){
-  /* .start2span2{
-    grid-column: 2 / span 1;
-  } */
+  .full-width-wrapper{
+    padding: 8rem 10.4rem;
+  }
   .d-one-m-one-col-grid, .d-three-m-one-col-grid{
       margin: 0 11%;
   }
   .d-two-m-one-col-grid{
-    margin: 0;
+      margin-top: 5rem;
   }
 
   .d-4r-by-2c{
@@ -143,6 +149,9 @@
     grid-auto-rows: auto;
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
+  }
+
+  .personas-grid{
     grid-template-areas:
     "intro card1"
     "card2 card1"
@@ -150,6 +159,16 @@
     "concl card3"
   }
 
+  .hifi-homepage-grid{
+    grid-template-rows: 0.75fr 4fr 3fr 1.5fr;
+    grid-column-gap: 5rem;
+    margin: 4rem 0 0 0;
+    grid-template-areas:
+    "homepageV1text homepageV2"
+    "homepageV1 homepageV2"
+    "homepageV1 homepageV2"
+    "homepageConcl homepageV2"
+  }
 
   .d-three-m-one-col-grid{
       /* grid-column-gap: 3rem; */

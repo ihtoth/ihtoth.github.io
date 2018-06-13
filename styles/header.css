@@ -3,10 +3,12 @@ header{
   display:flex;
   position: fixed;
   top: 0;
-  left: 0;
+  /* left: 0; */
   width: 100%;
   background-color: var(--light-grey);
   z-index: 1;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 header h1, header h2, header ul{
@@ -229,6 +231,10 @@ header ul{
 
   .desktopMenu>li{
     margin-right: 2rem;
+  }
+
+  .desktopMenu a{
+      font-weight: 400;
   }
 
   .mainLogoContainer{

@@ -32,8 +32,11 @@ footer>ul{
 }
 
 footer #text{
-  margin: auto 1.6rem;
   font-family: 'Roboto Condensed', sans-serif;
+  margin: 0rem;
+  font-size: 2.2rem;
+  text-align: center;
+
 }
 
 footer #socialIcons ul{
@@ -41,8 +44,8 @@ footer #socialIcons ul{
 }
 
 footer #socialIcons ul li {
-  margin-right:2.5rem;
-  font-size: 2.7rem;
+  margin-right:1.8rem;
+  font-size: 2.5rem;
 }
 
 footer #socialIcons ul li:last-child{
@@ -61,11 +64,11 @@ footer #socialIcons ul li:last-child{
   footer{
     padding: 1rem;
   }
-  footer #text{
+  /* footer #text{
     margin: 0rem;
     font-size: 2.2rem;
     text-align: center;
-  }
+  } */
 
   footer #socialIcons{
   margin-top:0.6rem;
@@ -79,6 +82,14 @@ footer #socialIcons ul li:last-child{
   .text{
     width: 63%;
   }
+  /* footer>ul{
+      font-size: 2rem;
+    } */
 
+}
 
+@media screen and (min-width: 575px){
+  footer #text{
+    margin: auto 1.6rem;
+  }
 }

@@ -37,7 +37,7 @@
   --dark-brown: #59310E;
 
   --dark-grey: #55574F;
-  --dark-grey-half-transparent: rgba(0,0,0,0.4);
+  --dark-grey-half-transparent: rgba(0,0,0,0.2);
   --grey: #A5A89D;
   --medium-grey: #D9DCD1;
   --light3-grey: #E2E5DC;
@@ -184,6 +184,8 @@ body{
   /* padding-bottom: 5rem; */
   max-width: 1280px;
   margin: 0 auto;
+  background-color: var(--lighter-grey);
+  /* border: 1px #aaa solid; */
   /* overflow-x: hidden; */
 }
 main{
@@ -203,7 +205,7 @@ article{
 /****************************/
 h1{
   text-align: center;
-  padding: 5rem 0rem;
+  padding: 0 0 5rem 0;
   font-family: 'Advent Pro';
   font-size: 3.2rem;
   font-weight: 700;
@@ -216,8 +218,9 @@ h2{
   font-size: 3rem;
   font-weight:600;
   max-width: 1230px;
-  margin: 0 auto;
-  padding: 1.33334em 0 1.165em;
+  margin: 0 auto 1em;
+  padding: 0 0 0.2em;
+  /* padding: 1.33334em 0 1.165em; */
 }
 
 #myJourney h2{
@@ -231,7 +234,7 @@ h3{
   line-height: 100%;
   color: #2B2B27;
   font-family: 'Roboto Condensed', Arial, sans-serif;
-  padding: 0.3em 0 0.5em 0;
+  padding: 0 0 0.5em 0;
   /* margin: 0 auto; */
   max-width: 67rem;
 }
@@ -246,8 +249,8 @@ h4{
   font-size: 2.2rem;
   font-weight: 300;
   padding: 0.7em 0;
-  margin: 0 auto;
-  max-width: 67rem;
+  /* margin: 0 auto; */
+  /* max-width: 67rem; */
 
 }
 
@@ -280,8 +283,21 @@ p.less-line-height{
   line-height: 120%;
 }
 
+#myJourney p{
+  max-width: none;
+}
+
 ul{
   line-height: 160%;
+}
+/* ul.withBullets{
+  list-style-type: disc;
+} */
+ul li.pSpacing{
+  padding-bottom: 0.4em;
+}
+ul li.pSpacing:last-child{
+  padding-bottom: 0;
 }
 
 .quote{
@@ -325,6 +341,7 @@ date{
 a{
   text-decoration: none;
   color:var(--dark-grey);
+  font-weight: 600;
   transition: color 0.3s ease;
   /* display: inline-block; */
   position: relative;
@@ -355,9 +372,11 @@ a:hover:after{
 
 .lnk{
   text-transform: uppercase;
-  font-family: 'advent pro';
+  font-family: 'Roboto Condensed','Advent Pro', sans-serif;
   font-size: 2.4rem;
-  line-height: 200%;
+  padding-top: 1rem;
+  font-weight: 400;
+  /* line-height: 200%; */
 }
 
 /* Overriding underline effect on special links */
@@ -435,7 +454,7 @@ img{
 }
 
 .centered{
-  width: 50%;
+  /* width: 50%; */
   margin: 0 auto;
 }
 
@@ -443,9 +462,7 @@ img{
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-.noTopPadding{
-  margin-top: 0;
-}
+
 .m-large{
   width: 100%;
 }
@@ -455,13 +472,13 @@ img{
 }
 
 .m-smaller{
-  max-width: 10rem;
+  max-width: 9rem;
   /* height: 100%; */
   /* display: inline; */
 }
 
 .shadow{
-  /* box-shadow: 0.5rem 0.5rem 20px var(--dark-grey-half-transparent); */
+  box-shadow: 0rem 1rem 100px var(--dark-grey-half-transparent);
 }
 
 .shapeContainer{
@@ -566,7 +583,7 @@ img{
   }
 
   h1{
-    padding: 6rem 2rem;
+    padding: 0 2rem 6rem;
     font-size: 4.2rem;
   }
 
@@ -607,25 +624,36 @@ img{
   .d-xlarge{
     /* padding: 1rem 11%; */
     /* display: flex; */
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
     width: 100%;
+  }
+  .d-large, .d-medium{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 
   .d-large{
     /* margin: 0 auto; */
-    width: 90%;
+    width: 85%;
   }
 
   .d-medium{
     /* margin: 0 auto; */
-    width: 50%;
+    /* width: 50% */
+    max-width: 30rem;
+    /* margin-top: 0; */
+  }
+
+  .d-small{
+    max-width: 15rem;
   }
 
   .d-vertical{
     flex-direction: column;
     justify-content: space-between;
-    align-content: center;
-    margin: 2rem 30% 2rem auto;
+    /* align-content: center; */
+    /* margin: 2rem 30% 2rem auto; */
   }
 
 }
@@ -633,17 +661,18 @@ img{
 /* ------ For Large Screens ------ */
 /***********************************/
 @media screen and (min-width: 769px){
-  p, span{
+  p, span, ul{
     font-size:2.4rem;
     line-height: 160%;
   }
 
   h1{
     font-size: 4.8rem;
-    padding: 8rem 2rem;
+    padding: 0 2rem 8rem;
   }
   h2{
-    /* padding-left: 10.6rem; */
+    border-bottom: 2px solid var(--grey);
+
   }
 
   h3{
@@ -663,6 +692,12 @@ img{
   .desktop{
     display:block;
   }
+  .d-xlarge{
+    /* padding: 1rem 11%; */
+    /* display: flex; */
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
 }
 
 /**************************************************/
@@ -670,9 +705,6 @@ img{
 /**************************************************/
 @media screen and (max-width: 574px){
 
-  .m-horizontal{
-   flex-direction: row;
-  }
 
 }
 
@@ -697,5 +729,23 @@ img{
   .lnk{
     font-size: 2rem;
   }
+  .m-horizontal{
+   flex-direction: row;
+  }
 
+}
+/* Overrides to standard styles*/
+.noTopPadding{
+ padding-top: 0;
+}
+
+.noTopMargin{
+  margin-top: 0;
+}
+.noBottomMargin{
+  margin-bottom: 0;
+}
+
+.noMargin{
+  margin: 0;
 }

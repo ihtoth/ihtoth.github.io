@@ -5,11 +5,13 @@
 #hero{
   text-align:center;
   padding-top: 1rem;
+
 }
 
 #hero h2{
-  font-family: 'Muli', 'Roboto', 'Roboto Condensed', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   padding: 0;
+  border: none;
 }
 
 .heroEmphasis{
@@ -110,7 +112,7 @@
 @media screen and (min-width: 700px){
   #hero{
     max-width: 700px;
-    padding: 0;
+    padding: 4rem 0;
   }
   #hero h1, #hero .heroTitle{
     font-size: 4.75rem;
