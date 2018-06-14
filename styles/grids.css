@@ -105,6 +105,9 @@
     flex-direction: row;
     padding: 3rem calc(2% + 10px);
 }
+.card a{
+  font-weight: 400;
+}
 
 .one-col-card{
   padding: 0 0 3rem 0;

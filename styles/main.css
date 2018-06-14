@@ -58,8 +58,8 @@
 /************************/
 
 /* Border */
-.limeGreenBorder{
-  border: 0.2rem solid var(--lime-green);
+.greenBorder{
+  border: 0.3rem solid var(--lime-green);
 }
 
 /* Text */
@@ -274,6 +274,7 @@ p, span, ul, .quote{
   padding-bottom: 1.5rem;
 }
 
+
 p{
   max-width: 67rem;
   margin: 0 auto;
@@ -285,6 +286,9 @@ p.less-line-height{
 
 #myJourney p{
   max-width: none;
+}
+#myJourney a{
+  font-weight: 400;
 }
 
 ul{
@@ -568,6 +572,9 @@ img{
   .mobile{
     display:none;
   }
+  .desktop{
+    display:block;
+  }
   /*Only flex on larger screens*/
   .flexing{
     display: flex;
@@ -577,7 +584,11 @@ img{
   main{
     width: 100%;
     margin: 0 auto;
-    padding-top: 8rem;
+    padding-top: 7rem;
+  }
+
+  main #intro_1>div{
+    padding-top: 4rem;
   }
 
   h1{
@@ -687,9 +698,7 @@ img{
       margin-right: -5%;
       font-size: 3rem;
   }
-  .desktop{
-    display:block;
-  }
+
   .d-xlarge{
     /* padding: 1rem 11%; */
     /* display: flex; */

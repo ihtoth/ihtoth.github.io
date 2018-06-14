@@ -29,6 +29,7 @@ header h2{
   font-size: 1.6rem;
   font-weight:200;
   text-align: left;
+  margin: 0;
 
 }
 
@@ -169,9 +170,12 @@ header ul{
 }
 
 #topMenu li {
-  padding: 0.4rem 0;
+  padding: 0.8rem 0;
+}
+
+#topMenu li a{
   font-size: 3rem;
-  font-weight: 400;
+  font-weight:400;
 }
 
 /*
@@ -234,7 +238,7 @@ header ul{
   }
 
   .desktopMenu a{
-      font-weight: 400;
+      font-weight: 300;
   }
 
   .mainLogoContainer{

@@ -96,7 +96,7 @@
 
   #hero .flexing h2{
     order: 1;
-    width: 75%;
+    width: 60%;
     margin: auto 0;
     text-align: left;
   }
@@ -129,7 +129,7 @@
     font-size: 3rem;
   }
   #hero .flexing h2{
-    width: 75%;
+    width: 60%;
 
   }
 }

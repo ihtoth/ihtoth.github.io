@@ -394,6 +394,17 @@
 /******************************/
 /* ------ MEDIA QUERIES ------*/
 /******************************/
+@media screen and (max-width: 413px){
+  #Frustrations li div:nth-child(1), #CollaborationExcitement li div:nth-child(1), #CEKey li div:nth-child(1){
+    font-size: 2rem;
+  }
+
+  #Frustrations li div:nth-child(2), #CollaborationExcitement li div:nth-child(2), #CEKey li div:nth-child(2){
+    font-size: 1.6rem;
+  }
+}
+
+
 @media screen and (min-width: 575px){
   .triangleGreyBg{
     border-radius: 0.5em;
@@ -536,7 +547,7 @@
   }
 
   .triangleRight::after{
-    margin-top:-3.8rem;
+    margin-top:-3.9rem;
   }
 
 
