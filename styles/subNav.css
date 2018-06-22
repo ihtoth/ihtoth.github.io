@@ -1,0 +1,96 @@
+/* body{
+    height: 2000px;
+    background-image: linear-gradient(to bottom, #FFF 0%,#2989d8 50%,#207cca 68%,#7db9e8 100%);
+} */
+@media screen and (min-width: 769px){
+  #subnav a{
+    text-decoration: none;
+    display: block;
+    color: #55574F;
+
+  }
+
+  #subnav {
+    /* margin: 10px; */
+    position: fixed;
+    top: 28%;
+    padding: 0 2%;
+  }
+
+  #subnav .subnavEl{
+    border-radius: 50%;
+    border: 1px #55574F solid;
+    margin: 5px 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 1px 5px #666;
+  /*   transition: max-width 2s; */
+
+  }
+
+  #subnav .subnavEl{
+    width: 4.6rem;
+    max-width: 4.6rem;
+    height: 4.6rem;
+
+  }
+
+  #subnav .subnavEl:hover{
+    width: auto;
+    max-width: 500px;
+    border-radius: 2.8rem;
+    background-color: #fff;
+  }
+
+  #subnav .subnavIcon{
+    height: 4.4rem;
+    width: 4.4rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  #researchAnalysis_sn{
+    background-image: url(../images/sketches/researchIcon@54px.png);
+  }
+
+  #interactionDesign_sn{
+    background-image: url(../images/sketches/interactionDesignIcon@54px.png);
+  }
+  #branding_sn{
+    background-image: url(../images/sketches/brandingIcon@54px.png);
+  }
+  #visualDesign_sn{
+    background-image: url(../images/sketches/visualDesignIcon@54px.png);
+  }
+
+  #testing_sn{
+    background-image: url(../images/sketches/testingIcon@54px.png);
+  }
+
+  #finalThoughts_sn{
+    background-image: url(../images/sketches/finalThoughtsIcon@54px.png);
+  }
+
+
+  #subnav .subnavText{
+    display: none;
+    position: relative;
+   /*These are needed because of subnavEl's 1px border*/
+    top: -1px;
+    left: -1px;
+
+    border-radius: 2.8rem;
+    padding: 1.4rem 2rem 1.4rem 6rem;
+    margin: 0;
+    font-family: "Advent Pro", Serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    white-space: nowrap
+  }
+  #subnav .subnavText:hover{
+  }
+}
