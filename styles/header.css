@@ -6,6 +6,7 @@ header{
   /* left: 0; */
   width: 100%;
   background-color: var(--light-grey);
+  border-bottom: 1px var(--light2-grey) solid;
   z-index: 1;
   max-width: 1280px;
   margin: 0 auto;
