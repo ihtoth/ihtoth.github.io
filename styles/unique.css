@@ -420,6 +420,14 @@
   .tools{
     width: 34%;
   }
+  
+  .ideaBubble{
+    margin-bottom: 6rem;
+  }
+
+  .lastInSection{
+    margin-bottom: 0;
+  }
 }
 
 

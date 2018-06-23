@@ -180,6 +180,10 @@
     /* justify-content: center; */
   }
 
+  #blog .d-two-m-one-col-grid{
+    margin-top: 0;
+  }
+  
   .myJourney-grid{
     grid-column-gap: 2rem;
     grid-row-gap: 3rem;
@@ -232,6 +236,7 @@
   .d-two-m-one-col-grid{
       margin-top: 5rem;
   }
+
   .d3-t2-m1-col-grid{
     /* grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr)); */
     /* grid-gap: 4.9rem; */
