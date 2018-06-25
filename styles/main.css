@@ -37,7 +37,8 @@
   --dark-brown: #59310E;
 
   --dark-grey: #55574F;
-  --dark-grey-half-transparent: rgba(0,0,0,0.2);
+  --dark-grey-half-transparent: rgba(0,0,0,0.5);
+  --dark-grey-fifth-transparent: rgba(0,0,0,0.2);
   --grey: #A5A89D;
   --medium-grey: #D9DCD1;
   --light3-grey: #E2E5DC;
@@ -709,7 +710,7 @@ img{
   }
 
   .shadow{
-    box-shadow: 0rem 1rem 100px var(--dark-grey-half-transparent);
+    box-shadow: 0rem 1rem 100px var(--dark-grey-fifth-transparent);
   }
 
 }
