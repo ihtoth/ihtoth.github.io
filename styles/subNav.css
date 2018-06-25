@@ -2,6 +2,11 @@
     height: 2000px;
     background-image: linear-gradient(to bottom, #FFF 0%,#2989d8 50%,#207cca 68%,#7db9e8 100%);
 } */
+#subnav{
+  display: none;
+}
+
+
 @media screen and (min-width: 769px){
   #subnav a{
     text-decoration: none;
@@ -12,6 +17,7 @@
 
   #subnav {
     /* margin: 10px; */
+    display:block;
     position: fixed;
     top: 28%;
     padding: 0 2%;
