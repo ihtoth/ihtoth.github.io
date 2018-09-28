@@ -227,6 +227,7 @@ h2{
 #myJourney h2{
   padding: 0;
   text-align: left;
+  border-bottom: none;
 }
 
 h3{
@@ -674,7 +675,7 @@ img{
 /***********************************/
 @media screen and (min-width: 769px){
   p, span, ul{
-    font-size:2.4rem;
+    font-size: 2rem;
     line-height: 160%;
   }
 
