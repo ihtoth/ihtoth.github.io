@@ -293,7 +293,7 @@
 #personas article{
   background-color: var(--dark-grey-half-transparent);
   background-position: top;
-  background-blend-mode: luminosity;
+  /*background-blend-mode: luminosity;*/
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto 1rem;
@@ -312,7 +312,7 @@
 }
 
 #William{
-  background-image: url(../projects/cirrus/images/photos/william3.jpeg);
+  background-image: url(../projects/cirrus/images/photos/william2Color.png);
   grid-area: card3;
 }
 
@@ -420,7 +420,7 @@
   .tools{
     width: 34%;
   }
-  
+
   .ideaBubble{
     margin-bottom: 6rem;
   }
