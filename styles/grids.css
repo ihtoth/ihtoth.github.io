@@ -162,6 +162,10 @@
   text-align: left;
 }
 
+.subsection{
+  padding: 0 5%;
+}
+
 /********************************/
 /* ------ Tablet/Desktop ------ */
 /********************************/
@@ -183,7 +187,7 @@
   #blog .d-two-m-one-col-grid{
     margin-top: 0;
   }
-  
+
   .myJourney-grid{
     grid-column-gap: 2rem;
     grid-row-gap: 3rem;
