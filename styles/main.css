@@ -183,7 +183,7 @@ body{
   color: var(--dark-green);
   font-family: 'Muli', sans-serif;
   /* padding-bottom: 5rem; */
-  max-width: 1280px;
+  max-width: 2000px;
   margin: 0 auto;
   background-color: var(--lighter-grey);
   /* border: 1px #aaa solid; */
@@ -560,7 +560,7 @@ img{
 }
 
 #linkToTop.sticky:hover{
-  background-color: var(--bright-orange);
+  background-color: var(--lime-green);
   color: #fff;
 }
 
@@ -684,7 +684,7 @@ img{
     padding: 0 2rem 8rem;
   }
   h2{
-    border-bottom: 2px solid var(--grey);
+    /* border-bottom: 2px solid var(--grey); */
 
   }
 

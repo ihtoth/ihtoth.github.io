@@ -5,10 +5,10 @@ header{
   top: 0;
   /* left: 0; */
   width: 100%;
-  background-color: var(--light-grey);
+  /* background-color: var(--light-grey); */
   border-bottom: 1px var(--light2-grey) solid;
   z-index: 1;
-  max-width: 1280px;
+  max-width: 2000px;
   margin: 0 auto;
 }
 
@@ -26,7 +26,7 @@ header h1{
 }
 
 header h2{
-  color: var(--medium-green);
+  color: var(--dark-grey);
   font-size: 1.6rem;
   font-weight:200;
   text-align: left;
@@ -217,25 +217,25 @@ header ul{
   }
 
   .mainLogo{
-    margin: 16px 10px 10px 20px;
-    height: 6rem;
+    margin: 16px 10px 10px 0px;
+    height: 7rem;
   }
 
   .desktopNav{
-    width: 85%;
+    width: 100%;
     justify-content: flex-end;
     margin: auto 0;
   }
   .desktopMenu{
       display: flex;
       justify-content: inherit;
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight:300;
       text-transform: uppercase;
   }
 
   .desktopMenu>li{
-    margin-right: 2rem;
+    margin-right: 1.8rem;
   }
 
   .desktopMenu a{
@@ -243,6 +243,19 @@ header ul{
   }
 
   .mainLogoContainer{
-    width: 15%;
+    width: 12%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .mainLogo{
+    margin-left:20px;
+  }
+  .desktopMenu{
+      font-size: 2.2rem;
+  }
+
+  .desktopMenu>li{
+    margin-right: 2rem;
   }
 }
