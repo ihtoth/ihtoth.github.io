@@ -235,10 +235,11 @@ h3{
   font-size: 2.6rem;
   line-height: 100%;
   color: #2B2B27;
+  font-weight: 300;
   font-family: 'Roboto Condensed', Arial, sans-serif;
   padding: 0 0 0.5em 0;
   /* margin: 0 auto; */
-  max-width: 67rem;
+  /* max-width: 67rem; */
 }
 
 .noPadding{
@@ -249,8 +250,9 @@ h4{
   text-transform: uppercase;
   font-family: 'Roboto Condensed', Arial, sans-serif;
   font-size: 2.2rem;
-  font-weight: 300;
-  padding: 0.7em 0;
+  font-weight: 400;
+  /* padding: 0.7em 0; */
+  line-height: 100%;
   /* margin: 0 auto; */
   /* max-width: 67rem; */
 
@@ -268,6 +270,9 @@ h6{
   font-style: italic;
   text-transform: uppercase;
   font-weight: 300;
+}
+em{
+ font-style: italic;
 }
 
 p, span, ul, .quote{
@@ -510,7 +515,7 @@ img{
 /* ------ Specifically for My Journey Expand/Collapse ------ */
 /*************************************************************/
 
-  a.expand, summary.expand::before{
+  a.whyIMovedOn, summary.whyIMovedOn::before{
     font-family: 'Roboto Condensed', Arial, sans-serif;
     font-size: 2rem;
     color: var(--lime-green);
@@ -518,8 +523,8 @@ img{
     line-height: 150%;
   }
   /*sets pseudo class above details to say "expand"*/
-  summary.expand::before{
-    content: 'Expand';
+  summary.whyIMovedOn::before{
+    content: 'Why I moved on';
   }
   /* Specifically for My Journey Expand/Collapse
    * removing the turning arrow
@@ -535,8 +540,8 @@ img{
   /* Change text to collapse when details are open.
 
   */
-  details[open] summary.expand::before {
-      content:'collapse';
+  details[open] summary.whyIMovedOn::before {
+      content:'Hide';
       color: var(--dark-brown);
   }
 
@@ -587,7 +592,7 @@ img{
   main{
     width: 100%;
     margin: 0 auto;
-    padding-top: 7rem;
+    padding-top: 12.5rem;
   }
 
   main #intro_1>div{
@@ -595,7 +600,7 @@ img{
   }
 
   h1{
-    padding: 0 2rem 6rem;
+    /* padding: 0 2rem 6rem; */
     font-size: 4.2rem;
   }
 
@@ -605,7 +610,7 @@ img{
   }
 
   h3{
-    font-size: 3.2rem;
+    font-size: 2.88rem;
     /* padding-bottom: 0.3em; */
   }
 
@@ -624,7 +629,7 @@ img{
     font-size:2rem;
   }
 
-  summary.expand::before, a.expand{
+  summary.whyIMovedOn::before, a.whyIMovedOn{
     font-size:2.4rem;
   }
 
@@ -680,16 +685,16 @@ img{
   }
 
   h1{
-    font-size: 4.8rem;
-    padding: 0 2rem 8rem;
+    font-size: 5.972rem;
   }
-  h2{
-    /* border-bottom: 2px solid var(--grey); */
 
+
+  h2{
+    font-size: 41.47rem;
   }
 
   h3{
-    font-size: 3.6rem;
+
     }
 
   .lnk{

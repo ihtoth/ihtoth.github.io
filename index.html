@@ -17,9 +17,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Google Fonts-->
-    <link href='https://fonts.googleapis.com/css?family=Advent+Pro:400,700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Advent+Pro:600,700' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Muli:300,400,700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Muli:300,700' rel='stylesheet'>
 
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -70,7 +70,7 @@
           <ul id="topMenu">
             <li><a href="#projects">Projects</a></li>
             <li><a href="#myJourney">My Journey</a></li>
-            <li><a href="#blog">Blog</a></li>
+            <li><a href="#blog">Resume</a></li>
             <li><a href="#footerTextAndIcons">Contact</a></li>
           </ul>
         </div>
@@ -79,7 +79,7 @@
         <ul class="desktopMenu desktop">
           <li><a href="#projects">Projects</a></li>
           <li><a href="#myJourney">My Journey</a></li>
-          <li><a href="#blog">Blog</a></li>
+          <li><a href="#blog">Resume</a></li>
           <li><a href="#footerTextAndIcons">Contact</a></li>
         </ul>
       </nav>
@@ -91,13 +91,17 @@
       </div>
     </a>
     <main>
-      <section id=hero class="center subsection">
-        <!-- Large Screen only. Hide when < 575px -->
-        <h1 class="desktop"><span class="heroTitle">Hello! I'm Ildikó</span> <br  /><span class="bold-300 subtext">(It's pronounced ILL-dee-co)</span></h1>
-        <!-- End Large Screen -->
+      <section id=hero class="center full-width-wrapper">
+
         <div class="flexing">
           <img src="./images/sketches/humantime2.png" />
+
+          <div id="heroText">
+            <!-- Large Screen only. Hide when < 575px -->
+          <h1 class="desktop"><span class="heroTitle">Hello! I'm Ildikó</span> <br  /><span class="bold-300 subtext">(It's pronounced <em>ILL</em>-dee-co)</span></h1>
+          <!-- End Large Screen -->
           <h2 class="bold-300">I’m an American-born Hungarian. My superpowers include pixel perfectionism, data wizardry, and a deep desire to do good in this world.</h2>
+          </div>
         </div>
       </section>
       <section class="full-width-wrapper lightGreyBg">
@@ -153,58 +157,37 @@
 
       <section id="myJourney" class="full-width-wrapper">
         <div class="myJourney-grid">
-              <img class="circleBorder greenBorder col-1-content m-smaller" src="./images/sketches/mathNoBorder@1x.png" />
+              <img class="circleBorder col-1-content m-smaller" src="./images/sketches/mathNoBorder@1x.png" />
 
           <article id="myJourneyPart1" class="d-start2span2 m-bottom-margin">
-              <h2 class="bottomBorder">1</h2>
               <p>
-                <span class="bold-600">Math.</span> It’s challenging, and I love the logic and making sense of data.
-                I also have a degree in it from two different universities.
-                Left brain is happy, but right brain needed something too...
+                <span class="bold-700">Math.</span> This is where my love of challenge using logic and data come together. By studying math, the ability to be comfortable with not understanding, but still plunging forward has built a sense grit in me. But I always gravitated towards something a bit more visually tangible…
               </p>
-              <a href="./documents/IldikoTothResume.pdf" class="expand">see resume</a>
+              <!-- <a href="./documents/IldikoTothResume.pdf" class="expand">see resume</a> -->
           </article>
-             <img class="circleBorder greenBorder col-1-content m-smaller" src="./images/sketches/graphicDesignNoBorder@1x.png" />
+             <img class="circleBorder col-1-content m-smaller" src="./images/sketches/graphicDesignNoBorder@1x.png" />
           <article id="myJourneyPart2" class="d-start2span2 m-bottom-margin">
-            <h2 class="bottomBorder66">2</h2>
             <p>
-              <span class="bold-600">Graphic Design.</span> I have a degree in this too. Back in the day,
-              apps and interface design were in their infancy, left mainly for the programmer to implement.
-              I thought it was dumb to design print brochures, so I got a job as a programmer...
+              <span class="bold-700"> Graphic Design & Programming.</span> Back in the day, apps and interface design were in their infancy, left mainly for the programmer to implement. I thought it was too simple to design print brochures, so I got a job as a programmer...
             </p>
             <!-- Hide when Expand is shown as link below, show when Collapse is link below -->
             <details class="start2span2">
-              <summary class="expand">
+              <summary class="whyIMovedOn">
               </summary>
               <p>
-                My first job out in the wild was an Automation Software Engineer.
-                As a newly minted adult, I wanted most of all to please my coworkers and managers.
-                I did exactly what I was told: learn fast, and program things due yesterday.
-                In the process, I ignored certain thoughts which got louder and louder as time passed:
-                Why do the users turn off our automation and do things manually essentially abandoning
-                the software we wrote? Why is it not encouraged to talk to and watch them try
-                new releases to work out any kinks?
+                My first job out in the wild was an Automation Software Engineer. As a newly minted adult, I wanted most of all to please my coworkers and managers. I did exactly what I was told: learn fast and program things due yesterday. In the process, I ignored certain thoughts which got louder and louder as time passed: Why do the users turn off our automation and do things manually, abandoning the software we wrote? Why is it not highly important to watch users try new releases to improve their experience and perception of the software?
               <p>
-                When I voiced my concern to management, they downplayed what I said,
-                citing my proposed improvements a “waste of time” and “no competition,
-                internal customers…it doesn’t matter...” and then put me on a project the furthest
-                away from UX they could find: how to take the user out of the picture entirely.
-                Their vision was a lights-off factory.
+                When I finally voiced my concern to management, they shrugged, citing my proposed improvements a “waste of time” and “no competition, internal customers…it doesn’t matter...” Eventually, I found out that their vision was a lights-off factory with as little human intervention as possible.
               </p>
               <p>
-                Needless to say, this attitude and short sightedness made me sad. Yes I get
-                all the reasons, but it didn’t mean I was ok with it. I finally realized that this type of
-                work was not for me, because what I enjoyed the most: talking to
-                customers and ultimately design for them, was at risk of falling
-                off the priority list entirely.
+                I understood all the reasons, but it didn’t mean I was ok with it. I finally realized that this type of work was not for me, because what I enjoyed the most: talking to customers and ultimately design for them, was at risk of falling off the priority list entirely.
               </p>
             </details>
           </article>
-            <img class="circleBorder greenBorder col-1-content m-smaller" src="./images/sketches/ethicsNoBorder@1x.png" />
+            <img class="circleBorder col-1-content m-smaller" src="./images/sketches/ethicsNoBorder@1x.png" />
           <article id="myJourneyPart3" class="d-start2span2">
-            <h2 class="bottomBorder100">3</h2>
               <p>
-                <span class="bold-600">UX Ethics.</span> I don’t want to create anything that wastes people’s time.
+                <span class="bold-700">UX Ethics.</span> I don’t want to create anything that wastes people’s time.
                 As a designer, it is my responsibility to avoid design patterns that cause anxiety and confusion.
               </p>
               <!-- Hide when Expand is shown as link below, show when Collapse is link below -->
@@ -225,32 +208,6 @@
           </article>
         </div>
       </section>
-      <!-- <section id="blog" class="full-width-wrapper lightGreyBg">
-        <h1 class="green-medium">What I'm up to</h1>
-        <div class="d-two-m-one-col-grid">
-          <article class="card whiteBg">
-            <div class="col-1">
-              <div class="col-1-content">
-                <img src="./images/makingThingsReadableBlogImg@2x.png" />
-              </div>
-            </div>
-            <div class="col-2"><h3 class="noPadding">HACK: How to make a hard...</h3><date class="">March 27, 2018</date>
-              <a class="lnk" href="http://www.ildikototh.com/index.php/2018/03/hack-how-to-make-a-hard-to-read-page-look-however-you-want/">READ POST</a>
-            </div>
-          </article>
-          <article class="card whiteBg">
-            <div class="col-1">
-              <div class="col-1-content">
-                <img src="./images/makeBurgersSmaller@1x.gif" />
-            </div>
-            </div>
-            <div class="col-2"><h3 class="noPadding">Make Burgers Smaller!</h3><date class="">December 28, 2017</date>
-              <a class="lnk"href="http://www.ildikototh.com/index.php/2017/12/make-burgers-smaller/">READ POST</a>
-            </div>
-          </article>
-        </div>
-        <div class="one-col-cntr"><a class="green-dark lnk" href="http://www.ildikototh.com/index.php/category/design/">More blog posts</a></div>
-      </section> -->
       <footer>
             <ul id="footerTextAndIcons">
               <li id="text"> Like My Work? <br class="desktop" />Let me know.</li>
