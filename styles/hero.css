@@ -1,11 +1,19 @@
-:root{
-    --blue: #86D7CA;
-    --red: #DF8C78;
-}
+
 #hero{
   text-align:center;
-  /* padding-top: 1rem; */
 
+}
+#hero h1, #hero .heroTitle{
+  color: var(--dark-green);
+  font-size: 2.6rem;
+  font-family: 'Muli', sans-serif;
+  padding: 0;
+  line-height: 95%;
+  text-transform: none;
+}
+
+#hero h1{
+  padding: 1rem 0 2rem;
 }
 
 #hero h2{
@@ -13,6 +21,9 @@
   line-height: 130%;
   padding: 0;
   border: none;
+}
+#hero .subtext{
+  font-size: 1em;
 }
 
 .heroEmphasis{
@@ -29,10 +40,6 @@
 }
 #hero .blue{
   color: var(--dark-green);
-}
-
-#hero div{
- /* padding-bottom: 3rem; */
 }
 
 /*For Mobile*/
@@ -53,13 +60,11 @@
 
 }
 
+/*For small mobile screens*/
 @media screen and (max-width: 413px){
   #hero img{
     height: 110px;
     margin: 0 auto;
-  }
-  #hero div{
-   /* padding-bottom: 2.5rem; */
   }
 
 }
@@ -68,28 +73,22 @@
 @media screen and (min-width: 575px){
 
   #hero{
-    max-width: 575px;
+    /* max-width: 575px; */
     margin: 0 auto;
     /* padding: 2rem; */
   }
   #hero h1, #hero .heroTitle{
-    color: var(--dark-green);
-    font-size: 3.6rem;
-    font-family: 'Muli', sans-serif;
-    padding: 0;
+    text-align: left;
     line-height: 120%;
-    text-transform: none;
+    font-size: 3.2rem;
   }
 
   #hero h1{
     padding: 0 0 4rem;
   }
 
-  #hero div{
-    /* padding: 0 0 1.2rem 0; */
-  }
   #hero h2{
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
   .heroEmphasis{
     font-size: 2.3rem;
@@ -106,12 +105,6 @@
     text-align: left;
   }
 
-  #hero .flexing h2{
-    /* order: 1; */
-    /* width: 70%; */
-    /* margin: auto 2em auto 0; */
-    /* text-align: left; */
-  }
   #hero .flexing img{
     height: 250px;
     width: auto;
@@ -121,33 +114,21 @@
 
 }
 /*For Desktop*/
-@media screen and (min-width: 700px){
+@media screen and (min-width: 769px){
   #hero{
     max-width: 1100px;
-    /* padding: 4rem 2rem; */
-  }
-  #hero h1, #hero .heroTitle{
-    /* font-size: 3.6rem; */
-    text-align: left;
-  }
-  #hero h2{
-    font-size: 3rem;
   }
 
-  #hero .subtext{
-    font-size: 1em;
+  #hero h2{
+    font-size: 2.4rem;
   }
+
+
   #hero .heroEmphasis{
     font-size: 3rem;
   }
-  #hero .flexing h2{
-    /* width: 60%; */
 
-  }
   #hero .flexing img{
     height: 300px;
-    /* width: auto;
-    order: 2;
-    margin: 0 0 0 auto; */
   }
 }

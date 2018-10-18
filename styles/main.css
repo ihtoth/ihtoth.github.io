@@ -216,7 +216,7 @@ h1{
 
 h2{
   font-family: 'Advent Pro';
-  font-size: 3rem;
+  font-size: 2.88rem;
   font-weight:600;
   max-width: 1230px;
   margin: 0 auto 1em;
@@ -232,7 +232,7 @@ h2{
 
 h3{
   /* text-transform: uppercase; */
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   line-height: 100%;
   color: #2B2B27;
   font-weight: 300;
@@ -271,6 +271,18 @@ h6{
   text-transform: uppercase;
   font-weight: 300;
 }
+
+.card h3{
+  font-family: font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.card p{
+      text-align: center;
+}
+
 em{
  font-style: italic;
 }
@@ -311,30 +323,30 @@ ul li.pSpacing:last-child{
   padding-bottom: 0;
 }
 
-.quote{
+/* .quote{
   font-size: 2em;
   font-weight: 700;
   font-family: 'Roboto Condensed', Arial, sans-serif;
   text-align: right;
   color: var(--medium-green);
   margin-left: 2%;
-  /* margin-right: -10%; */
+  margin-right: -10%;
   padding-right: 1rem;
   padding-left: 1rem;
   border-right: 0.5rem var(--medium-green) solid;
-}
+} */
 
-.topPadding{
+/* .topPadding{
   padding-top: 1.5rem;
-}
+} */
 
-date{
+/* date{
   padding: 10px 0 15px 0;
   display: block;
   font-weight: 300;
   font-size: 1.6rem;
   text-transform: uppercase;
-}
+} */
 
 .italics{
   font-style:italic;
@@ -387,13 +399,60 @@ a:hover:after{
   font-size: 2.4rem;
   padding-top: 1rem;
   font-weight: 400;
-  /* line-height: 200%; */
+}
+
+button{
+  height: 4.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  font-family: 'Advent Pro', Roboto, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+
+button.flexContent{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap:nowrap;
+}
+button.primary{
+    border: none;
+    background-color: var(--lime-green);
+    color: var(--white-grey);
+
+}
+button.secondary{
+  border: 1px solid var(--lime-green);
+  color: var(--lime-green);
+  background-color: var(--white-grey);
+}
+
+button.secondary:hover{
+background-color: var(--light-green);
+}
+
+button.primary:hover{
+  background-color: var(--lime-light-green);
+  border: none;
+  color: #fff;
+}
+
+.cntr{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button.maxWidthSmall{
+  max-width: 190px;
 }
 
 /* Overriding underline effect on special links */
   .linkNoUnderline:hover{
     text-decoration: none;
-    /* border: none; */
   }
 
   .linkNoUnderline::after{
@@ -426,30 +485,9 @@ a:hover:after{
   border-radius: 0.5rem;
 }
 
-.circleBorder{
-  border-radius: 50%;
-  /* background-color: var(--light-grey); */
-  /* padding: 1em; */
-}
-
 .greyBorder{
     border: var(--grey) solid 0.3rem;
     color: var(--dark-grey);
-}
-
-.bottomBorder, .bottomBorder66, .bottomBorder100{
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
-  border-bottom: 0.2rem solid var(--lime-green);
-}
-.bottomBorder{
-    margin-right: 66%;
-}
-.bottomBorder66{
-  margin-right: 33%;
-}
-.bottomBorder100{
-  margin-right: 0;
 }
 
 
@@ -515,7 +553,7 @@ img{
 /* ------ Specifically for My Journey Expand/Collapse ------ */
 /*************************************************************/
 
-  a.whyIMovedOn, summary.whyIMovedOn::before{
+  a.whyIMovedOn, summary.whyIMovedOn::before, a.whatMotivatesMe, summary.whatMotivatesMe::before, summary i{
     font-family: 'Roboto Condensed', Arial, sans-serif;
     font-size: 2rem;
     color: var(--lime-green);
@@ -524,7 +562,15 @@ img{
   }
   /*sets pseudo class above details to say "expand"*/
   summary.whyIMovedOn::before{
-    content: 'Why I moved on';
+    content: 'Why I moved on ';
+  }
+
+  summary.whatMotivatesMe::before{
+    content: 'What motivates me ';
+  }
+
+  summary.whatMotivatesMe::before:hover{
+    color: var(--dark-green);
   }
   /* Specifically for My Journey Expand/Collapse
    * removing the turning arrow
@@ -540,9 +586,20 @@ img{
   /* Change text to collapse when details are open.
 
   */
-  details[open] summary.whyIMovedOn::before {
-      content:'Hide';
+  details[open] summary.whyIMovedOn::before, details[open] summary.whatMotivatesMe::before {
+      content:'Hide ';
       color: var(--dark-brown);
+  }
+
+  details[open] summary i.closed{
+    display:none;
+  }
+  details[open] summary i.open{
+    display:inline;
+    color: var(--dark-brown);
+  }
+  summary i.open{
+    display:none;
   }
 
 /******************************************************/
@@ -554,6 +611,7 @@ img{
   text-align: center;
   padding: 0.5em 1em 1em;
   background-color: rgba(255,255,255,0.7);
+  color: var(--lime-green);
 }
 #linkToTop i, #linkToTop div{
   position: relative;
@@ -565,8 +623,8 @@ img{
 }
 
 #linkToTop.sticky:hover{
-  background-color: var(--lime-green);
-  color: #fff;
+  background-color: var(--light-green);
+  /* color: #fff; */
 }
 
 .desktop{
@@ -625,12 +683,17 @@ img{
     font-size: 1.8rem;
   }
 
+  .card h3{
+    font-size: 2.8rem;
+  }
+
+
   p, span{
     font-size:2rem;
   }
 
-  summary.whyIMovedOn::before, a.whyIMovedOn{
-    font-size:2.4rem;
+  summary.whyIMovedOn::before, a.whyIMovedOn, summary.whatMotivatesMe::before, a.whatMotivatesMe, summary i{
+    font-size:2.2rem;
   }
 
   .quote{
@@ -672,6 +735,15 @@ img{
     /* align-content: center; */
     /* margin: 2rem 30% 2rem auto; */
   }
+  button{
+    margin: 2.5rem 0;
+    font-size: 2.4rem;
+    height:5rem;
+  }
+
+  button.maxWidthSmall{
+    max-width: 228px;
+  }
 
 
 }
@@ -697,6 +769,8 @@ img{
 
     }
 
+
+
   .lnk{
     font-size: 2.8rem;
   }
@@ -719,6 +793,24 @@ img{
     box-shadow: 0rem 1rem 100px var(--dark-grey-fifth-transparent);
   }
 
+  button{
+    height: 5.5rem;
+    border-radius: 0.7rem;
+    font-size: 2.4rem;
+    margin: 3rem 0;
+  }
+  button.maxWidthLarge{
+    max-width: 670px;
+  }
+
+  button.maxWidthMedium{
+    max-width: 446px;
+  }
+
+  button.maxWidthSmall{
+    max-width: 308px;
+  }
+
 }
 
 /**************************************************/
@@ -729,6 +821,9 @@ img{
 
 }
 
+/**************************************************/
+/* ------ small Mobile settings ------ */
+/**************************************************/
 @media screen and (max-width: 413px){
 
   h2{

@@ -14,41 +14,58 @@ footer a{
 }
 
 footer a:hover{
-  color: var(--bright-yellow);
+  color: var(--lime-light-green);
 }
 
 footer ul{
   margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
   padding: 0;
   line-height: 1em;
 }
 
-footer>ul{
+/* footer>ul{
     font-size: 2rem;
     flex-wrap:wrap;
-}
+} */
 
 
-footer #text{
+footer .text{
   font-family: 'Roboto Condensed', sans-serif;
   margin: 0rem;
-  font-size: 2.2rem;
+  font-size: 3rem;
   text-align: center;
+  line-height: 100%;
 
 }
 
-footer #socialIcons ul{
-  flex-wrap:nowrap;
+footer #footerTextAndIcons{
+  margin-top: 5rem;
 }
 
-footer #socialIcons ul li {
-  margin-right:1.8rem;
-  font-size: 2.5rem;
+footer #footerTextAndIcons ul{
+  /* flex-wrap:wrap; */
 }
 
-footer #socialIcons ul li:last-child{
+footer #footerTextAndIcons ul li {
+  margin-right: 1.8rem;
+  font-size: 1.9em;
+  font-family: 'Roboto Condensed';
+  line-height: 100%;
+  text-align: left;
+}
+footer #footerTextAndIcons ul li:first-child{
+  display: none;
+  font-size: 2rem;
+  font-weight: 400;
+  /* flex-basis: 100%; */
+  text-align: center;
+  padding-bottom: 0.5em;
+}
+
+footer #footerTextAndIcons ul li:last-child{
   margin-right:0;
 }
 
@@ -58,38 +75,46 @@ footer #socialIcons ul li:last-child{
     width: 100%;
     padding: calc(3% + 3px) 0px;
   }
+  footer #footerTextAndIcons ul li {
+    margin-right: 1.2rem;
+    font-size: 1.5em;
+  }
 }
 
-@media screen and (max-width: 575px){
-  footer{
-    padding: 1rem;
-  }
-  /* footer #text{
-    margin: 0rem;
-    font-size: 2.2rem;
-    text-align: center;
-  } */
-
-  footer #socialIcons{
-  margin-top:0.6rem;
-  }
-
-  footer #socialIcons ul li{
-    margin-right: 1.8rem;
-    font-size: 2.5rem;
-  }
-
-  .text{
-    width: 63%;
-  }
-  /* footer>ul{
-      font-size: 2rem;
-    } */
-
-}
 
 @media screen and (min-width: 575px){
-  footer #text{
-    margin: auto 1.6rem;
+  footer .text{
+    font-size: 3.6rem;
+  }
+  footer #footerTextAndIcons ul li:first-child{
+    font-size: 2.5rem;
+    padding:0;
+    display: block;
+    text-align: right;
+  }
+  footer #footerTextAndIcons ul{
+    flex-wrap:nowrap;
+  }
+
+  footer #footerTextAndIcons ul li{
+    font-size: 3rem;
+  }
+
+  footer ul{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    line-height: 1em;
+  }
+}
+
+@media screen and (min-width: 769px){
+  footer .text{
+    font-size: 4.8rem;
+  }
+  footer #footerTextAndIcons ul li:first-child{
+    font-size: 2.8rem;
   }
 }

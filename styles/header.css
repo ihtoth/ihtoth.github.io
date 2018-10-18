@@ -10,6 +10,7 @@ header{
   z-index: 1;
   max-width: 2000px;
   margin: 0 auto;
+  transition: top 0.3s;
 }
 
 header h1, header h2, header ul{
@@ -18,7 +19,7 @@ header h1, header h2, header ul{
 }
 
 header h1{
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 0.5rem;
   padding: 0;
   text-align: left;
@@ -175,7 +176,7 @@ header ul{
 }
 
 #topMenu li a{
-  font-size: 3rem;
+  /* font-size: 3rem; */
   font-weight:400;
 }
 
@@ -215,6 +216,9 @@ header ul{
   header{
     padding: 0 5%;
   }
+  header h1{
+    font-size: 3rem;
+  }
 
   .mainLogo{
     margin: 16px 10px 10px 0px;
@@ -229,8 +233,8 @@ header ul{
   .desktopMenu{
       display: flex;
       justify-content: inherit;
-      font-size: 1.8rem;
-      font-weight:300;
+      font-size: 1.6rem;
+      font-weight:600;
       text-transform: uppercase;
   }
 
@@ -252,7 +256,7 @@ header ul{
     margin-left:20px;
   }
   .desktopMenu{
-      font-size: 2.2rem;
+      font-size: 2rem;
   }
 
   .desktopMenu>li{
