@@ -219,7 +219,7 @@ h2{
   font-size: 2.88rem;
   font-weight:600;
   max-width: 1230px;
-  margin: 0 auto 1em;
+  /* margin: 0 auto 1em; */
   padding: 0 0 0.2em;
   /* padding: 1.33334em 0 1.165em; */
 }
@@ -281,6 +281,7 @@ h6{
 
 .card p{
       text-align: center;
+
 }
 
 em{
@@ -433,12 +434,14 @@ button.secondary{
 
 button.secondary:hover{
 background-color: var(--light-green);
+cursor: pointer;
 }
 
 button.primary:hover{
   background-color: var(--lime-light-green);
   border: none;
   color: #fff;
+  cursor: pointer;
 }
 
 .cntr{
@@ -552,7 +555,9 @@ img{
 /*************************************************************/
 /* ------ Specifically for My Journey Expand/Collapse ------ */
 /*************************************************************/
-
+  summary{
+    list-style-type: none;
+  }
   a.whyIMovedOn, summary.whyIMovedOn::before, a.whatMotivatesMe, summary.whatMotivatesMe::before, summary i{
     font-family: 'Roboto Condensed', Arial, sans-serif;
     font-size: 2rem;
@@ -578,6 +583,7 @@ img{
   summary::-webkit-details-marker{
     display: none;
   }
+
   /* details are lighter type
   */
   details[open] p{
@@ -687,6 +693,9 @@ img{
     font-size: 2.8rem;
   }
 
+  .card p{
+   min-height: 50px;
+  }
 
   p, span{
     font-size:2rem;
@@ -762,14 +771,16 @@ img{
 
 
   h2{
-    font-size: 41.47rem;
+    font-size: 4.147rem;
   }
 
   h3{
 
     }
 
-
+    .card p{
+     min-height: 70px;
+    }
 
   .lnk{
     font-size: 2.8rem;

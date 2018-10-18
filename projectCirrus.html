@@ -40,11 +40,11 @@
     <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="./js/scrollingHeader.js"></script>
     <script src="./js/menuHelper.js"></script>
-    <script src="./js/subNav.js"></script>
+    <!-- <script src="./js/subNav.js"></script> -->
 
   </head>
   <body id=home>
-    <header class="flexing whiteBg caseStudy">
+    <header id="header" class="flexing whiteBg caseStudy">
       <a href="http://ihtoth.github.io" class="mainLogoContainer linkNoUnderline">
         <!-- <div> -->
           <img src="./images/icons/logo@1x.png" class="mainLogo "/>
@@ -68,7 +68,7 @@
           <ul id="topMenu">
             <li><a href="./index.html#projects">Projects</a></li>
             <li><a href="./index.html#myJourney">My Journey</a></li>
-            <li><a href="./index.html#blog">Blog</a></li>
+            <li><a href="./documents/IldikoResumeSeptember2018v8.pdf">Resume</a></li>
             <li><a href="#footerTextAndIcons">Contact</a></li>
           </ul>
         </div>
@@ -77,7 +77,7 @@
         <ul class="desktopMenu desktop">
           <li><a href="./index.html#projects">Projects</a></li>
           <li><a href="./index.html#myJourney">My Journey</a></li>
-          <li><a href="./index.html#blog">Blog</a></li>
+          <li><a href="./documents/IldikoResumeSeptember2018v8.pdf">Resume</a></li>
           <li><a href="#footerTextAndIcons">Contact</a></li>
         </ul>
       </nav>
@@ -88,7 +88,7 @@
         <div>Top</div>
       </div>
     </a>
-    <nav id="subnav">
+    <!-- <nav id="subnav">
       <a class="subnavEl linkNoUnderline" href="#researchDesign_1">
         <div class="subnavIcon" id="researchAnalysis_sn"> </div>
         <div class="subnavText">Research + Analysis </div>
@@ -118,7 +118,7 @@
       </a>
 
 
-    </nav>
+    </nav> -->
   <main>
     <section id=intro_1>
       <div class="full-width-wrapper">
@@ -197,30 +197,8 @@
       </article>
     </section>
     <section id=researchDesign_1>
-      <section class="full-width-wrapper">
-        <h1>Research + Analysis</h1>
-        <section class="DT">
-          <div class="deliverables">
-            <h4>Deliverables</h4>
-            <ul>
-              <li>Research user demographics </li>
-              <li>Market discovery</li>
-              <li>List of prioritized user needs</li>
-              <li>User flows to fulfill top needs</li>
-            </ul>
-          </div>
-          <div class="tools">
-            <h4>Tools</h4>
-            <ul>
-              <li>Google Forms</li>
-              <li>Chrome</li>
-              <li>Spreadsheets</li>
-              <li>Figma</li>
-              <li>Pen + Paper</li>
-              <li>Draw.io</li>
-            </ul>
-          </div>
-        </section>
+      <section class="sectionHeaderWrapper lightGreyBg">
+        <h1 class="green-medium noPadding">Research + Analysis</h1>
       </section>
       <section id=userResearch class="lightGreyBg full-width-wrapper">
         <h2>User Research</h2>
@@ -433,30 +411,9 @@
       </section>
     </section>
     <section id=interactionDesign_1>
-      <section class="full-width-wrapper">
-        <h1>Interaction Design</h1>
-        <section class=DT>
-          <div class="deliverables">
-            <h4>Deliverables</h4>
-            <ul>
-              <li>User Flows </li>
-              <li>Sitemap</li>
-              <li>Page Layout Sketches</li>
-              <li>Digital Wireframes</li>
-              <li>Clickable Mockups</li>
-            </ul>
-          </div>
-          <div class="tools">
-            <h4>Tools</h4>
-            <ul>
-              <li>Flowmapp</li>
-              <li>Pen + Paper</li>
-              <li>Balsamiq</li>
-              <li>Figma</li>
-              <li>Invision</li>
-            </ul>
-          </div>
-        </section>
+      <section class="sectionHeaderWrapper lightGreyBg">
+        <h1 class="green-medium noPadding">Interaction Design</h1>
+      </section>
       </section>
       <section id=userFlows class="full-width-wrapper lighterGreyBg">
         <h2>User Flows</h2>
@@ -589,30 +546,8 @@
       </section>
     <!-- </section> -->
     <section id=branding_1>
-      <section class="full-width-wrapper">
-        <h1>Branding</h1>
-        <section class=DT>
-          <div class="deliverables">
-            <h4>Deliverables</h4>
-            <ul>
-              <li>Moodboards</li>
-              <li>Brand look & feel</li>
-              <li>Vector logo</li>
-              <li>Color palette</li>
-              <li>Typography</li>
-            </ul>
-          </div>
-          <div class="tools">
-            <h4>Tools</h4>
-            <ul>
-              <li>Pen + Paper</li>
-              <li>Google Fonts</li>
-              <li>Figma</li>
-              <li>Pinterest</li>
-              <li>Google Search</li>
-            </ul>
-          </div>
-        </section>
+      <section class="sectionHeaderWrapper lightGreyBg">
+        <h1 class="green-medium noPadding">Branding</h1>
       </section>
       <section id=sketching class="full-width-wrapper whiteBg">
         <h2>Sketching</h2>
@@ -703,24 +638,8 @@
       </section>
     </section>
     <section id=visualDesign_1>
-      <section class="full-width-wrapper">
-        <h1>Visual Design</h1>
-        <section class=DT>
-          <div class="deliverables">
-            <h4>Deliverables</h4>
-            <ul>
-              <li>High Fidelity Mockup</li>
-              <li>Clickable Prototype</li>
-            </ul>
-          </div>
-          <div class="tools">
-            <h4>Tools</h4>
-            <ul>
-              <li>Figma</li>
-              <li>inVision</li>
-            </ul>
-          </div>
-        </section>
+      <section class="sectionHeaderWrapper lightGreyBg">
+        <h1 class="green-medium noPadding">Visual Design</h1>
       </section>
       <section id=highFidelityPrototypes class="lightGreyBg">
         <section class="full-width-wrapper">
@@ -791,29 +710,8 @@
 
     </section>
     <section id=testing_1>
-      <section class="full-width-wrapper">
-        <h1>Testing</h1>
-        <section class=DT>
-          <div class="deliverables">
-            <h4>Deliverables</h4>
-            <ul>
-              <li>User Preference Test</li>
-              <li>In-Person/Remote Usability tests</li>
-              <li>Modified high fidelity prototypes</li>
-              <li>Refined clickable prototype according to test results</li>
-            </ul>
-          </div>
-          <div class="tools">
-            <h4>Tools</h4>
-            <ul>
-              <li>Usability Hub</li>
-              <li>Zoom</li>
-              <li>Google Docs</li>
-              <li>Figma</li>
-              <li>InVision</li>
-            </ul>
-          </div>
-        </section>
+      <section class="sectionHeaderWrapper lightGreyBg">
+        <h1 class="green-medium noPadding">Testing</h1>
       </section>
       <section id=round1MockupTesting >
         <article class="full-width-wrapper">
@@ -991,39 +889,46 @@
     </nav> -->
   </main>
 
-  <footer>
-        <ul id="footerTextAndIcons">
-          <li id="text"> Like My Work? <br class="desktop" />Let me know.</li>
-          <li id="socialIcons">
+  <footer class="full-width-wrapper subsection">
+    <div class="text"> Like My Work? </div>
+    <button class="primary maxWidthSmall cntr flexContent" onclick="window.location.href='mailto:imildih@gmail.com?Subject=Hi! I like your portfolio...'">
+      <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      <div> &nbsp; Say Hello</div>
+    </button>
+        <div id="footerTextAndIcons">
+          <!-- <li id="socialIcons"> -->
             <ul>
-              <li>
-                <a target="_blank"href="mailto:imildih@gmail.com" class="linkNoUnderline" >
-                  <i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i>
-                </a>
+              <li class="text">
+                  Or find me on social media
               </li>
               <li>
-                <a target="_blank"href="http://www.linkedin.com/in/ildikototh" class="linkNoUnderline">
-                  <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a target="_blank"href=  "https://www.github.com/ihtoth" class="linkNoUnderline">
+                <a href=  "https://www.github.com/ihtoth" class="linkNoUnderline">
                   <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
-                <a target="_blank"href="https://www.facebook.com/ihtoth" class="linkNoUnderline">
+                <a href="http://www.linkedin.com/in/ildikototh" class="linkNoUnderline">
+                  <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.twitter.com/ihtoth" class="linkNoUnderline">
+                  <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/ihtoth" class="linkNoUnderline">
                   <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
-                <a target="_blank"href="http://www.twitter.com/ihtoth" class="linkNoUnderline">
-                  <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                <a href="https://www.instagram.com/ihtoth/" class="linkNoUnderline" >
+                  <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
                 </a>
               </li>
             </ul>
-          </li>
-        </ul>
+          <!-- </li> -->
+        </div>
       </footer>
 </body>
 

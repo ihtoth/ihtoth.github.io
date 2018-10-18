@@ -142,11 +142,17 @@ a.card:after{
 }
 
 .card img{
-  max-width:40%;
-  width: auto;
+  /* max-width:40%; */
+  width: 100%;
   display: block;
-  margin: auto;
+  height: auto;
+  /* margin: auto; */
+  /* padding-bottom: 2rem; */
+}
+.card .cardImgCont{
+  margin: 0 auto;
   padding-bottom: 2rem;
+  width: 40%;
 }
 
 /* #blog .card img, #projects .card img{
@@ -251,9 +257,14 @@ a.card:after{
   .m-bottom-margin{
     margin-bottom: 0rem;
   }
-  .card img{
+  /* .card img{
     max-width:30%;
+  } */
+
+  .card .cardImgCont{
+    width:30%;
   }
+
   .card{
     padding-top: 0;
     padding-bottom: 0;
@@ -292,7 +303,7 @@ a.card:after{
   .d3-t2-m1-col-grid{
     margin-top: 0;
   }
-  
+
   .d-4r-by-2c{
     display: grid;
     grid-template-columns:repeat(2,1fr);
@@ -326,9 +337,9 @@ a.card:after{
     grid-row-gap: 6rem;
     grid-template-columns: 1fr 4fr 1fr;
   }
-  .card img{
+  /* .card img{
     max-width:50%;
-  }
+  } */
 
   .col-1{
     width: 20%;
@@ -354,9 +365,6 @@ a.card:after{
     grid-auto-rows: auto;
   }
 
-  /* .card{
-    flex-direction: column;
-  } */
 
   .col-1{
     width: 100%;
@@ -376,8 +384,8 @@ a.card:after{
     max-width: 45%;
   }
 
-  .card img{
-    /* max-width:50%; */
+  .card .cardImgCont{
+    width:50%;
   }
 
 

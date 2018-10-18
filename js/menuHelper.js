@@ -1,10 +1,11 @@
 
 $(document).ready(function(){
-
+  //get initial page scroll position.
   var prevScrollpos = window.pageYOffset;
-  // var header = ;
+  //get header height
   var $header = $(document.getElementById("header"));
   var headerHeight = $header.height();
+
   window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {

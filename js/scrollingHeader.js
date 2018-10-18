@@ -2,36 +2,14 @@ $(document).ready(function(){
 
   smoothScroll();
 
-
-  //When scrolling is past height of the header, make fixed header appear.
-  //when scrolling is back up o less than height of header, make fixed header disappear.
-
-// (function(){
-//   let navLinks = $('desktopNav li a'),
-//       navH = $('header').height(),
-//       section = $('section'),
-//       documentEl = $(document);
-//
-//
-//   documentEl.on('scroll', function(){
-//     let currentScrollPos = documentEl.scrollTop();
-//       section.each(function() {
-//       let self = $(this);
-//       if (self.offset().top <
-//             (currentScrollPos + navH) &&
-//             (currentScrollPos + navH) <
-//             (self.offset().top + self.outerHeight()) ) {
-//                targetClass = '.' + self.attr('class') + '-link';
-//                navLinks.removeClass('active');
-//                $(targetClass).addClass('active');
-//              }
-//       });
-//
-//   });
-// });
 });
+
 // Select all links with hashes
 function smoothScroll(){
+
+  var $header = $(document.getElementById("header"));
+  var headerHeight = $header.height();
+
   $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
@@ -46,12 +24,22 @@ function smoothScroll(){
       // Figure out element to scroll to
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+      //get location of where I might scroll
+      var headerOffset;
+      //if target scroll is further than current scroll position
+      if(target.offset().top > window.pageYOffset){
+        headerOffset = 0; //the header will scroll away
+      }
+      else{
+        headerOffset = headerHeight; //header will be there
+      }
       // Does a scroll target exist?
       if (target.length) {
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
         $('html, body').animate({
-          scrollTop: ((target.offset().top)-120)
+          scrollTop: ((target.offset().top)-($('main').find('.sectionHeaderWrapper').outerHeight()+headerOffset))
         }, 1000,function() {
           // Callback after animation
           // Must change focus!
@@ -64,14 +52,14 @@ function smoothScroll(){
           //   $target.focus(); // Set focus again
           // };
         });
+        // $('a[href*="#"]').style.color="var(--dark-grey)";
+        //this.style.color="#1C9D03";
+
       }
     }
   });
  }
 
-// $(".mobile").click(function () {
-//   $("li").toggleClass("visible");
-// });
 
 $("li").click(function () {
   $("li").toggleClass("active");
