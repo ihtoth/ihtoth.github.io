@@ -19,8 +19,8 @@ header h1, header h2, header ul{
 }
 
 header h1{
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 2.4rem;
+  /* margin-bottom: 0.5rem; */
   padding: 0;
   text-align: left;
   text-transform: none;
@@ -40,9 +40,9 @@ header ul{
 }
 
 .headerText{
-  width: 45%;
-  padding-left: 10px;
-  min-width: 175px;
+  width: 60%;
+  padding-left: 1.2rem;
+  /* min-width: 175px; */
   align-self: center;
 }
 
@@ -197,10 +197,10 @@ header ul{
     right:10px;
   }
  .headerText.caseStudy h2{
-   display: none;
+   font-size: 1.4rem;
  }
  .headerText.caseStudy h1{
-   text-align: center;
+   /* text-align: center; */
  }
  .caseStudy .mainLogo{
    height: 4rem;
@@ -251,9 +251,9 @@ header ul{
   }
 }
 
-@media screen and (min-width: 700px) {
-  .mainLogo{
-    margin-left:20px;
+@media screen and (min-width: 769px) {
+  header{
+    padding: 0 7%;
   }
   .desktopMenu{
       font-size: 2rem;

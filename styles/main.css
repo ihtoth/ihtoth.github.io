@@ -288,6 +288,10 @@ em{
  font-style: italic;
 }
 
+strong{
+  font-weight: 600;
+}
+
 p, span, ul, .quote{
   font-size: 1.6rem;
   line-height: 150%;
@@ -296,17 +300,18 @@ p, span, ul, .quote{
 
 
 p{
-  max-width: 67rem;
-  margin: 0 auto;
+  /* max-width: 67rem; */
+  /* margin: 0 auto; */
 }
 
 p.less-line-height{
   line-height: 120%;
 }
 
-#myJourney p{
+/* #myJourney p{
   max-width: none;
-}
+} */
+
 #myJourney a{
   font-weight: 400;
 }
@@ -349,10 +354,10 @@ ul li.pSpacing:last-child{
   text-transform: uppercase;
 } */
 
-.italics{
+/* .italics{
   font-style:italic;
   font-size: 1em;
-}
+} */
 
 .caption{
   font-size:2rem;
@@ -512,8 +517,8 @@ img{
 }
 
 .m-large, .m-medium{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  /* margin-top: 2rem;
+  margin-bottom: 2rem; */
 }
 
 .m-large{
@@ -656,12 +661,12 @@ img{
   main{
     width: 100%;
     margin: 0 auto;
-    padding-top: 12.5rem;
+    padding-top: 10rem;
   }
 
-  main #intro_1>div{
+  /* main #intro_1>div{
     padding-top: 4rem;
-  }
+  } */
 
   h1{
     /* padding: 0 2rem 6rem; */
@@ -718,8 +723,8 @@ img{
     width: 100%;
   }
   .d-large, .d-medium{
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    /* margin-top: 4rem;
+    margin-bottom: 4rem; */
   }
 
   .d-large{
@@ -778,13 +783,17 @@ img{
 
     }
 
-    .card p{
-     min-height: 70px;
-    }
+  .h2h3HeadingWrapper{
+    /* padding-bottom: 4rem; */
+  }
+  .card p{
+   min-height: 70px;
+  }
 
   .lnk{
     font-size: 2.8rem;
   }
+
   date{
     font-size: 1.8rem;
   }

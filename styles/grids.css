@@ -16,7 +16,7 @@
   padding-bottom: 2rem;
 }
 
-.d-two-m-one-col-grid, .d-one-m-one-col-grid, .myJourney-grid{
+.d-two-m-one-col-sym-grid, .d-one-m-one-col-grid, .myJourney-grid, .d-two-m-one-col-asym-grid, .d-left-col{
   grid-gap: 1rem;
   grid-template-columns: repeat(1, 1fr);
   display: grid;
@@ -207,17 +207,20 @@ a.card:after{
   .d-one-m-one-col-grid{
    grid-row-gap: 2rem;
   }
-  .d-two-m-one-col-grid{
+  .d-two-m-one-col-sym-grid{
     grid-auto-rows: 1fr;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 2rem;
-    margin-top: 4rem;
+    grid-column-gap: 16%;
+    /* margin-top: 4rem; */
     /* justify-content: center; */
   }
-
-  /* #blog .d-two-m-one-col-grid{
-    margin-top: 0;
-  } */
+  .d-two-m-one-col-asym-grid{
+    grid-auto-rows: 1fr;
+    grid-template-columns: 4.5fr 5.5fr;
+    grid-column-gap: 8.25%;
+    /* margin-top: 4rem; */
+    /* justify-content: center; */
+  }
 
   .myJourney-grid{
     grid-column-gap: 2rem;
@@ -296,8 +299,8 @@ a.card:after{
   .d-one-m-one-col-grid, .myJourney-grid{
       margin: 0 20%;
   }
-  .d-two-m-one-col-grid{
-      margin-top: 5rem;
+  .d-two-m-one-col-sym-grid{
+      /* margin-top: 5rem; */
   }
 
   .d3-t2-m1-col-grid{
@@ -354,6 +357,16 @@ a.card:after{
     max-width: 67rem;
 
   } */
+
+  /* .d-right-col img{
+    margin-left: 0;
+  } */
+  .subsection{
+    padding-left: 7%;
+    padding-right: 7%;
+    max-width: 160rem;
+    margin: 0 auto;
+  }
 }
 
 /**********************************/
@@ -361,7 +374,7 @@ a.card:after{
 /**********************************/
 @media screen and (max-width: 413px){
 
-  .d-two-m-one-col-grid{
+  .d-two-m-one-col-sym-grid{
     grid-auto-rows: auto;
   }
 
@@ -380,7 +393,7 @@ a.card:after{
     margin: 0 auto;
     max-width: 35%;
   }
-  .d-one-m-one-col-grid .col-1-content, .d-two-m-one-col-grid .col-1-content{
+  .d-one-m-one-col-grid .col-1-content, .d-two-m-one-col-sym-grid .col-1-content{
     max-width: 45%;
   }
 
