@@ -178,14 +178,15 @@ a.card:after{
   padding-right: 5%;
 }
 .topBottomPadding{
-  padding: 3rem 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .topPadding{
-  padding: 3rem 0 0 0;
+  padding-top: 3rem;
 }
 
 .bottomPadding{
-  padding: 0 0 3rem 0;
+  padding-bottom:3rem;
 }
 
 .m-bottom-margin{

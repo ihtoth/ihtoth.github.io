@@ -331,10 +331,10 @@ ul li.pSpacing:last-child{
 }
 
 ul.checkmarks li{
-  background-image: url(../images/icons/checkmark.png);
+  background-image: url(../images/icons/checkmarkSmaller.png);
   background-repeat: no-repeat;
   background-position: 0 0.5rem;
-  padding-left: 5rem;
+  padding-left: 4rem;
 }
 
 /* .quote{
@@ -770,6 +770,10 @@ img{
 
   button.maxWidthSmall{
     max-width: 228px;
+  }
+  ul.checkmarks li{
+    background-image: url(../images/icons/checkmark.png);
+    padding-left: 5rem;
   }
 
 
