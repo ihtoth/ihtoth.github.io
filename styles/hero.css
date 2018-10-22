@@ -21,6 +21,7 @@
   line-height: 130%;
   padding: 0;
   border: none;
+  text-transform: none;
 }
 #hero .subtext{
   font-size: 1em;

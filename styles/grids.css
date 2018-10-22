@@ -106,6 +106,7 @@
     border: 2px solid var(--lime-green);
     font-weight: 400;
     box-shadow: 5px 5px 5px var(--light-grey);
+    color: var(--dark-green);
 }
 a.card:after{
  border:none;
