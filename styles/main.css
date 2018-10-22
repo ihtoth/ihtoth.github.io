@@ -254,8 +254,8 @@ h4{
   font-weight: 400;
   /* padding: 0.7em 0; */
   line-height: 100%;
-  /* margin: 0 auto; */
-  /* max-width: 67rem; */
+  margin: 0 auto;
+  max-width: 128rem;
 
 }
 
@@ -324,10 +324,17 @@ ul{
   list-style-type: disc;
 } */
 ul li.pSpacing{
-  padding-bottom: 0.4em;
+  padding-bottom: 1em;
 }
 ul li.pSpacing:last-child{
   padding-bottom: 0;
+}
+
+ul.checkmarks li{
+  background-image: url(../images/icons/checkmark.png);
+  background-repeat: no-repeat;
+  background-position: 0 0.5rem;
+  padding-left: 5rem;
 }
 
 /* .quote{
@@ -735,12 +742,13 @@ img{
   .d-large{
     /* margin: 0 auto; */
     width: 100%;
+    max-width: 72.4rem;
   }
 
   .d-medium{
     /* margin: 0 auto; */
-    /* width: 50% */
-    max-width: 30rem;
+    max-width: 75%
+    /* max-width: 30rem; */
     /* margin-top: 0; */
   }
 
@@ -810,8 +818,8 @@ img{
   .d-xlarge{
     /* padding: 1rem 11%; */
     /* display: flex; */
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    /* margin-bottom: 2rem; */
+    /* margin-top: 2rem; */
   }
 
   .shadow{
