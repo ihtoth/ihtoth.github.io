@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-9510171-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-9510171-4');
+    </script>
+
+    <meta charset="utf-8">
+    <title>Portfolio | Ildikó Tóth</title>
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Advent+Pro:400,700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Muli:300,400,700' rel='stylesheet'>
+
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Reset CSS-->
+    <link rel="stylesheet" href="./styles/reset.css" />
+
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/hero.css" />
+    <link rel="stylesheet" href="./styles/grids.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/unique.css" />
+    <link rel="stylesheet" href="./styles/subNav.css" />
+
+    <!-- jQuery import and Scrolling header JS-->
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="./js/scrollingHeader.js"></script>
+    <script src="./js/menuHelper.js"></script>
+    <!-- <script src="./js/subNav.js"></script> -->
+
+  </head>
+  <body id=home>
+    <header id="header" class="flexing whiteBg caseStudy subsection">
+      <a href="http://ihtoth.github.io" class="mainLogoContainer linkNoUnderline">
+        <!-- <div> -->
+          <img src="./images/icons/logo@1x.png" class="mainLogo "/>
+        <!-- </div> -->
+      </a>
+      <!-- For Mobile Size. Hide when viewport size > 600px?-->
+      <div class="headerText mobile caseStudy">
+        <h1>Ildikó Tóth</h1>
+        <h2>UX Designer in Portland, OR</h2>
+      </div>
+      <nav role="navigation" class="mobile">
+        <div id="menuToggle">
+          <!-- A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it.-->
+          <input type="checkbox" class=hamburgerMenuCheckbox/>
+          <!--      hamburgerMenu  -->
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="topMenu">
+            <li><a href="./index.html#projects">Projects</a></li>
+            <li><a href="./index.html#myJourney">My Journey</a></li>
+            <li><a href="./documents/IldikoResumeSeptember2018v8.pdf">Resume</a></li>
+            <li><a href="#footerTextAndIcons">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="desktopNav desktop">
+        <ul class="desktopMenu desktop">
+          <li><a href="./index.html#projects">Projects</a></li>
+          <li><a href="./index.html#myJourney">My Journey</a></li>
+          <li><a href="./documents/IldikoResumeSeptember2018v8.pdf">Resume</a></li>
+          <li><a href="#footerTextAndIcons">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <a href="#home" class="linkNoUnderline">
+      <div class="sticky roundCorners" id="linkToTop">  <!--This will float as one scrolls down. Clicking rolls up to top -->
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+        <div>Top</div>
+      </div>
+    </a>
+
+    <main>
+      <section id=intro_1 class="full-width-wrapper d-two-m-one-col-sym-grid subsection">
+          <div class="d-left-col">
+            <div class="h2h3HeadingWrapper">
+                <h1>REBRANDING INREACH SOLUTIONS</h1>
+            </div>
+          </div>
+          <div class="d-right-col">
+            <img src="./projects/inreach/images/InreachSolutionsQpgAd.png" class="d-large m-large centered" />
+            <img src="./projects/inreach/images/logoMug.png" class="d-large m-large centered desktop" />
+          </div>
+          <div class="d-left-col">
+            <div>
+            <p class="desktop">
+              Inreach Solutions is a tiny company with a fiercely motivated hazel-eyed lady at its helm. The love and care she extends to clients are way beyond “just business,” which creates wholesome trust between the company and its customers.
+              <strong>Passion and a playfulness were the most important feelings the director wanted to continue to convey while rebranding her company.</strong>
+            </p>
+            <h2>Problem</h2>
+            <p>
+              Their main product is SAM:
+              a salesforce-like Content Management System (CMS) for foster/adoption agencies.
+              The branding guidelines were sparse at best: they had a 90’s-look logo and some basic
+              colors they used in the product.
+              <strong>As a growing company, the need for a full design guide
+              became clear as multiple employees struggled to stay brand-consistent.</strong>
+            </p>
+            <h2>Solution</h2>
+            <p>
+              I met with the director to understand the feel the brand should continue to deliver. As a result, I redesigned their logo, chose a fitting typeface, created friendly icons for their new website, made a new letterhead & business card, among other marketing material.
+              All of these guidelines are in the design guide and implemented at <a href="http://inreachsolutions.com" target="_blank">inreachsolutions.com</a>.
+            </p>
+            </div>
+            <button class="primary cntr" onclick="window.open('./projects/inreach/documents/designGuide.pdf', '_blank')">Design Guide</button>
+          </div>
+
+      </section>
+      <section class="sectionHeaderWrapper lightGrey3Bg">
+        <h1 class="noPadding">The Logo</h1>
+      </section>
+      <section class="full-width-wrapper subsection">
+        <div class="d-one-m-one-col-grid">
+          <div class="h2h3HeadingWrapper">
+            <h2>Brainstorming</h2>
+            <h3>Should we start from scratch?</h3>
+          </div>
+          <p>
+            When first assessing what direction to take the logo, the director presented me with a business card with this icon.
+          </p>
+          <img src="./projects/inreach/images/InreachSolutionsOriginalLogo.png" class="d-medium m-medium centered"/>
+          <p>
+            I drew a few sketches as potential alternatives.
+          </p>
+          <img src="./projects/inreach/images/logoSketcheshighContrast.jpeg" class="d-large m-large centered"/>
+          <p>
+            We decided that the original image wasn’t a bad one, but needed a facelift that would be more modern and simple. </p>
+          <p>
+            I took the SVG of this little figure and opened it into illustrator, pulling the outline from the rest, and experimented with adding typography and color.</p>
+          <img src="./projects/inreach/images/icons/oldAndNewLogos.png" class="d-large m-large centered" />
+          <img src="./projects/inreach/images/icons/logosTextandColor.png" class="d-large m-large centered" />
+          <aside class="ideaBubble lastInSection">
+            <img src="./projects/cirrus/images/fabs/idea.png" class="icon"/>
+            <div class="roundCorner yellowLightBg triangleTop">
+              <p>
+                The most challenging part of the logo redesign was deciding what text should go along with the icon. Unfortunately, the name of the company is very long, and the software they offered had a different name altogether. In fact, most customers didn’t even recognize “InReach Solutions” - the name of the company - but knew exactly what ”SAM” - the name of the software - was.
+              </p>
+            </div>
+          </aside>
+      </section>
+      <section class="full-width-wrapper subsection">
+        <div class="d-one-m-one-col-grid">
+          <div class="h2h3h2h3HeadingWrapper">
+            <h2>Narrowing the options</h2>
+            <h3>Image + text size and placement</h3>
+          </div>
+          <p>
+            We decided that because SAM was the most recognizable, it would need to be the largest text. However, I had to wriggle in the company’s name somehow.
+          </p>
+          <img src="./projects/inreach/images/Logo_Showcase_Printing.jpg" class="d-large m-large centered"/>
+        <h3>Naming Consistency</h3>
+        <p>
+          Sometimes even the employees would shorten the company name to “InReach”. So which would it be? We’d have to stick with it, and stay consistent. </p>
+        <p>
+          I twisted the text in many directions, ran preference tests with the employees and director, as well as friends with a good eye for design.
+        </p>
+        <img src="./projects/inreach/images/icons/logowTabs.png" class="d-large m-large centered"/>
+        </div>
+      </section>
+      <section class="full-width-wrapper subsection lighterGreyBg">
+        <div class="d-two-m-one-col-asym-grid">
+          <div class="d-left-col">
+            <div>
+              <h2>Final Logo</h2>
+              <h3>Many variations & preference tests later</h3>
+            </div>
+            <p>
+              We finally settled on this one, which leads the eye in a circular fashion, and provides good contrast between the text and vector image. This version also uses the typeface Montserrat we selected.
+            </p>
+          </div>
+          <div class="d-right-col">
+            <img src="./projects/inreach/images/icons/LogowithAnnotations.png" class="d-large m-large centered"/>
+          </div>
+        </div>
+      </section>
+      <section class="sectionHeaderWrapper lightGrey3Bg">
+        <h1 class="noPadding">Typography</h1>
+      </section>
+      <section class="full-width-wrapper subsection">
+        <div class="d-one-m-one-col-grid">
+          <p>
+            Typography was another element of the design guide. I printed out a variety of heading/body text typography variations, and set it out in front of the team.
+          </p>
+          <img src="./projects/inreach/images/TypographyMashup.png" class="d-large m-large centered"/>
+        </div>
+      </section>
+      <section class="full-width-wrapper subsection lighterGreyBg">
+        <div class="d-two-m-one-col-asym-grid">
+          <div class="d-left-col">
+            <div>
+              <h2>Final Type Choice</h2>
+              <h3>Heading + Body</h3>
+            </div>
+            <p>
+              Debating the line-height, curvature, and readability, we picked out Montserrat as the heading type and Quattrocento Sans for body copy.  
+            </p>
+          </div>
+          <div class="d-right-col">
+            <img src="./projects/inreach/images/finalTypeChoices.png" class="d-large m-large centered"/>
+
+          </div>
+        </div>
+      </section>
+
+      <nav class="full-width-wrapper subsection projectNav">
+        <a class="" href="projectCopilot.html">
+          <div class="previousProject">
+            <i class="fa fa-caret-left fa-1x" aria-hidden="true"></i> &nbsp;
+            Copilot
+          </div>
+        </a>
+        <a class="" href="projectCirrus.html">
+          <div class="nextProject">
+            Cirrus &nbsp;  <i class="fa fa-caret-right fa-1x" aria-hidden="true"></i>
+          </div>
+        </a>
+      </nav>
+    </main>
+
+    <footer class="full-width-wrapper subsection">
+      <div class="text"> Like My Work? </div>
+      <button class="primary maxWidthSmall cntr flexContent" onclick="window.location.href='mailto:imildih@gmail.com?Subject=Hi! I like your portfolio...'">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+        <div> &nbsp; Say Hello</div>
+      </button>
+          <div id="footerTextAndIcons">
+            <!-- <li id="socialIcons"> -->
+              <ul>
+                <li class="text">
+                    Or find me on social media
+                </li>
+                <li>
+                  <a href=  "https://www.github.com/ihtoth" class="linkNoUnderline">
+                    <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://www.linkedin.com/in/ildikototh" class="linkNoUnderline">
+                    <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://www.twitter.com/ihtoth" class="linkNoUnderline">
+                    <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/ihtoth" class="linkNoUnderline">
+                    <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/ihtoth/" class="linkNoUnderline" >
+                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            <!-- </li> -->
+          </div>
+        </footer>
+
+      </body>
+
+      </html>

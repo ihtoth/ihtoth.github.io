@@ -196,7 +196,7 @@ main{
   background-color: #fff;
 }
 aside{
-  margin: 3rem auto;
+  margin: 2.5rem auto;
 }
 article{
   /* margin: 2rem auto; */
@@ -206,7 +206,7 @@ article{
 /****************************/
 h1{
   text-align: center;
-  padding: 0 0 5rem 0;
+  padding: 0 0 4rem 0;
   font-family: 'Advent Pro';
   font-size: 3.2rem;
   font-weight: 700;
@@ -221,6 +221,7 @@ h2{
   max-width: 1230px;
   /* margin: 0 auto 1em; */
   padding: 0 0 0.2em;
+  text-transform: uppercase;
   /* padding: 1.33334em 0 1.165em; */
 }
 
@@ -369,7 +370,7 @@ ul li.pSpacing:last-child{
 
 a{
   text-decoration: none;
-  color:var(--dark-grey);
+  color:var(--lime-green);
   font-weight: 600;
   transition: color 0.3s ease;
   /* display: inline-block; */
@@ -527,6 +528,10 @@ img{
 
 .m-medium{
   max-width: 30rem;
+}
+
+.m-small{
+  max-width: 50%;
 }
 
 .m-smaller{
@@ -729,7 +734,7 @@ img{
 
   .d-large{
     /* margin: 0 auto; */
-    width: 85%;
+    width: 100%;
   }
 
   .d-medium{
@@ -847,7 +852,7 @@ img{
 @media screen and (max-width: 413px){
 
   h2{
-      text-align: center;
+     font-size: 2.6rem;
   }
 
   h3{
