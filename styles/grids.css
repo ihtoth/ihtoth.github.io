@@ -264,6 +264,7 @@ a.card:after{
     padding-right: 10%;
     /* max-width: 160rem; */
     margin: 0 auto;
+  }
 
   .col-2{
     width: 80%;
@@ -284,11 +285,12 @@ a.card:after{
   .card{
     padding-top: 0;
     padding-bottom: 0;
-    border: none;
+    border: 0;
     box-shadow: none;
     pointer-events:none;
     cursor:default;
   }
+
   a.card button{
     pointer-events:auto;
     cursor:pointer;
@@ -310,7 +312,7 @@ a.card:after{
 
 
   .myJourney-grid{
-      margin: 0 20%;
+      margin: 0 18%;
   }
 
   .d-two-m-one-col-sym-grid{
