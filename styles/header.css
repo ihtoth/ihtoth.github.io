@@ -52,7 +52,9 @@ header ul{
   height: 6rem;
   display:block;
 }
-
+.desktopMenu>li:last-child{
+  margin-right: 0;
+}
 
 /********************************/
 /* ------ HAMBURGER MENU ------ */
@@ -198,6 +200,8 @@ header ul{
     top: 10px;
     right:10px;
   }
+
+
  .headerText.caseStudy h2{
    font-size: 1.4rem;
  }
@@ -244,6 +248,7 @@ header ul{
     margin-right: 1.8rem;
   }
 
+
   .desktopMenu a{
       font-weight: 300;
       color: var(--dark-grey);
@@ -251,6 +256,9 @@ header ul{
 
   .mainLogoContainer{
     width: 10%;
+  }
+  .headerText{
+    width: 40%;
   }
 }
 
