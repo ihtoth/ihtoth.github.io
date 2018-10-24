@@ -8,9 +8,12 @@ $(document).ready(function(){
 
   window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
+    //I'm scrolling up - reveal header
+    if (prevScrollpos > currentScrollPos || prevScrollpos <= headerHeight) { 
       header.style.top = "0";
-    } else {
+    }
+    //I'm scrolling down - hide header
+    else {
       header.style.top = "-".concat(headerHeight,"px");
     }
     prevScrollpos = currentScrollPos;
