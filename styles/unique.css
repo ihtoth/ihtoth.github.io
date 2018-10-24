@@ -98,6 +98,8 @@
 
 #CopilotBarChart .d3-t2-m1-col-grid{
   align-items: end;
+  grid-gap: 2rem;
+  margin: 2rem 0;
 }
 
 #CopilotKey{
@@ -110,7 +112,7 @@
 }
 
 #FPP .color, #FFP .color, #IP .color{
-  margin: 7% 5%;
+  margin: 3%;
   height: 100%;
   padding: 2% 0 2% 15%;
 }
@@ -136,7 +138,7 @@
   font-family: 'Roboto Condensed', Arial, sans-serif;
   text-transform: uppercase;
   color: var(--lime-green);
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 400;
   padding: 1rem;
 }
@@ -559,6 +561,17 @@
 
   #personaIntro{
     grid-area: intro;
+  }
+
+  #CopilotBarChart .d3-t2-m1-col-grid{
+    /* align-items: end; */
+    margin: unset;
+  }
+
+  #FPP .color, #FFP .color, #IP .color{
+    margin: 7% 5%;
+    height: 100%;
+    padding: 2% 0 2% 15%;
   }
 
   .centerInGrid{

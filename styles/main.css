@@ -209,7 +209,7 @@ h1{
   text-align: center;
   padding: 0 0 4rem 0;
   font-family: 'Advent Pro';
-  font-size: 3.2rem;
+  font-size: 2.88rem;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -233,8 +233,8 @@ h2{
 }
 
 h3{
-  /* text-transform: uppercase; */
-  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-size: 2.2rem;
   line-height: 100%;
   color: #2B2B27;
   font-weight: 300;
@@ -251,7 +251,7 @@ h3{
 h4{
   text-transform: uppercase;
   font-family: 'Roboto Condensed', Arial, sans-serif;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 400;
   padding-bottom: 0.5em;
   line-height: 100%;
@@ -295,7 +295,7 @@ strong{
 }
 
 p, span, ul, .quote{
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 150%;
   padding-bottom: 1.5rem;
 }
@@ -306,7 +306,7 @@ p.less-line-height{
 }
 
 .smallCaption{
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 140%;
   padding-bottom: 1.3rem;
 }
@@ -521,7 +521,6 @@ img{
 }
 
 .centered{
-  /* width: 50%; */
   margin: 0 auto;
   text-align: center;
 }
@@ -686,16 +685,16 @@ img{
 
   h2{
     /* padding-left: 10.6rem; */
-    font-size: 4.2rem;
+    font-size: 2.88rem;
   }
 
   h3{
-    font-size: 2.88rem;
+    font-size: 2.8rem;
     /* padding-bottom: 0.3em; */
   }
 
   h4{
-    font-size: 2.8rem;
+    font-size: 2.6rem;
   }
 
   h5{
@@ -706,7 +705,7 @@ img{
   }
 
   .card h3{
-    font-size: 2.8rem;
+    font-size: 2.6rem;
   }
 
   .card p{
@@ -714,21 +713,21 @@ img{
   }
 
   p, span{
-    font-size:1.6rem;
+    font-size:1.8rem;
   }
 
   .smallCaption{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   summary.whyIMovedOn::before, a.whyIMovedOn, summary.whatMotivatesMe::before, a.whatMotivatesMe, summary i{
     font-size:2.2rem;
   }
 
-  .quote{
+  /* .quote{
       font-size: 2.5rem;
       border-right-width: 1rem;
-  }
+  } */
 
   button{
     margin: 2.5rem 0;
@@ -769,17 +768,21 @@ img{
   }
 
   h1{
-    font-size: 5.972rem;
+    font-size: 4.147rem;
   }
 
 
   h2{
-    font-size: 4.147rem;
+    font-size: 3.456rem;
   }
 
   h3{
-
+    font-size: 2.4rem;
     }
+  h4{
+    font-size: 2.2rem;
+  }
+
 
   .h2h3HeadingWrapper{
     /* padding-bottom: 4rem; */

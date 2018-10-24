@@ -16,3 +16,30 @@
 .noMargin{
   margin: 0;
 }
+
+.topBottomPadding{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.topPadding{
+  padding-top: 1rem;
+}
+
+.bottomPadding{
+  padding-bottom:1rem;
+}
+
+
+@media screen and (min-width: 769px){
+  .topBottomPadding{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .topPadding{
+    padding-top: 3rem;
+  }
+
+  .bottomPadding{
+    padding-bottom:3rem;
+  }
+}
