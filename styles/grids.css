@@ -283,15 +283,6 @@ a.card:after{
     width:30%;
   }
 
-  .card{
-    padding-top: 0;
-    padding-bottom: 0;
-    border: 0;
-    box-shadow: none;
-    pointer-events:none;
-    cursor:default;
-  }
-
   a.card button{
     pointer-events:auto;
     cursor:pointer;
@@ -378,6 +369,15 @@ a.card:after{
     max-width:50%;
   } */
 
+  .card{
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 0;
+    box-shadow: none;
+    pointer-events:none;
+    cursor:default;
+  }
+  
   .col-1{
     width: 20%;
   }
