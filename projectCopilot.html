@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-9510171-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-9510171-4');
+    </script>
+
+    <meta charset="utf-8">
+    <title>Portfolio | Ildikó Tóth</title>
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Advent+Pro:400,700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Muli:300,400,700' rel='stylesheet'>
+
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Reset CSS-->
+    <link rel="stylesheet" href="./styles/reset.css" />
+
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/hero.css" />
+    <link rel="stylesheet" href="./styles/grids.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/unique.css" />
+    <!-- <link rel="stylesheet" href="./styles/subNav.css" /> -->
+    <link rel="stylesheet" href="./styles/videoPlayer.css" />
+      <link rel="stylesheet" href="styles/overrides.css" />
+
+    <!-- jQuery import and Scrolling header JS-->
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="./js/scrollingHeader.js"></script>
+    <script src="./js/menuHelper.js"></script>
+    <script src="./js/youTubePlayer.js"></script>
+    <script async src="https://www.youtube.com/iframe_api"></script>
+    <!-- <script src="./js/subNav.js"></script> -->
+
+  </head>
+  <body id=home>
+    <header id="header" class="flexing whiteBg caseStudy subsection">
+      <a href="http://ihtoth.github.io" class="mainLogoContainer linkNoUnderline">
+        <!-- <div> -->
+          <img src="./images/icons/logo@1x.png" class="mainLogo "/>
+        <!-- </div> -->
+      </a>
+      <!-- For Mobile Size. Hide when viewport size > 600px?-->
+      <div class="headerText mobile caseStudy">
+        <h1>Ildikó Tóth</h1>
+        <h2>UX Designer in Portland, OR</h2>
+      </div>
+      <nav role="navigation" class="mobile">
+        <div id="menuToggle">
+          <!-- A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it.-->
+          <input type="checkbox" class=hamburgerMenuCheckbox/>
+          <!--      hamburgerMenu  -->
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="topMenu">
+            <li><a href="./index.html#projects">Projects</a></li>
+            <li><a href="./index.html#myJourney">My Journey</a></li>
+            <li><a href="./documents/IldikoResumeSeptember2018v8.pdf">Resume</a></li>
+            <li><a href="#footerTextAndIcons">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="desktopNav desktop">
+        <ul class="desktopMenu desktop">
+          <li><a href="./index.html#projects">Projects</a></li>
+          <li><a href="./index.html#myJourney">My Journey</a></li>
+          <li><a href="./documents/IldikoResumeSeptember2018v8.pdf">Resume</a></li>
+          <li><a href="#footerTextAndIcons">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <a href="#home" class="linkNoUnderline">
+      <div class="sticky roundCorners" id="linkToTop">  <!--This will float as one scrolls down. Clicking rolls up to top -->
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+        <div>Top</div>
+      </div>
+    </a>
+
+    <main>
+      <section id=intro_1 class="full-width-wrapper subsection">
+        <div class=" d-two-m-one-col-sym-grid">
+          <div class="d-left-col">
+            <!-- <div class="h2h3HeadingWrapper"> -->
+                <h1 class="noPadding">Copilot</h1>
+            <!-- </div> -->
+          </div>
+          <div class="d-right-col">
+            <div class="video-responsive">
+              <div id="muteYouTubeVideoPlayer"></div>
+            </div>
+            <img src="./projects/copilot/images/copilotPreview.png" class="d-large m-large centered" />
+          </div>
+          <div class="d-left-col">
+            <div>
+            <p>
+              It is surprising that in this day and age, there isn’t a widespread app for bridging the gap between driving to nearest to your destination, parking, and actually arriving to your destination.
+            </p>
+          </div>
+          <div>
+            <h2>Problem</h2>
+            <p>
+              You know when you’re in a rush and need to park? You circle around, stressing out to find a (hopefully) cheap spot. Finding a place for $1/hr cheaper makes your day. When you do park, you don’t always know if you have to pay for it, where the parking meter is, or how much it will cost. Sometimes, you will not remember exactly where you parked, or when your ticket expires.
+            </p>
+          </div>
+          <div>
+            <h2>Solution</h2>
+            <p>
+              Copilot is an app that knows the street parking availability and can direct you to spots nearest to your destination that are most likely open. It reduces the stress of finding and paying for a spot by having the information and payment functionality at your fingertips, whether you are familiar with a city or not.
+            </p>
+            <p>
+              This was my final project at my Bloc apprenticeship, under the mentorship of <a href="https://www.linkedin.com/in/chrisgillis/" target="_blank">Chris Gillis</a>.
+            </p>
+            <button class="primary cntr" onclick="window.open('./projects/inreach/documents/designGuide.pdf', '_blank')">Design Guide</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sectionHeaderWrapper lightGrey3Bg">
+        <h1 class="noPadding">Research + Analysis</h1>
+      </section>
+      <section class="full-width-wrapper subsection">
+        <div class="d-one-m-one-col-grid">
+          <div class="h2h3HeadingWrapper">
+            <h2>User Survey</h2>
+            <h3>Who are my users, and what’s their take?</h3>
+          </div>
+          <p>
+            To get a better idea about my target audience, I put out a survey on <a href="http://www.freeonlinesurveys.com">freeonlinesurveys.com</a> (which isn’t actually free if you want some sweet features). I started out asking general questions such as <strong>“Do you drive a vehicle?”</strong>, and <strong>“How many times a week do you park a vehicle?”</strong> These questions helped me not only to guide testers to appropriate follow-up questions, but also to segment them into groups explaining their opinions and behaviors.
+          </p>
+          <p>
+            It turns out that the way people answered questions about most useful features of a parking app and frustrations while parking were highly correlated with frequency and whether or not they typically paid for parking.
+          </p>
+          <button class="secondary maxWidthMedium" onclick="window.open('https://drive.google.com/file/d/1bDpxIgPGvLcr7WKJ_cxuIi4huV3vUygm/view?usp=sharing', '_blank')">Raw Survey Responses</button>
+
+        </div>
+      </section>
+      <section class="full-width-wrapper subsection whiteGreyBg">
+        <div id=CopilotBarChart>
+          <h4>Most frustrating thing about parking a vehicle</h4>
+          <div class="d3-t2-m1-col-grid">
+              <div>
+                <img src="./projects/copilot/images/1st.png" class="cntr d-large m-large"/>
+              </div>
+              <div>
+                <img src="./projects/copilot/images/2nd.png" class="cntr d-large m-large"/>
+              </div>
+              <div>
+                <img src="./projects/copilot/images/3rd.png" class="cntr d-large m-large"/>
+              </div>
+          </div>
+          <div id="CopilotKey">
+            <div class="d3-t2-m1-col-grid">
+              <div id="FPP">
+                <div class="color"><p class="noPadding">Frequent Pay Parkers</p></div>
+              </div>
+              <div id="FFP">
+                <div class="color"><p class="noPadding">Frequent Free Parkers</p></div>
+              </div>
+              <div id="IP">
+                <div class="color"><p class="noPadding">Infrequent Parkers</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-two-m-one-col-sym-grid full-width-wrapper noBottomPadding">
+          <div class="d-left-col">
+            <h4>Top two features rated "That's Awesome" by over 90% of respondents</h4>
+            <ul class="checkmarks">
+              <li class="pSpacing">
+                <strong>Tells me how many spots there are in an area.</strong>
+              </li>
+              <li class="pSpacing">
+                <strong>Shows me where there are spots in an area.</strong>
+              </li>
+            </ul>
+            <p>
+              These features correlate as the solution to the highest rated frustration with parking which is “driving around to find a spot”.
+            </p>
+          </div>
+          <div class="d-right-col">
+            <img src="./projects/copilot/images/radarChart.png" class="d-large m-large centered" />
+          </div>
+          <div class="d-left-col">
+            <button class="secondary maxWidthMedium" onclick="window.open('https://docs.google.com/document/d/1CgTp_BUVYTg35Ii8N4a5MjuLTmCfC4kkt--wQ1CWE84/edit?usp=sharing', '_blank')">Full Survey Analysis</button>
+          </div>
+        </div>
+        </div>
+      </section>
+      <section class="full-width-wrapper subsection lightGreyBg">
+        <div class="d-one-m-one-col-grid">
+          <div class="h2h3HeadingWrapper">
+            <h2>Competitors</h2>
+            <h3>Selected Weaknesses and Threats</h3>
+          </div>
+          <p>
+            The goal is to capitalize (make my app do better) on as many of these as possible as long as they are relevant to my top user stories.
+          </p>
+        </div>
+        <section class="d3-t2-m1-col-grid full-width-wrapper">
+          <div>
+            <img src="./projects/copilot/images/icons/parkingKittyLogo.png" class="d-small m-medium bottomPadding"/>
+            <a href="http://www.parkingkitty.com" target="_blank"><h4 class="topPadding">Parking Kitty</h4></a>
+            <ul class="checkmarks">
+              <li class="pSpacing">
+                No Geolocation
+              </li>
+              <li class="pSpacing">
+                Can't use the app unless you have an account
+              </li>
+              <li class="pSpacing">
+                Creating a parking session takes too much time (many screens)
+              </li>
+            </ul>
+          </div>
+          <div>
+            <img src="./projects/copilot/images/icons/parkerLogo.png" class="d-small m-medium bottomPadding"/>
+            <a href="http://www.theparkerapp.com" target="_blank"><h4 class="topPadding">Parker</h4></a>
+            <ul class="checkmarks">
+              <li class="pSpacing">
+                Can’t pay for parking on the app.
+              </li>
+              <li class="pSpacing">
+                Shows street-park availability but is very slow, shows too much when zoomed out, and restricted to few locations
+              </li>
+              <li class="pSpacing">
+                Drains phone battery fast
+              </li>
+            </ul>
+          </div>
+          <div>
+            <img src="./projects/copilot/images/icons/bestParkingLogo.png" class="d-small m-medium bottomPadding"/>
+            <a href="http://www.bestparking.com" target="_blank"><h4 class="topPadding">Best Parking</h4></a>
+            <ul class="checkmarks">
+              <li class="pSpacing">
+                Recent update has produced many unhappy users
+              </li>
+              <li class="pSpacing">
+                Does not show parking history
+              </li>
+              <li class="pSpacing">
+                Does not integrate with parking maids
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="d-one-m-one-col-grid">
+          <button class="secondary cntr maxWidthMedium" onclick="window.open('https://docs.google.com/document/d/1_c6haV0KOUgcTC3zDDmS3vHJmmcU5_-Za5_36xyjgwE/edit?usp=sharing', '_blank')">Full Analysis</button>
+        </section>
+        </section>
+
+        <section class="full-width-wrapper subsection">
+          <div class="d-one-m-one-col-grid">
+            <div class="h2h3HeadingWrapper">
+              <h2>Personas</h2>
+              <h3>summarizing goals and frustrations</h3>
+            </div>
+            <p>
+              In line with research, I created three personas to embody the three profiles that emerged. The personas are based on a combination of the users who took my survey.
+            </p>
+
+          </div>
+          <section class="d3-t2-m1-col-grid full-width-wrapper">
+            <div id="Jonas">
+              <img src="./projects/copilot/images/Jonas.png" class="d-large m-medium bottomPadding"/>
+              <h4 class="topPadding">Frequent Pay Parker</h4>
+              <p class="smallCaption">
+                <strong>Goals</strong>
+              </p>
+              <p class="smallCaption">
+                For work, park somewhere that is no more than a 10 min. walk from his office. He doesn’t care if it’s garage or street.
+              </p>
+              <p class="smallCaption">
+                He wants to park as quickly as possible, and have the longest parking availability as possible.
+              </p>
+              <p class="smallCaption">
+                <strong>Frustrations</strong>
+              </p>
+              <p class="smallCaption">
+                It takes too long to park, he’s already spent so much time driving to work that the parking ordeal doesn’t help.
+              </p>
+              <p class="smallCaption">
+                Not knowing the the number spots open of a given street/area.
+              </p>
+              <p class="smallCaption">
+                Moving the car when allowed time has run out.
+              </p>
+            </div>
+            <div id="Dana">
+              <img src="./projects/copilot/images/Dana.png" class="d-large m-medium bottomPadding"/>
+              <h4 class="topPadding">Frequent Free Parker</h4>
+              <p class="smallCaption">
+                <strong>Goals</strong>
+              </p>
+              <p class="smallCaption">
+                She wants to know where to park before she goes, often to unfamiliar places between flights.
+              </p>
+              <p class="smallCaption">
+                She’s familiar with Stillwater, but would like to know where there are spots during events or if there are any closures from construction.
+              </p>
+              <p class="smallCaption">
+                <strong>Frustrations</strong>
+              </p>
+              <p class="smallCaption">
+                Different cities have different apps, requiring a lot of info input every time. Could be made simpler!
+              </p>
+              <p class="smallCaption">
+                Wishes app would just know how much it costs without having to put in some code or address.
+              </p>
+              <p class="smallCaption">
+                When she does have to find parking, even when free, she doesn’t know where to find it in other cities.
+              </p>
+            </div>
+            <div>
+              <img src="./projects/copilot/images/paige.png" class="d-large m-medium bottomPadding"/>
+              <h4 class="topPadding">Infrequent Parker</h4>
+              <p class="smallCaption">
+                <strong>Goals</strong>
+              </p>
+              <p class="smallCaption">
+                To avoid getting a ticket by knowing for sure I can park.
+              </p>
+              <p class="smallCaption">
+                Find a free spot fast (or cheap spot!)
+              </p>
+              <p class="smallCaption">
+                Save money by ending a session early.
+              </p>
+              <p class="smallCaption">
+                <strong>Frustrations</strong>
+              </p>
+              <p class="smallCaption">
+                Circling around trying to find parking. Where are those spots!?
+              </p>
+              <p class="smallCaption">
+                Interpreting confusing parking rules.
+              </p>
+              <p class="smallCaption">
+                She has to keep running back to her car to put more coins in the meter.
+              </p>
+              <p class="smallCaption">
+                Sometimes she forgets where she parked her car, which is stressful, especially when she thinks time is running out.
+              </p>
+
+            </div>
+          </section>
+          <section class="d-one-m-one-col-grid">
+            <button class="secondary cntr maxWidthMedium" onclick="window.open('https://www.figma.com/file/OZSGMGgg918SKVOXCSsfKSKU/Copilot-User-Personas?node-id=1%3A5', '_blank')">See Full Personas (Figma File)</button>
+          </section>
+      </section>
+      <section class="sectionHeaderWrapper lightGrey3Bg">
+        <h1 class="noPadding">Interaction Design</h1>
+      </section>
+
+
+      <nav class="full-width-wrapper subsection projectNav">
+        <div>
+          <!-- need div so nextProject link flexes to the right -->
+        </div>
+        <a class="" href="projectInreach.html">
+          <div class="nextProject">
+            Rebranding Inreach Solutions &nbsp;  <i class="fa fa-caret-right fa-1x" aria-hidden="true"></i>
+          </div>
+        </a>
+      </nav>
+    </main>
+    <footer class="full-width-wrapper subsection">
+      <div class="text"> Like My Work? </div>
+      <button class="primary maxWidthSmall cntr flexContent" onclick="window.open('mailto:imildih@gmail.com?Subject=Hi! I like your portfolio...', '_blank')">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+        <div> &nbsp; Say Hello</div>
+      </button>
+          <div id="footerTextAndIcons">
+            <!-- <li id="socialIcons"> -->
+              <ul>
+                <li class="text">
+                    Or find me on social media
+                </li>
+                <li>
+                  <a href=  "https://www.github.com/ihtoth" target="_blank" class="linkNoUnderline">
+                    <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://www.linkedin.com/in/ildikototh" target="_blank" class="linkNoUnderline">
+                    <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://www.twitter.com/ihtoth" target="_blank" class="linkNoUnderline">
+                    <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/ihtoth" target="_blank" class="linkNoUnderline">
+                    <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/ihtoth/" target="_blank" class="linkNoUnderline" >
+                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+          </div>
+        </footer>
+  </body>
+</html>

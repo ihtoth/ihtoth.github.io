@@ -30,6 +30,7 @@
   display: grid;
   margin-top: 3rem;
   max-width: 1440px;
+  align-items: top;
 }
 .d3-t2-m1-col-grid > * {
   padding: 0;
@@ -319,7 +320,7 @@ a.card:after{
     /* grid-auto-rows: 1fr; */
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 8.25%;
-    max-width: 140rem;
+    max-width: 1440px;
     margin:auto;
     /* margin-top: 4rem; */
     /* justify-content: center; */
@@ -328,7 +329,7 @@ a.card:after{
     /* grid-auto-rows: 1fr; */
     grid-template-columns: 4.5fr 5.5fr;
     grid-column-gap: 8.25%;
-    max-width: 140rem;
+    max-width: 1440px;
     margin: auto;
     /* margin-top: 4rem; */
     /* justify-content: center; */
@@ -343,6 +344,8 @@ a.card:after{
 
   .d3-t2-m1-col-grid{
     margin-top: 0;
+    max-width: 1440px;
+    margin: auto;
   }
 
 
@@ -398,6 +401,16 @@ a.card:after{
     /* max-width: 160rem; */
     margin: 0 auto;
   }
+}
+
+/******************************************/
+/* ------ For hi-def large screens ------ */
+/******************************************/
+
+@media screen and (min-width: 1440px){
+  .d3-t2-m1-col-grid{
+      /* margin: 0 auto; */
+    }
 }
 
 /**********************************/

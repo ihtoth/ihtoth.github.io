@@ -1,5 +1,5 @@
 /***************************************/
-/* ----- User Research Graphics ------ */
+/* ----- Cirrus User Research Graphics ------ */
 /***************************************/
 #Frustrations{
   display:flex;
@@ -87,11 +87,45 @@
 #CEKey li div:nth-child(2){
   padding-left: 3%;
 }
-/*******************************/
-/* ------ Subnavigation ------ */
-/*******************************/
+/************************************************/
+/* ------ Copilot User Research Graphics ------ */
+/************************************************/
+#CopilotBarChart.d-one-m-one-col-grid{
+  max-width: 1440px;
+  /* margin: 0 auto; */
+  align-items: end;
+}
 
+#CopilotBarChart .d3-t2-m1-col-grid{
+  align-items: end;
+}
 
+#CopilotKey{
+  margin: auto;
+  margin-top: 4rem;
+  border-top: 2px solid var(--medium-grey);
+  border-bottom: 2px solid var(--medium-grey);
+  max-width: 1440px;
+
+}
+
+#FPP .color, #FFP .color, #IP .color{
+  margin: 7% 5%;
+  height: 100%;
+  padding: 2% 0 2% 15%;
+}
+
+#FPP .color{
+  background: linear-gradient( to right,var(--light-teal), var(--light-teal) 14%, var(--white-grey) 14%, var(--white-grey));
+}
+
+#FFP .color{
+  background: linear-gradient( to right,var(--bright-teal), var(--bright-teal) 14%, var(--white-grey) 14%, var(--white-grey));
+}
+
+#IP .color{
+  background: linear-gradient( to right,var(--medium-teal), var(--medium-teal) 14%, var(--white-grey) 14%, var(--white-grey));
+}
 
 /**********************************/
 /* ----- Project Navigation ----- */
@@ -117,7 +151,7 @@
 .nextProject:hover, .previousProject:hover{
   /* border-top: 0.1rem var(--lime-green) solid;
   border-bottom: 0.1rem var(--lime-green) solid; */
-  padding: 0.9rem 1rem;
+  /* padding: 0.9rem 1rem; */
   transform: scale(1.02);
   background-color: var(--light-green);
 
@@ -577,7 +611,7 @@
   }
 
   .nextProject:hover, .previousProject:hover{
-    padding: 1.9rem 1rem;
+    /* padding: 1.9rem 1rem; */
   }
 
 

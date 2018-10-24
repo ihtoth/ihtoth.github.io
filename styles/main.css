@@ -20,6 +20,7 @@
   --dark-teal: #004C3E;
   --medium-teal:#009176;
   --bright-teal:#01D7B0;
+  --light-teal: #BAF4E9;
 
 
   --dark-orange: #AC5200;
@@ -252,10 +253,10 @@ h4{
   font-family: 'Roboto Condensed', Arial, sans-serif;
   font-size: 2.2rem;
   font-weight: 400;
-  /* padding: 0.7em 0; */
+  padding-bottom: 0.5em;
   line-height: 100%;
-  margin: 0 auto;
-  max-width: 128rem;
+  /* margin: 0 auto; */
+  max-width: 1440rem;
 
 }
 
@@ -300,13 +301,14 @@ p, span, ul, .quote{
 }
 
 
-p{
-  /* max-width: 67rem; */
-  /* margin: 0 auto; */
-}
-
 p.less-line-height{
   line-height: 120%;
+}
+
+.smallCaption{
+  font-size: 1.4rem;
+  line-height: 140%;
+  padding-bottom: 1.3rem;
 }
 
 /* #myJourney p{
@@ -327,13 +329,13 @@ ul li.pSpacing{
   padding-bottom: 1em;
 }
 ul li.pSpacing:last-child{
-  padding-bottom: 0;
+  padding-bottom: 0.5rem;
 }
 
 ul.checkmarks li{
   background-image: url(../images/icons/checkmarkSmaller.png);
   background-repeat: no-repeat;
-  background-position: 0 0.5rem;
+  background-position: 0 0.3rem;
   padding-left: 4rem;
 }
 
@@ -712,7 +714,11 @@ img{
   }
 
   p, span{
-    font-size:2rem;
+    font-size:1.6rem;
+  }
+
+  .smallCaption{
+    font-size: 1.4rem;
   }
 
   summary.whyIMovedOn::before, a.whyIMovedOn, summary.whatMotivatesMe::before, a.whatMotivatesMe, summary i{
@@ -726,8 +732,8 @@ img{
 
   button{
     margin: 2.5rem 0;
-    font-size: 2.4rem;
-    height:5rem;
+    font-size: 2.2rem;
+    height:4rem;
   }
 
   button.maxWidthSmall{
@@ -753,8 +759,13 @@ img{
   }
 
   p, span, ul{
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 160%;
+  }
+  .smallCaption{
+    font-size: 1.6rem;
+    line-height: 140%;
+    padding-bottom: 1.4rem;
   }
 
   h1{
@@ -784,10 +795,10 @@ img{
   date{
     font-size: 1.8rem;
   }
-  .quote{
+  /* .quote{
       margin-right: -5%;
       font-size: 3rem;
-  }
+  } */
 
   .d-xlarge{
     /* padding: 1rem 11%; */
@@ -830,9 +841,9 @@ img{
   }
 
   button{
-    height: 5.5rem;
+    height: 5rem;
     border-radius: 0.7rem;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     margin: 3rem 0;
   }
   button.maxWidthLarge{
@@ -885,19 +896,4 @@ img{
    flex-direction: row;
   }
 
-}
-/* Overrides to standard styles*/
-.noTopPadding{
- padding-top: 0;
-}
-
-.noTopMargin{
-  margin-top: 0;
-}
-.noBottomMargin{
-  margin-bottom: 0;
-}
-
-.noMargin{
-  margin: 0;
 }
