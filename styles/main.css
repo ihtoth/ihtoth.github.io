@@ -335,8 +335,9 @@ ul li.pSpacing:last-child{
 ul.checkmarks li{
   background-image: url(../images/icons/checkmarkSmaller.png);
   background-repeat: no-repeat;
-  background-position: 0 0.3rem;
-  padding-left: 4rem;
+  background-position: 0 0.45rem;
+  background-size: 4%;
+  padding-left: 5%;
 }
 
 /* .quote{
@@ -558,9 +559,9 @@ img{
 /* .shapeContainer img{
   display: inline;
 } */
-.desktop{
+/* .desktop{
   display:none;
-}
+} */
 
 
 
@@ -655,7 +656,25 @@ img{
   /* color: #fff; */
 }
 
+/**********************************/
+/* ------ Screen highlights ------*/
+/**********************************/
+ .highlight{
+   background-color: #FADB6B;
+   border: 1px #FADB6B solid;
+   border-radius: 50%;
+   min-width: 3.5rem;
+   min-height: 3.5rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.3em;
+   font-weight: 600;
+ }
 
+ /* .scrollCardCaption{
+   display: flex;
+ } */
 
 /**********************************************/
 /* ------ For Medium Screens and above ------ */
@@ -740,7 +759,6 @@ img{
   }
   ul.checkmarks li{
     background-image: url(../images/icons/checkmark.png);
-    padding-left: 5rem;
   }
 
 
@@ -750,12 +768,10 @@ img{
 /***********************************/
 @media screen and (min-width: 769px){
 
-  .desktop{
+  /* .desktop{
     display:block;
-  }
-  .mobile{
-    display:none;
-  }
+  } */
+
 
   p, span, ul{
     font-size: 1.8rem;
@@ -781,6 +797,8 @@ img{
     }
   h4{
     font-size: 2.2rem;
+    max-width: calc(1440px - 14%);
+    /* margin: 0 auto; */
   }
 
 
@@ -897,6 +915,15 @@ img{
   }
   .m-horizontal{
    flex-direction: row;
+  }
+
+
+  ul.checkmarks li{
+    /* background-image: url(../images/icons/checkmarkSmaller.png);
+    background-repeat: no-repeat;
+    background-position: 0 0.45rem; */
+    background-size: 6%;
+    padding-left: 8%;
   }
 
 }

@@ -1,34 +1,39 @@
 /* Overrides to standard styles*/
-.noTopPadding{
- padding-top: 0;
-}
-.noBottomPadding{
-  padding-bottom: 0;
-}
+@media screen and (max-width: 768px){
+  .noTopPadding{
+   padding-top: 0;
+  }
+  .noBottomPadding{
+    padding-bottom: 0;
+  }
 
-.noTopMargin{
-  margin-top: 0;
-}
-.noBottomMargin{
-  margin-bottom: 0;
-}
+  .noTopMargin{
+    margin-top: 0;
+  }
+  .noBottomMargin{
+    margin-bottom: 0;
+  }
 
-.noMargin{
-  margin: 0;
-}
+  .noMargin{
+    margin: 0;
+  }
 
-.topBottomPadding{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.topPadding{
-  padding-top: 1rem;
-}
+  .topBottomPadding{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .topPadding{
+    padding-top: 2rem;
+  }
 
-.bottomPadding{
-  padding-bottom:1rem;
-}
+  .bottomPadding{
+    padding-bottom:1rem;
+  }
 
+  .desktop{
+    display:none;
+  }
+}
 
 @media screen and (min-width: 769px){
   .topBottomPadding{
@@ -42,4 +47,10 @@
   .bottomPadding{
     padding-bottom:3rem;
   }
+  .mobile{
+    display:none;
+  }
+  /* .desktop{
+    display:inherit;
+  } */
 }
