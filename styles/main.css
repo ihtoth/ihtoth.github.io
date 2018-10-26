@@ -919,9 +919,7 @@ img{
 
 
   ul.checkmarks li{
-    /* background-image: url(../images/icons/checkmarkSmaller.png);
-    background-repeat: no-repeat;
-    background-position: 0 0.45rem; */
+    background-position: 0 0.5rem;
     background-size: 6%;
     padding-left: 8%;
   }
