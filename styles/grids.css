@@ -32,7 +32,7 @@
   align-items: top;
 }
 .d3-t2-m1-col-grid{
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
 }
 .d3-t2-m1-col-grid > * {
   padding: 0;
