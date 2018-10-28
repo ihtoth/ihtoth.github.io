@@ -7,6 +7,11 @@
     padding-bottom: 0;
   }
 
+  .noRLPaddingMobile{
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   .noTopMargin{
     margin-top: 0;
   }
@@ -25,6 +30,11 @@
   .topPadding{
     padding-top: 2rem;
   }
+/* 
+  .marginRLMobile{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  } */
 
   .bottomPadding{
     padding-bottom:1rem;

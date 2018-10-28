@@ -34,6 +34,7 @@
 .d3-t2-m1-col-grid{
   /* margin-top: 3rem; */
 }
+
 .d3-t2-m1-col-grid > * {
   padding: 0;
 }
@@ -168,10 +169,15 @@ a.card:after{
   -webkit-overflow-scrolling: touch;
 }
 
-.subsection .d-three-m-scroll-col-grid{
+.d-three-m-scroll-col-grid>*:first-child{ margin-left: 2rem; }
+.d-three-m-scroll-col-grid>*:last-child{ margin-right: 2rem; }
+
+/* .subsection .d-three-m-scroll-col-grid{
   padding-left: 0;
   padding-right: 0;
-}
+} */
+
+
 
 .d-three-m-scroll-col-grid::-webkit-scrollbar {
   display: none;
@@ -183,9 +189,10 @@ a.card:after{
   margin-right: 3rem;
   /* border-bottom: 2px dotted var(--light2-grey); */
 }
-.scrollCard>*:nth-child(2){
+.scrollCard>*:nth-child(2){ /*for the first scrollCardCaption*/
   padding-top:1rem;
 }
+
 
 .scrollCardCaption{
   display: flex;
@@ -352,6 +359,9 @@ a.card:after{
 
   }
 
+  .d-three-m-scroll-col-grid>*:first-child{ margin-left: 0; }
+  .d-three-m-scroll-col-grid>*:last-child{ margin-right: 0; }
+
   /* .subsection .d-three-m-scroll-col-grid{
     padding-left: initial;
     padding-right: initial;
@@ -367,10 +377,10 @@ a.card:after{
     padding-top:2rem;
   }
 
-  .scrollCardCaption{
+  .scrollCardImg{
+    padding-top: 2rem;
     padding-bottom: 2rem;
   }
-
 
   .personas-grid{
     grid-template-areas:
