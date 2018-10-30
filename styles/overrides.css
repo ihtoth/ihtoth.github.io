@@ -30,7 +30,7 @@
   .topPadding{
     padding-top: 2rem;
   }
-/* 
+/*
   .marginRLMobile{
     margin-left: 2rem;
     margin-right: 2rem;
@@ -46,6 +46,24 @@
 }
 
 @media screen and (min-width: 769px){
+  .noTopPadding{
+   padding-top: 0;
+  }
+  .noBottomPadding{
+    padding-bottom: 0;
+  }
+
+  .noTopMargin{
+    margin-top: 0;
+  }
+  .noBottomMargin{
+    margin-bottom: 0;
+  }
+
+  .noMargin{
+    margin: 0;
+  }
+  
   .topBottomPadding{
     padding-top: 3rem;
     padding-bottom: 3rem;

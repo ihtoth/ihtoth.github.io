@@ -322,7 +322,7 @@ a.card:after{
 
   .d-two-m-one-col-sym-grid, .d-two-m-one-col-asym-grid{
     grid-column-gap: 8.25%;
-    max-width: 1440px;
+    max-width: 1040px;
     margin:auto;
     align-items: center;
   }
@@ -341,13 +341,14 @@ a.card:after{
   }
 
   .d-right-col{
-    grid-area: 1 / 2 / span 2 /2;
+    grid-area: 1 / 2 / span 3 /2;
     margin-bottom: 0;
   }
 
   .d3-t2-m1-col-grid, .d-three-m-scroll-col-grid{
     margin-top: 0;
-    max-width: calc(1440px - 14%);
+    max-width: 1040px;
+    /* calc(1040px - 14%); */
     margin: auto;
   }
 
@@ -439,7 +440,7 @@ a.card:after{
   .d3-t2-m1-col-grid,.d-three-m-scroll-col-grid, h4{
       /* margin: 0 auto; */
       /* max-width: calc(1440px - 14%); */
-      max-width: none;
+      /* max-width: none; */
 
     }
 }

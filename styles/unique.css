@@ -1,6 +1,10 @@
 /***************************************/
 /* ----- Cirrus User Research Graphics ------ */
 /***************************************/
+#CirrusGraphs{
+  max-width: 1040px;
+  margin: auto;
+}
 #Frustrations{
   display:flex;
   flex-direction: column;
@@ -90,8 +94,11 @@
 /************************************************/
 /* ------ Copilot User Research Graphics ------ */
 /************************************************/
+#CopilotBarChart{
+  max-width: 1040px;
+}
 #CopilotBarChart.d-one-m-one-col-grid{
-  max-width: 1440px;
+  /* max-width: 1440px; */
   /* margin: 0 auto; */
   align-items: end;
 }
@@ -340,22 +347,23 @@
 
 #Samira{
   background-image: url(../projects/cirrus/images/photos/samira.jpeg);
-  grid-area: card1;
+  /* grid-area: card1; */
 }
 
 #Raul{
-  background-image: url(../projects/cirrus/images/photos/raulCropped.jpeg);
-  grid-area: card2;
+  background-image: url(../projects/cirrus/images/photos/raulLowSat2.png);
+  /* grid-area: card2; */
 }
 
 #William{
   background-image: url(../projects/cirrus/images/photos/william2Color.png);
-  grid-area: card3;
+  /* grid-area: card3; */
+  color: #FFF;
 }
 
-#Raul .title{
+/* #Raul .title{
   text-align: right;
-}
+} */
 
 .overlay, .title{
   padding: 2rem 2rem 0;

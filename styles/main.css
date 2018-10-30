@@ -256,7 +256,7 @@ h4{
   padding-bottom: 0.5em;
   line-height: 100%;
   /* margin: 0 auto; */
-  max-width: 1440rem;
+  max-width: 1040rem;
 
 }
 
@@ -797,7 +797,8 @@ img{
     }
   h4{
     font-size: 2.2rem;
-    max-width: calc(1440px - 14%);
+    max-width: 1040px;
+    /* calc(1040px - 14%); */
     /* margin: 0 auto; */
   }
 
@@ -906,9 +907,9 @@ img{
     font-size: 2rem;
   }
 
-  h4.imgAbove{
+  /* h4.imgAbove{
     text-align:center;
-  }
+  } */
 
   .lnk{
     font-size: 2rem;
