@@ -331,111 +331,159 @@
         <h1 class="noPadding">Interaction Design</h1>
       </section>
     </section>
-      <section id=userFlows class="full-width-wrapper subsection lighterGreyBg">
-        <div class="h2h3HeadingWrapper">
-          <h2>User Flows</h2>
-          <h3>Connecting the dots... and other shapes</h3>
+      <section id=userFlows class="full-width-wrapper subsection">
+        <div class="d-one-m-one-col-grid">
+          <div class="h2h3HeadingWrapper">
+            <h2>User Flows</h2>
+            <h3>Connecting the dots... and other shapes</h3>
+          </div>
+          <div>
+            <p>
+              Sketching allowed me to be messy, I brainstormed how a user might go about completing tasks such as signing up, adding content, and sharing something.
+            </p>
+            <p>
+              This was the part where I had interaction ideas handwritten sideways, upside down, with arrows pointing a lot of directions. Distilling the essence, I used draw.io to digitize the flows.
+            </p>
+          </div>
         </div>
-        <p>
-          I used sketching to be messy, brainstorming on how a user might go about completing tasks such as signing up, adding content, and sharing something.
-        </p>
-        <img id=OnboardingSketch src="./projects/cirrus/images/sketches/onboarding.png" class="centered m-large d-large"/>
-        <p>
-          Distilling the essence, I used draw.io to digitize the flows.
-        </p>
-        <div class="d-two-m-one-col-grid">
-          <div class="">
-            <h4 class="centered">Sharing</h4>
+        <section class="d3-t2-m1-col-grid topPadding">
+          <div class="title bottomPadding lightGreyBorder">
+            <h4 class="">Onboarding</h4>
+            <img id=OnboardingSketch src="./projects/cirrus/images/sketches/onboarding.png" class="centered m-large d-large"/>
+          </div>
+          <div class=" title lightGreyBorder">
+            <h4 class="">Sharing</h4>
             <img src="./projects/cirrus/images/screenshots/sharingFlow.png" class="centered m-large d-large noTopMargin"/>
           </div>
-          <div class="">
-            <h4 class="centered">Adding an Item</h4>
+          <div class="title lightGreyBorder">
+            <h4 class="">Adding an Item</h4>
             <img src="./projects/cirrus/images/screenshots/addingAnItem.png" class="centered m-large d-large noTopMargin" />
           </div>
-        </div>
+        </section>
         <aside class="ideaBubble lastInSection">
           <img src="./projects/cirrus/images/fabs/idea.png" class="icon"/>
-          <div class="roundCorner yellowBg triangleTop">
+          <div class="roundCorner yellowLightBg triangleTop">
             <p>
               I ended up deviating from both of these user flows. Here is what I learned: the flows are just to get the first draft out the door. As I compared other products and tested Cirrus with users, the interactions evolved to be simpler. For example, I ditched the ‘user-dialogue’ when uploading something.
             </p>
           </div>
         </aside>
-        <div class="one-col-cntr">
-          <button class="secondary cntr" onclick="window.open('https://drive.google.com/drive/folders/1SjWGktNO9YpNFYqAIBhTeknM_sFcEnbk?usp=sharing', '_blank')">More User Flows</button>
+        <div class="d-one-m-one-col-grid topPadding">
+          <button class="secondary centered maxWidthMedium" onclick="window.open('https://drive.google.com/drive/folders/1SjWGktNO9YpNFYqAIBhTeknM_sFcEnbk?usp=sharing', '_blank')">More User Flows</button>
           <!-- <a target="_blank"class="lnk" href="https://drive.google.com/drive/folders/1SjWGktNO9YpNFYqAIBhTeknM_sFcEnbk?usp=sharing">More User Flows</a> -->
         </div>
       </section>
-      <section id=contentStrategy class="full-width-wrapper subsection lightGreyBg">
-        <h2>Content Strategy</h2>
-        <h3 class="one-col-content">Mapping out every single page.</h3>
-        <p>
-          So far, we have the user flows according to user personas and user stories. To help me with wireframing, I needed to map out my content into specific pages. This is called the sitemap, which just outlines proposed content of each page, and how they may be connected to one-another. I used an app called Flow Mapp.
-        </p>
-        <img class="d-xlarge desktop" src="./projects/cirrus/images/screenshots/siteMap.png" />
-        <p class="desktop caption">
-          <span class="green-bright caption">Green</span> = Items depicted on wireframe, and in high fidelity mockups.<br />
-          <span class="turquoise caption">Turquoise</span> = Visible to non-cirrus users.<br />
-          <span class="purple caption">Purple</span> = Not implemented at this time.
-        </p>
-        <div class="one-col-cntr">
-          <button class="secondary cntr" onclick="window.open('https://app.flowmapp.com/share/169870cd8b42e541df547457522f28c5', '_blank')">See Full Sitemap</button>
-          <!-- <a target="_blank"class="lnk" href="https://app.flowmapp.com/share/169870cd8b42e541df547457522f28c5">See full sitemap</a> -->
+      <section id=contentStrategy class="full-width-wrapper subsection lighterGreyBg desktop">
+        <div class="d-one-m-one-col-grid">
+          <div class="h2h3HeadingWrapper">
+            <h2>Content Strategy</h2>
+            <h3>Mapping out every single page.</h3>
+          </div>
+          <p>
+            To help me with wireframing, I needed to map out my content into specific pages. Using <a href="http://www.flowmapp.com" target="_blank">Flow Mapp </a>, I outlined the content of each page, and how they may be connected to one-another.
+          </p>
+        </div>
+
+        <img class="d-xlarge" src="./projects/cirrus/images/screenshots/siteMapTransparent.png" />
+        <div class="d-one-m-one-col-grid">
+          <p>
+            <span class="green-bright caption">Green</span> = Items depicted on wireframe, and in high fidelity mockups.<br />
+            <span class="turquoise caption">Turquoise</span> = Visible to non-cirrus users.<br />
+            <span class="purple caption">Purple</span> = Not implemented at this time.
+          </p>
+            <button class="primary centered" onclick="window.open('https://app.flowmapp.com/share/169870cd8b42e541df547457522f28c5', '_blank')">See Full Sitemap</button>
         </div>
 
 
       </section>
-      <section id=wireframing class="whiteBg">
-        <article class="full-width-wrapper subsection">
-        <h2>Wireframing</h2>
-          <h3 class="one-col-content">Never enough X-es, O-s, boxes, and Squiggles</h3>
+      <section id=wireframing class="full-width-wrapper subsection">
+        <article class="d-one-m-one-col-grid">
+          <div class="h2h3HeadingWrapper">
+            <h2>Wireframing</h2>
+            <h3 class="one-col-content">Never enough X-es, O-s, boxes, and Squiggles</h3>
+          </div>
           <p>
-            Finally! Lots of research has gone into getting to this point. I relied heavily on my sitemap, user flows, and user stories as I started to sketch out what my pages might look like using old fashioned paper and pen. These are different ideas how I may lay out my user dashboard.
+            I relied heavily on my sitemap, user flows, and user stories as I started to sketch out what my pages might look like using old fashioned paper and pen. These are different ideas for the user dashboard.
           </p>
           <img src="./projects/cirrus/images/sketches/wireframeSketches.png" class="centered m-large" />
         </article>
-        <article  class="full-width-wrapper subsection">
-          <h3>Digitize and Iterate</h3>
-          <div class="d-two-m-one-col-grid">
-            <div class="">
-              <h4 class="noTopPadding">Upload? Add? Save? Import?</h4>
+      </section>
+        <article  class="full-width-wrapper lighterGreyBg">
+          <div class="subsection">
+              <h3>Iterating - Upload? Add? Save? Import?</h3>
               <p>
-                Button to upload says “Import” vs. “Add” with dropdown in second version. Seems simple, but trying to find the right wording for this action ended up being the longest saga involving multiple user tests.
+                Trying to find the right wording and placement for this action ended up being the longest testing-saga from the first digital wireframe to high-fidelity prototype tests.
               </p>
-            </div>
-            <div class="">
-              <img src="./projects/cirrus/images/screenshots/wireframeImport.png" class="noTopMargin centered m-large d-large"/>
-              <div class="downTriangleArrow"></div>
-              <img src="./projects/cirrus/images/screenshots/wireframeAdd.png" class="centered m-large d-large noTopMargin"/>
-            </div>
           </div>
-          <aside class="ideaBubble">
-            <img src="./projects/cirrus/images/fabs/idea.png" class="icon" />
-            <div class="roundCorner yellowBg triangleTop">
+          <section class="subsection noRLPaddingMobile">
+            <div class="d-three-m-scroll-col-grid">
+              <div class="scrollCard">
+                <div class="scrollCardImg">
+                  <img src="./projects/cirrus/images/screenshots/uploadWordingV1.png" class="centered m-medium d-large"/>
+                </div>
+                <p class="scrollCardCaption smallCaption noTopPadding">
+                  Started with Import
+                </p>
+              </div>
+              <div class="scrollCard">
+                <div class="scrollCardImg">
+                  <img src="./projects/cirrus/images/screenshots/uploadWordingV2.png" class=" m-medium d-large"/>
+                </div>
+                <p class="scrollCardCaption smallCaption noTopPadding">
+                  Add is more familial, less techy-sounding
+                </p>
+              </div>
+              <div class="scrollCard">
+                <div class="scrollCardImg">
+                  <img src="./projects/cirrus/images/screenshots/uploadWordingV3.png" class=" m-medium d-large"/>
+                </div>
+                <p class="scrollCardCaption smallCaption noTopPadding">
+                  This placement tested to be more discoverable
+                </p>
+              </div>
+              <div class="scrollCard">
+                <div class="scrollCardImg">
+                  <img src="./projects/cirrus/images/screenshots/uploadWordingV4.png" class=" m-medium d-large"/>
+                </div>
+                <p class="scrollCardCaption smallCaption noTopPadding">
+                  Upload made more sense to my users.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="subsection topPadding">
+            <aside class="ideaBubble">
+              <img src="./projects/cirrus/images/fabs/idea.png" class="icon" />
+              <div class="roundCorner yellowLightBg triangleTop">
+                <p>
+                  Although I was trying to be minimalist, the test results showed that the extra couple words "file or folder" were necessary. Without them, some less tech-savvy testers said the single word "upload" was too ambiguous.
+                </p>
+              </div>
+            </aside>
+          </section>
+        </article>
+        <article class="full-width-wrapper subsection">
+          <div class="d-two-m-one-col-asym-grid">
+            <div class="d-left-col">
+              <h3 class="noTopPadding">Testing the Mockups</h3>
+              <h4>The Good</h4>
               <p>
-                I finally ended up using “Add folder or file”. Although I was trying to be minimalist, the test results showed that the extra couple words were necessary. Without them, some testers didn’t quite get it.
+                About half of my feedback was positive, including praise of the visual feedback when users interacted with the interface: sharing success, uploading progress, hover behavior.
+              </p>
+              <h4>The Not So Good</h4>
+              <p>
+                Test takers had trouble with how to move items. In this screenshot, the folder icon wasn’t understood. Instinctively, they said they should be able to drag the name of the file over a folder to drop it in. This included not only the line item, but in the breadcrumbs too. <strong>When moving items, dragging is more intuitive than clicking buttons.</strong>
               </p>
             </div>
-          </aside>
-          <div class="d-two-m-one-col-grid">
-            <div class="">
-              <h4 class="noTopPadding">Removing Clutter.</h4>
-              <p>
-                In my first iteration, the quick tools were always visible. I revised the mockup so they only appear for a row when hovering on a row (desktop solution). For touch-only screens and mobile, a different solution would have to be implemented.
-              </p>
+            <div class="d-right-col">
+              <img src="./projects/cirrus/images/screenshots/wireframeImageView.png" class="noTopMargin centered m-large d-large bottomPadding"/>
+              <button class="primary centered" onclick="window.open('https://bloc.mybalsamiq.com/projects/ildikototh/grid', '_blank')">See all wireframes</button>
             </div>
-            <div class="">
-              <img src="./projects/cirrus/images/screenshots/alwaysViewQuickTools.png" class="noTopMargin centered m-large d-large"/>
-              <div class="downTriangleArrow"></div>
-              <img src="./projects/cirrus/images/screenshots/hoverQuickTools.png" class="centered m-large d-large noTopMargin"/>
-            </div>
-          </div>
-          <div class="one-col-cntr">
-            <a target="_blank"href="https://bloc.mybalsamiq.com/projects/ildikototh/grid" class="lnk">More Wireframes</a>
           </div>
         </article>
       </section>
-      <section id=mockups class="yellowWhiteBg full-width-wrapper subsection">
+
+      <!-- <section id=mockups class="yellowWhiteBg full-width-wrapper subsection">
         <h2>Mockups</h2>
         <h3 class="one-col-content">Aka wireframes round-two.</h3>
         <p>
@@ -453,29 +501,39 @@
         <div class="one-col-cntr">
           <a target="_blank"href="https://invis.io/EUFKV2L4PNB" class="lnk">Invision B+W Mockups</a>
         </div>
-      </section>
-      <section id="testingMockups" class="yellowLightBg full-width-wrapper subsection">
+      </section> -->
+      <!-- <section id="testingMockups" class="yellowLightBg full-width-wrapper subsection">
         <h3 class="one-col-content">Testing the Mockups</h3>
-        <!-- <img class="m-small d-small centered" src="./projects/cirrus/images/photos/remoteTesting.png" /> -->
+        <img class="m-small d-small centered" src="./projects/cirrus/images/photos/remoteTesting.png" />
         <p>
           For consistency, I created a <a target="_blank"href="https://drive.google.com/open?id=1p0vUldQmuBybq18zkS-mb7S2wIjrCZieiKfRbJT1nRU">testing script</a> to use. This was the first time my ideas saw light of day. With a mixture of nervousness, excitement, and kicking myself to stop making perfectionist tweaks, I coordinated remote and in-person tests, asking users to complete relatively “simple” tasks associated with the top user stories from my research phase.
         </p>
         <div class="one-col-cntr">
           <a href="#round1MockupTesting" class="lnk">See Results</a>
         </div>
-      </section>
+      </section> -->
     <!-- </section> -->
     <section id=branding_1>
       <section class="sectionHeaderWrapper lightGreyBg">
         <h1 class="noPadding">Branding</h1>
       </section>
-      <section id=sketching class="full-width-wrapper subsection whiteBg">
-        <h2>Sketching</h2>
-        <h3 class="one-col-content">Best done on the couch with a cup of tea.</h3>
-        <p>
-          Taking a pause from the layout and content iterations, I dove into creating a brand for Cirrus. At this time, I already had the name “Cirrus” in mind. Cirrus is a type of high-flying light-whispy cloud. I wanted my users to feel light, elegance when using the application. I used a mind map to come up with more words and ideas to accompany Cirrus.
-        </p>
-        <img src="./projects/cirrus/images/sketches/mindmap.png" class="centered m-large d-large" />
+      <section id=sketching class="full-width-wrapper subsection">
+        <div class="d-two-m-one-col-asym-grid">
+          <div class="d-left-col">
+            <div class="h2h3HeadingWrapper">
+              <h2>Sketching</h2>
+              <h3 class="one-col-content">Best done on the couch with a cup of tea.</h3>
+            </div>
+            <p>
+              Taking a pause from the layout and content iterations, I dove into creating a brand for Cirrus. At this time, I already had the name “Cirrus” in mind. Cirrus is a type of high-flying light-whispy cloud. I wanted my users to feel light, elegance when using the application. I used a mind map to come up with more words and ideas to accompany Cirrus.
+            </p>
+          </div>
+          <div class="d-right-col">
+            <img src="./projects/cirrus/images/sketches/mindmapCropped.png" class="centered m-large d-large" />
+          </div>
+        </div>
+      </section>
+      <section class="full-width-wrapper subsection lighterGreyBg">
         <article class="">
           <h3 class="one-col-content">I took a wrong turn</h3>
           <p>

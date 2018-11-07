@@ -108,11 +108,11 @@ a.card:after{
 }
 
 
-.one-col-cntr{
+/* .one-col-cntr{
   margin: 0 auto;
   text-align: center;
   padding: 3rem 0 0;
-}
+} */
 
 .col-1
 {
@@ -158,9 +158,9 @@ a.card:after{
 }
 
 
-.m-bottom-margin{
+/* .m-bottom-margin{
   margin-bottom: 4rem;
-}
+} */
 
 .d-three-m-scroll-col-grid{
   display: flex;
@@ -196,7 +196,7 @@ a.card:after{
 
 .scrollCardCaption{
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: flex-start;
   padding-bottom: 1rem;
 }
@@ -252,27 +252,30 @@ a.card:after{
     grid-auto-rows: auto;
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
+    max-width: 1040px;
+    margin: auto;
   }
 
-  .col-1-content{
+  /* .col-1-content{
     justify-self: right;
     max-width: 100%;
   }
 
   .one-col-card{
     padding: 0 11.2% 6.4rem 0;
-  }
-  .one-col-cntr{
-    padding: 4rem 0 0;
-  }
+  } */
 
-  .one-col-content{
+  /* .one-col-cntr{
+    padding: 4rem 0 0;
+  } */
+
+  /* .one-col-content{
     max-width: 67rem;
     margin: 0 auto;
   }
   .one-col-img{
     max-width:67rem;
-  }
+  } */
 
   .subsection{
     padding-left: 10%;
@@ -280,14 +283,14 @@ a.card:after{
     margin: 0 auto;
   }
 
-  .col-2{
+  /* .col-2{
     width: 80%;
     padding: 0 0px 0px 5%;
     text-align: left;
-  }
-  .m-bottom-margin{
+  } */
+  /* .m-bottom-margin{
     margin-bottom: 0rem;
-  }
+  } */
   /* .card img{
     max-width:30%;
   } */
@@ -342,12 +345,15 @@ a.card:after{
 
   .d-right-col{
     grid-area: 1 / 2 / span 3 /2;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
   }
+  .d3-t2-m1-col-grid{
+        max-width: 1040px;
+    }
 
   .d3-t2-m1-col-grid, .d-three-m-scroll-col-grid{
     margin-top: 0;
-    max-width: 1040px;
+    /* max-width: 1040px; */
     /* calc(1040px - 14%); */
     margin: auto;
   }
@@ -372,7 +378,7 @@ a.card:after{
     width: auto;
     flex: none;
     margin-right: 0;
-    border-bottom: none;
+    /* border-bottom: none; */
   }
   .scrollCard>*:nth-child(2){
     padding-top:2rem;
@@ -413,8 +419,8 @@ a.card:after{
     padding-bottom: 0;
     border: 0;
     box-shadow: none;
-    pointer-events:none;
-    cursor:default;
+    /* pointer-events:none;
+    cursor:default; */
   }
 
   .col-1{
@@ -437,11 +443,14 @@ a.card:after{
 /******************************************/
 
 @media screen and (min-width: 1840px){
-  .d3-t2-m1-col-grid,.d-three-m-scroll-col-grid, h4{
+  .d3-t2-m1-col-grid, h4{
       /* margin: 0 auto; */
       /* max-width: calc(1440px - 14%); */
       /* max-width: none; */
 
+    }
+    .d-three-m-scroll-col-grid{
+      max-width: none;
     }
 }
 
@@ -455,7 +464,7 @@ a.card:after{
   }
 
 
-  .col-1{
+  /* .col-1{
     width: 100%;
   }
 
@@ -463,12 +472,12 @@ a.card:after{
     width: 100%;
     padding: 2rem 2rem 0 2rem;
     /* text-align: center; */
-  }
+/*  }
   .col-1-content{
     float:none;
     margin: 0 auto;
     max-width: 35%;
-  }
+  } */
   .d-one-m-one-col-grid .col-1-content, .d-two-m-one-col-sym-grid .col-1-content{
     max-width: 45%;
   }

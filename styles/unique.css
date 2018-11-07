@@ -96,6 +96,7 @@
 /************************************************/
 #CopilotBarChart{
   max-width: 1040px;
+  margin: auto;
 }
 #CopilotBarChart.d-one-m-one-col-grid{
   /* max-width: 1440px; */

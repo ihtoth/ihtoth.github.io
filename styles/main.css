@@ -63,6 +63,12 @@
 .greenBorder{
   border: 0.3rem solid var(--lime-green);
 }
+.lightGreyBorder{
+  border: 0.1rem solid var(--light-grey);
+}
+.greyBorder{
+  border: 0.1rem solid var(--grey);
+}
 
 /* Text */
 .green-medium{
@@ -298,6 +304,7 @@ p, span, ul, .quote{
   font-size: 1.8rem;
   line-height: 150%;
   padding-bottom: 1.5rem;
+  max-width: calc(1040px - 14%);
 }
 
 
@@ -370,9 +377,9 @@ ul.checkmarks li{
   font-size: 1em;
 } */
 
-.caption{
+/* .caption{
   font-size:2rem;
-}
+} */
 
 /***********************/
 /* ------ Links ------ */
@@ -504,10 +511,10 @@ button.maxWidthSmall{
   border-radius: 0.5rem;
 }
 
-.greyBorder{
+/* .greyBorder{
     border: var(--grey) solid 0.3rem;
     color: var(--dark-grey);
-}
+} */
 
 
 /******************************/
@@ -713,7 +720,7 @@ img{
   }
 
   h4{
-    font-size: 2.6rem;
+    /* font-size: 2rem; */
   }
 
   h5{
@@ -795,8 +802,9 @@ img{
   h3{
     font-size: 2.4rem;
     }
+
   h4{
-    font-size: 2.2rem;
+    /* font-size: 2rem; */
     max-width: 1040px;
     /* calc(1040px - 14%); */
     /* margin: 0 auto; */

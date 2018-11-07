@@ -47,7 +47,7 @@
 
 @media screen and (min-width: 769px){
   .noTopPadding{
-   padding-top: 0;
+   padding-top: 0 !important;
   }
   .noBottomPadding{
     padding-bottom: 0;
@@ -63,7 +63,7 @@
   .noMargin{
     margin: 0;
   }
-  
+
   .topBottomPadding{
     padding-top: 3rem;
     padding-bottom: 3rem;
