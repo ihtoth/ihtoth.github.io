@@ -529,9 +529,10 @@ img{
 }
 
 .centered{
-  margin: 0 auto;
+  margin: auto;
   text-align: center;
 }
+
 
 .m-large, .m-medium{
   /* margin-top: 2rem;

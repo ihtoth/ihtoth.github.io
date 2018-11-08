@@ -347,6 +347,11 @@ a.card:after{
     grid-area: 1 / 2 / span 3 /2;
     /* margin-bottom: 0; */
   }
+
+  .d-right-col-singlerow{
+    grid-area: 1 / 2 / span 1;
+  }
+
   .d3-t2-m1-col-grid{
         max-width: 1040px;
     }
