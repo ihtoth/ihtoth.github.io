@@ -35,13 +35,15 @@
     <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/unique.css" />
     <link rel="stylesheet" href="./styles/subNav.css" />
-      <link rel="stylesheet" href="./styles/overrides.css" />
+    <link rel="stylesheet" href="./styles/videoPlayer.css" />
+    <link rel="stylesheet" href="./styles/overrides.css" />
 
     <!-- jQuery import and Scrolling header JS-->
     <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="./js/scrollingHeader.js"></script>
     <script src="./js/menuHelper.js"></script>
-    <!-- <script src="./js/subNav.js"></script> -->
+    <script src="./js/youTubePlayer.js"></script>
+    <script async src="https://www.youtube.com/iframe_api"></script>
 
   </head>
   <body id=home>
@@ -243,7 +245,7 @@
           </p>
         </div>
           <!-- <section class="d-4r-by-2c personas-grid"> -->
-      <section class="d3-t2-m1-col-grid topPadding">
+      <section class="d3-t2-m1-col-grid topBottomPadding">
           <article id=Raul class="">
             <div class="title">
               <h5>Raul</h5>
@@ -299,9 +301,9 @@
             </div>
           </article>
           <article class="d-one-m-one-col-grid topPadding">
-            <img src="./projects/cirrus/images/icons/collaborator@2x.png" class="d-small m-smaller topPadding"/>
+            <img src="./projects/cirrus/images/icons/collaborator@2x.png" class="centered d-smaller m-smaller topPadding"/>
             <div>
-              <h4 class="imgAbove bold-700">Collaborator</h4>
+              <h4 class="imgAbove bold-700 centered">Collaborator</h4>
               <ul class="checkmarks">
                 <li class="pSpacing">
                   “I want to make sure ANYONE can view content that I've shared with them, regardless of if they have my cloud storage service, what device they are on, or what browser they are using.”
@@ -311,9 +313,9 @@
                 </li>
               </ul>
             </div>
-            <img src="./projects/cirrus/images/icons/backuper@2x.png" class="d-small m-smaller topPadding"/>
+            <img src="./projects/cirrus/images/icons/backuper@2x.png" class="centered d-smaller m-smaller topPadding"/>
             <div>
-              <h4 class="imgAbove bold-700">Backuper</h4>
+              <h4 class="imgAbove bold-700 centered">Backuper</h4>
               <ul class="checkmarks">
                 <li class="pSpacing">
                   “I do not want files to be deleted without my consent.”
@@ -352,7 +354,7 @@
             <h4 class="">Onboarding</h4>
             <img id=OnboardingSketch src="./projects/cirrus/images/sketches/onboarding.png" class="centered m-large d-large"/>
           </div>
-          <div class=" title lightGreyBorder">
+          <div class=" title lightGreyBorder desktop">
             <h4 class="">Sharing</h4>
             <img src="./projects/cirrus/images/screenshots/sharingFlow.png" class="centered m-large d-large noTopMargin"/>
           </div>
@@ -365,7 +367,7 @@
           <img src="./projects/cirrus/images/fabs/idea.png" class="icon"/>
           <div class="roundCorner yellowLightBg triangleTop">
             <p>
-              I ended up deviating from both of these user flows. Here is what I learned: the flows are just to get the first draft out the door. As I compared other products and tested Cirrus with users, the interactions evolved to be simpler. For example, I ditched the ‘user-dialogue’ when uploading something.
+              I ended up deviating from these user flows. Here is what I learned: the flows are just to get the first draft out the door. As I compared other products and tested Cirrus with users, the interactions evolved to be simpler. For example, I ditched the ‘user-dialogue’ when uploading something.
             </p>
           </div>
         </aside>
@@ -579,6 +581,9 @@
             <p><span class="bold-600">Lesson:</span> Let the visual look miander slightly, don’t feel like you have to stick exactly with the branding guidelines, especially in the beginning. When in doubt, run a preference test!</p>
           </div>
         </aside>
+        <div class="d-one-m-one-col-grid topPadding">
+          <button class="secondary centered maxWidthMedium" onclick="window.open('./projects/cirrus/images/screenshots/moodBoardCirrus.jpg', '_blank')">Link to Moodboard</button>
+        </div>
         <!-- <img src="./projects/cirrus/images/screenshots/moodBoardCirrus.jpg" class="centered m-large d-large"/> -->
       </section>
       <!-- <section id=digitalLogo class="full-width-wrapper subsection lightGreyBg">
@@ -650,122 +655,115 @@
               The dashboard went through many versions as I iterated through usability tests. I noted where multiple users were confused or struggled. As a result, I changed the placement of elements on the page, improved the visual hierarchy, and modified interactive behaviors.
             </p>
           </div>
-          <!-- <p>
-            With colors, typography, a solid logo, basic wireframes and a list of things to fix, I sat down to design the high fidelity mockups. I started with the easy stuff:
-          </p> -->
-          <!-- <div class="d-4r-by-2c hifi-homepage-grid">
-          <article id="HomepageV1">
-          <!-- <h4 class="centered noTopPadding"> First Try</h4>
-          <img src="./projects/cirrus/images/screenshots/homepageV1.png" class="centered m-large d-xlarge noMargin"/>
-          </article>
-          <div class="upTriangleArrow mobile"></div>
-          <article class="centerInGrid" id="HomepageV1Text">
-            <!-- <h4 class="centered"> Homepage version 1</h4>
-            <p>
-              Parts that evolved from the first draft.
-            </p>
-            <!-- <h4 class="centered mobile">Second Version</h4>
-          </article>
-          <article id="HomepageV2">
-            <h4 class="centered noTopPadding">Final Version</h4>
-            <div class="downTriangleArrow mobile">&nbsp;</div>
-            <img src="./projects/cirrus/images/screenshots/homepageV2.png" class="centered m-large d-xlarge noMargin"/>
-          </article>
-          <article class="centerInGrid" id="HomepageConcl">
-            <p>
-              Easy? Well no, but the user stories for a new user were relatively straightforward, with not too many complicated tasks required.
-            </p>
-          </article>
-          </div>
-          <!-- <div class="one-col-cntr">
-            <a class="lnk" href="">See onboarding screens</a>
-          </div>
         </section>
-        <section class="full-width-wrapper subsection">
-          <h3 class="one-col-content">Mobile Dashboard</h3>
-          <p>
-            Next, I changed my perspective, literally - to what the dashboard may look like on a mobile device. Although this interaface wasn’t the main focus, it was important to start thinking small screen too.
-          </p>
-          <p>
-            What if I thought up a fancy solution on the big screen that would *suck* on the mobile. I didn’t want to have to alter the look too much. The users did say they want this app available on any device.
-          </p>
-          <section class="d-two-m-one-col-grid">
-            <div>
-              <h4 class="textC">Initial Version</h4>
-              <img src="./projects/cirrus/images/screenshots/androidDashboardV1.png" class=" centered m-large d-medium noTopMargin noBottomMargin"/>
-            </div>
-            <div>
-              <h4 class="textC">Final Version</h4>
-              <img src="./projects/cirrus/images/screenshots/androidDashboardV2.png" class=" centered m-large d-medium noTopMargin noBottomMargin"/>
-            </div>
+        <section class="full-width-wrapper whiteGreyBg noTopPadding">
+          <section class="subsection topBottomPadding">
+            <h4>Dashboard Evolution</h4>
+          </section>
+            <section class="subsection noRLPaddingMobile">
+              <div class="d-three-m-scroll-col-grid">
+                <div class="scrollCard">
+                  <div class="scrollCardImg">
+                    <img src="./projects/cirrus/images/screenshots/desktopDashboardV1.png" class="centered m-large d-large"/>
+                    <!-- <img src="./projects/cirrus/images/screenshots/uploadWordingV1.png" class="centered m-medium d-large"/> -->
+                  </div>
+                  <div class="crollCardCaption noTopPadding">
+                    <ol class="circle-list">
+                      <li>
+                        <p class="smallCaption">Expanded Search Bar</p>
+                      </li>
+                      <li>
+                        <p class="smallCaption">Folders and Files under the same list</p>
+                      </li>
+                      <li>
+                        <p class="smallCaption">Help Link at the top</p> 
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="scrollCard">
+                  <div class="scrollCardImg">
+                    <img src="./projects/cirrus/images/screenshots/desktopDashboardV2.png" class="centered m-large d-large"/>
+                  </div>
+                  <div class="crollCardCaption noTopPadding">
+                    <ol class="circle-list">
+                      <li>
+                        <p class="smallCaption">Search Collapsed into magnified glass icon</p>
+                      </li>
+                      <li>
+                        <p class="smallCaption">Folders and Files now hierarchically separated</p>
+                      </li>
+                      <li>
+                        <p class="smallCaption">Help link is a hovering FAB</p> 
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="scrollCard">
+                  <div class="scrollCardImg">
+                    <img src="./projects/cirrus/images/screenshots/desktopDashboardV3.png" class="centered m-large d-large"/>
+                  </div>
+                  <div class="crollCardCaption noTopPadding">
+                    <ol class="circle-list">
+                      <li>
+                        <p class="smallCaption">Drastically different visual tile organization</p>
+                      </li>
+                      <li>
+                        <p class="smallCaption">Tile with plus-sign to match tiles</p>
+                      </li>
+                      <li>
+                        <p class="smallCaption">All menu still present, but "all" is removed in the next iteration</p> 
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="scrollCard">
+                  <div class="scrollCardImg">
+                    <img src="./projects/cirrus/images/screenshots/desktopDashboardV4.png" class="centered m-large d-large"/>
+                  </div>
+                  <div class="crollCardCaption noTopPadding">
+                    <ol class="circle-list">
+                      <li>
+                        <p class="smallCaption">Pagination now available</p>
+                      </li>
+                      <li>
+                        <p class="smallCaption">Ability to switch between visual tile-view and list view</p>
+                      </li>
+                      <li>
+                        <p class="smallCaption">Can select all folders and all files</p> 
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
           </section>
         </section>
-          <article class="full-width-wrapper subsection">
-            <h3 class="centered">Desktop Dashboard Evolution</h3> -->
-            <section class="d-two-m-one-col-grid ">
-              <img src="./projects/cirrus/images/screenshots/desktopDashboardV1.png" class="centered m-large d-large shadow noTopMargin"/>
-              <img src="./projects/cirrus/images/screenshots/desktopDashboardV2.png" class="centered m-large d-large shadow noTopMargin"/>
-              <img src="./projects/cirrus/images/screenshots/desktopDashboardV3.png" class="centered m-large d-large shadow noTopMargin"/>
-              <img src="./projects/cirrus/images/screenshots/desktopDashboardV4.png" class="centered m-large d-large shadow noTopMargin"/>
-            </section>
-          </article>
-
     </section>
-  </section>
     <section id=testing_1>
       <section class="sectionHeaderWrapper lightGreyBg">
         <h1 class="noPadding">Testing</h1>
       </section>
-      <!-- <section id=round1MockupTesting >
-        <article class="full-width-wrapper subsection">
-          <h2>Round 1: Mockup Testing</h2>
-          <h3 class="one-col-content">What’s black and white and moves when you click?</h3>
-          <p>
-            A wireframe mockup.. duh!
-          </p>
-          <p>
-            All jokes aside, I ran this test before I did any branding.
-          </p>
-          <p>
-            Just like you can’t move the foundation of a house once the walls are up without having to start over, running low fidelity tests gave me a good base on which to create the branded high-fi prototypes.
-          </p>
-          <p>
-            Here are the results combined from four user tests.
-          </p>
-        </article>
-        <article class="greenMedBg full-width-wrapper subsection">
-          <h4 class="one-col-content">The Good</h4>
-          <ul class="one-col-content pSpacing">
-            <li>"Ooh I like the thumbs up!"</li>
-            <li>"It's great that the quick tools are right there when I hover."</li>
-            <li>"I can tell my file is uploading. :)"</li>
-          </ul>
-        </article>
-        <article class="orangeMedBg full-width-wrapper subsection">
-          <h4 class="one-col-content">The not so good</h4>
-          <img src="./projects/cirrus/images/screenshots/wireframeImageView.png" class="centered m-large one-col-img d-large noTopMargin"/>
-          <p>
-            <span class="bold-600">Dragging-Dropping.</span> Test takers had trouble with how to move items. In the above screenshots, the folder icon wasn’t understood. Instinctively, they said they should be able to drag the name of the file over a folder to drop it in. This included not only the line item, but in the breadcrumbs too. Dragging is more intuitive than clicking buttons.
-          </p>
-          <div class="one-col-cntr">
-            <a target="_blank"class="lnk brown-dark" href="https://docs.google.com/document/d/1XFpZmQPO6J-dOrKZ9buFVmc3grC6WflscY_W1RkVl1A/edit?usp=sharing%5C">Complete Results</a>
+      <section id=round2HiFiTesting class="full-width-wrapper subsection">
+        <article class="d-one-m-one-col-grid bottomPadding">
+          <div class="h2h3HeadingWrapper">
+            <h2>High Fidelity Testing</h2>
+            <h3 class="one-col-content">Things are never really perfect</h3>
+          </div>
+          <div>
+            <p>
+              The best part about being a UX designer is that if you are not sure how something should work, the best way to find out is to test users. It’s great that we don’t have to invent it all by ourselves!
+            </p>
+            <p>
+              I thought I had ironed out everything by the time I was ready to test my high-fidelity prototypes, but there’s always something to tweak, especially when bringing in new testers who haven’t tested the product before.
+            </p>
           </div>
         </article>
-      </section> -->
-      <section id=round2HiFiTesting class="full-width-wrapper subsection">
-        <h2>Round 2: High-Fi Testing</h2>
-        <h3 class="one-col-content">Things are never really perfect.</h3>
-        <p>
-          The best part about being a UX designer is that if you are not sure how something should work, the best way to find out is to test users. It’s great that we don’t have to invent it all by ourselves!
-        </p>
-        <p>
-          I thought I had ironed out everything by the time I was ready to test my high-fidelity prototypes, but there’s always something to tweak, especially when bringing in new testers who haven’t tested the product before.
-        </p>
         <section class="d3-t2-m1-col-grid">
-          <article class="d3-t2-m1-col-grid-card">
+          <h4 class="mobile">Improvements</h4>
+          <article class="d3-t2-m1-col-grid-card desktop">
             <figure>
                 <figcaption>
-                  <h4 class="one-col-content">Improvements</h4>
+                  <h4>Improvements</h4>
                 </figcaption>
             </figure>
           </article>
@@ -776,6 +774,7 @@
                 <p>Keep quick tools on the item row when it is selected!</p>
               </figcaption>
             </figure>
+            <p class="mobile topPadding">Keep quick tools on the item row when it is selected!</p>
           </article>
 
           <article class="d3-t2-m1-col-grid-card">
@@ -785,6 +784,8 @@
                   <p>In the grid layout, the select circle should be on the top left or right.</p>
                 </figcaption>
             </figure>
+            <p class="mobile topPadding">In the grid layout, the select circle should be on the top left or right.</p>
+
           </article>
 
           <article class="d3-t2-m1-col-grid-card">
@@ -794,15 +795,17 @@
                 <p>Order files by last modified date by default, and remove Recent tab.</p>
               </figcaption>
             </figure>
+            <p class="mobile topPadding">Order files by last modified date by default, and remove Recent tab.</p>
           </article>
 
           <article class="d3-t2-m1-col-grid-card">
             <figure>
-              <!-- <img src="./projects/cirrus/images/screenshots/???.png" class="m-large"/> -->
+              <img src="./projects/cirrus/images/screenshots/hotkeys.png" class="m-large"/>
               <figcaption>
                 <p>Hotkeys should be enabled including Ctrl-Z, Ctrl-X, Ctrl-C, Ctrl-V.</p>
               </figcaption>
             </figure>
+            <p class="mobile topPadding">Hotkeys should be enabled including Ctrl-Z, Ctrl-X, Ctrl-C, Ctrl-V.</p>
           </article>
 
           <article class="d3-t2-m1-col-grid-card">
@@ -812,24 +815,29 @@
                 <p>Include toggle to grid/list view and pagination.</p>
               </figcaption>
             </figure>
+            <p class="mobile topPadding">Include toggle to grid/list view and pagination.</p>
+
           </article>
 
           <article class="d3-t2-m1-col-grid-card">
             <figure>
-              <!-- <img src="./projects/cirrus/images/screenshots/rightClick.png" /> -->
+              <img src="./projects/cirrus/images/icons/rightClickMenu.png" />
               <figcaption>
                 <p>Quick tool options made available on right-click.</p>
               </figcaption>
             </figure>
+              <p class="mobile topPadding">Quick tool options made available on right-click.</p>
           </article>
 
           <article class="d3-t2-m1-col-grid-card">
             <figure>
-              <!-- <img src="./projects/cirrus/images/screenshots/colorPalette.png" /> -->
+              <img src="./projects/cirrus/images/screenshots/layoutColors.png" />
               <figcaption>
                 <p>Colors and layout worked well. Yay research and wireframing!</p>
               </figcaption>
             </figure>
+            <p class="mobile topPadding">Colors and layout worked well. Yay research and wireframing!</p>
+
           </article>
 
           <article class="d3-t2-m1-col-grid-card">
@@ -839,57 +847,81 @@
                 <p>Upload area  say “Upload file or folder” instead of “Add”</p>
               </figcaption>
             </figure>
+            <p class="mobile topPadding">Upload area  say “Upload file or folder” instead of “Add”</p>
+
           </article>
         </section>
-        <div class=one-col-cntr>
-          <a target="_blank"class="lnk " href="https://docs.google.com/document/d/1T-aJMFfTLGdMwpB2MW-DvPD6tHu05hwOGwbnvkA26Zw/edit?usp=sharing">see all results</a>
+        <div class="d-one-m-one-col-grid topPadding">
+          <button class="secondary centered maxWidthMedium" onclick="window.open('https://docs.google.com/document/d/1T-aJMFfTLGdMwpB2MW-DvPD6tHu05hwOGwbnvkA26Zw/edit?usp=sharing', '_blank')">See all results</button>
         </div>
+        <!-- <div class=one-col-cntr>
+          <a target="_blank"class="lnk " href="https://docs.google.com/document/d/1T-aJMFfTLGdMwpB2MW-DvPD6tHu05hwOGwbnvkA26Zw/edit?usp=sharing">see all results</a>
+        </div> -->
       </section>
     </section>
-      <section id=finalDesign class="lightGreyBg full-width-wrapper subsection">
-        <h2>Final Design</h2>
-        <h3 class="one-col-content">Three iterations later</h3>
-        <p>
-          Taking results from preference tests, in-person and remote user testing, my prototype evolved from sketches to Balsamiq wireframes and finally high-fidelity prototypes with interaction. View the video to see all key functionalities and the drag + drop UI Animation.
-        </p>
-        <img src="./projects/cirrus/images/gifs/hiFiClickthrough.gif" class="centered m-large d-large"/>
-        <div class="one-col-cntr">
-          <a target="_blank"class="lnk" href="https://invis.io/2EGGO1M83BJ">InVision Prototype</a>
-        </div>
+      <section id=finalDesign class="full-width-wrapper subsection">
+        <article class="d-one-m-one-col-grid">
+          <div class="h2h3HeadingWrapper">
+            <h2>Final Design</h2>
+            <h3 class="one-col-content">Three iterations later</h3>
+          </div>
+          <p>
+            Taking results from preference tests, in-person and remote user testing, my prototype evolved from sketches to Balsamiq wireframes and finally high-fidelity prototypes with interaction. View the video to see all key functionalities and the drag + drop UI Animation.
+          </p>
+          <!-- <img src="./projects/cirrus/images/gifs/hiFiClickthrough.gif" class="centered m-large d-large"/> -->
+          <div class="bottomPadding"> <!-- This div is needed to space the video correctly-->
+            <div class="video-responsive">
+              <div class="YTVideo" id="muteYouTubeVideoPlayerCirrus"></div>
+            </div>
+          </div>
+            <button class="primary centered maxWidthMedium" onclick="window.open('https://invis.io/2EGGO1M83BJ', '_blank')">Invision Prototype</button>
+          </article>
       </section>
       <section id=reflection class="full-width-wrapper subsection">
-      <h2>Reflection</h2>
-        <div class="one-col-content">
-          <h3>The Design Process really works.</h3>
-          <p>
-            I am amazed how far users’ feedback combined with my experience and studying have brought this product where I truly believe it could compete with “the big ones” like google and dropbox if implemented correctly, and further iterated on using the same testing principles.
-          </p>
-          <h4>Lessons Learned</h4>
+        <article class="d-one-m-one-col-grid">
+          <div class="h2h3HeadingWrapper">
+            <h2>Reflection</h2>
+            <h3>The Design Process really works.</h3>
+          </div>
+            <p>
+              I am amazed how far users’ feedback combined with my experience and studying have brought this product where I truly believe it could compete with “the big ones” like google and dropbox if implemented correctly, and further iterated on using the same testing principles.
+            </p>
+            <h4>Lessons Learned</h4>
 
-            <ul class="noPadding">
-              <li><p>There’s no such thing as too much sketching </p></li>
-              <li><p>Trust your gut instinct; stop and go back, or keep iterating if it doesn’t feel right.</p></li>
-              <li><p>The process will take 2 or 3 times as long as you think. Most people don’t get why.</p></li>
-            </ul>
-          </p>
-          <h4>What's Next?</h4>
-          <p>
-            There are many more user stories in the queue that haven’t been implemented. That is where I would go to if there is more time, or a second design sprint.
-          </p>
-          <p>
-            As a Designer, I would go into more details and thinking out test cases and acceptance criteria for the developer to use when iterating on their code to match to the original user stories.
-          </p>
-        </div>
+              <ul class="checkmarks">
+                <li><p>There’s no such thing as too much sketching </p></li>
+                <li><p>Trust your gut instinct; sometimes the right answer is going back to a previous version. Or just keep iterating if you have time.</p></li>
+                <li><p>The process will take 2 or 3 times as long as you think. Most clients will not usually understand why.</p></li>
+                <li><p>Done is better than perfect.</p></li>
+              </ul>
+            <h4>What's Next?</h4>
+            <ul>
+            <li>
+              <p>
+                There are many more user stories in the queue that haven’t been implemented. That is where I would go to if there is more time, or a second design sprint.
+              </p>
+            </li>
+            <li>
+              <p>
+                As a Designer, I would go into more details and thinking out test cases and acceptance criteria for the developer to use when iterating on their code to match to the original user stories.
+              </p>
+            </li>
+          </ul>
+        </article>
       </section>
-
-    <nav class="full-width-wrapper subsection projectNav">
-      <a class="" href="projectInreach.html">
-        <div class="previousProject">
-          <i class="fa fa-caret-left fa-1x" aria-hidden="true"></i> &nbsp;
-          Rebranding Inreach Solutions
-        </div>
-      </a>
-    </nav>
+      <nav class="full-width-wrapper subsection projectNav">
+        <a class="" href="projectInreach.html">
+          <div class="previousProject">
+            <i class="fa fa-caret-left fa-1x" aria-hidden="true"></i> &nbsp;
+            Rebranding Inreach Solutions
+          </div>
+        </a>
+        <!-- <a class="" href="projectCirrus.html">
+          <div class="nextProject">
+            Cirrus &nbsp;  <i class="fa fa-caret-right fa-1x" aria-hidden="true"></i>
+          </div>
+        </a> -->
+      </nav>
   </main>
 
   <footer class="full-width-wrapper subsection">

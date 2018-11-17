@@ -25,8 +25,9 @@
   margin-bottom: 1rem;
 }
 .d3-t2-m1-col-grid, .d-three-m-scroll-col-grid{
+  /* grid-template-columns: repeat(2,minmax(20rem, 1fr)); */
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  grid-gap: 3rem;
+  grid-gap: 2rem;
   display: grid;
   /* max-width: 1440px; */
   align-items: top;
@@ -152,7 +153,7 @@ a.card:after{
   text-align: left;
 }
 
-.subsection{
+.subsection, .subsectionMobile{
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -187,6 +188,7 @@ a.card:after{
   width: min-content;
   flex: 0 0 auto;
   margin-right: 3rem;
+  min-width: 30rem;
   /* border-bottom: 2px dotted var(--light2-grey); */
 }
 .scrollCard>*:nth-child(2){ /*for the first scrollCardCaption*/
@@ -282,6 +284,10 @@ a.card:after{
     padding-right: 10%;
     margin: 0 auto;
   }
+  .subsectionMobile{
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   /* .col-2{
     width: 80%;
@@ -353,7 +359,7 @@ a.card:after{
   }
 
   .d3-t2-m1-col-grid{
-        max-width: 1040px;
+        max-width: 1120px;
     }
 
   .d3-t2-m1-col-grid, .d-three-m-scroll-col-grid{
@@ -447,7 +453,7 @@ a.card:after{
 /* ------ For hi-def large screens ------ */
 /******************************************/
 
-@media screen and (min-width: 1840px){
+@media screen and (min-width: 1640px){
   .d3-t2-m1-col-grid, h4{
       /* margin: 0 auto; */
       /* max-width: calc(1440px - 14%); */

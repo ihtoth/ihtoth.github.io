@@ -437,6 +437,52 @@
    transition: all 0.3s ease-in-out;
  } */
 
+ /****************************
+ **********CIRCLE LIST********
+ *****************************/
+ ol {
+     counter-reset: li; /* Initiate a counter */
+     list-style: none; /* Remove default numbering */
+     *list-style: decimal; /* Keep using default numbering for IE6/7 */
+     /* font: 15px 'trebuchet MS', 'lucida sans'; */
+     padding: 0;
+     /* margin-bottom: 4em; */
+     /* text-shadow: 0 1px 0 rgba(255,255,255,.5); */
+ }
+
+ ol ol {
+     margin: 0 0 0 2em; /* Add some left margin for inner lists */
+ }
+
+
+ .circle-list li{
+     padding-left: 4.5em;
+     padding-bottom: 1rem;
+ }
+
+ .circle-list p{
+     margin: 0;
+     position: relative;
+ }
+
+ .circle-list p:before{
+     content: counter(li);
+     counter-increment: li;
+     position: absolute;
+     left: -4.5rem;
+     /* top: -.4rem; */
+     background-color: rgba(250,219,107,1);
+     background-blend-mode: darken;
+     height: 3.5rem;
+     width: 3.5rem;
+     border: .6rem solid rgba(0,0,0,0);
+     text-align: center;
+     font-weight: 600;
+     font-size: 1.3rem;
+     color: #444;
+     border-radius: 50%;
+     /* transition: all .2s ease-out; */
+ }
 
 /******************************/
 /* ------ MEDIA QUERIES ------*/
