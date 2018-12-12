@@ -433,7 +433,8 @@ button{
   font-family: 'Advent Pro', Roboto, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  margin: 2rem 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 button.flexContent{
@@ -757,7 +758,9 @@ img{
   } */
 
   button{
-    margin: 2.5rem 0;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    /* margin: 2.5rem 0; */
     font-size: 2.2rem;
     height:4rem;
   }
@@ -875,7 +878,9 @@ img{
     height: 5rem;
     border-radius: 0.7rem;
     font-size: 2.2rem;
-    margin: 3rem 0;
+    /* margin: 3rem 0; */
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
   button.maxWidthLarge{
     max-width: 670px;
@@ -935,4 +940,3 @@ img{
   }
 
 }
-  

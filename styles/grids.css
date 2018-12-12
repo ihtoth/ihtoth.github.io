@@ -238,7 +238,7 @@ a.card:after{
 
   .myJourney-grid{
     grid-column-gap: 2rem;
-    grid-row-gap: 3rem;
+    /* grid-row-gap: 3rem; */
     grid-auto-rows: minmax(1.5rem, auto);
     grid-template-columns: 1fr 5fr 1fr;
   }
@@ -284,10 +284,7 @@ a.card:after{
     padding-right: 10%;
     margin: 0 auto;
   }
-  .subsectionMobile{
-    padding-left: 0;
-    padding-right: 0;
-  }
+
 
   /* .col-2{
     width: 80%;
@@ -319,15 +316,20 @@ a.card:after{
     padding-bottom: 8rem;
   }
 
+  .subsectionMobile{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .sectionHeaderWrapper{
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
 
 
-  .myJourney-grid{
+  /* .myJourney-grid{
       margin: 0 18%;
-  }
+  } */
 
   .d-two-m-one-col-sym-grid, .d-two-m-one-col-asym-grid{
     grid-column-gap: 8.25%;
@@ -421,8 +423,8 @@ a.card:after{
 
   .myJourney-grid{
       /* grid-column-gap: 3rem; */
-    grid-row-gap: 6rem;
-    grid-template-columns: 1fr 4fr 1fr;
+    /* grid-row-gap: 6rem; */
+    /* grid-template-columns: 1fr 4fr 1fr; */
   }
 
   .card{

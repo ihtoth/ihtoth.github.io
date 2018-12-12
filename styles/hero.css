@@ -43,6 +43,9 @@
   color: var(--dark-green);
 }
 
+#myJourney{
+  padding-bottom: 2rem;
+}
 /*For Mobile*/
 @media screen and (max-width: 574px){
   #hero img{
@@ -58,6 +61,9 @@
   .heroEmphasis{
     font-size: 1.8rem;
   }
+  /* #myJourney{
+    padding-bottom: 2rem;
+  } */
 
 }
 
@@ -66,6 +72,9 @@
   #hero img{
     height: 110px;
     margin: 0 auto;
+  }
+  #myJourney{
+    padding-bottom: 0.5rem;
   }
 
 }
@@ -99,11 +108,16 @@
     font-size: 1em;
   }
 
-  #heroText{
+  #heroText, #myJourneyText{
     order: 1;
-    width: 70%;
     margin: auto 2em auto 0;
     text-align: left;
+  }
+  #heroText{
+    width: 70%;
+  }
+  #myJourneyText{
+    width: 100%;
   }
 
   #hero .flexing img{
@@ -112,12 +126,19 @@
     order: 2;
     margin: 0 0 0 auto;
   }
+  /* #myJourney{
+    padding-bottom: 2rem;
+  } */
 
 }
 /*For Desktop*/
 @media screen and (min-width: 769px){
-  #hero{
+  #hero, #myJourney{
     max-width: 1100px;
+  }
+
+  #myJourney{
+    padding-bottom: 4rem;
   }
 
   #hero h2{
@@ -131,5 +152,14 @@
 
   #hero .flexing img{
     height: 300px;
+  }
+  #myJourney .flexing>img{
+    height: 60rem;
+    width: auto;
+    order: 2;
+  }
+
+  #myJourneyText>p{
+    font-size:1.6rem;
   }
 }
