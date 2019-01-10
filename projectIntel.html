@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-9510171-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-9510171-4');
+    </script>
+
+    <meta charset="utf-8">
+    <title>Portfolio | Ildikó Tóth</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./images/icons/favicon.png">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Advent+Pro:400,700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Muli:300,400,700' rel='stylesheet'>
+
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Reset CSS-->
+    <link rel="stylesheet" href="./styles/reset.css" />
+
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/hero.css" />
+    <link rel="stylesheet" href="./styles/grids.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/unique.css" />
+    <link rel="stylesheet" href="./styles/subNav.css" />
+    <link rel="stylesheet" href="./styles/videoPlayer.css" />
+    <link rel="stylesheet" href="./styles/overrides.css" />
+
+    <!-- jQuery import and Scrolling header JS-->
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="./js/scrollingHeader.js"></script>
+    <script src="./js/menuHelper.js"></script>
+    <script src="./js/youTubePlayer.js"></script>
+    <script async src="https://www.youtube.com/iframe_api"></script>
+    <!-- <script src="./js/subNav.js"></script> -->
+
+  </head>
+  <body id=home>
+    <header id="header" class="flexing whiteBg caseStudy subsection">
+      <a href="http://ihtoth.github.io" class="mainLogoContainer linkNoUnderline">
+        <!-- <div> -->
+          <img src="./images/icons/Logo9.png" class="mainLogo"/>
+        <!-- </div> -->
+      </a>
+      <!-- For Mobile Size. Hide when viewport size > 600px?-->
+      <div class="headerText mobile caseStudy">
+        <h1>Ildikó Tóth</h1>
+        <h2>UX Designer in Portland, OR</h2>
+      </div>
+      <nav role="navigation" class="mobile">
+        <div id="menuToggle">
+          <!-- A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it.-->
+          <input type="checkbox" class=hamburgerMenuCheckbox/>
+          <!--      hamburgerMenu  -->
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="topMenu">
+            <li><a href="./index.html#projects">Projects</a></li>
+            <li><a href="./index.html#myJourney">My Journey</a></li>
+            <li><a href="./documents/IldikoTothResumeDec2018v16.pdf" target="_blank">Resume</a></li>
+            <li><a href="#footerTextAndIcons">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="desktopNav desktop">
+        <ul class="desktopMenu desktop">
+          <li><a href="./index.html#projects">Projects</a></li>
+          <li><a href="./index.html#myJourney">My Journey</a></li>
+          <li><a href="./documents/IldikoTothResumeDec2018v16.pdf" target="_blank">Resume</a></li>
+          <li><a href="#footerTextAndIcons">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <a href="#home" class="linkNoUnderline">
+      <div class="sticky roundCorners" id="linkToTop">  <!--This will float as one scrolls down. Clicking rolls up to top -->
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+        <div>Top</div>
+      </div>
+    </a>
+
+    <main>
+      <section id=intro_1 class="full-width-wrapper subsection">
+        <div class=" d-two-m-one-col-sym-grid">
+          <div class="d-left-col">
+            <div class="h2h3HeadingWrapper">
+                <h1>Intel Retailer Onboarding</h1>
+            </div>
+          </div>
+          <div class="d-right-col">
+            <img src="./projects/intel/images/SearchForCompany.png" class="d-large m-large" />
+            <img src="./projects/intel/images/PinDrop.png" class="d-large m-large topPadding" />
+            <button class="primary cntr" onclick="window.open('http://intel.razorfishwest.com/myintel-registration/qa/', '_blank')">View Prototype</button>
+
+          </div>
+          <div class="d-left-col">
+            <div>
+            <h2>Problem</h2>
+            <p>
+              Intel is a global company with product retailers in nearly every country. On the Intel Technology Provider (ITP) registration form, the address template format did not allow for a variety of global address structures, resulting in poor data quality and geocode accuracy which is used for location services to provide local resources, training, and support.
+            </p>
+            </div>
+            <div>
+            <h2>Solution</h2>
+            <p>
+              The generic address fields were removed and replaced with the google address API which allows the user to put in first a country, then address fields specifically relevant to their country. If their business location does not have a written address, they can use the language-agnostic google maps interface to place a pin onto the location of their business. The pin is captured by GPS coordinates and recorded in the backend on form submit.
+            </p>
+            </div>
+            <div>
+            <h2>My Role</h2>
+            <p>
+              This was a complex project involving <a href="https://www.bchannels.com/" target="_blank">B-Channels</a> (an agency who did initial user research), our internal sales/marketing + development teams, and <a href="https://www.sapientrazorfish.com/" target="_blank">Razorfish</a>. I worked to create the user flows, personas, and mockups based on my knowledge of our user base and the research documents. I gave these requirements to Razorfish, and collaborated in client meetings as we iterated on the prototype. I also coordinated with our internal dev team. Finally, I played a role in the Q/A process to ensure the acceptance criteria were met and coordinated translation and release of the new webpage with my counterparts in all other world regions.
+            </p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <section class="sectionHeaderWrapper lightGrey3Bg">
+        <h1 class="noPadding">Research</h1>
+      </section>
+      <section class="full-width-wrapper subsection">
+        <div class="d-one-m-one-col-grid">
+          <div class="h2h3HeadingWrapper">
+            <h2>Discovery</h2>
+            <h3>Understanding the Problem</h3>
+          </div>
+          <div>
+            <p>
+              B-channels, in collaboration with our sales team, provided this data for me to kick-start an analysis and first iteration of how our user’s new journey might look like.
+            </p>
+            <p>
+              Intel’s existing ITP registration form has a standard address template for all countries worldwide, which does not allow for non-traditional formatted addresses.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="full-width-wrapper subsection lighterGreyBg">
+        <div class="d-two-m-one-col-asym-grid">
+          <div class="d-left-col">
+            <div>
+              <h2></h2>
+              <h4>The Old Form was difficult to use outside of North America</h4>
+            </div>
+            <!-- <div class="scrollCardCaption noTopPadding"> -->
+              <ol class="circle-list">
+                <li>
+                  <p class="smallCaption">Some Countries do not have States / provinces that are used regularly in addresses, so business owner may not know this field and will put something random (Incorrect data!). Or they leave it blank (incomplete data!)</p>
+                </li>
+                <li>
+                  <p class="smallCaption">Spelling of some streets/districts/ other address elements can be misspelled as the language is mostly spoken, or there are different dialects. We often find different character-sets with different accent marks.</p>
+                </li>
+                <li>
+                  <p class="smallCaption">Business may not have a formal address at all! (ie. The way they identify themselves is “across from the McDonalds”)</p> 
+                </li>
+                <li>
+                  <p class="smallCaption">There may need to be more than 2 lines for an address</p> 
+                </li>
+              </ol>
+            <!-- </div> -->
+          </div>
+          <div class="d-right-col">
+            <img src="./projects/intel/images/oldFormWMarkup.png" class="d-large m-large centered"/>
+          </div>
+        </div>
+      </section>
+      <section class="full-width-wrapper subsection">
+        <div class="d-one-m-one-col-grid">
+            <h3>Problematic State of Data</h3>
+          <p>
+            The charts below display the meaning of each google accuracy rating (circa 2015), as well as our customer-entered data by country. The highlighted ones were the target of improvement
+          </p>
+          <img src="./projects/intel/images/gAPIAccRatingsLegend.png" class="d-large m-large centered"/>
+          <img src="./projects/intel/images/gAPIAccRatings.png" class="d-large m-large centered"/>
+        </div>
+      </section>
+        <section class="full-width-wrapper subsection noTopPadding">
+          <div class="d-one-m-one-col-grid">
+            <div class="h2h3h2h3HeadingWrapper">
+              <h2>Users and flows</h2>
+              <h3>What our users' journey looks like</h3>
+            </div>
+            <div>
+              <p>
+                Our ITP Partners come from many countries and cultures. But they all have one thing in common - they want to know more about the products they sell and get rewarded for selling them!   </p>
+              <p>
+                I took some time researching partner companies and came up with some basic user types and defined their reason for engaging with our program. Finally, I visualized their journey through our system using Axure.
+              </p>
+            </div>
+
+          <img src="./projects/intel/images/sarah.png" class="d-large m-large centered"/>
+          </div>
+      </section>
+
+      <!-- <section class="full-width-wrapper subsection lighterGreyBg">
+        <div class="d-two-m-one-col-asym-grid">
+          <div class="d-left-col">
+            <div>
+              <h2>Final Logo</h2>
+              <h3>Many variations & preference tests later</h3>
+            </div>
+            <p>
+              We finally settled on this one, which leads the eye in a circular fashion, and provides good contrast between the text and vector image. This version also uses the typeface Montserrat we selected.
+            </p>
+          </div>
+          <div class="d-right-col">
+            <img src="./projects/inreach/images/icons/LogowithAnnotations.png" class="d-large m-large centered"/>
+          </div>
+        </div>
+      </section> -->
+      <section class="sectionHeaderWrapper lightGrey3Bg">
+        <h1 class="noPadding">Interaction Design</h1>
+      </section>
+      <section class="full-width-wrapper subsection">
+        <div class="d-one-m-one-col-grid">
+          <div class="h2h3h2h3HeadingWrapper">
+            <h2>Merging Existing and New</h2>
+            <h3>How to nestle new steps into an existing process</h3>
+          </div>
+          <p>
+            To create a wholistic view of the project, I mapped out our current process including all the layers of databases (CIM and ERPM), front end (AEM), and user areas and where they would interact. Welcome to the world of corporate lingo :)
+          </p>
+        </div>
+        <img src="./projects/intel/documents/searchFlowSelect.png" class="d-xlarge m-large centered topPadding"/>
+        <div class="d-one-m-one-col-grid">
+          <button class="secondary cntr maxWidthMedium" onclick="window.open('./projects/intel/documents/searchFlow.png', '_blank')">See Full Flow</button>
+        </div>
+      </section>
+
+      <section class="full-width-wrapper subsection noTopPadding">
+        <div class="d-one-m-one-col-grid">
+          <div class="h2h3h2h3HeadingWrapper">
+            <h2>UI Markup</h2>
+            <h3>Demonstrating changes to User Steps</h3>
+          </div>
+          <p>
+            Before sending the requirements out to Razorfish to design according to specific Intel design rules, I took the existing form and added steps such as:
+          </p>
+          <ul class="checkmarks">
+            <li class="pSpacing">
+              Search for existing company
+            </li>
+            <li class="pSpacing">
+              Adding a new company
+            </li>
+            <li class="pSpacing">
+              Choosing a physical location not found by google maps API
+            </li>
+          </ul>
+          <p>
+            Hacking the flow into an animated slideshow, I presented the vision to various stakeholders at all business layers of this project.
+          </p>
+            <!-- VIDEOS -->
+          <section>
+          <h4>Search for Company Before Creating a new one</h4>
+          <div> <!-- This div is needed to space the video correctly-->
+            <div class="video-responsive">
+              <div class="YTVideo" id="muteYouTubeVideoPlayerCompanySearch"></div>
+            </div>
+          </div>
+
+          <h4 class="topPadding">Choosing a company location Not Found on Google maps</h4>
+          <div> <!-- This div is needed to space the video correctly-->
+            <div class="video-responsive">
+              <div class="YTVideo" id="muteYouTubeVideoPlayerPinDrop"></div>
+            </div>
+          </div>
+          </section>
+
+          <p class="topPadding">
+            Trying to be clear as possible, I handed the material to our team handling the external agency communications and tried not to hold my breath too long before they came back with a first iteration, hopefully somewhat in the frame of what I had laid out.
+          </p>
+          <div>
+            <img src="./projects/intel/images/finn_praying_to_glob.png" class="d-small m-medium centered"/>
+            <p class="smallCaption centered">
+              credit: <a href="https://www.deviantart.com/marcospower1996/art/Finn-praying-to-Glob-436127754">DeviantArt</a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="sectionHeaderWrapper lightGrey3Bg">
+        <h1 class="noPadding">Project Iterations</h1>
+      </section>
+      <section class="full-width-wrapper subsection">
+        <div class="d-one-m-one-col-grid bottomPadding">
+            <div>
+              <h2>High Fidelity Tweaks</h2>
+              <h3>Providing feedback and adjustments</h3>
+            </div>
+            <p>
+              Three rounds went into the final version where I provided change requests to improve the user flow through the form and reduce abandon rates.
+            </p>
+        </div>
+        <div class="d-two-m-one-col-asym-grid topBottomPadding">
+          <div class="d-right-col">
+            <img src="./projects/intel/images/hiFiTweakAddSearchMod.png" class="d-large m-large centered"/>
+          </div>
+            <div class="scrollCardCaption d-left-col">
+              <div class="highlight">
+                1
+              </div>
+              <p class="smallCaption">
+                Add Search Module. It was important to narrow by country and city due to search time performance. Too many options would bog down the site if we didn’t ask for those filters.
+              </p>
+            </div>
+        </div>
+        <div class="d-two-m-one-col-asym-grid bottomPadding">
+          <div class="d-right-col">
+            <img src="./projects/intel/images/hiFiTweakShowMore.png" class="d-large m-large centered"/>
+          </div>
+          <div class="scrollCardCaption d-left-col">
+            <div class="highlight">
+              2
+            </div>
+            <p class="smallCaption">
+              Show three search results with an option to see more if any. Showing all results requires more attention from the user and clutters the screen. On a mobile device, it would require lots of scrolling.
+            </p>
+          </div>
+        </div>
+        <div class="d-two-m-one-col-asym-grid bottomPadding">
+          <div class="d-right-col">
+            <img src="./projects/intel/images/hiFiTweakBackToSearch.png" class="d-large m-large centered"/>
+          </div>
+          <div class="scrollCardCaption d-left-col">
+            <div class="highlight">
+              3
+            </div>
+            <p class="smallCaption">
+              Back to search link. Without it, our users would struggle to navigate back and forth through the form.
+            </p>
+          </div>
+        </div>
+        <div class="d-two-m-one-col-asym-grid bottomPadding">
+          <div class="d-right-col">
+            <img src="./projects/intel/images/hiFiTweakAutoFill.png" class="d-large m-large centered"/>
+          </div>
+          <div class="scrollCardCaption d-left-col">
+            <div class="highlight">
+              4
+            </div>
+            <p class="smallCaption">
+              When deciding to create a new business because they can’t find it in the search, we auto-fill the fields we ask for in the search. Simple but significant time-savings, since most users want to add what they tried to search for.
+            </p>
+          </div>
+        </div>
+        <aside class="ideaBubble">
+          <img src="./projects/cirrus/images/fabs/idea.png" class="icon"/>
+          <div class="roundCorner yellowLightBg triangleTop">
+            <p>
+              In a perfect world, I would test each prototype iteration with someone who has just signed up for our program, or retailers who would be potential customers.
+            </p>
+            <p>
+              However, due to time constraints and very strict processes rules, I was only able to verify my ideas with our sales and marketing rep and fellow analysts on the team.
+            </p>
+          </div>
+        </aside>
+        <div class="d-one-m-one-col-grid topPadding">
+            <p>
+              Once we had an acceptable prototype, our front end team in India took the baton. My role at this point was to meet up with their product owner periodically to see if they needed any clarification or needed to compromise on the design.
+            </p>
+        </div>
+      </section>
+      <!-- <section class="full-width-wrapper subsection">
+        <div class="d-one-m-one-col-grid">
+          <div>
+            <h2>Standardizing</h2>
+            <h3>Define and add lighter hues</h3>
+          </div>
+          <p>
+            No one had taken the time to actually define what they were in Hex, RGB, or even a Pantone variation for print. In an effort to standardize these colors, I nailed down the exact color and put it in the design guide.
+          </p>
+          <p>
+          I also chose appropriate lighter versions and neutral black/grey/whites.
+          </p>
+          <img src="./projects/inreach/images/colorsPgDesignGuide.png" class="d-large m-large centered"/>
+          <aside class="ideaBubble lastInSection">
+            <img src="./projects/cirrus/images/fabs/idea.png" class="icon"/>
+            <div class="roundCorner yellowLightBg triangleTop">
+              <p>
+                The challenging part of this color palette was the sheer number of hues. I created a logo with each of the colors, but realistically we only used about half of them, mainly for the business cards. The main logo remained the darker blue version.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section> -->
+      <section class="sectionHeaderWrapper lightGrey3Bg">
+        <h1 class="noPadding">Q/A</h1>
+      </section>
+      <section class="full-width-wrapper subsection">
+        <div class="d-one-m-one-col-grid">
+          <div class="h2h3HeadingWrapper">
+            <h2>Lab Time</h2>
+            <h3>Tablets, Phablets, Phones, and breaking things.</h3>
+          </div>
+        <!-- <div class="d-4r-by-2c">
+          <img src="./projects/inreach/images/icons/iconsQmarkandArrow.png" class="d-large m-medium centered"/>
+          <img src="./projects/inreach/images/icons/iconsXandCheck.png" class="d-large m-medium centered"/>
+        </div> -->
+        <div>
+          <p>
+            As soon as the front end team had a testable coded beta version up and running, I recruited coworkers or really just anyone who wanted to have fun in the lab with me.
+          </p>
+          <p>
+            We rolled out the cart with a bunch of diffently sized devices and went to work seeing if the interface would break at any point in the process.
+          </p>
+          <p>
+            I found this work pretty dang fun, but I was naive to hope they would fix every little perfectionist problem I found :D
+          </p>
+        </div>
+      </section>
+        <section class="full-width-wrapper whiteGreyBg">
+          <div class="subsection">
+            <h4 class="bottomPadding">Examples of select issues</h4>
+          </div>
+          <div class="subsection noRLPaddingMobile">
+            <div class="d-three-m-scroll-col-grid">
+              <div class="scrollCard">
+                <div class="scrollCardImg whiteBg">
+                  <img src="./projects/intel/images/err-IconsIncorrect.png" class="d-medium m-medium centered"  />
+                </div>
+                <div class="scrollCardCaption">
+                  <!-- <div class="highlight">
+                    1
+                  </div> -->
+                  <p class="smallCaption">
+                    The Icons were cut off (they should be checkmarks when the requirements are filled.)
+                  </p>
+                </div>
+              </div>
+              <div class="scrollCard">
+                <div class="scrollCardImg whiteBg">
+                  <img src="./projects/intel/images/err-AddressAndPinMismatch.png" class="d-medium m-medium centered"  />
+                </div>
+                <div class="scrollCardCaption">
+                  <!-- <div class="highlight">
+                    1
+                  </div> -->
+                  <p class="smallCaption">
+                    The Icons were cut off (they should be checkmarks when the requirements are filled.)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class="sectionHeaderWrapper lightGrey3Bg">
+        <h1 class="noPadding">Conclusion</h1>
+      </section>
+      <section class="full-width-wrapper subsection">
+        <div class="d-one-m-one-col-grid">
+          <div class="h2h3HeadingWrapper">
+            <h2>Successfully Implemented</h2>
+            <h3>Examples of the design guide in action</h3>
+          </div>
+          <p>
+            The best part of completing the guide was to see the work in action, and getting feedback that it is helping streamline content creation.
+          </p>
+          <p>
+            <em>“The guide is so helpful, I check it daily for all my marketing materials I’m making, it’s so much easier to work through my materials now.”
+            <br />- Director of Customer Success</em>
+          </p>
+          <div>
+            <h4>Business Card</h4>
+            <img src="./projects/inreach/images/oneBusinessCard.png" class="d-large m-large centered"/>
+          </div>
+          <div>
+            <h4>Letter Template</h4>
+            <img src="./projects/inreach/images/envelopeTemplate.png" class="d-large m-large centered"/>
+          </div>
+          <button class="secondary cntr" onclick="window.open('./projects/inreach/documents/DesignGuide.pdf', '_blank')">See Design Guide (PDF)</button>
+        </div>
+          </section>
+      <section class="subsection">
+          <!-- <h4 class="centered">Website</h4> -->
+          <img src="./projects/inreach/images/websiteSnapshot.png" class="d-xlarge m-large centered"/>
+          <div class="d-one-m-one-col-grid">
+            <button class="primary cntr " onclick="window.open('http://inreachsolutions.com', '_blank')">Go to InreachSolutions.com</button>
+          </div>
+      </section>
+      <section class="full-width-wrapper subsection">
+        <div class="d-one-m-one-col-grid topPadding">
+          <div class="h2h3HeadingWrapper">
+            <h2>Lessons Learned</h2>
+            <h3>How would I do it differently if I could go back?</h3>
+          </div>
+          <ul class="checkmarks">
+            <li class="pSpacing">
+              I would formalize the icons, text, and colors into a design system
+            </li>
+            <li class="pSpacing">
+              The logo should really only have one or two color versions allowed to keep the brand more homogenous.
+            </li>
+            <li class="pSpacing">
+              I used Adobe to create all the design assets. They have a library feature which I would utilize so the patterns are dynamic and easily updatable.
+            </li>
+            <li class="pSpacing">
+              I would educate all team members on how to best use and add to the deesign system.
+            </li>
+            <li class="pSpacing">
+              Keep the customer included on major decisions even if they tell you “do whatever”. Often, they don’t know what they want and need help with deciding what the next step is.
+            </li>
+          </ul>
+
+        </div>
+      </section>
+      <nav class="full-width-wrapper subsection projectNav">
+        <a class="" href="projectCopilot.html">
+          <div class="previousProject">
+            <i class="fa fa-caret-left fa-1x" aria-hidden="true"></i> &nbsp;
+            Copilot
+          </div>
+        </a>
+        <a class="" href="projectCirrus.html">
+          <div class="nextProject">
+            Cirrus &nbsp;  <i class="fa fa-caret-right fa-1x" aria-hidden="true"></i>
+          </div>
+        </a>
+      </nav>
+    </main>
+
+    <footer class="full-width-wrapper subsection">
+      <div class="text"> Like My Work? </div>
+      <button class="primary maxWidthSmall cntr flexContent" onclick="window.location.href='mailto:imildih@gmail.com?Subject=Hi! I like your portfolio...', '_blank'">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+        <div> &nbsp; Say Hello</div>
+      </button>
+          <div id="footerTextAndIcons">
+            <!-- <li id="socialIcons"> -->
+              <ul>
+                <li class="text">
+                    Or find me on social media
+                </li>
+                <li>
+                  <a href=  "https://www.github.com/ihtoth" target="_blank" class="linkNoUnderline">
+                    <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://www.linkedin.com/in/ildikototh" target="_blank" class="linkNoUnderline">
+                    <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://www.twitter.com/ihtoth" target="_blank" class="linkNoUnderline">
+                    <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/ihtoth" target="_blank" class="linkNoUnderline">
+                    <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/ihtoth/" target="_blank" class="linkNoUnderline" >
+                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            <!-- </li> -->
+          </div>
+        </footer>
+
+      </body>
+
+      </html>
