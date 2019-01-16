@@ -548,6 +548,10 @@ img{
   max-width: 30rem;
 }
 
+.m-smedium{
+  max-width: 20rem;
+}
+
 .m-small{
   max-width: 50%;
 }
@@ -853,12 +857,11 @@ img{
   }
 
   .d-medium{
-    /* margin: 0 auto; */
-    max-width: 75%
-    /* max-width: 30rem; */
-    /* margin-top: 0; */
+    max-width: 73%
   }
-
+  .d-smedium{
+    max-width: 65%;
+  }
   .d-small{
     max-width: 15rem;
   }

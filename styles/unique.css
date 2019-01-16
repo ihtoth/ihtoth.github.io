@@ -1,3 +1,15 @@
+/******************************************/
+/* ----- Homepage Projects section ------ */
+/* is not 3 cols wide because 4 things in it, looks better with even tiles. */
+/******************************************/
+@media screen and (min-width: 769px){
+#projects .d3-t2-m1-col-grid{
+  grid-template-columns: repeat(2, minmax(25rem, 1fr));
+  grid-gap: 5rem;
+  max-width: 104.0rem;
+  }
+}
+
 /***************************************/
 /* ----- Cirrus User Research Graphics ------ */
 /***************************************/

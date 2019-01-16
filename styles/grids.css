@@ -185,8 +185,10 @@ a.card:after{
 }
 
 .scrollCard{
-  width: min-content;
+  /* width: min-content; */
+  max-width: 50rem;
   flex: 0 0 auto;
+  /* flex: 1 0 0; */
   margin-right: 3rem;
   min-width: 30rem;
   /* border-bottom: 2px dotted var(--light2-grey); */
@@ -376,7 +378,7 @@ a.card:after{
     /* flex-wrap: nowrap; */
     overflow-x: none;
     -webkit-overflow-scrolling: none;
-
+    grid-template-columns: repeat(3, minmax(30rem, 1fr));
   }
 
   .d-three-m-scroll-col-grid>*:first-child{ margin-left: 0; }
@@ -389,6 +391,7 @@ a.card:after{
 
   .scrollCard{
     width: auto;
+    max-width: none;
     flex: none;
     margin-right: 0;
     /* border-bottom: none; */
@@ -428,12 +431,13 @@ a.card:after{
   }
 
   .card{
-    padding-top: 0;
+    /* padding-top: 0;
     padding-bottom: 0;
     border: 0;
-    box-shadow: none;
+    box-shadow: none; */
     /* pointer-events:none;
     cursor:default; */
+    padding: 3rem calc(5% + 10px);
   }
 
   .col-1{
@@ -456,12 +460,7 @@ a.card:after{
 /******************************************/
 
 @media screen and (min-width: 1640px){
-  .d3-t2-m1-col-grid, h4{
-      /* margin: 0 auto; */
-      /* max-width: calc(1440px - 14%); */
-      /* max-width: none; */
 
-    }
     .d-three-m-scroll-col-grid{
       max-width: none;
     }
