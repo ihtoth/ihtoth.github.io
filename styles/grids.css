@@ -99,6 +99,7 @@
     font-weight: 400;
     box-shadow: 5px 5px 5px var(--light-grey);
     color: var(--dark-green);
+    border-radius: 0.5rem;
 }
 a.card:after{
  border:none;
