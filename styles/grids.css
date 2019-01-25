@@ -97,10 +97,17 @@
     padding: 3rem calc(2% + 10px);
     border: 2px solid var(--lime-green);
     font-weight: 400;
-    box-shadow: 5px 5px 5px var(--light-grey);
+    /* box-shadow: 5px 5px 5px var(--light-grey); */
     color: var(--dark-green);
     border-radius: 0.5rem;
+    transition: all .2s ease-in-out;
 }
+a.card:hover{
+  box-shadow: 5px 5px 5px var(--light-grey);
+  /* background-color: var(--light-green); */
+  transform:scale(1.01);
+}
+
 a.card:after{
  border:none;
 }

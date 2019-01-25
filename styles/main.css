@@ -388,7 +388,7 @@ ul.checkmarks li{
 a{
   text-decoration: none;
   color:var(--lime-green);
-  font-weight: 600;
+  font-weight: 400;
   transition: color 0.3s ease;
   /* display: inline-block; */
   position: relative;
@@ -651,8 +651,10 @@ img{
   bottom: 10em;
   right: 3em;
   text-align: center;
-  padding: 0.5em 1em 1em;
+  padding: 0.8em 1em 1em;
   background-color: rgba(255,255,255,0.7);
+  border: 0.05rem var(--lime-green) solid;
+  /* box-shadow: 3px 3px 3px #F2F3EF; */
   color: var(--lime-green);
 }
 #linkToTop i, #linkToTop div{
@@ -661,7 +663,10 @@ img{
   text-transform: uppercase;
 }
 #linkToTop i{
-  font-size: 2rem;
+  font-size: 1.8rem;
+}
+#linkToTop div{
+  font-weight: 600;
 }
 
 #linkToTop.sticky:hover{
