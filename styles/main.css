@@ -280,16 +280,25 @@ h6{
   font-weight: 300;
 }
 
+
+
 .card h3{
   font-family: font-family: 'Roboto Condensed', Arial, sans-serif;
   font-size: 2.4rem;
   font-weight: 400;
   text-align: center;
+  padding-bottom: 0.1em;
 }
 
-.card p{
+.card > *{
       text-align: center;
+}
 
+.card > h4{
+  color: var(--grey);
+}
+.card > p{
+  /* opacity: 1; */
 }
 
 em{
@@ -309,7 +318,7 @@ p, span, ul, .quote{
 
 
 p.less-line-height{
-  line-height: 120%;
+  line-height: 130%;
 }
 
 .smallCaption{
@@ -346,40 +355,6 @@ ul.checkmarks li{
   background-size: 4%;
   padding-left: 5%;
 }
-
-/* .quote{
-  font-size: 2em;
-  font-weight: 700;
-  font-family: 'Roboto Condensed', Arial, sans-serif;
-  text-align: right;
-  color: var(--medium-green);
-  margin-left: 2%;
-  margin-right: -10%;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  border-right: 0.5rem var(--medium-green) solid;
-} */
-
-/* .topPadding{
-  padding-top: 1.5rem;
-} */
-
-/* date{
-  padding: 10px 0 15px 0;
-  display: block;
-  font-weight: 300;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-} */
-
-/* .italics{
-  font-style:italic;
-  font-size: 1em;
-} */
-
-/* .caption{
-  font-size:2rem;
-} */
 
 /***********************/
 /* ------ Links ------ */
@@ -745,10 +720,6 @@ img{
     font-size: 2.6rem;
   }
 
-  .card p{
-   min-height: 50px;
-  }
-
   p, span{
     font-size:1.8rem;
   }
@@ -827,9 +798,7 @@ img{
   .h2h3HeadingWrapper{
     /* padding-bottom: 4rem; */
   }
-  .card p{
-   min-height: 70px;
-  }
+
 
   .lnk{
     font-size: 2.8rem;
@@ -900,6 +869,12 @@ img{
 
   button.maxWidthSmall{
     max-width: 308px;
+  }
+
+  .card > p{
+    opacity: 0;
+    padding-bottom: 0rem;
+    transition: opacity .2s ease-in-out;
   }
 
 }

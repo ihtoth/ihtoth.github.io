@@ -99,13 +99,20 @@
     font-weight: 400;
     /* box-shadow: 5px 5px 5px var(--light-grey); */
     color: var(--dark-green);
+    /* opacity: 0.5; */
     border-radius: 0.5rem;
     transition: all .2s ease-in-out;
 }
 a.card:hover{
   box-shadow: 5px 5px 5px var(--light-grey);
+  /* opacity: 1; */
   /* background-color: var(--light-green); */
   transform:scale(1.01);
+
+
+}
+a.card:hover > p{
+  opacity:1;
 }
 
 a.card:after{
