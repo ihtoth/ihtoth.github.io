@@ -17,7 +17,7 @@ $(document).ready(function(){
       var $ripple = $(".ripple-effect");
 
       $ripple.css("height", $(this).height());
-      $ripple.css("width", $(this).width());
+      // $ripple.css("width", $(this).width());
       $div
         .css({
           top: yPos - ($ripple.height()/2),
