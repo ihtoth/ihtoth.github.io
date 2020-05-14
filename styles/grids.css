@@ -105,8 +105,6 @@
 }
 a.card:hover{
   box-shadow: 5px 5px 5px var(--light-grey);
-  /* opacity: 1; */
-  /* background-color: var(--light-green); */
   transform:scale(1.01);
 
 
