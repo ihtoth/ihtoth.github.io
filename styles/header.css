@@ -201,7 +201,6 @@ header ul{
     right:10px;
   }
 
-
  .headerText.caseStudy h2{
    font-size: 1.4rem;
  }
@@ -212,7 +211,15 @@ header ul{
    height: 4rem;
    margin: 12px 0 10px;
  }
+
 }
+
+@media screen and (max-width: 432px){
+  .headerText{
+    width: 55%;
+  }
+}
+
 /************************************/
 /* ------ For tablet/desktop ------ */
 /************************************/
@@ -254,11 +261,12 @@ header ul{
       color: var(--dark-grey);
   }
 
-  .mainLogoContainer{
-    width: 10%;
-  }
+  /* .mainLogoContainer{
+    width: 11%;
+  } */
+  
   .headerText{
-    width: 40%;
+    width: 46%;
   }
 }
 
