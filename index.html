@@ -157,7 +157,9 @@
         <h1 class="noPadding">Blog</h1>
       </section>
       <section id="blog" class="full-width-wrapper subsection">
+          <div id="divRss"></div>
           <div id="divRss2"></div>
+
       </section>
       <!-- <link href="css/FeedEk.css" rel="stylesheet" type="text/css" /> -->
 
@@ -270,13 +272,16 @@
           </footer>
     </main>
 <!-- RSS Feed JS code -->
-    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/FeedEk.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+    <script type="text/javascript" src="js/FeedEk.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
+          $('#divRss').FeedEk({
+            FeedUrl: 'http://www.ildikototh.com/wordpress3_0_1/index.php/category/design/?feed=rss2', MaxCount: 4, ShowDesc: true, ShowPubDate: false, DescCharacterLimit: 200, PostNum: 1
+          });
           $('#divRss2').FeedEk({
-            FeedUrl: 'http://www.ildikototh.com/wordpress3_0_1/index.php/category/design/?feed=rss2', MaxCount: 4, ShowDesc: true, ShowPubDate: false, DescCharacterLimit: 200
+            FeedUrl: 'http://www.ildikototh.com/wordpress3_0_1/index.php/category/design/?feed=rss2', MaxCount: 4, ShowDesc: true, ShowPubDate: false, DescCharacterLimit: 200, PostNum: 2
           });
         });
     </script>
