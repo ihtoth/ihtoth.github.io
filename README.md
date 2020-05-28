@@ -1,2 +1,2 @@
 # My Portfolio
-A showcase of my work at Bloc.
+A showcase of my UX/UI and strategy work.
