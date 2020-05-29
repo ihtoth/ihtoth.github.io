@@ -64,8 +64,8 @@
 					}
 				});
 
-
-				//$("#" + id).append('<ul class="feedEkList">' + s + '</ul>');
+				if(def.PostNum == 0)
+				$("#" + id).append('<ul class="feedEkList">' + s + '</ul>');
 			}
 		});
 	};
