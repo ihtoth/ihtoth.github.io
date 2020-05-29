@@ -103,6 +103,17 @@
     border-radius: 0.5rem;
     transition: all .2s ease-in-out;
 }
+.blog{
+  border: 2px solid var(--lime-light-green);
+}
+
+/* .blog h3{
+  color: var(--lime-green);
+} */
+.card h5{
+  color: var(--lime-light-green);
+}
+
 a.card:hover{
   box-shadow: 5px 5px 5px var(--light-grey);
   transform:scale(1.01);

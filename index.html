@@ -72,7 +72,7 @@
           <span></span>
 
           <ul id="topMenu">
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#projects">Work</a></li>
             <li><a href="#myJourney">My Journey</a></li>
             <li><a href="./documents/IldikoTothResume2020v5.pdf" target="_blank">Resume</a></li>
             <li><a href="#footerTextAndIcons">Contact</a></li>
@@ -81,7 +81,7 @@
       </nav>
       <nav class="desktopNav desktop">
         <ul class="desktopMenu desktop">
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#projects">Work</a></li>
           <li><a href="#myJourney">My Journey</a></li>
           <li><a href="./documents/IldikoTothResume2020v5.pdf" target="_blank">Resume</a></li>
           <li><a href="#footerTextAndIcons">Contact</a></li>
@@ -109,7 +109,7 @@
         </div>
       </section>
       <section class="sectionHeaderWrapper lightGreyBg">
-        <h1 class="noPadding">Projects</h1>
+        <h1 class="noPadding">Work</h1>
       </section>
       <section id="projects" class="full-width-wrapper subsection">
           <div class="d3-t2-m1-col-grid cntr">
@@ -141,7 +141,7 @@
               <p class="less-line-height">Proof of concept. Cloud storage with a more intuitive way to organize and share your files.</p>
               <!-- <button class="secondary cntr desktop" onclick="window.location.href='./projectCirrus.html'">see case study</button> -->
             </a>
-            <a href="./projectIntel.html" id="intel" class="card ripple" data-ripple-color="var(--lime-light-green)">
+            <a href="./projectIntel.html" target="_blank" id="intel" class="card ripple" data-ripple-color="var(--lime-light-green)">
               <div class="cardImgCont">
                 <img src="./projects/intel/images/icons/logo@2x.png" />
               </div>
@@ -150,17 +150,27 @@
               <p class="less-line-height">Solving duplicate sign-ups and the international address problem.</p>
               <!-- z<button class="secondary cntr desktop" onclick="window.location.href='./projectIntel.html'">see case study</button> -->
             </a>
+            <a id="divRssContainer" href="" target ="" class="card blog ripple" data-ripple-color="var(--lime-light-green)">
+              <h5 class="smallCaption bottomPadding">BLOGPOST</h5>
+              <h3 id="divRssTitle"></h3>
+              <h4 id="divRssMeta" class="less-line-height smallCaption">Mini-project &#8226; Redesign &#8226; Mobile</h4>
+              <p id="divRss"></p>
+            </a>
+            <a id="divRss2Container" href="" target="" class="card blog ripple" data-ripple-color="var(--lime-light-green)">
+              <h5 class="smallCaption bottomPadding">BLOGPOST</h5>
+              <h3 id="divRss2Title"></h3>
+              <h4 id="divRss2Meta" class="less-line-height smallCaption">Mini-Project &#8226; Redesign &#8226; Web</h4>
+              <p id="divRss2"></p>
+
+            </a>
           </div>
         </div>
       </section>
-      <section class="sectionHeaderWrapper lightGreyBg">
-        <h1 class="noPadding">Blog</h1>
-      </section>
-      <section id="blog" class="full-width-wrapper subsection">
-          <div id="divRss"></div>
+
+      <!-- <section id="blog" class="full-width-wrapper subsection">
           <div id="divRss2"></div>
 
-      </section>
+      </section> -->
       <!-- <link href="css/FeedEk.css" rel="stylesheet" type="text/css" /> -->
 
       <section class="sectionHeaderWrapper lightGreyBg">
@@ -278,10 +288,10 @@
     <script type="text/javascript">
         $(document).ready(function () {
           $('#divRss').FeedEk({
-            FeedUrl: 'http://www.ildikototh.com/wordpress3_0_1/index.php/category/design/?feed=rss2', MaxCount: 4, ShowDesc: true, ShowPubDate: false, DescCharacterLimit: 200, PostNum: 1
+            FeedUrl: 'http://www.ildikototh.com/wordpress3_0_1/index.php/category/design/?feed=rss2', MaxCount: 4, ShowDesc: true, ShowPubDate: false, DescCharacterLimit: 100, PostNum: 1
           });
           $('#divRss2').FeedEk({
-            FeedUrl: 'http://www.ildikototh.com/wordpress3_0_1/index.php/category/design/?feed=rss2', MaxCount: 4, ShowDesc: true, ShowPubDate: false, DescCharacterLimit: 200, PostNum: 2
+            FeedUrl: 'http://www.ildikototh.com/wordpress3_0_1/index.php/category/design/?feed=rss2', MaxCount: 4, ShowDesc: true, ShowPubDate: false, DescCharacterLimit: 100, PostNum: 2
           });
         });
     </script>

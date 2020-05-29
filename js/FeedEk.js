@@ -32,6 +32,9 @@
 					if(def.PostNum == postOrder || def.PostNum == 0){ //when calling for a specific post, or if none specified (PostNum=0), show max count.
 
 						s += '<li><div class="itemTitle"><a href="' + itm.link + '" target="' + def.TitleLinkTarget + '" >' + itm.title + '</a></div>';
+						$("#" + id +"Container").attr( "href", itm.link);
+						$("#" + id +"Container").attr( "target", def.TitleLinkTarget);
+						$("#" + id +"Title").append("<h3>" + itm.title + "</h3>");
 
 						if (def.ShowPubDate) {
 							dt = new Date(itm.publishDate);
@@ -48,17 +51,21 @@
 							s += '<div class="itemContent">';
 							if (def.DescCharacterLimit > 0 && itm.description.length > def.DescCharacterLimit) {
 								s += itm.description.substring(0, def.DescCharacterLimit) + '...';
+									$("#" + id).append(itm.description.substring(0, def.DescCharacterLimit) + '...');
 							}
 							else {
 								s += itm.description;
+								$("#" + id).append(itm.description);
 							}
 							s += '</div>';
 						}
+
+
 					}
 				});
 
 
-				$("#" + id).append('<ul class="feedEkList">' + s + '</ul>');
+				//$("#" + id).append('<ul class="feedEkList">' + s + '</ul>');
 			}
 		});
 	};
