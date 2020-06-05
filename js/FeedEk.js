@@ -31,7 +31,7 @@
 					++postOrder; //counting posts, this var contains the order of the post in the feed.
 					if(def.PostNum == postOrder || def.PostNum == 0){ //when calling for a specific post, or if none specified (PostNum=0), show max count.
 
-						s += '<li><div class="itemTitle"><a href="' + itm.link + '" target="' + def.TitleLinkTarget + '" >' + itm.title + '</a></div>';
+						// s += '<li><div class="itemTitle"><a href="' + itm.link + '" target="' + def.TitleLinkTarget + '" >' + itm.title + '</a></div>';
 						$("#" + id +"Container").attr( "href", itm.link);
 						$("#" + id +"Container").attr( "target", def.TitleLinkTarget);
 						$("#" + id +"Title").append("<h3>" + itm.title + "</h3>");
