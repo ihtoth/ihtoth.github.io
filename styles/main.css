@@ -564,7 +564,7 @@ img{
   z-index: 1;
 }
 /*************************************************************/
-/* ------ Specifically for My Journey Expand/Collapse ------ */
+/* ------ Specifically for About Expand/Collapse ------ */
 /*************************************************************/
   summary{
     list-style-type: none;
@@ -588,7 +588,7 @@ img{
   summary.whatMotivatesMe::before:hover{
     color: var(--dark-green);
   }
-  /* Specifically for My Journey Expand/Collapse
+  /* Specifically for About Expand/Collapse
    * removing the turning arrow
   */
   summary::-webkit-details-marker{
