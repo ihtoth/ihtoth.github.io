@@ -39,6 +39,9 @@
   .bottomPadding{
     padding-bottom:1rem;
   }
+  .bottomMargin{
+    margin-bottom: 2rem;
+  }
 
   .desktop{
     display:none;
@@ -74,6 +77,10 @@
 
   .bottomPadding{
     padding-bottom:3rem;
+  }
+
+  .bottomMargin{
+    margin-bottom: 3rem;
   }
   .mobile{
     display:none;

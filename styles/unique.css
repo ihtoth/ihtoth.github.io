@@ -1,3 +1,12 @@
+/**********************/
+/*  NDA Note divs  */
+/**********************/
+.note{
+  background-color: var(--light-yellow);
+  padding: 1.7rem 1.5rem;
+  font-size: 1.2rem;
+}
+
 /******************************************/
 /* ----- Homepage Projects section ------ */
 /* is not 3 cols wide because 4 things in it, looks better with even tiles. */

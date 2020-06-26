@@ -327,9 +327,14 @@ p.less-line-height{
   padding-bottom: 1.3rem;
 }
 
-/* #myJourney p{
-  max-width: none;
-} */
+p.quote{
+  font-size: 2.2rem;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 100%;
+  color: var(--medium-green);
+}
 
 #myJourney a{
   font-weight: 400;
@@ -537,7 +542,9 @@ img{
   /* display: inline; */
 }
 
-
+.img-shadow{
+  box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.2);
+}
 
 .shapeContainer{
   display: flex;
@@ -724,6 +731,11 @@ img{
     font-size:1.8rem;
   }
 
+  p.quote{
+      font-size: 2.8rem;
+    }
+  }
+
   .smallCaption{
     font-size: 1.6rem;
   }
@@ -835,6 +847,9 @@ img{
   }
   .d-smedium{
     max-width: 65%;
+  }
+  .d-s2medium{
+    max-width: 40%;
   }
   .d-small{
     max-width: 15rem;

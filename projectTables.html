@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-9510171-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-9510171-4');
+    </script>
+
+    <meta charset="utf-8">
+    <title>Portfolio | Ildikó Tóth</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./images/icons/favicon.png">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Advent+Pro:400,700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Muli:300,400,700' rel='stylesheet'>
+
+    <!-- Font Awesome -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- Reset CSS-->
+    <link rel="stylesheet" href="./styles/reset.css" />
+
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/hero.css" />
+    <link rel="stylesheet" href="./styles/grids.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/unique.css" />
+    <link rel="stylesheet" href="./styles/subNav.css" />
+    <link rel="stylesheet" href="./styles/overrides.css" />
+
+    <!-- jQuery import and Scrolling header JS-->
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="./js/scrollingHeader.js"></script>
+    <script src="./js/menuHelper.js"></script>
+    <!-- <script src="./js/subNav.js"></script> -->
+
+  </head>
+  <body id=home>
+    <header id="header" class="flexing whiteBg caseStudy subsection">
+      <a href="./" class="mainLogoContainer linkNoUnderline">
+        <!-- <div> -->
+          <img src="./images/icons/Logo9.png" class="mainLogo"/>
+        <!-- </div> -->
+      </a>
+      <!-- For Mobile Size. Hide when viewport size > 600px?-->
+      <div class="headerText mobile caseStudy">
+        <h1>Ildikó Tóth</h1>
+        <h2>Interaction Designer in Portland, OR</h2>
+      </div>
+      <nav role="navigation" class="mobile">
+        <div id="menuToggle">
+          <!-- A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it.-->
+          <input type="checkbox" class=hamburgerMenuCheckbox/>
+          <!--      hamburgerMenu  -->
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="topMenu">
+            <li><a href="./index.html#projects">Work</a></li>
+            <li><a href="./index.html#myJourney">About</a></li>
+            <li><a href="./documents/IldikoTothResume2020v7.pdf" target="_blank">Resume</a></li>
+            <li><a href="#footerTextAndIcons">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="desktopNav desktop">
+        <ul class="desktopMenu desktop">
+          <li><a href="./index.html#projects">Work</a></li>
+          <li><a href="./index.html#myJourney">About</a></li>
+          <li><a href="./documents/IldikoTothResume2020v7.pdf" target="_blank">Resume</a></li>
+          <li><a href="#footerTextAndIcons">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <a href="#home" class="linkNoUnderline">
+      <div class="sticky roundCorners" id="linkToTop">  <!--This will float as one scrolls down. Clicking rolls up to top -->
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+        <div>Top</div>
+      </div>
+    </a>
+
+    <main>
+      <section id=intro_1 class="full-width-wrapper subsection">
+        <div class=" d-two-m-one-col-sym-grid">
+          <div class="d-left-col">
+            <div class="h2h3HeadingWrapper">
+                <h1>Search & Table Design</h1>
+            </div>
+          </div>
+          <div class="d-right-col">
+            <p class="smallCaption note bottomMargin">
+              <strong class="">Note:</strong> This project has been sanitized with images blurred to protect company IP.
+            </p>
+            <img src="./projects/tables/images/introScreenshots.png" class="d-large m-large centered" />
+          </div>
+          <div class="d-left-col">
+            <h2>Problem</h2>
+            <p class="noBottomPadding">
+              Ranging from desk-jockey to on-the-go, our users needed to search for, and quickly pick through a list of constantly changing results on an online marketplace.
+            </p>
+            <p>
+              The existing search and results page was clunky, with a lack of clear hierarchy and engineered without a scalable UI. Changes often required custom code, making it harder to test and maintain.
+            </p>
+            <h2>Solution</h2>
+            <p>
+              We designed a new way to search and distill results via a table (desktop) and card (mobile) layout that allowed users to choose what details they see in the search, filter and sort with more accuracy. Collaborating with engineering, the solution focused on component reusability, accessibility, and interface customizability.
+            </p>
+            <h2>My Role</h2>
+            <p>
+              I lead heuristic analysis and created initial UI designs, working with my team to create reusable components. I also worked with a UX researcher to challenge assumptions via observation.
+            </p>
+
+          </div>
+        </div>
+      </section>
+      <section class="sectionHeaderWrapper lightGrey3Bg">
+        <h1 class="noPadding">Discovery</h1>
+      </section>
+      <section class="full-width-wrapper subsection">
+        <div class="d-one-m-one-col-grid">
+          <div class="h2h3HeadingWrapper">
+            <h2>Requirements</h2>
+            <h3>What services we offer, what fields to show?</h3>
+          </div>
+          <h4 class="noBottomPadding">Engineering</h4>
+          <p class="noBottomPadding">
+            Tired of getting things thrown over the proverbial “wall”, engineers wanted more detailed designs, with considerations for responsiveness and an idea of future changes so they could craft a more flexible UI.
+          </p>
+          <p>
+            We created Data architecture diagrams to communicate long-term product goals.
+          </p>
+          <img src="./projects/tables/images/dataArchitecture.png" class="d-large m-large centered bottomPadding"/>
+          <h4 class="noBottomPadding">Customers</h4>
+          <p class="noBottomPadding">
+            With the help of our UX Researcher and our support team, we looked through <strong>customer requests and listened to live calls </strong>to challenge the engineering assumptions baked into the existing design.
+          </p>
+          <p class="noBottomPadding">
+            I also viewed youtube tutorials, where customers were teaching others about our product - <strong>conveniently pointing out things they were frustrated about </strong>or didn’t get about our interface.
+          </p>
+          <p>
+            I wanted to be sure were were actually solving the right user problems.
+          </p>
+          <img src="./projects/tables/images/youTubeScreenshot.png" class="d-large m-large centered bottomPadding"/>
+          <h4 class="noBottomPadding">Product and Sales</h4>
+          <p>
+            The product team gave us a long list of services and fields that should be ported over from the existing application into free and paid versions of the new one.
+          </p>
+          <img src="./projects/tables/images/productRequirements.png" class="d-medium m-large centered bottomPadding" />
+
+          <div class="h2h3HeadingWrapper">
+            <h2>User Journey</h2>
+            <h3>Aligning Requirements with User Goals</h3>
+          </div>
+          <p class="noBottomPadding">
+            I could have blindly stuffed the above list into an interface, but that wouldn’t really solve the problems our users were facing.
+          </p>
+          <p>
+           Instead, I created a user journey of what I believed their thought process might look like.
+          </p>
+        </div>
+          <img src="./projects/tables/images/userJourney.png" class="d-xlarge m-large centered bottomPadding bottomMargin" />
+        <div class="d-one-m-one-col-grid">
+          <div class="h2h3HeadingWrapper">
+            <h2>Experience Benchmarking</h2>
+            <h3>How have other designers done this?</h3>
+          </div>
+          <p class="noBottomPadding">
+            I googled “table UX design” just to see what would come up. And boy did lots of articles pop up.
+          </p>
+          <p class="noBottomPadding">
+            <a href="https://uxdesign.cc/designing-tables-for-reusability-490a3760533">This one </a>was especially helpful; I discovered that 75% of our design problems were the same ones this group faced.
+          </p>
+          <p>
+            I also looked at good search sites, such as Google’s Flights website.
+          </p>
+        </div>
+        <div class="topPadding">
+          <h4>Google Flights: A Reference Model</h4>
+          <img src="./projects/tables/images/googleFlights.png" class="d-xlarge m-large centered" />
+        </div>
+      </section>
+      <section class="full-width-wrapper subsection whiteGreyBg">
+      <div class="d-two-m-one-col-asym-grid">
+        <div class="h2h3HeadingWrapper bottomPadding">
+          <h2>Heuristics</h2>
+          <h3>Problems with our Existing Design</h3>
+        </div>
+      </div>
+        <div class="d-two-m-one-col-asym-grid">
+          <div class="d-left-col bottomMargin">
+            <h4 class="noBottomPadding">Search Form</h4>
+            <p class="noBottomPadding">
+              <strong>Search terms are hard to read, and some of the copy is confusing.</strong> When searching, users keep most terms the same. Why not make those most often changed more prominent, the secondary ones visually different and more clearly labeled?
+            </p>
+          </div>
+          <div class="d-right-col">
+            <img src="./projects/tables/images/searchFormIssues.png" class="d-large m-large" />
+          </div>
+        </div>
+        <div class="d-two-m-one-col-asym-grid bottomMargin">
+          <div class="d-left-col">
+            <h4 class="noBottomPadding">Results Table</h4>
+            <p class="noBottomPadding">
+              <strong>There’s too much data visible.</strong>  Based on the mind map, we could reduce the default view to show only a couple columns.
+            </p>
+            <p class="noBottomPadding">
+              <strong>Unnecessary icons are taking up precious space.</strong> Let’s put icons sparingly and with purpose. Rethink seldom-used multi-select.
+            </p>
+          </div>
+          <div class="d-right-col">
+            <img src="./projects/tables/images/unnecessaryIcons.png" class="d-large m-large bottomPadding" />
+          </div>
+        </div>
+        <div class="d-two-m-one-col-asym-grid bottomMargin">
+          <div class="d-left-col">
+            <p class="noBottomPadding">
+              <strong>The result view is not customizable, making it especially messy on a narrower screen.</strong> Data we show at first varies vastly based on the user, so we wanted to allow hiding and reordering columns.
+            </p>
+          </div>
+          <div class="d-right-col">
+            <img src="./projects/tables/images/tabletUnorganizedView.png" class="d-large m-large bottomPadding" />
+          </div>
+        </div>
+        <div class="d-two-m-one-col-asym-grid">
+          <div class="d-left-col">
+            <p class="noBottomPadding">
+              <strong>The distinction between “exact” results and “similar” results is not clear.</strong> Let’s show exact results, with suggestions to expand based on common criteria.
+            </p>
+          </div>
+          <div class="d-right-col">
+            <img src="./projects/tables/images/exactSimilar.png" class="d-large m-large" />
+          </div>
+        </div>
+      </section>
+      <section class="sectionHeaderWrapper lightGrey3Bg">
+        <h1 class="noPadding">Sketching & Prototypes</h1>
+      </section>
+      <section class="full-width-wrapper subsection noBottomMargin">
+        <div class="d-one-m-one-col-grid bottomPadding">
+          <div class="h2h3HeadingWrapper">
+            <h2>Searching</h2>
+            <h3>Iterating through Low -> High Fidelity</h3>
+          </div>
+          <p>
+            The existing search form had a bunch of search criteria, only half of which were changed before a search was made. Filtering wasn’t even an option.
+          </p>
+        </div>
+        <div class="d-two-m-one-col-asym-1-3-grid">
+         <h4 class="d-left-col topPadding">Sketch</h4>
+         <div class="d-right-col">
+           <img src="./projects/tables/images/searchSketch.png" class="d-large m-large" />
+
+         </div>
+        </div>
+        <div class="d-two-m-one-col-asym-1-3-grid">
+         <h4 class="d-left-col topPadding">Wireframe</h4>
+         <div class="d-right-col">
+           <img src="./projects/tables/images/searchWireframe.png" class="d-large m-large" />
+
+         </div>
+        </div>
+        <div class="d-two-m-one-col-asym-1-3-grid bottomPadding">
+         <h4 class="d-left-col topPadding">Prototype</h4>
+         <div class="d-right-col">
+           <img src="./projects/tables/images/searchPrototype.png" class="d-large m-large" />
+         </div>
+        </div>
+
+      <div class="d-one-m-one-col-grid topPadding">
+        <div class="h2h3HeadingWrapper">
+          <h2>Search Results</h2>
+          <h3>What Data do users rely on to choose a job?</h3>
+        </div>
+        <p>
+          The existing interface cluttered the view, offering less matches visible on one screen, one of the key frustrations. Bringing my user journey into action, I narrowed it down to the following key points of information:
+        </p>
+        <ul>
+          <li>
+            - Who published the job?
+          </li>
+          <li>
+            - When does it start?
+          </li>
+          <li>
+            - Where is it?
+          </li>
+          <li>
+            - Do I have the right equipment for the job?
+          </li>
+          <li>
+            - What does the job pay?
+          </li>
+        </ul>
+        <p>
+          All other stuff is supplementary information and play less of a role in the first order of business: <strong>does the job even match what I’m looking for.</strong>
+        </p>
+
+        <h4>Desktop</h4>
+        <img src="./projects/tables/images/desktopResultsGrid.png" class="d-large m-large img-shadow bottomMargin" />
+        <h4>Mobile</h4>
+        <img src="./projects/tables/images/mobileResults.png" class="d-small m-small img-shadow bottomMargin" />
+        <div class="h2h3HeadingWrapper topPadding">
+          <h2>Interactions</h2>
+          <h3>What helps users narrow down their options?</h3>
+        </div>
+        <p class="noBottomPadding">
+          The existing interface had single column sorting available, but no other interactions.
+        </p>
+        <p class="noBottomPadding">
+          We wanted to expand on this for a better UX. After all, there were hundreds of customer support tickets asking for sort by more than one column.
+        </p>
+        <p>
+          <strong>The root cause was that we weren’t giving them the right tools to find those matches that fit their needs the most.</strong>
+        </p>
+        <h4 class="noBottomPadding">Simplifying column headers</h4>
+        <p>
+          We didn’t want to clutter the interface with a bunch of column names, most of which were intuitive based on the data type.
+        </p>
+        <img src="./projects/tables/images/simplifyHeader.png" class="d-large m-large bottomMargin centered" />
+        <h4 class="noBottomPadding">Changing column order</h4>
+        <p>
+          We had to make the data scannable, and hide stuff that didn’t matter as much. But everyone had a different need for how to order the columns. So we made it customizable.
+        </p>
+        </div>
+        <img src="./projects/tables/images/columnOrderSketches.png" class="d-xlarge m-large bottomMargin centered" />
+        <div class="d-one-m-one-col-grid">
+          <img src="./projects/tables/images/columnReordering.gif" class="d-s2medium m-small bottomMargin centered" />
+          <h4 class="noBottomPadding">Row Selection</h4>
+          <p>
+            In this application, selecting multiple rows (or cards) was a seldom-performed action. But we need to make this pattern work for other products too. <strong>Elegance and space saving design was the name of the game.</strong>
+          </p>
+        </div>
+          <img src="./projects/tables/images/rowSelectionSketches.png" class="d-xlarge m-large bottomMargin centered" />
+        <div class="d-one-m-one-col-grid">
+          <p class="smallCaption note bottomMargin centered">
+            <strong>Note:</strong> High fidelity video of selecting a row is not available due to NDA.
+          </p>
+        </div>
+      </section>
+      <section class="sectionHeaderWrapper lightGrey3Bg">
+        <h1 class="noPadding">Learnings, Next Steps</h1>
+      </section>
+      <section class="full-width-wrapper subsection">
+        <div class="d-one-m-one-col-grid">
+          <div class="h2h3HeadingWrapper">
+            <h2>accomplishments</h2>
+            <h3>Meeting (and exceeding) Expectations</h3>
+          </div>
+          <p>
+            After completing the initial round of designs, we presented to all of our stakeholders, making clear how these designs addressed their individual requirements.
+          </p>
+          <p class="quote noBottomPadding">
+            “I’ve been here 25 years, and this is the highest quality work I’ve seen from any design team.”
+          </p>
+          <p class="quote bottomMargin">
+            -Senior Data Architect
+          </p>
+          <h4 class="noBottomPadding">As a result of our efforts</h4>
+          <ul class="checkmarks">
+            <li class="pSpacing">
+              Product owners started writing stories for the engineering team to implement in upcoming sprints.
+            </li>
+            <li class="pSpacing">
+              The engineering team was excited by the prospect of using new, more modern Javascript libraries that would work well with our designs.
+            </li>
+            <li class="pSpacing">
+              Data architects were able to empathize with the user and made an informed decision on building new scaffolding instead of modifying the existing one.
+            </li>
+            <li class="pSpacing">
+              Our team was able to easily communicate which parts of the designs were still highly likely to change (due to testing and iteration that still needed to happen), allowing crossfunctional teams to start working on more established ideas.
+            </li>
+            <li class="pSpacing">
+              We helped marketing socialize the new brand guidelines we collaborated on during the design phase.
+            </li>
+          </ul>
+          <h4 class="noBottomPadding">Next Steps</h4>
+          <p class="noBottomPadding">
+            At this point, we had not run any usability tests, and my data-mind was itching to get some eyes on it. We needed to check
+          </p>
+          <ul>
+            <li>
+              - Navigability of the interface (we could use any user for this test)
+            </li>
+            <li>
+              - What was the response of a user who was an active customer: Would they be able to hop on it, and complete the basic tasks they do many times a day?
+            </li>
+          </ul>
+          <p>
+            Based on our learnings, we would iterate and spot-check again, and add more advanced features, keeping the engineering team looped in at key milestones.
+          </p>
+        </div>
+      </section>
+
+      <nav class="full-width-wrapper subsection projectNav">
+        <a class="" href="projectAdobe.html">
+          <div class="previousProject">
+            <i class="fas fa-caret-left fa-1x" aria-hidden="true"></i> &nbsp;
+            Adobe: Non-Genuine Users
+          </div>
+        </a>
+        <a class="" href="projectIntel.html">
+          <div class="nextProject">
+            Intel: Retailer Onboarding &nbsp;  <i class="fas fa-caret-right fa-1x" aria-hidden="true"></i>
+          </div>
+        </a>
+      </nav>
+    </main>
+
+    <footer class="full-width-wrapper subsection">
+      <div class="text"> Like My Work? </div>
+      <button class="primary maxWidthSmall cntr flexContent" onclick="window.location.href='mailto:imildih@gmail.com?Subject=Hi! I like your portfolio...', '_blank'">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+        <div> &nbsp; Say Hello</div>
+      </button>
+          <div id="footerTextAndIcons">
+            <!-- <li id="socialIcons"> -->
+            <ul>
+              <li class="text">
+                  Or find me on the interwebs
+              </li>
+              <li>
+                <a href="http://www.linkedin.com/in/ildikototh" target="_blank" class="linkNoUnderline" alt="LinkedIn">
+                  <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.twitter.com/ihtoth" target="_blank" class="linkNoUnderline" alt="Twitter">
+                  <i class="fab fa-twitter-square fa-2x" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/ihtoth" target="_blank" class="linkNoUnderline" alt="Facebook">
+                  <i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/ihtoth/" target="_blank" class="linkNoUnderline" alt="Instagram">
+                  <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href= "http://www.ildikototh.com/index.php/category/design/" target="_blank" class="linkNoUnderline" alt="Wordpress Blog">
+                  <i class="fab fa-wordpress-simple fa-2x" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+            <!-- </li> -->
+          </div>
+        </footer>
+
+      </body>
+
+      </html>
