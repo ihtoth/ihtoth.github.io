@@ -744,10 +744,6 @@ img{
     font-size:2.2rem;
   }
 
-  /* .quote{
-      font-size: 2.5rem;
-      border-right-width: 1rem;
-  } */
 
   button{
     margin-top: 2.5rem;
@@ -755,6 +751,14 @@ img{
     /* margin: 2.5rem 0; */
     font-size: 2.2rem;
     height:4rem;
+  }
+
+  button.maxWidthLarge{
+    max-width: 670px;
+  }
+
+  button.maxWidthMedium{
+    max-width: 446px;
   }
 
   button.maxWidthSmall{
@@ -770,11 +774,6 @@ img{
 /* ------ For Large Screens ------ */
 /***********************************/
 @media screen and (min-width: 769px){
-
-  /* .desktop{
-    display:block;
-  } */
-
 
   p, span, ul{
     font-size: 1.8rem;
